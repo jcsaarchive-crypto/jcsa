@@ -11,9 +11,37 @@
   <body>
     <main>
       <div class="label">JAPANESE FOOTBALL ARCHIVE</div>
+
       <h1>日本サッカーWEBデータベース</h1>
-      <p>日本サッカーの記録を、チーム・シーズンを軸に整理するデータベース。</p>
-      <a href="/teams/toyota-90-91">90/91 トヨタ自動車</a>
+
+      <p class="intro">
+        日本サッカーの記録を、選手とクラブの歴史から辿る。
+      </p>
+
+      <section class="archive-section">
+        <h2>年代から見る</h2>
+
+        <div class="year-list">
+          <a href="#">1960年代</a>
+          <a href="#">1970年代</a>
+          <a href="#">1980年代</a>
+          <a href="#">1990年代</a>
+          <a href="#">2000年代</a>
+          <a href="#">2010年代</a>
+          <a href="#">2020年代</a>
+        </div>
+      </section>
+
+      <section class="archive-section">
+        <h2>更新リスト</h2>
+
+        <div class="current-list">
+          <a href="/teams/toyota-90-91">
+            <span class="season">90/91</span>
+            <span class="team">トヨタ自動車</span>
+          </a>
+        </div>
+      </section>
     </main>
   </body>
 </html>
@@ -34,7 +62,7 @@
   main {
     width: min(1200px, calc(100% - 40px));
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 70px 0 90px;
   }
 
   .label {
@@ -48,10 +76,90 @@
   h1 {
     margin: 0 0 12px;
     font-size: clamp(30px, 5vw, 48px);
+    line-height: 1.2;
   }
 
-  p {
+  .intro {
     margin: 0;
     color: #68716b;
+    font-size: 16px;
+  }
+
+  .archive-section {
+    margin-top: 55px;
+    padding-top: 25px;
+    border-top: 1px solid #cfd5d0;
+  }
+
+  h2 {
+    margin: 0 0 18px;
+    font-size: 20px;
+  }
+
+  .year-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  max-width: 820px;
+}
+
+  .year-list a {
+    display: block;
+    padding: 12px 18px;
+    background: white;
+    border: 1px solid #cfd5d0;
+    color: #202522;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .year-list a:hover {
+    background: #e7ebe8;
+  }
+
+  .current-list a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    min-width: 280px;
+    padding: 14px 18px;
+    background: white;
+    border: 1px solid #cfd5d0;
+    color: #202522;
+    text-decoration: none;
+  }
+
+  .current-list a:hover {
+    background: #e7ebe8;
+  }
+
+  .season {
+    color: #68716b;
+    font-size: 13px;
+  }
+
+  .team {
+    font-weight: 700;
+  }
+
+  @media (max-width: 700px) {
+    main {
+      width: calc(100% - 24px);
+      padding-top: 40px;
+    }
+
+    .year-list {
+      gap: 8px;
+    }
+
+    .year-list a {
+      padding: 10px 13px;
+    }
+
+    .current-list a {
+      min-width: 0;
+      width: 100%;
+    }
   }
 </style>
