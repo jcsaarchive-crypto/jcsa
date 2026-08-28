@@ -1,6 +1,7 @@
 export const team = {
   season: "90/91",
   competition: "日本サッカーリーグ1部",
+  competitionEn: "JAPAN SOCCER LEAGUE 1990/91",
   name: "トヨタ自動車",
 };
 

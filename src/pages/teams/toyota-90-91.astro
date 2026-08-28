@@ -6,12 +6,12 @@ import { team, players } from "../../data/toyota-90-91.js";
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>90/91 トヨタ自動車</title>
+ <title>{team.season} {team.name}</title>
 </head>
 
 <body>
   <main>
-    <div class="league">JAPAN SOCCER LEAGUE 1990/91</div>
+    <div class="league">{team.competitionEn}</div>
    <h1>{team.name}</h1>
     <p class="season">{team.season} {team.competition}</p>
 
