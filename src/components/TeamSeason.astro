@@ -238,7 +238,9 @@ const {
           <ol class="source-list">
             {sources.map((source) => (
               <li class="source-item">
-                <div class="source-title">『{source.title}』</div>
+                <div class="source-title">
+                  『{source.title}』
+                </div>
 
                 <div class="source-details">
                   {source.publisher && (
@@ -293,21 +295,25 @@ const {
   h1 {
     margin: 0;
     font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.2;
   }
 
   .season {
     margin: 7px 0 42px;
     color: #68716b;
+    font-size: 14px;
   }
 
   h2 {
     margin: 0 0 16px;
     font-size: 21px;
+    line-height: 1.4;
   }
 
   h3 {
     margin: 0;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .info-section,
@@ -325,17 +331,21 @@ const {
     border: 1px solid #cfd5d0;
   }
 
+  /* クラブ情報 */
+
   .info-list {
     display: grid;
     grid-template-columns: 180px 1fr;
     margin: 0;
+    font-size: 14px;
   }
 
   .info-list dt,
   .info-list dd {
     margin: 0;
-    padding: 11px 14px;
+    padding: 9px 11px;
     border-bottom: 1px solid #e0e4e1;
+    line-height: 1.6;
   }
 
   .info-list dt {
@@ -363,22 +373,24 @@ const {
   }
 
   .ground-list li + li {
-    margin-top: 4px;
+    margin-top: 3px;
   }
 
+  /* 成績 */
+
   .result-box {
-    padding: 22px;
+    padding: 20px;
   }
 
   .result-box h3 {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
 
   .league-result {
     display: flex;
     align-items: stretch;
     gap: 28px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
     border-bottom: 1px solid #e0e4e1;
   }
 
@@ -392,35 +404,41 @@ const {
   .result-stats span,
   .cup-results span {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     color: #68716b;
     font-size: 12px;
+    line-height: 1.4;
   }
 
   .result-rank strong {
-    font-size: 25px;
+    font-size: 24px;
+    line-height: 1.2;
   }
 
   .result-stats {
     display: flex;
     flex-wrap: wrap;
-    gap: 28px;
+    gap: 26px;
   }
 
   .result-stats strong {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.4;
   }
 
   .cup-results {
     display: flex;
     flex-wrap: wrap;
-    gap: 35px;
-    padding-top: 18px;
+    gap: 32px;
+    padding-top: 16px;
   }
 
   .cup-results strong {
     font-size: 14px;
+    line-height: 1.4;
   }
+
+  /* 選手一覧 */
 
   .table-wrap {
     overflow-x: auto;
@@ -442,6 +460,8 @@ const {
     border-bottom: 2px solid #aeb8b0;
     text-align: left;
     white-space: nowrap;
+    font-size: 13px;
+    line-height: 1.4;
   }
 
   td {
@@ -449,6 +469,7 @@ const {
     border-right: 1px solid #e0e4e1;
     border-bottom: 1px solid #e0e4e1;
     white-space: nowrap;
+    line-height: 1.5;
   }
 
   tbody tr:hover {
@@ -474,12 +495,15 @@ const {
     text-decoration: underline;
   }
 
+  /* スタッフ */
+
   .staff-box {
     padding: 0;
   }
 
   .staff-list {
     margin: 0;
+    font-size: 14px;
   }
 
   .staff-row {
@@ -495,7 +519,9 @@ const {
   .staff-row dt,
   .staff-row dd {
     margin: 0;
-    padding: 11px 14px;
+    padding: 9px 11px;
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   .staff-row dt {
@@ -505,34 +531,41 @@ const {
 
   .staff-row dd {
     background: white;
+    font-weight: 400;
   }
 
+  /* 出典 */
+
   .sources-box {
-    padding: 20px 24px;
+    padding: 18px 22px;
   }
 
   .source-list {
     margin: 0;
     padding-left: 24px;
+    font-size: 13px;
+  }
+
+  .source-item {
+    line-height: 1.6;
   }
 
   .source-item + .source-item {
-    margin-top: 18px;
+    margin-top: 16px;
   }
 
   .source-title {
     font-weight: 700;
-    line-height: 1.6;
   }
 
   .source-details {
     display: flex;
     flex-wrap: wrap;
     gap: 0 18px;
-    margin-top: 3px;
+    margin-top: 2px;
     color: #68716b;
-    font-size: 13px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.6;
   }
 
   @media (max-width: 700px) {
@@ -564,7 +597,7 @@ const {
     }
 
     .sources-box {
-      padding: 18px;
+      padding: 16px 18px;
     }
 
     .source-details {
