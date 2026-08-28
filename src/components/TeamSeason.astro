@@ -1,0 +1,149 @@
+---
+const { team, players } = Astro.props;
+---
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+ <title>{team.season} {team.name}</title>
+</head>
+
+<body>
+  <main>
+    <div class="league">{team.competitionEn}</div>
+   <h1>{team.name}</h1>
+    <p class="season">{team.season} {team.competition}</p>
+
+    <h2>選手一覧</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>背番号</th>
+            <th>選手名</th>
+            <th>ラテン文字表記</th>
+            <th>Pos</th>
+            <th>生年月日</th>
+            <th>身長/体重</th>
+            <th>出身地</th>
+            <th>前所属チーム</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {players.map((player) => (
+            <tr>
+              <td class="number">{player.number}</td>
+              <td class="player-name">{player.name}</td>
+              <td>{player.latin}</td>
+              <td class="position">{player.position}</td>
+              <td>{player.birth}</td>
+              <td>{player.size}</td>
+              <td>{player.birthplace}</td>
+              <td>{player.previous}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #f4f5f3;
+    color: #202522;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Noto Sans JP", sans-serif;
+  }
+
+  main {
+    width: min(1400px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 50px 0 80px;
+  }
+
+  .league {
+    margin-bottom: 7px;
+    color: #68716b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(30px, 4vw, 46px);
+  }
+
+  .season {
+    margin: 7px 0 42px;
+    color: #68716b;
+  }
+
+  h2 {
+    margin: 0 0 13px;
+    font-size: 21px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #cfd5d0;
+  }
+
+  table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  th {
+    padding: 10px 11px;
+    background: #e7ebe8;
+    border-right: 1px solid #ccd2cd;
+    border-bottom: 2px solid #aeb8b0;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 9px 11px;
+    border-right: 1px solid #e0e4e1;
+    border-bottom: 1px solid #e0e4e1;
+    white-space: nowrap;
+  }
+
+  tbody tr:hover {
+    background: #f3f6f3;
+  }
+
+  .number,
+  .position {
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .player-name {
+    font-weight: 700;
+  }
+
+  @media (max-width: 700px) {
+    main {
+      width: calc(100% - 24px);
+      padding-top: 28px;
+    }
+
+    .season {
+      margin-bottom: 30px;
+    }
+  }
+</style>
