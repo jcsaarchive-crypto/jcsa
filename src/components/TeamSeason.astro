@@ -1,52 +1,264 @@
 ---
-const { team, players } = Astro.props;
+const {
+  team,
+  players,
+  staff = [],
+  sources = [],
+} = Astro.props;
 ---
+
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
- <title>{team.season} {team.name}</title>
+  <title>{team.season} {team.name}</title>
 </head>
 
 <body>
   <main>
     <div class="league">{team.competitionEn}</div>
-   <h1>{team.name}</h1>
-    <p class="season">{team.season} {team.competition}</p>
 
-    <h2>選手一覧</h2>
+    <h1>{team.name}</h1>
 
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>背番号</th>
-            <th>選手名</th>
-            <th>ラテン文字表記</th>
-            <th>Pos</th>
-            <th>生年月日</th>
-            <th>身長/体重</th>
-            <th>出身地</th>
-            <th>前所属チーム</th>
-          </tr>
-        </thead>
+    <p class="season">
+      {team.season} {team.competition}
+    </p>
 
-        <tbody>
-          {players.map((player) => (
+    <!-- クラブ情報 -->
+    <section class="info-section">
+      <h2>クラブ情報</h2>
+
+      <div class="info-box">
+        <dl class="info-list">
+          {team.officialName && (
+            <>
+              <dt>正式名称</dt>
+              <dd>{team.officialName}</dd>
+            </>
+          )}
+
+          {team.abbreviation && (
+            <>
+              <dt>略称</dt>
+              <dd>{team.abbreviation}</dd>
+            </>
+          )}
+
+          {team.location && (
+            <>
+              <dt>所在地</dt>
+              <dd>{team.location}</dd>
+            </>
+          )}
+
+          {team.founding && (
+            <>
+              <dt>創部</dt>
+              <dd>
+                {team.founding.year}年
+                {team.founding.note && (
+                  <span class="sub-note">
+                    （{team.founding.note}）
+                  </span>
+                )}
+              </dd>
+            </>
+          )}
+
+          {team.trainingGround && (
+            <>
+              <dt>練習場</dt>
+              <dd>{team.trainingGround}</dd>
+            </>
+          )}
+
+          {team.mainGrounds?.length > 0 && (
+            <>
+              <dt>主な使用グラウンド</dt>
+              <dd>
+                <ul class="ground-list">
+                  {team.mainGrounds.map((ground) => (
+                    <li>{ground}</li>
+                  ))}
+                </ul>
+              </dd>
+            </>
+          )}
+        </dl>
+      </div>
+    </section>
+
+    <!-- 今シーズンの成績 -->
+    {team.results && (
+      <section class="info-section">
+        <h2>今シーズンの成績</h2>
+
+        <div class="result-box">
+          {team.results.league && (
+            <>
+              <h3>{team.results.league.competition}</h3>
+
+              <div class="league-result">
+                <div class="result-rank">
+                  <span>順位</span>
+                  <strong>{team.results.league.rank}位</strong>
+                </div>
+
+                <div class="result-stats">
+                  {team.results.league.points !== undefined && (
+                    <div>
+                      <span>勝点</span>
+                      <strong>{team.results.league.points}</strong>
+                    </div>
+                  )}
+
+                  <div>
+                    <span>成績</span>
+                    <strong>
+                      {team.results.league.wins}勝
+                      {team.results.league.draws}分
+                      {team.results.league.losses}敗
+                    </strong>
+                  </div>
+
+                  <div>
+                    <span>得点</span>
+                    <strong>{team.results.league.goalsFor}</strong>
+                  </div>
+
+                  <div>
+                    <span>失点</span>
+                    <strong>{team.results.league.goalsAgainst}</strong>
+                  </div>
+
+                  <div>
+                    <span>得失点差</span>
+                    <strong>
+                      {team.results.league.goalsFor -
+                        team.results.league.goalsAgainst > 0
+                        ? "+"
+                        : ""}
+                      {team.results.league.goalsFor -
+                        team.results.league.goalsAgainst}
+                    </strong>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+
+          <div class="cup-results">
+            {team.results.jslCup && (
+              <div>
+                <span>JSLカップ</span>
+                <strong>{team.results.jslCup}</strong>
+              </div>
+            )}
+
+            {team.results.emperorCup && (
+              <div>
+                <span>天皇杯</span>
+                <strong>{team.results.emperorCup}</strong>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- 選手一覧 -->
+    <section class="players-section">
+      <h2>選手一覧</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
             <tr>
-              <td class="number">{player.number}</td>
-              <td class="player-name">{player.name}</td>
-              <td>{player.latin}</td>
-              <td class="position">{player.position}</td>
-              <td>{player.birth}</td>
-              <td>{player.size}</td>
-              <td>{player.birthplace}</td>
-              <td>{player.previous}</td>
+              <th>背番号</th>
+              <th>選手名</th>
+              <th>ラテン文字表記</th>
+              <th>Pos</th>
+              <th>生年月日</th>
+              <th>身長/体重</th>
+              <th>出身地</th>
+              <th>前所属チーム</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+          </thead>
+
+          <tbody>
+            {players.map((player) => (
+              <tr>
+                <td class="number">{player.number}</td>
+
+                <td class="player-name">
+                  {player.playerUrl ? (
+                    <a href={player.playerUrl}>{player.name}</a>
+                  ) : (
+                    player.name
+                  )}
+                </td>
+
+                <td>{player.latin}</td>
+                <td class="position">{player.position}</td>
+                <td>{player.birth}</td>
+                <td>{player.size}</td>
+                <td>{player.birthplace}</td>
+                <td>{player.previous}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- スタッフ -->
+    {staff.length > 0 && (
+      <section class="staff-section">
+        <h2>スタッフ</h2>
+
+        <div class="staff-box">
+          <dl class="staff-list">
+            {staff.map((member) => (
+              <div class="staff-row">
+                <dt>{member.role}</dt>
+                <dd>{member.name}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+    )}
+
+    <!-- 出典・参考資料 -->
+    {sources.length > 0 && (
+      <section class="sources-section">
+        <h2>出典・参考資料</h2>
+
+        <div class="sources-box">
+          <ol class="source-list">
+            {sources.map((source) => (
+              <li class="source-item">
+                <div class="source-title">『{source.title}』</div>
+
+                <div class="source-details">
+                  {source.publisher && (
+                    <span>{source.publisher}</span>
+                  )}
+
+                  {source.year && (
+                    <span>{source.year}</span>
+                  )}
+
+                  {source.isbn && (
+                    <span>{source.isbn}</span>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+    )}
   </main>
 </body>
 </html>
@@ -89,8 +301,125 @@ const { team, players } = Astro.props;
   }
 
   h2 {
-    margin: 0 0 13px;
+    margin: 0 0 16px;
     font-size: 21px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  .info-section,
+  .players-section,
+  .staff-section,
+  .sources-section {
+    margin-top: 38px;
+  }
+
+  .info-box,
+  .result-box,
+  .staff-box,
+  .sources-box {
+    background: white;
+    border: 1px solid #cfd5d0;
+  }
+
+  .info-list {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    margin: 0;
+  }
+
+  .info-list dt,
+  .info-list dd {
+    margin: 0;
+    padding: 11px 14px;
+    border-bottom: 1px solid #e0e4e1;
+  }
+
+  .info-list dt {
+    background: #e7ebe8;
+    font-weight: 700;
+  }
+
+  .info-list dd {
+    background: white;
+  }
+
+  .info-list dt:last-of-type,
+  .info-list dd:last-of-type {
+    border-bottom: 0;
+  }
+
+  .sub-note {
+    margin-left: 8px;
+    color: #68716b;
+  }
+
+  .ground-list {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .ground-list li + li {
+    margin-top: 4px;
+  }
+
+  .result-box {
+    padding: 22px;
+  }
+
+  .result-box h3 {
+    margin-bottom: 18px;
+  }
+
+  .league-result {
+    display: flex;
+    align-items: stretch;
+    gap: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e4e1;
+  }
+
+  .result-rank {
+    min-width: 120px;
+    padding-right: 28px;
+    border-right: 1px solid #d8ddd9;
+  }
+
+  .result-rank span,
+  .result-stats span,
+  .cup-results span {
+    display: block;
+    margin-bottom: 5px;
+    color: #68716b;
+    font-size: 12px;
+  }
+
+  .result-rank strong {
+    font-size: 25px;
+  }
+
+  .result-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+
+  .result-stats strong {
+    font-size: 16px;
+  }
+
+  .cup-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding-top: 18px;
+  }
+
+  .cup-results strong {
+    font-size: 14px;
   }
 
   .table-wrap {
@@ -136,6 +465,76 @@ const { team, players } = Astro.props;
     font-weight: 700;
   }
 
+  .player-name a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .player-name a:hover {
+    text-decoration: underline;
+  }
+
+  .staff-box {
+    padding: 0;
+  }
+
+  .staff-list {
+    margin: 0;
+  }
+
+  .staff-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    border-bottom: 1px solid #e0e4e1;
+  }
+
+  .staff-row:last-child {
+    border-bottom: 0;
+  }
+
+  .staff-row dt,
+  .staff-row dd {
+    margin: 0;
+    padding: 11px 14px;
+  }
+
+  .staff-row dt {
+    background: #e7ebe8;
+    font-weight: 700;
+  }
+
+  .staff-row dd {
+    background: white;
+  }
+
+  .sources-box {
+    padding: 20px 24px;
+  }
+
+  .source-list {
+    margin: 0;
+    padding-left: 24px;
+  }
+
+  .source-item + .source-item {
+    margin-top: 18px;
+  }
+
+  .source-title {
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  .source-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 18px;
+    margin-top: 3px;
+    color: #68716b;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
   @media (max-width: 700px) {
     main {
       width: calc(100% - 24px);
@@ -144,6 +543,36 @@ const { team, players } = Astro.props;
 
     .season {
       margin-bottom: 30px;
+    }
+
+    .info-list,
+    .staff-row {
+      grid-template-columns: 130px 1fr;
+    }
+
+    .league-result {
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .result-rank {
+      min-width: 0;
+      padding-right: 0;
+      padding-bottom: 15px;
+      border-right: 0;
+      border-bottom: 1px solid #d8ddd9;
+    }
+
+    .sources-box {
+      padding: 18px;
+    }
+
+    .source-details {
+      display: block;
+    }
+
+    .source-details span {
+      display: block;
     }
   }
 </style>

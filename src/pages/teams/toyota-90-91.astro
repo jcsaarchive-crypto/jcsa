@@ -1,6 +1,17 @@
 ---
-import { team, players } from "../../data/toyota-90-91.js";
+import {
+  team,
+  staff,
+  sources,
+  players,
+} from "../../data/toyota-90-91.js";
+
 import TeamSeason from "../../components/TeamSeason.astro";
 ---
 
-<TeamSeason {team} {players} />
+<TeamSeason
+  team={team}
+  staff={staff}
+  sources={sources}
+  players={players}
+/>
