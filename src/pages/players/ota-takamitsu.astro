@@ -17,13 +17,16 @@ import { player } from "../../data/players/P004.js";
         <h1>{player.name}</h1>
         <p class="name-en">{player.nameEn}</p>
 
-        <div class="profile">
-          <p>{player.position}</p>
-          <p>{player.birth}－{player.death}</p>
-          <p>{player.birthplace}</p>
-          <p>{player.height}cm / {player.weight}kg</p>
-          <p>{player.education}</p>
-        </div>
+<div class="profile">
+  <p>ポジション：{player.position}</p>
+  <p>生年月日：{player.birth}</p>
+  {player.death && <p>没年月日：{player.death}</p>}
+  <p>出身地：{player.birthplace}</p>
+  <p>出身校/ユース：{player.education}</p>
+  <p>身長：{player.height}cm</p>
+  <p>体重：{player.weight}kg</p>
+</div>
+        
       </header>
 
       <section class="archive-section">
