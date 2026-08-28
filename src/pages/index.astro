@@ -1,5 +1,5 @@
 ---
-import { players } from "../data/toyota-90-91.js";
+import { team, players } from "../data/toyota-90-91.js";
 ---
 
 <html lang="ja">
@@ -12,8 +12,8 @@ import { players } from "../data/toyota-90-91.js";
 <body>
   <main>
     <div class="league">JAPAN SOCCER LEAGUE 1990/91</div>
-    <h1>トヨタ自動車</h1>
-    <p class="season">90/91 日本サッカーリーグ1部</p>
+   <h1>{team.name}</h1>
+    <p class="season">{team.season} {team.competition}</p>
 
     <h2>選手一覧</h2>
 

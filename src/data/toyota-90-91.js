@@ -1,3 +1,9 @@
+export const team = {
+  season: "90/91",
+  competition: "日本サッカーリーグ1部",
+  name: "トヨタ自動車",
+};
+
 export const players = [
   { number: "1", name: "大橋昭好", latin: "Akiyoshi OHASHI", position: "GK", birth: "1962年12月11日", size: "183cm/77kg", birthplace: "静岡県", previous: "藤枝東高 - ヤマハ発動機" },
   { number: "2", name: "浅野哲也", latin: "Tetsuya ASANO", position: "DF", birth: "1967年2月23日", size: "184cm/77kg", birthplace: "茨城県", previous: "鉾田一高 - トヨタ蹴球団" },
