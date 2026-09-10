@@ -120,6 +120,19 @@ export const playerPages = {
   P00119: "/players/tabuchi-ryuji",
   P00120: "/players/furukawa-tsuyoshi",
   P00121: "/players/niimura-yasuhiko",
+  P00122: "/players/watanabe-taku",
+  P00123: "/players/toriizuka-nobuhito",
+  P00124: "/players/kikawada-kenji",
+  P00125: "/players/akaike-yasuyuki",
+  P00126: "/players/tokioka-hiromasa",
+  P00127: "/players/kaneko-makoto",
+  P00128: "/players/okada-naohiko",
+  P00129: "/players/ayugai-hidehiko",
+  P00130: "/players/ono-yoshifumi",
+  P00131: "/players/yamahashi-takashi",
+  P00132: "/players/kudo-hideaki",
+  P00133: "/players/mori-atsuhiko",
+  P00134: "/players/ishizuka-keiji",
 };
 
 export const teamSeasonPages = {

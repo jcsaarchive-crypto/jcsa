@@ -45,6 +45,75 @@ const getGoalDifference = (result) =>
       <a href="/">← トップへ戻る</a>
     </div>
 
+    {team.seasonNavigation && (
+      <nav
+        class="season-navigation"
+        aria-label="クラブ年度ナビゲーション"
+      >
+        <div
+          class="season-navigation-side season-navigation-previous"
+        >
+          {team.seasonNavigation.previous && (
+            team.seasonNavigation.previous.url ? (
+              <a
+                href={team.seasonNavigation.previous.url}
+                class="season-navigation-item"
+              >
+                <span class="season-navigation-direction">
+                  ← 前年
+                </span>
+                <span class="season-navigation-label">
+                  {team.seasonNavigation.previous.label}
+                </span>
+              </a>
+            ) : (
+              <div
+                class="season-navigation-item season-navigation-unlinked"
+              >
+                <span class="season-navigation-direction">
+                  ← 前年
+                </span>
+                <span class="season-navigation-label">
+                  {team.seasonNavigation.previous.label}
+                </span>
+              </div>
+            )
+          )}
+        </div>
+
+        <div
+          class="season-navigation-side season-navigation-next"
+        >
+          {team.seasonNavigation.next && (
+            team.seasonNavigation.next.url ? (
+              <a
+                href={team.seasonNavigation.next.url}
+                class="season-navigation-item"
+              >
+                <span class="season-navigation-direction">
+                  翌年 →
+                </span>
+                <span class="season-navigation-label">
+                  {team.seasonNavigation.next.label}
+                </span>
+              </a>
+            ) : (
+              <div
+                class="season-navigation-item season-navigation-unlinked"
+              >
+                <span class="season-navigation-direction">
+                  翌年 →
+                </span>
+                <span class="season-navigation-label">
+                  {team.seasonNavigation.next.label}
+                </span>
+              </div>
+            )
+          )}
+        </div>
+      </nav>
+    )}
+
     <div class="league">{team.competitionEn}</div>
 
     <h1>{team.name}</h1>
@@ -640,6 +709,62 @@ const getGoalDifference = (result) =>
     text-decoration: underline;
   }
 
+  .season-navigation {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+    margin: 0 0 28px;
+    padding: 12px 0;
+    border-top: 1px solid #cfd5d0;
+    border-bottom: 1px solid #cfd5d0;
+  }
+
+  .season-navigation-side {
+    min-width: 0;
+  }
+
+  .season-navigation-next {
+    text-align: right;
+  }
+
+  .season-navigation-item {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 100%;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+  .season-navigation-next .season-navigation-item {
+    align-items: flex-end;
+  }
+
+  .season-navigation-direction {
+    color: #68716b;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .season-navigation-label {
+    margin-top: 2px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  a.season-navigation-item:hover .season-navigation-label {
+    text-decoration: underline;
+  }
+
+  .season-navigation-unlinked {
+    cursor: default;
+  }
+
+  .season-navigation-unlinked .season-navigation-label {
+    color: #68716b;
+  }
+
   .league {
     margin-bottom: 7px;
     color: #68716b;
@@ -1071,6 +1196,16 @@ const getGoalDifference = (result) =>
 
     .top-nav {
       margin-bottom: 22px;
+    }
+
+    .season-navigation {
+      gap: 14px;
+      margin-bottom: 22px;
+      padding: 10px 0;
+    }
+
+    .season-navigation-label {
+      font-size: 12px;
     }
 
     .season {

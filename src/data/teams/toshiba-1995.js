@@ -30,6 +30,17 @@ export const team = {
 
   staffLabel: "役員・チームスタッフ",
 
+  seasonNavigation: {
+    previous: {
+      label: "1994 東芝",
+      url: "/teams/toshiba-1994",
+    },
+    next: {
+      label: "1996 東芝/コンサドーレ札幌",
+      url: "/teams/toshiba-consadole-sapporo-1996",
+    },
+  },
+
   results: {
     league: {
       competition: "第4回ジャパンフットボールリーグ",

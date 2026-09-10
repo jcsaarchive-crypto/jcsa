@@ -23,6 +23,17 @@ export const team = {
     "富士市総合運動公園",
   ],
 
+  seasonNavigation: {
+    previous: {
+      label: "89/90 トヨタ自動車",
+      url: "",
+    },
+    next: {
+      label: "91/92 トヨタ自動車",
+      url: "",
+    },
+  },
+
   results: {
     league: {
       competition: "第26回日本サッカーリーグ1部",

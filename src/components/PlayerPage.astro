@@ -167,7 +167,8 @@ const hasOtherOfficialMatches =
             <tbody>
               {player.history.map((item, index) => {
                 const seasonRowspan = getSeasonRowspan(player.history, index);
-                const teamUrl = getTeamSeasonUrl(item.team, item.season);
+                const teamUrl =
+                  item.teamUrl || getTeamSeasonUrl(item.team, item.season);
 
                 return (
                   <tr>

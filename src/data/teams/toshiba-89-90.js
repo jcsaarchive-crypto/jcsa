@@ -20,6 +20,17 @@ export const team = {
     "西が丘サッカー場",
   ],
 
+  seasonNavigation: {
+    previous: {
+      label: "88/89 東芝",
+      url: "/teams/toshiba-88-89",
+    },
+    next: {
+      label: "90/91 東芝",
+      url: "/teams/toshiba-90-91",
+    },
+  },
+
   results: {
     league: {
       competition: "第25回日本サッカーリーグ1部",

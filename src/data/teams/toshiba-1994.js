@@ -27,6 +27,17 @@ export const team = {
 
   staffLabel: "役員・チームスタッフ",
 
+  seasonNavigation: {
+    previous: {
+      label: "1993 東芝",
+      url: "/teams/toshiba-1993",
+    },
+    next: {
+      label: "1995 東芝",
+      url: "/teams/toshiba-1995",
+    },
+  },
+
   results: {
     league: {
       competition: "第3回ジャパンフットボールリーグ",

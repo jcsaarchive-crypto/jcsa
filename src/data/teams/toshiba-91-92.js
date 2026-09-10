@@ -21,6 +21,17 @@ export const team = {
     "等々力陸上競技場",
   ],
 
+  seasonNavigation: {
+    previous: {
+      label: "90/91 東芝",
+      url: "/teams/toshiba-90-91",
+    },
+    next: {
+      label: "1992 東芝",
+      url: "/teams/toshiba-1992",
+    },
+  },
+
   results: {
     league: {
       competition: "第27回日本サッカーリーグ1部",

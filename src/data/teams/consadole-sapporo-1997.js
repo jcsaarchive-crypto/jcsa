@@ -24,6 +24,17 @@ export const team = {
 
   staffLabel: "役員・チームスタッフ",
 
+  seasonNavigation: {
+    previous: {
+      label: "1996 東芝/コンサドーレ札幌",
+      url: "/teams/toshiba-consadole-sapporo-1996",
+    },
+    next: {
+      label: "1998 コンサドーレ札幌",
+      url: "",
+    },
+  },
+
   results: {
     league: {
       competition: "第6回ジャパンフットボールリーグ",
@@ -56,7 +67,7 @@ export const players = [
     size: "186cm/87kg",
     birthplace: "オランダ",
     previous:
-      "ADOデン・ハーグ - マツダスポーツクラブ - マツダサッカークラブ - 読売サッカークラブ - 読売ジュニオール - 名古屋グランパスエイト - ジュビロ磐田",
+      "ADOデン・ハーグ - マツダスポーツクラブ/マツダサッカークラブ - 読売サッカークラブ - 読売ジュニオール - 名古屋グランパスエイト - ジュビロ磐田",
   },
 
   {

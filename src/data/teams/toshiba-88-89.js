@@ -20,6 +20,17 @@ export const team = {
     "東芝磯子サッカー場",
   ],
 
+  seasonNavigation: {
+    previous: {
+      label: "1987 東芝",
+      url: "",
+    },
+    next: {
+      label: "89/90 東芝",
+      url: "/teams/toshiba-89-90",
+    },
+  },
+
   results: {
     league: {
       competition: "第17回日本サッカーリーグ２部",
