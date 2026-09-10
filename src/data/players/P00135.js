@@ -37,7 +37,7 @@ export const player = {
     {
       season: "88/89",
       division: "JSL２部",
-      jersey: "",
+      jersey: "1",
       team: "トヨタ自動車",
 
       leagueMatches: 24,
