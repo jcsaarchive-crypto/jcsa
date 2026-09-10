@@ -133,6 +133,10 @@ export const playerPages = {
   P00132: "/players/kudo-hideaki",
   P00133: "/players/mori-atsuhiko",
   P00134: "/players/ishizuka-keiji",
+  P00135: "/players/uemura-shuichi",
+  P00136: "/players/iizuka-kenji",
+  P00137: "/players/ikeda-hiroyuki",
+  P00138: "/players/matsunaga-toshihiro",
 };
 
 export const teamSeasonPages = {
@@ -148,6 +152,7 @@ export const teamSeasonPages = {
   "東芝|1995": "/teams/toshiba-1995",
   "東芝/コンサドーレ札幌|1996": "/teams/toshiba-consadole-sapporo-1996",
   "コンサドーレ札幌|1997": "/teams/consadole-sapporo-1997",
+  "トヨタ自動車|89/90": "/teams/toyota-89-90",
 };
 
 export const getPlayerUrl = (playerId) => {

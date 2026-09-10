@@ -26,7 +26,7 @@ export const team = {
   seasonNavigation: {
     previous: {
       label: "89/90 トヨタ自動車",
-      url: "",
+      url: "/teams/toyota-89-90",
     },
     next: {
       label: "91/92 トヨタ自動車",
