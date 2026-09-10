@@ -1,0 +1,64 @@
+---
+import { player } from "../../data/players/P00118.js";
+import PlayerPage from "../../components/PlayerPage.astro";
+---
+
+<PlayerPage player={player} />
+
+<script>
+  const heading = document.querySelector(".player-header h1");
+
+  if (heading) {
+    const kana = heading.querySelector(".name-kana");
+
+    const textNodes = Array.from(heading.childNodes).filter(
+      (node) => node.nodeType === Node.TEXT_NODE
+    );
+
+    for (const node of textNodes) {
+      const text = node.textContent ?? "";
+      const parenthesisIndex = text.indexOf("（");
+
+      if (parenthesisIndex === -1) continue;
+
+      const mainName = text.slice(0, parenthesisIndex);
+      const alternateName = text.slice(parenthesisIndex);
+
+      node.textContent = mainName;
+
+      const alternateNameElement =
+        document.createElement("span");
+
+      alternateNameElement.className =
+        "havenaar-alternate-name";
+
+      alternateNameElement.textContent =
+        alternateName;
+
+      if (kana) {
+        heading.insertBefore(
+          alternateNameElement,
+          kana.nextSibling
+        );
+      } else {
+        heading.appendChild(alternateNameElement);
+      }
+
+      break;
+    }
+  }
+</script>
+
+<style is:global>
+  .player-header h1 .name-kana {
+    display: inline;
+  }
+
+  .player-header h1 .havenaar-alternate-name {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.55em;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+</style>

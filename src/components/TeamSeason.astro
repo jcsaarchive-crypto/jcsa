@@ -22,6 +22,14 @@ const leagueGoalDifference =
         team.results.league.goalsAgainst
       : 0
   );
+
+const getGoalDifference = (result) =>
+  result?.goalDifference ??
+  (
+    result
+      ? result.goalsFor - result.goalsAgainst
+      : 0
+  );
 ---
 
 <html lang="ja">
@@ -127,52 +135,190 @@ const leagueGoalDifference =
             <>
               <h3>{team.results.league.competition}</h3>
 
-              <div class="league-result">
-                <div class="result-rank">
-                  <span>順位</span>
-                  <strong>{team.results.league.rank}位</strong>
-                </div>
+              {team.results.league.stages?.length > 0 ? (
+                <>
+                  <div class="stage-results">
+                    {team.results.league.stages.map((stage) => {
+                      const stageGoalDifference =
+                        getGoalDifference(stage);
 
-                <div class="result-stats">
-                  {team.results.league.points !== undefined && (
-                    <div>
-                      <span>勝点</span>
-                      <strong>{team.results.league.points}</strong>
+                      return (
+                        <div class="stage-result-block">
+                          <h4>{stage.name}</h4>
+
+                          <div class="league-result">
+                            <div class="result-rank">
+                              <span>順位</span>
+                              <strong>{stage.rank}位</strong>
+                            </div>
+
+                            <div class="result-stats">
+                              {stage.points !== undefined && (
+                                <div>
+                                  <span>勝点</span>
+                                  <strong>{stage.points}</strong>
+                                </div>
+                              )}
+
+                              <div>
+                                <span>成績</span>
+                                <strong>
+                                  {stage.wins}勝
+                                  {stage.vGoalWins !== undefined &&
+                                    `${stage.vGoalWins}Vゴール勝`}
+                                  {stage.pkWins !== undefined &&
+                                    `${stage.pkWins}PK勝`}
+                                  {stage.draws !== undefined &&
+                                    `${stage.draws}分`}
+                                  {stage.losses}敗
+                                  {stage.pkLosses !== undefined &&
+                                    stage.pkLosses > 0 &&
+                                    `${stage.pkLosses}PK負け`}
+                                </strong>
+                              </div>
+
+                              <div>
+                                <span>得点</span>
+                                <strong>{stage.goalsFor}</strong>
+                              </div>
+
+                              <div>
+                                <span>失点</span>
+                                <strong>{stage.goalsAgainst}</strong>
+                              </div>
+
+                              <div>
+                                <span>得失点差</span>
+                                <strong>
+                                  {stageGoalDifference > 0 ? "+" : ""}
+                                  {stageGoalDifference}
+                                </strong>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  {team.results.league.overall && (
+                    <div class="overall-result-block">
+                      <h4>総合</h4>
+
+                      <div class="league-result">
+                        <div class="result-rank">
+                          <span>順位</span>
+                          <strong>
+                            {team.results.league.overall.rank}位
+                          </strong>
+                        </div>
+
+                        <div class="result-stats">
+                          {team.results.league.overall.points !==
+                            undefined && (
+                            <div>
+                              <span>勝点</span>
+                              <strong>
+                                {team.results.league.overall.points}
+                              </strong>
+                            </div>
+                          )}
+
+                          <div>
+                            <span>成績</span>
+                            <strong>
+                              {team.results.league.overall.wins}勝
+                              {team.results.league.overall.draws !==
+                                undefined &&
+                                `${team.results.league.overall.draws}分`}
+                              {team.results.league.overall.losses}敗
+                            </strong>
+                          </div>
+
+                          <div>
+                            <span>得点</span>
+                            <strong>
+                              {team.results.league.overall.goalsFor}
+                            </strong>
+                          </div>
+
+                          <div>
+                            <span>失点</span>
+                            <strong>
+                              {team.results.league.overall.goalsAgainst}
+                            </strong>
+                          </div>
+
+                          <div>
+                            <span>得失点差</span>
+                            <strong>
+                              {getGoalDifference(
+                                team.results.league.overall
+                              ) > 0
+                                ? "+"
+                                : ""}
+                              {getGoalDifference(
+                                team.results.league.overall
+                              )}
+                            </strong>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   )}
-
-                  <div>
-                    <span>成績</span>
-                    <strong>
-                      {team.results.league.wins}勝
-                      {team.results.league.draws !== undefined &&
-                        `${team.results.league.draws}分`}
-                      {team.results.league.losses}敗
-                      {team.results.league.pkLosses !== undefined &&
-                        team.results.league.pkLosses > 0 &&
-                        `${team.results.league.pkLosses}PK負け`}
-                    </strong>
+                </>
+              ) : (
+                <div class="league-result">
+                  <div class="result-rank">
+                    <span>順位</span>
+                    <strong>{team.results.league.rank}位</strong>
                   </div>
 
-                  <div>
-                    <span>得点</span>
-                    <strong>{team.results.league.goalsFor}</strong>
-                  </div>
+                  <div class="result-stats">
+                    {team.results.league.points !== undefined && (
+                      <div>
+                        <span>勝点</span>
+                        <strong>{team.results.league.points}</strong>
+                      </div>
+                    )}
 
-                  <div>
-                    <span>失点</span>
-                    <strong>{team.results.league.goalsAgainst}</strong>
-                  </div>
+                    <div>
+                      <span>成績</span>
+                      <strong>
+                        {team.results.league.wins}勝
+                        {team.results.league.vGoalWins !== undefined &&
+                          `${team.results.league.vGoalWins}Vゴール勝`}
+                        {team.results.league.pkWins !== undefined &&
+                          `${team.results.league.pkWins}PK勝`}
+                        {team.results.league.draws !== undefined &&
+                          `${team.results.league.draws}分`}
+                        {team.results.league.losses}敗
+                        {team.results.league.pkLosses !== undefined &&
+                          team.results.league.pkLosses > 0 &&
+                          `${team.results.league.pkLosses}PK負け`}
+                      </strong>
+                    </div>
 
-                  <div>
-                    <span>得失点差</span>
-                    <strong>
-                      {leagueGoalDifference > 0 ? "+" : ""}
-                      {leagueGoalDifference}
-                    </strong>
+                    <div>
+                      <span>得点</span>
+                      <strong>{team.results.league.goalsFor}</strong>
+                    </div>
+
+                    <div>
+                      <span>失点</span>
+                      <strong>{team.results.league.goalsAgainst}</strong>
+                    </div>
+
+                    <div>
+                      <span>得失点差</span>
+                      <strong>
+                        {leagueGoalDifference > 0 ? "+" : ""}
+                        {leagueGoalDifference}
+                      </strong>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </>
           )}
 
@@ -181,6 +327,13 @@ const leagueGoalDifference =
               <div>
                 <span>JSLカップ</span>
                 <strong>{team.results.jslCup}</strong>
+              </div>
+            )}
+
+            {team.results.nabiscoCup && (
+              <div>
+                <span>ナビスコカップ</span>
+                <strong>{team.results.nabiscoCup}</strong>
               </div>
             )}
 
@@ -601,6 +754,40 @@ const leagueGoalDifference =
 
   .result-box h3 {
     margin-bottom: 17px;
+  }
+
+  .stage-results {
+    display: grid;
+    gap: 18px;
+  }
+
+  .stage-result-block h4,
+  .overall-result-block h4 {
+    margin: 0 0 10px;
+    color: #68716b;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .stage-result-block + .stage-result-block {
+    padding-top: 18px;
+    border-top: 1px solid #e0e4e1;
+  }
+
+  .stage-result-block .league-result {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .overall-result-block {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #e0e4e1;
+  }
+
+  .overall-result-block .league-result {
+    padding-bottom: 0;
+    border-bottom: 0;
   }
 
   .league-result {

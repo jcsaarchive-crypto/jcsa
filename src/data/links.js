@@ -116,6 +116,10 @@ export const playerPages = {
   P00115: "/players/ono-kosuke",
   P00116: "/players/matsuyama-daichi",
   P00117: "/players/kim-jong-song",
+  P00118: "/players/havenaar-dido",
+  P00119: "/players/tabuchi-ryuji",
+  P00120: "/players/furukawa-tsuyoshi",
+  P00121: "/players/niimura-yasuhiko",
 };
 
 export const teamSeasonPages = {
@@ -130,6 +134,7 @@ export const teamSeasonPages = {
   "東芝|1994": "/teams/toshiba-1994",
   "東芝|1995": "/teams/toshiba-1995",
   "東芝/コンサドーレ札幌|1996": "/teams/toshiba-consadole-sapporo-1996",
+  "コンサドーレ札幌|1997": "/teams/consadole-sapporo-1997",
 };
 
 export const getPlayerUrl = (playerId) => {

@@ -20,7 +20,7 @@ const teams = [
     season: "1991",
     competitionKey: "HOKKAIDO",
     competition: "北海道サッカーリーグ",
-    rank: null,
+    rank: 3,
     name: "新日鐵室蘭",
     url: "/teams/shin-nittetsu-muroran-1991",
   },
@@ -72,13 +72,18 @@ const teams = [
     name: "東芝 / コンサドーレ札幌",
     url: "/teams/toshiba-consadole-sapporo-1996",
   },
+  {
+    season: "1997",
+    competitionKey: "OLD_JFL",
+    competition: "ジャパンフットボールリーグ（旧JFL）",
+    rank: 1,
+    name: "コンサドーレ札幌",
+    url: "/teams/consadole-sapporo-1997",
+  },
 ];
 
-/*
-  1990年代のシーズン表示順。
-  今後チームを追加したシーズンをここへ追加する。
-*/
 const seasonOrder = [
+  "1990",
   "90/91",
   "1991",
   "91/92",
@@ -92,22 +97,6 @@ const seasonOrder = [
   "1999",
 ];
 
-/*
-  大会・リーグの表示順。
-
-  competitionKey を使うことで、
-  表示名が似ていても別大会として管理できる。
-
-  JSL1      日本サッカーリーグ1部
-  JSL2      日本サッカーリーグ2部
-  J         Jリーグ
-  J1        J1
-  J2        J2
-  OLD_JFL   ジャパンフットボールリーグ（旧JFL）
-  JFL       日本フットボールリーグ（JFL）
-
-  その下に各地域リーグを配置する。
-*/
 const competitionOrder = [
   "JSL1",
   "JSL2",
@@ -130,10 +119,6 @@ const competitionOrder = [
   "KYUSHU",
 ];
 
-/*
-  seasonOrder に未登録のシーズンが追加された場合でも、
-  ページから消えないように末尾へ自動追加する。
-*/
 const registeredSeasons = [
   ...new Set(teams.map((team) => team.season)),
 ];
@@ -147,15 +132,6 @@ const allSeasons = [
   ),
 ];
 
-/*
-  シーズン
-    ↓
-  大会・リーグ
-    ↓
-  順位
-
-  の順で自動整理する。
-*/
 const groupedSeasons = allSeasons
   .map((season) => {
     const seasonTeams = teams.filter(
@@ -192,10 +168,6 @@ const groupedSeasons = allSeasons
               team.competitionKey === competitionKey
           )
           .sort((a, b) => {
-            /*
-              順位があるチームは順位順。
-              順位不明はそのリーグの最後へ。
-            */
             if (a.rank == null && b.rank == null) {
               return a.name.localeCompare(
                 b.name,
@@ -379,12 +351,6 @@ const groupedSeasons = allSeasons
     font-size: 22px;
   }
 
-  /*
-    ========================================
-    シーズン
-    ========================================
-  */
-
   .season-block {
     max-width: 700px;
   }
@@ -402,12 +368,6 @@ const groupedSeasons = allSeasons
     font-weight: 800;
     line-height: 1.3;
   }
-
-  /*
-    ========================================
-    大会・リーグ
-    ========================================
-  */
 
   .competition-group {
     max-width: 700px;
@@ -437,12 +397,6 @@ const groupedSeasons = allSeasons
     font-size: 14px;
     font-weight: 600;
   }
-
-  /*
-    ========================================
-    収録チーム
-    ========================================
-  */
 
   .team-section {
     padding-left: 18px;
