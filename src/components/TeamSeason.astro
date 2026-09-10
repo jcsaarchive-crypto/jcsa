@@ -326,6 +326,7 @@ const leagueGoalDifference =
         if (!(element instanceof HTMLElement)) return;
 
         element.classList.remove(
+          "is-one-line",
           "is-two-lines",
           "is-small",
           "is-smaller",
@@ -336,14 +337,43 @@ const leagueGoalDifference =
           まず通常サイズ・1段で確認。
           セル幅に収まっている選手はそのまま。
         */
-        element.classList.add("is-measuring-one-line");
+        const probe = element.cloneNode(true);
+
+        if (!(probe instanceof HTMLElement)) return;
+
+        probe.classList.remove(
+          "is-one-line",
+          "is-two-lines",
+          "is-small",
+          "is-smaller",
+          "is-smallest"
+        );
+
+        probe.classList.add("is-measuring-one-line");
+
+        probe.style.position = "fixed";
+        probe.style.left = "-100000px";
+        probe.style.top = "0";
+        probe.style.width = "max-content";
+        probe.style.maxWidth = "none";
+        probe.style.visibility = "hidden";
+        probe.style.pointerEvents = "none";
+
+        document.body.appendChild(probe);
+
+        const oneLineWidth =
+          probe.getBoundingClientRect().width;
+
+        const availableWidth =
+          element.clientWidth;
+
+        probe.remove();
 
         const oneLineFits =
-          element.scrollWidth <= element.clientWidth + 1;
-
-        element.classList.remove("is-measuring-one-line");
+          oneLineWidth <= availableWidth + 1;
 
         if (oneLineFits) {
+          element.classList.add("is-one-line");
           return;
         }
 
@@ -353,8 +383,11 @@ const leagueGoalDifference =
         element.classList.add("is-two-lines");
 
         const fitsTwoLines = () => {
-          const style = getComputedStyle(element);
-          const lineHeight = parseFloat(style.lineHeight);
+          const style =
+            getComputedStyle(element);
+
+          const lineHeight =
+            parseFloat(style.lineHeight);
 
           return (
             element.scrollHeight <=
@@ -407,7 +440,9 @@ const leagueGoalDifference =
     }
 
     if (document.fonts?.ready) {
-      document.fonts.ready.then(runPreviousTeamFit);
+      document.fonts.ready.then(
+        runPreviousTeamFit
+      );
     }
 
     window.addEventListener(
@@ -707,11 +742,14 @@ const leagueGoalDifference =
     width: 100%;
     font-size: 14px;
     line-height: 1.35;
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
+  .previous-text.is-one-line,
   .previous-text.is-measuring-one-line {
     white-space: nowrap;
+    overflow-wrap: normal;
   }
 
   .previous-text.is-two-lines {
