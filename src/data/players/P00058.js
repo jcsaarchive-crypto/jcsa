@@ -1,0 +1,77 @@
+export const player = {
+  id: "P00058",
+  name: "菊池 淳",
+  nameKana: "きくち じゅん",
+  nameEn: "Jun KIKUCHI",
+  position: "DF",
+  birth: "1970年4月20日",
+  death: "",
+  birthplace: "",
+  height: "180",
+  weight: "73",
+  education: "遠野高",
+
+  history: [
+    {
+      season: "89/90",
+      division: "JSL１部",
+      jersey: "21",
+      team: "東芝",
+      leagueMatches: "0",
+      leagueGoals: "0",
+      cupMatches: "0",
+      cupGoals: "0",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+    {
+      season: "90/91",
+      division: "JSL１部",
+      jersey: "21",
+      team: "東芝",
+      leagueMatches: "0",
+      leagueGoals: "0",
+      cupMatches: "0",
+      cupGoals: "0",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+  ],
+
+  totals: [
+    {
+      country: "日本",
+      division: "JSL１部",
+      leagueMatches: "0",
+      leagueGoals: "0",
+      cupMatches: "0",
+      cupGoals: "0",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+  ],
+
+  grandTotal: {
+    leagueMatches: "0",
+    leagueGoals: "0",
+    cupMatches: "0",
+    cupGoals: "0",
+    emperorCupMatches: "",
+    emperorCupGoals: "",
+    totalMatches: "",
+    totalGoals: "",
+  },
+
+  otherOfficialMatches: [],
+
+  otherOfficialTotal: {
+    matches: "",
+    goals: "",
+  },
+};

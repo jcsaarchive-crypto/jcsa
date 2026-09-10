@@ -1,0 +1,16 @@
+---
+import { team } from "../../data/teams/shin-nittetsu-muroran-1991.js";
+
+import TeamSeason from "../../components/TeamSeason.astro";
+
+const staff = team.staff ?? [];
+const sources = team.sources ?? [];
+const players = team.players ?? [];
+---
+
+<TeamSeason
+  team={team}
+  staff={staff}
+  sources={sources}
+  players={players}
+/>

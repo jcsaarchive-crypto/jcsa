@@ -1,48 +1,529 @@
 ---
+/*
+  ========================================
+  日本クラブサッカーアーカイブ
+  Japan Club Soccer Archive
+  ========================================
+
+  更新リスト
+
+  今後チームを完成・更新したら、ここへ追加する。
+
+  updated:
+    実際の更新日が分かるものは YYYY-MM-DD で記録。
+
+  order:
+    同じ日付の場合の更新順。
+    数字が大きいものを新しい更新として上に表示する。
+
+  既存ページについては過去の正確な更新日を作らず、
+  現在の並びを暫定的に維持する。
+*/
+
+const updates = [
+  {
+    season: "1996",
+    team: "東芝 / コンサドーレ札幌",
+    url: "/teams/toshiba-consadole-sapporo-1996",
+    updated: "2026-09-09",
+    order: 11,
+  },
+
+  {
+    season: "1995",
+    team: "東芝",
+    url: "/teams/toshiba-1995",
+    updated: "2026-09-09",
+    order: 10,
+  },
+
+  {
+    season: "1994",
+    team: "東芝",
+    url: "/teams/toshiba-1994",
+    updated: "2026-09-07",
+    order: 9,
+  },
+
+  {
+    season: "1993",
+    team: "東芝",
+    url: "/teams/toshiba-1993",
+    updated: "2026-09-07",
+    order: 8,
+  },
+
+  {
+    season: "1992",
+    team: "東芝",
+    url: "/teams/toshiba-1992",
+    updated: "2026-09-07",
+    order: 7,
+  },
+
+  {
+    season: "91/92",
+    team: "東芝",
+    url: "/teams/toshiba-91-92",
+    updated: "2026-09-05",
+    order: 6,
+  },
+
+  {
+    season: "90/91",
+    team: "東芝",
+    url: "/teams/toshiba-90-91",
+    updated: "2026-09-05",
+    order: 5,
+  },
+
+  {
+    season: "90/91",
+    team: "トヨタ自動車",
+    url: "/teams/toyota-90-91",
+    updated: "",
+    order: 4,
+  },
+
+  {
+    season: "1991",
+    team: "新日鐵室蘭",
+    url: "/teams/shin-nittetsu-muroran-1991",
+    updated: "",
+    order: 3,
+  },
+
+  {
+    season: "89/90",
+    team: "東芝",
+    url: "/teams/toshiba-89-90",
+    updated: "",
+    order: 2,
+  },
+
+  {
+    season: "88/89",
+    team: "東芝",
+    url: "/teams/toshiba-88-89",
+    updated: "",
+    order: 1,
+  },
+];
+
+const sortedUpdates = [...updates].sort((a, b) => {
+  if (a.updated && b.updated) {
+    const dateCompare =
+      new Date(b.updated).getTime() -
+      new Date(a.updated).getTime();
+
+    if (dateCompare !== 0) {
+      return dateCompare;
+    }
+
+    return b.order - a.order;
+  }
+
+  if (a.updated) return -1;
+  if (b.updated) return 1;
+
+  return b.order - a.order;
+});
+
+const recentUpdates = sortedUpdates.slice(0, 3);
 ---
 
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>日本サッカーWEBデータベース</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <meta
+      name="description"
+      content="日本国内のリーグ、実業団・クラブ、選手、スタッフなどの記録を収集・整理し、日本のクラブサッカーが歩んできた歴史を辿るためのデータベースです。"
+    />
+
+    <title>
+      日本クラブサッカーアーカイブ | Japan Club Soccer Archive
+    </title>
   </head>
 
   <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-brand" href="/">
+          <span class="brand-mark">
+            JCSA
+          </span>
+
+          <span class="brand-names">
+            <strong>
+              日本クラブサッカーアーカイブ
+            </strong>
+
+            <span>
+              Japan Club Soccer Archive
+            </span>
+          </span>
+        </a>
+
+        <nav
+          class="site-nav"
+          aria-label="メインナビゲーション"
+        >
+          <a href="/">ホーム</a>
+          <a href="#decades">年代から探す</a>
+          <a href="/players/">選手</a>
+          <a href="#recent">チーム</a>
+          <a href="#about">このサイトについて</a>
+          <a href="#contact">情報提供・お問い合わせ</a>
+        </nav>
+      </div>
+    </header>
+
     <main>
-      <div class="label">JAPANESE FOOTBALL ARCHIVE</div>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy-area">
+            <div class="hero-archive-label">
+              JAPANESE CLUB SOCCER HISTORY DATABASE
+            </div>
 
-      <h1>日本サッカーWEBデータベース</h1>
+            <div class="hero-brand-text">
+              <h1>
+                日本クラブサッカーアーカイブ
+              </h1>
 
-      <p class="intro">
-        日本サッカーの記録を、選手とクラブの歴史から辿る。
-      </p>
+              <div class="hero-name-en">
+                Japan Club Soccer Archive
+              </div>
+            </div>
 
-      <section class="archive-section">
-        <h2>年代から見る</h2>
+            <div class="hero-divider"></div>
 
-        <div class="year-list">
-          <a href="#">1960年代</a>
-          <a href="#">1970年代</a>
-          <a href="#">1980年代</a>
-          <a href="/years/1990">1990年代</a>
-          <a href="#">2000年代</a>
-          <a href="#">2010年代</a>
-          <a href="#">2020年代</a>
+            <div class="hero-message">
+              <h2 class="hero-copy">
+                <span>
+                  クラブから選手へ。選手からクラブへ。
+                </span>
+
+                <span>
+                  日本のクラブサッカーの歴史を、
+                  記録とつながりから辿る。
+                </span>
+              </h2>
+
+              <p class="hero-lead">
+                日本クラブサッカーアーカイブは、
+                日本国内のリーグ、実業団・クラブ、選手、スタッフなどの
+                記録を収集・整理し、日本のクラブサッカーが歩んできた歴史を
+                辿るためのデータベースです。
+              </p>
+            </div>
+
+            <div class="tree-note">
+              <span class="tree-line"></span>
+
+              <p>
+                ひとりの選手から所属したチームへ、
+                そこからチームメイトへ。
+                さらに別のチーム、次の時代へ。
+                ロックミュージックの「ファミリーツリー」のように、
+                日本クラブサッカーの系譜を辿っていきます。
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="archive-section">
-        <h2>更新リスト</h2>
+      <section
+        class="content-section"
+        id="decades"
+      >
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">
+              BROWSE BY DECADE
+            </div>
 
-        <div class="current-list">
-          <a href="/teams/toyota-90-91">
-            <span class="season">90/91</span>
-            <span class="team">トヨタ自動車</span>
+            <h2>年代から探す</h2>
+          </div>
+
+          <p>
+            各年代から収録チーム・シーズンを辿ります。
+          </p>
+        </div>
+
+        <div class="decade-grid">
+          <div class="decade-card disabled">
+            <span class="decade-year">1960s</span>
+            <span class="decade-ja">1960年代</span>
+            <span class="coming-soon">準備中</span>
+          </div>
+
+          <div class="decade-card disabled">
+            <span class="decade-year">1970s</span>
+            <span class="decade-ja">1970年代</span>
+            <span class="coming-soon">準備中</span>
+          </div>
+
+          <a
+            class="decade-card"
+            href="/years/1980"
+          >
+            <span class="decade-year">1980s</span>
+            <span class="decade-ja">1980年代</span>
+            <span class="card-arrow">→</span>
+          </a>
+
+          <a
+            class="decade-card"
+            href="/years/1990"
+          >
+            <span class="decade-year">1990s</span>
+            <span class="decade-ja">1990年代</span>
+            <span class="card-arrow">→</span>
+          </a>
+
+          <div class="decade-card disabled">
+            <span class="decade-year">2000s</span>
+            <span class="decade-ja">2000年代</span>
+            <span class="coming-soon">準備中</span>
+          </div>
+
+          <div class="decade-card disabled">
+            <span class="decade-year">2010s</span>
+            <span class="decade-ja">2010年代</span>
+            <span class="coming-soon">準備中</span>
+          </div>
+
+          <div class="decade-card disabled">
+            <span class="decade-year">2020s</span>
+            <span class="decade-ja">2020年代</span>
+            <span class="coming-soon">準備中</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="content-section"
+        id="recent"
+      >
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">
+              RECENT ADDITIONS
+            </div>
+
+            <h2>最近の追加</h2>
+          </div>
+
+          <p>
+            新たに整理・追加したチームシーズン。
+          </p>
+        </div>
+
+        <div class="recent-list">
+          {
+            recentUpdates.map((item) => (
+              <a
+                class="recent-item"
+                href={item.url}
+              >
+                <div class="recent-main">
+                  <span class="recent-season">
+                    {item.season}
+                  </span>
+
+                  <strong class="recent-team">
+                    {item.team}
+                  </strong>
+                </div>
+
+                <div class="recent-meta">
+                  {
+                    item.updated && (
+                      <time datetime={item.updated}>
+                        {item.updated}
+                      </time>
+                    )
+                  }
+
+                  <span class="recent-arrow">
+                    →
+                  </span>
+                </div>
+              </a>
+            ))
+          }
+        </div>
+
+        <a
+          class="player-index-card"
+          href="/players/"
+        >
+          <div class="player-index-left">
+            <span class="player-index-kicker">
+              PLAYER INDEX
+            </span>
+
+            <strong class="player-index-title">
+              選手索引
+            </strong>
+          </div>
+
+          <div class="player-index-right">
+            <span class="player-index-description">
+              収録選手を名前から探す
+            </span>
+
+            <span class="player-index-arrow">
+              →
+            </span>
+          </div>
+        </a>
+      </section>
+
+      <section
+        class="content-section about-section"
+        id="about"
+      >
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">
+              ABOUT THIS ARCHIVE
+            </div>
+
+            <h2>
+              このサイトについて
+            </h2>
+          </div>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-lead">
+            <p>
+              日本クラブサッカーの記録を、
+              資料から少しずつ積み重ねています。
+            </p>
+          </div>
+
+          <div class="about-copy">
+            <p>
+              本サイトは、日本サッカー史を愛好する一個人が、
+              長年収集してきた資料をもとに趣味として制作・運営している
+              非公式のデータベースです。各競技団体、リーグ、クラブ、
+              企業、選手その他の関係者が公式に運営するものではありません。
+            </p>
+
+            <p>
+              掲載する人物情報は、
+              選手名鑑や公式プログラムなどの資料に記録された、
+              サッカー選手・スタッフとしての活動を把握するために
+              必要な情報を中心としています。
+              個人の私生活を調査・公開することや、
+              プライバシーを侵害することを目的としたサイトではありません。
+            </p>
+
+            <p>
+              資料の転記・整理には十分注意していますが、
+              個人による制作であるため、
+              誤記や資料間の相違、
+              確認できていない記録が含まれる可能性があります。
+              また、資料によって記載内容が異なる場合には、
+              一方を推測によって修正するのではなく、
+              それぞれの資料に残された記録を尊重して
+              掲載する場合があります。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="content-section contact-section"
+        id="contact"
+      >
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">
+              CONTACT
+            </div>
+
+            <h2>
+              情報提供・お問い合わせ
+            </h2>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <div class="contact-copy">
+            <p>
+              記録の訂正、追加資料、
+              当時の選手名鑑・公式プログラムなどに関する情報を
+              お持ちの方からの情報提供も歓迎しています。
+            </p>
+
+            <p>
+              ただし、ご提供いただいた情報を
+              そのまま掲載するのではなく、
+              可能な限り資料による確認を行ったうえで
+              データへ反映します。
+            </p>
+          </div>
+
+          <a
+            class="mail-link"
+            href="mailto:jcsa.archive@gmail.com"
+          >
+            <span class="mail-label">
+              E-MAIL
+            </span>
+
+            <strong>
+              jcsa.archive@gmail.com
+            </strong>
+
+            <span class="mail-arrow">
+              →
+            </span>
           </a>
         </div>
       </section>
+
+      <section class="policy-section">
+        <div class="policy-label">
+          ARCHIVE POLICY
+        </div>
+
+        <p>
+          資料に残された記録を尊重し、
+          空欄や表記差を推測で補正しないことを基本方針としています。
+          資料間で記録が異なる場合も、
+          その違い自体を記録として扱います。
+        </p>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>
+            日本クラブサッカーアーカイブ
+          </strong>
+
+          <span>
+            Japan Club Soccer Archive
+          </span>
+        </div>
+
+        <div class="footer-mark">
+          JCSA
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
 
@@ -51,115 +532,784 @@
     box-sizing: border-box;
   }
 
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
   :global(body) {
     margin: 0;
     background: #f4f5f3;
     color: #202522;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-      "Noto Sans JP", sans-serif;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      "Noto Sans JP",
+      sans-serif;
+  }
+
+  :global(a) {
+    color: inherit;
+  }
+
+  .site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #cfd5d0;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    width: min(1280px, calc(100% - 40px));
+    min-height: 84px;
+    margin: 0 auto;
+  }
+
+  .site-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+  }
+
+  .brand-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: #202522;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+  }
+
+  .brand-names {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .brand-names strong {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .brand-names span {
+    color: #68716b;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+
+  .site-nav a {
+    color: #4e5751;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .site-nav a:hover {
+    color: #202522;
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
   main {
-    width: min(1200px, calc(100% - 40px));
+    width: min(1280px, calc(100% - 40px));
     margin: 0 auto;
-    padding: 70px 0 90px;
   }
 
-  .label {
-    margin-bottom: 8px;
+  /*
+    ========================================
+    ヒーロー
+    ========================================
+
+    jcsa-hero.png は画像そのものを加工せず使用。
+    左側にもともと存在する黒い余白へ文字を重ねる。
+  */
+
+  .hero {
+    width: 100%;
+    margin: 26px 0 74px;
+    background: #000000;
+  }
+
+  .hero-inner {
+    position: relative;
+    min-height: 670px;
+    background-image: url("/images/jcsa-hero.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .hero-copy-area {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 39%;
+    min-height: 670px;
+    padding: 56px 24px 56px 50px;
+    color: #ffffff;
+  }
+
+  .hero-archive-label,
+  .section-kicker,
+  .policy-label {
     color: #68716b;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+  }
+
+  .hero-archive-label {
+    margin-bottom: 20px;
+    color: #9ca49f;
+  }
+
+  .hero-brand-text {
+    max-width: 500px;
   }
 
   h1 {
-    margin: 0 0 12px;
-    font-size: clamp(30px, 5vw, 48px);
-    line-height: 1.2;
-  }
-
-  .intro {
     margin: 0;
-    color: #68716b;
-    font-size: 16px;
+    color: #ffffff;
+    font-size: clamp(30px, 3.4vw, 46px);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1.25;
   }
 
-  .archive-section {
-    margin-top: 55px;
-    padding-top: 25px;
+  .hero-name-en {
+    margin-top: 8px;
+    color: #adb4af;
+    font-size: clamp(13px, 1.4vw, 18px);
+    font-weight: 500;
+    letter-spacing: 0.055em;
+  }
+
+  .hero-divider {
+    width: 100%;
+    max-width: 470px;
+    height: 1px;
+    margin: 31px 0 29px;
+    background: #444844;
+  }
+
+  .hero-message {
+    max-width: 500px;
+  }
+
+  .hero-copy {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(21px, 2.15vw, 29px);
+    font-weight: 750;
+    letter-spacing: -0.025em;
+    line-height: 1.58;
+  }
+
+  .hero-copy span {
+    display: block;
+  }
+
+  .hero-lead {
+    max-width: 470px;
+    margin: 23px 0 0;
+    color: #c5cbc7;
+    font-size: 13px;
+    line-height: 1.95;
+  }
+
+  .tree-note {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 390px);
+    gap: 16px;
+    align-items: start;
+    margin-top: 28px;
+  }
+
+  .tree-line {
+    display: block;
+    height: 1px;
+    margin-top: 11px;
+    background: #727873;
+  }
+
+  .tree-note p {
+    margin: 0;
+    color: #969e98;
+    font-size: 11px;
+    line-height: 1.85;
+  }
+
+  .content-section {
+    padding: 66px 0 72px;
     border-top: 1px solid #cfd5d0;
   }
 
-  h2 {
-    margin: 0 0 18px;
-    font-size: 20px;
+  .section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 29px;
   }
 
-  .year-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px 18px;
-  max-width: 820px;
-}
+  .section-kicker {
+    margin-bottom: 7px;
+  }
 
-  .year-list a {
-    display: block;
-    padding: 12px 18px;
-    background: white;
-    border: 1px solid #cfd5d0;
-    color: #202522;
+  .content-section h2 {
+    margin: 0;
+    font-size: clamp(23px, 3vw, 30px);
+    line-height: 1.4;
+  }
+
+  .section-heading > p {
+    max-width: 440px;
+    margin: 0;
+    color: #68716b;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .decade-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #cfd5d0;
+    border-left: 1px solid #cfd5d0;
+  }
+
+  .decade-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 148px;
+    padding: 23px;
+    background: #ffffff;
+    border-right: 1px solid #cfd5d0;
+    border-bottom: 1px solid #cfd5d0;
     text-decoration: none;
-    font-size: 14px;
+    transition: background 0.15s ease;
   }
 
-  .year-list a:hover {
+  a.decade-card:hover {
     background: #e7ebe8;
   }
 
-  .current-list a {
+  .decade-year {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .decade-ja {
+    margin-top: 4px;
+    color: #68716b;
+    font-size: 12px;
+  }
+
+  .card-arrow,
+  .coming-soon {
+    position: absolute;
+    right: 21px;
+    bottom: 19px;
+  }
+
+  .card-arrow {
+    font-size: 18px;
+  }
+
+  .coming-soon {
+    color: #9ba29d;
+    font-size: 10px;
+  }
+
+  .decade-card.disabled {
+    background: #eceeec;
+    color: #9ba29d;
+  }
+
+  .decade-card.disabled .decade-ja {
+    color: #a3aaa5;
+  }
+
+  .recent-list {
+    border-top: 1px solid #cfd5d0;
+  }
+
+  .recent-item {
     display: flex;
     align-items: center;
-    gap: 20px;
-    width: fit-content;
-    min-width: 280px;
-    padding: 14px 18px;
-    background: white;
-    border: 1px solid #cfd5d0;
-    color: #202522;
+    justify-content: space-between;
+    gap: 30px;
+    min-height: 77px;
+    padding: 15px 18px;
+    background: #ffffff;
+    border-right: 1px solid #cfd5d0;
+    border-bottom: 1px solid #cfd5d0;
+    border-left: 1px solid #cfd5d0;
     text-decoration: none;
   }
 
-  .current-list a:hover {
+  .recent-item:hover {
     background: #e7ebe8;
   }
 
-  .season {
+  .recent-main {
+    display: flex;
+    align-items: baseline;
+    gap: 28px;
+  }
+
+  .recent-season {
+    min-width: 55px;
     color: #68716b;
     font-size: 13px;
   }
 
-  .team {
+  .recent-team {
+    font-size: 16px;
+  }
+
+  .recent-meta {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+
+  .recent-meta time {
+    color: #7b837e;
+    font-size: 11px;
+  }
+
+  .recent-arrow {
+    font-size: 17px;
+  }
+
+  .player-index-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 28px;
+    min-height: 112px;
+    padding: 24px 28px;
+    background: #202522;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+
+  .player-index-card:hover {
+    background: #343b36;
+  }
+
+  .player-index-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .player-index-kicker {
+    margin-bottom: 7px;
+    color: #adb5af;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+  }
+
+  .player-index-title {
+    font-size: 25px;
+    line-height: 1.3;
+  }
+
+  .player-index-right {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+
+  .player-index-description {
+    color: #d1d6d2;
+    font-size: 13px;
+  }
+
+  .player-index-arrow {
+    font-size: 24px;
+  }
+
+  .about-layout {
+    display: grid;
+    grid-template-columns:
+      minmax(240px, 0.8fr)
+      minmax(0, 1.6fr);
+    gap: 75px;
+  }
+
+  .about-lead p {
+    margin: 0;
+    font-size: clamp(21px, 2.5vw, 29px);
     font-weight: 700;
+    line-height: 1.65;
+  }
+
+  .about-copy {
+    max-width: 750px;
+  }
+
+  .about-copy p {
+    margin: 0;
+    color: #4f5752;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .about-copy p + p {
+    margin-top: 19px;
+  }
+
+  .contact-box {
+    display: grid;
+    grid-template-columns:
+      1fr
+      minmax(340px, 0.8fr);
+    gap: 55px;
+    padding: 31px;
+    background: #ffffff;
+    border: 1px solid #cfd5d0;
+  }
+
+  .contact-copy p {
+    max-width: 650px;
+    margin: 0;
+    color: #4f5752;
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .contact-copy p + p {
+    margin-top: 13px;
+  }
+
+  .mail-link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 110px;
+    padding: 20px 55px 20px 23px;
+    background: #f4f5f3;
+    border: 1px solid #d8ddd9;
+    text-decoration: none;
+  }
+
+  .mail-link:hover {
+    background: #e7ebe8;
+  }
+
+  .mail-label {
+    margin-bottom: 6px;
+    color: #68716b;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+  }
+
+  .mail-link strong {
+    font-size: 15px;
+    word-break: break-all;
+  }
+
+  .mail-arrow {
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    font-size: 18px;
+    transform: translateY(-50%);
+  }
+
+  .policy-section {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 35px;
+    padding: 32px 0 58px;
+    border-top: 1px solid #cfd5d0;
+  }
+
+  .policy-label {
+    padding-top: 3px;
+  }
+
+  .policy-section p {
+    max-width: 820px;
+    margin: 0;
+    color: #68716b;
+    font-size: 12px;
+    line-height: 1.9;
+  }
+
+  .site-footer {
+    background: #202522;
+    color: #ffffff;
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    width: min(1280px, calc(100% - 40px));
+    min-height: 155px;
+    margin: 0 auto;
+    padding: 38px 0;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .footer-brand strong {
+    font-size: 14px;
+  }
+
+  .footer-brand span {
+    color: #aeb6b0;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+  }
+
+  .footer-mark {
+    color: #d6dbd7;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+  }
+
+  @media (max-width: 1050px) {
+    .hero-copy-area {
+      width: 45%;
+      padding-left: 36px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .header-inner {
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 18px 0;
+    }
+
+    .site-nav {
+      width: 100%;
+      gap: 15px 20px;
+      overflow-x: auto;
+      padding-bottom: 3px;
+    }
+
+    .hero-inner {
+      min-height: 620px;
+      background-position: 58% center;
+    }
+
+    .hero-copy-area {
+      width: 52%;
+      min-height: 620px;
+      padding: 42px 24px 42px 28px;
+    }
+
+    .decade-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-layout {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .contact-box {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
   }
 
   @media (max-width: 700px) {
-    main {
+    .header-inner,
+    main,
+    .footer-inner {
       width: calc(100% - 24px);
-      padding-top: 40px;
     }
 
-    .year-list {
-      gap: 8px;
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      font-size: 11px;
     }
 
-    .year-list a {
-      padding: 10px 13px;
+    .brand-names strong {
+      font-size: 13px;
     }
 
-    .current-list a {
-      min-width: 0;
+    .hero {
+      margin: 16px 0 52px;
+    }
+
+    .hero-inner {
+      min-height: 0;
+      background-image: none;
+    }
+
+    .hero-copy-area {
       width: 100%;
+      min-height: 0;
+      padding: 38px 24px 40px;
+    }
+
+    .hero-copy-area::after {
+      content: "";
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      margin-top: 34px;
+      background-image: url("/images/jcsa-hero.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: clamp(27px, 8vw, 38px);
+      line-height: 1.3;
+    }
+
+    .hero-name-en {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+
+    .hero-divider {
+      margin: 27px 0 24px;
+    }
+
+    .hero-copy {
+      font-size: clamp(20px, 6vw, 27px);
+      line-height: 1.55;
+    }
+
+    .hero-lead {
+      margin-top: 21px;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .tree-note {
+      grid-template-columns: 38px 1fr;
+      gap: 14px;
+      margin-top: 27px;
+    }
+
+    .content-section {
+      padding: 48px 0 53px;
+    }
+
+    .section-heading {
+      display: block;
+      margin-bottom: 22px;
+    }
+
+    .section-heading > p {
+      margin-top: 8px;
+    }
+
+    .decade-card {
+      min-height: 125px;
+      padding: 17px;
+    }
+
+    .decade-year {
+      font-size: 22px;
+    }
+
+    .recent-item {
+      gap: 15px;
+      min-height: 70px;
+      padding: 13px 14px;
+    }
+
+    .recent-main {
+      gap: 14px;
+    }
+
+    .recent-season {
+      min-width: 45px;
+      font-size: 12px;
+    }
+
+    .recent-team {
+      font-size: 14px;
+    }
+
+    .recent-meta time {
+      display: none;
+    }
+
+    .player-index-card {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 18px;
+      min-height: 0;
+      padding: 22px;
+    }
+
+    .player-index-title {
+      font-size: 23px;
+    }
+
+    .player-index-right {
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .player-index-description {
+      font-size: 12px;
+    }
+
+    .about-lead p {
+      font-size: 21px;
+    }
+
+    .contact-box {
+      padding: 21px;
+    }
+
+    .mail-link {
+      min-height: 95px;
+    }
+
+    .policy-section {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      padding: 27px 0 43px;
+    }
+
+    .footer-inner {
+      min-height: 130px;
+      padding: 30px 0;
     }
   }
 </style>

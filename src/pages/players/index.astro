@@ -1,0 +1,303 @@
+---
+import { playerPages } from "../../data/links.js";
+
+const playerModules = import.meta.glob(
+  "../../data/players/P*.js",
+  { eager: true }
+);
+
+const players = Object.values(playerModules)
+  .map((module) => module.player)
+  .filter((player) => {
+    return (
+      player &&
+      player.id &&
+      player.name &&
+      player.nameKana &&
+      playerPages[player.id]
+    );
+  })
+  .sort((a, b) =>
+    a.nameKana.localeCompare(b.nameKana, "ja")
+  );
+
+const kanaGroups = [
+  {
+    key: "あ",
+    label: "あ行",
+    chars: ["あ", "い", "う", "え", "お"],
+  },
+  {
+    key: "か",
+    label: "か行",
+    chars: ["か", "き", "く", "け", "こ", "が", "ぎ", "ぐ", "げ", "ご"],
+  },
+  {
+    key: "さ",
+    label: "さ行",
+    chars: ["さ", "し", "す", "せ", "そ", "ざ", "じ", "ず", "ぜ", "ぞ"],
+  },
+  {
+    key: "た",
+    label: "た行",
+    chars: ["た", "ち", "つ", "て", "と", "だ", "ぢ", "づ", "で", "ど"],
+  },
+  {
+    key: "な",
+    label: "な行",
+    chars: ["な", "に", "ぬ", "ね", "の"],
+  },
+  {
+    key: "は",
+    label: "は行",
+    chars: [
+      "は", "ひ", "ふ", "へ", "ほ",
+      "ば", "び", "ぶ", "べ", "ぼ",
+      "ぱ", "ぴ", "ぷ", "ぺ", "ぽ",
+    ],
+  },
+  {
+    key: "ま",
+    label: "ま行",
+    chars: ["ま", "み", "む", "め", "も"],
+  },
+  {
+    key: "や",
+    label: "や行",
+    chars: ["や", "ゆ", "よ"],
+  },
+  {
+    key: "ら",
+    label: "ら行",
+    chars: ["ら", "り", "る", "れ", "ろ"],
+  },
+  {
+    key: "わ",
+    label: "わ行",
+    chars: ["わ", "を", "ん"],
+  },
+];
+
+const groups = kanaGroups
+  .map((group) => ({
+    ...group,
+    players: players.filter((player) =>
+      group.chars.includes(player.nameKana.charAt(0))
+    ),
+  }))
+  .filter((group) => group.players.length > 0);
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>選手索引 | 日本サッカーWEBデータベース</title>
+  </head>
+
+  <body>
+    <main>
+      <p class="back"><a href="/">← トップへ戻る</a></p>
+
+      <p class="label">PLAYER INDEX</p>
+      <h1>選手索引</h1>
+
+      <p class="intro">
+        個人ページを収録している選手を、五十音順から辿る。
+      </p>
+
+      <nav class="kana-nav" aria-label="五十音索引">
+        {groups.map((group) => (
+          <a href={`#${group.key}`}>{group.label}</a>
+        ))}
+      </nav>
+
+      <section class="archive-section">
+        {groups.map((group) => (
+          <div class="kana-group" id={group.key}>
+            <h2>{group.label}</h2>
+
+            <div class="player-list">
+              {group.players.map((player) => (
+                <a
+                  class="player-row"
+                  href={playerPages[player.id]}
+                >
+                  <span class="player-name">
+                    {player.name}
+                  </span>
+
+                  <span class="player-kana">
+                    {player.nameKana}
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #f4f5f3;
+    color: #202522;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      "Noto Sans JP",
+      sans-serif;
+  }
+
+  main {
+    width: min(1000px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 50px 0 90px;
+  }
+
+  .back {
+    margin: 0 0 55px;
+    font-size: 14px;
+  }
+
+  .back a {
+    color: #68716b;
+    text-decoration: none;
+  }
+
+  .back a:hover {
+    text-decoration: underline;
+  }
+
+  .label {
+    margin: 0 0 8px;
+    color: #68716b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+
+  h1 {
+    margin: 0 0 12px;
+    font-size: clamp(36px, 6vw, 56px);
+    line-height: 1.2;
+  }
+
+  .intro {
+    margin: 0;
+    color: #68716b;
+  }
+
+  .kana-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 42px;
+  }
+
+  .kana-nav a {
+    display: block;
+    min-width: 62px;
+    padding: 10px 13px;
+    background: #ffffff;
+    border: 1px solid #cfd5d0;
+    color: #202522;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .kana-nav a:hover {
+    background: #e7ebe8;
+  }
+
+  .archive-section {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #cfd5d0;
+  }
+
+  .kana-group {
+    max-width: 700px;
+    scroll-margin-top: 25px;
+  }
+
+  .kana-group + .kana-group {
+    margin-top: 45px;
+    padding-top: 30px;
+    border-top: 1px solid #d9ddda;
+  }
+
+  h2 {
+    margin: 0 0 16px;
+    font-size: 22px;
+  }
+
+  .player-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .player-row {
+    display: flex;
+    align-items: baseline;
+    gap: 28px;
+    width: 100%;
+    padding: 13px 16px;
+    background: #ffffff;
+    border: 1px solid #cfd5d0;
+    color: #202522;
+    text-decoration: none;
+  }
+
+  .player-row:hover {
+    background: #e7ebe8;
+  }
+
+  .player-name {
+    min-width: 190px;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .player-kana {
+    color: #68716b;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 700px) {
+    main {
+      width: calc(100% - 24px);
+      padding-top: 40px;
+    }
+
+    .kana-nav a {
+      min-width: 54px;
+      padding: 9px 10px;
+    }
+
+    .player-row {
+      gap: 16px;
+    }
+
+    .player-name {
+      min-width: 145px;
+    }
+  }
+</style>

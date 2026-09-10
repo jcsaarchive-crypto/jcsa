@@ -1,0 +1,795 @@
+---
+import { player } from "../../data/players/P00003.js";
+import { getTeamSeasonUrl } from "../../data/links.js";
+
+const show = (value) => {
+  if (value === null || value === undefined) return "";
+  return value;
+};
+
+const showStat = (value) => {
+  if (value === null || value === undefined || value === "") {
+    return "";
+  }
+
+  return value;
+};
+
+const isNotApplicable = (value) => value === "-";
+
+/*
+ * 同一シーズンが連続する場合は、最初の行だけ年を表示し、
+ * その年の連続行数ぶん rowspan する。
+ *
+ * 所属・公式戦記録：
+ * シーズン途中移籍など、Excelで年セルが縦結合されている場合に対応。
+ *
+ * その他公式戦：
+ * 同一年に複数の大会がある場合の年セル縦結合にも使用。
+ */
+const getSeasonRowspan = (items, index) => {
+  const season = items[index].season;
+
+  if (index > 0 && items[index - 1].season === season) {
+    return 0;
+  }
+
+  let rowspan = 1;
+
+  for (let i = index + 1; i < items.length; i += 1) {
+    if (items[i].season !== season) break;
+    rowspan += 1;
+  }
+
+  return rowspan;
+};
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{player.name} | 日本サッカーWEBデータベース</title>
+  </head>
+
+  <body>
+    <main>
+      <p class="back"><a href="/">← トップへ戻る</a></p>
+
+      <header class="player-header">
+        <p class="label">PLAYER</p>
+        <h1>
+  {player.name}
+  {player.nameKana && (
+    <span class="name-kana">{player.nameKana}</span>
+  )}
+</h1>
+        <p class="name-en">{player.nameEn}</p>
+
+        <div class="profile">
+          <p>ポジション：{player.position}</p>
+          <p>生年月日：{player.birth}</p>
+          {player.death && <p>没年月日：{player.death}</p>}
+          <p>出身地：{player.birthplace}</p>
+          <p>出身校/ユース：{player.education}</p>
+          <p>身長：{player.height}cm</p>
+          <p>体重：{player.weight}kg</p>
+        </div>
+      </header>
+
+      <section class="archive-section">
+        <h2>所属・公式戦記録</h2>
+
+        <div class="table-scroll">
+          <table class="career-table">
+            <thead>
+              <tr>
+                <th rowspan="2" class="year-column">年</th>
+                <th rowspan="2" class="division-column">Div.</th>
+                <th rowspan="2" class="jersey-column">背番号</th>
+                <th rowspan="2" class="team-column">所属</th>
+
+                <th colspan="2" class="competition-heading group-start">
+                  リーグ
+                </th>
+
+                <th colspan="2" class="competition-heading group-start">
+                  カップ
+                </th>
+
+                <th colspan="2" class="competition-heading group-start">
+                  天皇杯
+                </th>
+
+                <th colspan="2" class="competition-heading group-start">
+                  期間通算
+                </th>
+              </tr>
+
+              <tr>
+                <th class="stat-column group-start">試合</th>
+                <th class="stat-column">得点</th>
+
+                <th class="stat-column group-start">試合</th>
+                <th class="stat-column">得点</th>
+
+                <th class="stat-column group-start">試合</th>
+                <th class="stat-column">得点</th>
+
+                <th class="stat-column group-start">試合</th>
+                <th class="stat-column">得点</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {player.history.map((item, index) => {
+                const seasonRowspan = getSeasonRowspan(player.history, index);
+                const teamUrl = getTeamSeasonUrl(item.team, item.season);
+
+                return (
+                  <tr>
+                    {seasonRowspan > 0 && (
+                      <td
+                        rowspan={seasonRowspan}
+                        class="center nowrap season-cell"
+                      >
+                        {item.season}
+                      </td>
+                    )}
+
+                    <td class="center nowrap">{item.division}</td>
+                    <td class="center nowrap">{show(item.jersey)}</td>
+
+                    <td class="team-name">
+                      {teamUrl ? (
+                        <a href={teamUrl}>{item.team}</a>
+                      ) : (
+                        item.team
+                      )}
+                    </td>
+
+                    {isNotApplicable(item.leagueMatches) ? (
+                      <td colspan="2" class="not-applicable group-start">
+                        <span>-</span>
+                      </td>
+                    ) : (
+                      <>
+                        <td class="number group-start">
+                          {showStat(item.leagueMatches)}
+                        </td>
+                        <td class="number">
+                          {showStat(item.leagueGoals)}
+                        </td>
+                      </>
+                    )}
+
+                    {isNotApplicable(item.cupMatches) ? (
+                      <td colspan="2" class="not-applicable group-start">
+                        <span>-</span>
+                      </td>
+                    ) : (
+                      <>
+                        <td class="number group-start">
+                          {showStat(item.cupMatches)}
+                        </td>
+                        <td class="number">
+                          {showStat(item.cupGoals)}
+                        </td>
+                      </>
+                    )}
+
+                    {isNotApplicable(item.emperorCupMatches) ? (
+                      <td colspan="2" class="not-applicable group-start">
+                        <span>-</span>
+                      </td>
+                    ) : (
+                      <>
+                        <td class="number group-start">
+                          {showStat(item.emperorCupMatches)}
+                        </td>
+                        <td class="number">
+                          {showStat(item.emperorCupGoals)}
+                        </td>
+                      </>
+                    )}
+
+                    {isNotApplicable(item.totalMatches) ? (
+                      <td colspan="2" class="not-applicable group-start">
+                        <span>-</span>
+                      </td>
+                    ) : (
+                      <>
+                        <td class="number group-start">
+                          {showStat(item.totalMatches)}
+                        </td>
+                        <td class="number">
+                          {showStat(item.totalGoals)}
+                        </td>
+                      </>
+                    )}
+                  </tr>
+                );
+              })}
+
+              {player.totals.map((item, index) => (
+                <tr class:list={["total-row", { "first-total-row": index === 0 }]}>
+                  {index === 0 && (
+                    <>
+                      <td
+                        rowspan={player.totals.length}
+                        class="total-main-label center"
+                      >
+                        通算
+                      </td>
+
+                      <td
+                        rowspan={player.totals.length}
+                        colspan="2"
+                        class="total-country center"
+                      >
+                        日本
+                      </td>
+                    </>
+                  )}
+
+                  <td class="total-division center">
+                    {item.division}
+                  </td>
+
+                  {isNotApplicable(item.leagueMatches) ? (
+                    <td colspan="2" class="not-applicable group-start">
+                      <span>-</span>
+                    </td>
+                  ) : (
+                    <>
+                      <td class="number group-start">
+                        {showStat(item.leagueMatches)}
+                      </td>
+                      <td class="number">
+                        {showStat(item.leagueGoals)}
+                      </td>
+                    </>
+                  )}
+
+                  {isNotApplicable(item.cupMatches) ? (
+                    <td colspan="2" class="not-applicable group-start">
+                      <span>-</span>
+                    </td>
+                  ) : (
+                    <>
+                      <td class="number group-start">
+                        {showStat(item.cupMatches)}
+                      </td>
+                      <td class="number">
+                        {showStat(item.cupGoals)}
+                      </td>
+                    </>
+                  )}
+
+                  {isNotApplicable(item.emperorCupMatches) ? (
+                    <td colspan="2" class="not-applicable group-start">
+                      <span>-</span>
+                    </td>
+                  ) : (
+                    <>
+                      <td class="number group-start">
+                        {showStat(item.emperorCupMatches)}
+                      </td>
+                      <td class="number">
+                        {showStat(item.emperorCupGoals)}
+                      </td>
+                    </>
+                  )}
+
+                  {isNotApplicable(item.totalMatches) ? (
+                    <td colspan="2" class="not-applicable group-start">
+                      <span>-</span>
+                    </td>
+                  ) : (
+                    <>
+                      <td class="number group-start">
+                        {showStat(item.totalMatches)}
+                      </td>
+                      <td class="number">
+                        {showStat(item.totalGoals)}
+                      </td>
+                    </>
+                  )}
+                </tr>
+              ))}
+
+              <tr class="grand-total-row">
+                <td colspan="4" class="grand-total-label center">
+                  総通算
+                </td>
+
+                {isNotApplicable(player.grandTotal.leagueMatches) ? (
+                  <td colspan="2" class="not-applicable group-start">
+                    <span>-</span>
+                  </td>
+                ) : (
+                  <>
+                    <td class="number group-start">
+                      {showStat(player.grandTotal.leagueMatches)}
+                    </td>
+                    <td class="number">
+                      {showStat(player.grandTotal.leagueGoals)}
+                    </td>
+                  </>
+                )}
+
+                {isNotApplicable(player.grandTotal.cupMatches) ? (
+                  <td colspan="2" class="not-applicable group-start">
+                    <span>-</span>
+                  </td>
+                ) : (
+                  <>
+                    <td class="number group-start">
+                      {showStat(player.grandTotal.cupMatches)}
+                    </td>
+                    <td class="number">
+                      {showStat(player.grandTotal.cupGoals)}
+                    </td>
+                  </>
+                )}
+
+                {isNotApplicable(player.grandTotal.emperorCupMatches) ? (
+                  <td colspan="2" class="not-applicable group-start">
+                    <span>-</span>
+                  </td>
+                ) : (
+                  <>
+                    <td class="number group-start">
+                      {showStat(player.grandTotal.emperorCupMatches)}
+                    </td>
+                    <td class="number">
+                      {showStat(player.grandTotal.emperorCupGoals)}
+                    </td>
+                  </>
+                )}
+
+                {isNotApplicable(player.grandTotal.totalMatches) ? (
+                  <td colspan="2" class="not-applicable group-start">
+                    <span>-</span>
+                  </td>
+                ) : (
+                  <>
+                    <td class="number group-start">
+                      {showStat(player.grandTotal.totalMatches)}
+                    </td>
+                    <td class="number">
+                      {showStat(player.grandTotal.totalGoals)}
+                    </td>
+                  </>
+                )}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="other-section">
+        <h2>その他公式戦</h2>
+
+        <div class="table-scroll other-scroll">
+          <table class="other-table">
+            <thead>
+              <tr>
+                <th class="other-year">年</th>
+                <th class="other-competition">大会</th>
+                <th class="other-team">所属</th>
+                <th class="other-stat">試合</th>
+                <th class="other-stat">得点</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {player.otherOfficialMatches.map((item, index) => {
+                const seasonRowspan = getSeasonRowspan(
+                  player.otherOfficialMatches,
+                  index
+                );
+
+                return (
+                  <tr>
+                    {seasonRowspan > 0 && (
+                      <td
+                        rowspan={seasonRowspan}
+                        class="center nowrap other-season-cell"
+                      >
+                        {item.season}
+                      </td>
+                    )}
+
+                    <td>{item.competition}</td>
+                    <td>{item.team}</td>
+                    <td class="number">{showStat(item.matches)}</td>
+                    <td class="number">{showStat(item.goals)}</td>
+                  </tr>
+                );
+              })}
+
+              <tr class="grand-total-row">
+                <td colspan="3" class="other-total-label center">
+                  通算
+                </td>
+                <td class="number">
+                  {showStat(player.otherOfficialTotal.matches)}
+                </td>
+                <td class="number">
+                  {showStat(player.otherOfficialTotal.goals)}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #f4f5f3;
+    color: #202522;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      "Noto Sans JP",
+      sans-serif;
+  }
+
+  main {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 50px 0 90px;
+  }
+
+  .back {
+    margin: 0 0 55px;
+    font-size: 14px;
+  }
+
+  .back a {
+    color: #68716b;
+    text-decoration: none;
+  }
+
+  .back a:hover {
+    text-decoration: underline;
+  }
+
+  .label {
+    margin: 0 0 8px;
+    color: #68716b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(36px, 6vw, 56px);
+    line-height: 1.2;
+  }
+  .name-kana {
+  display: inline-block;
+  margin-left: 18px;
+  color: #68716b;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+  .name-en {
+    margin: 8px 0 0;
+    color: #68716b;
+    font-size: 15px;
+  }
+
+  .profile {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #cfd5d0;
+  }
+
+  .profile p {
+    margin: 7px 0;
+  }
+
+  .archive-section,
+  .other-section {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #cfd5d0;
+  }
+
+  h2 {
+    margin: 0 0 25px;
+    font-size: 22px;
+  }
+
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border: 2px solid #7f8982;
+  }
+
+  table {
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 14px;
+  }
+
+  .career-table {
+    width: 100%;
+    min-width: 1100px;
+    table-layout: fixed;
+  }
+
+  th,
+  td {
+    border: 1px solid #8f9992;
+    padding: 10px 8px;
+    vertical-align: middle;
+  }
+
+  table tr:first-child th {
+    border-top: 0;
+  }
+
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  table th:first-child,
+  table td:first-child {
+    border-left: 0;
+  }
+
+  table th:last-child,
+  table td:last-child {
+    border-right: 0;
+  }
+
+  th {
+    background: #e4e8e5;
+    color: #202522;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  thead tr:first-child th {
+    background: #dde3df;
+  }
+
+  .group-start {
+    border-left: 2px solid #6f7972 !important;
+  }
+
+  .year-column {
+    width: 76px;
+  }
+
+  .division-column {
+    width: 86px;
+  }
+
+  .jersey-column {
+    width: 78px;
+    white-space: nowrap;
+  }
+
+  .team-column {
+    width: 230px;
+  }
+
+  .stat-column {
+    width: 67px;
+  }
+
+  .competition-heading {
+    white-space: nowrap;
+  }
+
+  .center {
+    text-align: center !important;
+  }
+
+  .number {
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  /*
+   * 所属・公式戦記録の年セル。
+   * 同一年が連続した場合は縦結合し、上下左右中央揃え。
+   */
+  .career-table td.season-cell {
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+
+  .team-name {
+    padding-left: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .team-name a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .team-name a:hover {
+    text-decoration: underline;
+  }
+
+  .career-table tbody tr:not(.total-row):not(.grand-total-row) td {
+    background: #ffffff;
+  }
+
+  /*
+   * 「-」は試合・得点2セルを結合。
+   * 結合した領域全体の中央に表示する。
+   */
+  .career-table td.not-applicable {
+    padding: 0 !important;
+    vertical-align: middle !important;
+  }
+
+  .career-table td.not-applicable > span {
+    display: flex;
+    width: 100%;
+    min-height: 38px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /*
+   * 最終年度と通算ブロックの境界
+   */
+  .first-total-row td {
+    border-top: 3px solid #59625c !important;
+  }
+
+  /*
+   * 通算ブロック
+   */
+  .total-row td {
+    background: #f3f5f3;
+    font-weight: 500;
+  }
+
+  .career-table td.total-main-label {
+    background: #e7ebe8 !important;
+    font-weight: 700;
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .career-table td.total-country {
+    background: #e7ebe8 !important;
+    font-weight: 700;
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .career-table td.total-division {
+    background: #f3f5f3 !important;
+    font-weight: 700;
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    white-space: nowrap;
+  }
+
+  /*
+   * 総通算：年～所属の4列を横結合
+   */
+  .grand-total-row td {
+    background: #dde3df;
+    font-weight: 700;
+    border-top: 2px solid #6f7972;
+  }
+
+  .career-table td.grand-total-label {
+    background: #dde3df !important;
+    font-weight: 700;
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /*
+   * その他公式戦
+   */
+  .other-scroll {
+    max-width: 760px;
+  }
+
+  .other-table {
+    width: 100%;
+    min-width: 650px;
+    table-layout: fixed;
+  }
+
+  .other-year {
+    width: 90px;
+  }
+
+  .other-competition {
+    width: 210px;
+  }
+
+  .other-team {
+    width: 220px;
+  }
+
+  .other-stat {
+    width: 75px;
+  }
+
+  .other-table td {
+    background: #ffffff;
+  }
+
+  /*
+   * その他公式戦でも同一年が連続した場合は、
+   * 年セルを縦結合して上下左右中央揃え。
+   */
+  .other-table td.other-season-cell {
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+
+  .other-table .grand-total-row td {
+    background: #dde3df;
+  }
+
+  .other-total-label {
+    text-align: center !important;
+    vertical-align: middle !important;
+    font-weight: 700;
+  }
+
+  @media (max-width: 600px) {
+    main {
+      width: calc(100% - 24px);
+      padding-top: 30px;
+    }
+
+    .back {
+      margin-bottom: 40px;
+    }
+
+    .archive-section,
+    .other-section {
+      margin-top: 45px;
+    }
+
+    th,
+    td {
+      padding: 9px 7px;
+    }
+  }
+</style>

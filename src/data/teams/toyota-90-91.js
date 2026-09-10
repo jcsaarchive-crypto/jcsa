@@ -1,7 +1,7 @@
 export const team = {
   season: "90/91",
   competition: "日本サッカーリーグ1部",
-  competitionEn: "JAPAN SOCCER LEAGUE 1990/91",
+  competitionEn: "JAPAN SOCCER LEAGUE（JSL）DIVISION 1",
 
   name: "トヨタ自動車",
   officialName: "トヨタ自動車(株)サッカー部",
@@ -25,7 +25,7 @@ export const team = {
 
   results: {
     league: {
-      competition: "日本サッカーリーグ1部",
+      competition: "第26回日本サッカーリーグ1部",
       rank: 5,
       points: 30,
       wins: 7,
@@ -87,6 +87,7 @@ export const sources = [
 
 export const players = [
   {
+    id: "P00002",
     number: "1",
     name: "大橋 昭好",
     latin: "Akiyoshi OHASHI",
@@ -98,6 +99,7 @@ export const players = [
   },
 
   {
+    id: "P00003",
     number: "2",
     name: "浅野 哲也",
     latin: "Tetsuya ASANO",
@@ -109,6 +111,7 @@ export const players = [
   },
 
   {
+    id: "P00004",
     number: "3",
     name: "鶴田 道弘",
     latin: "Michihiro TSURUTA",
@@ -120,6 +123,7 @@ export const players = [
   },
 
   {
+    id: "P00005",
     number: "4",
     name: "佐藤 辰男",
     latin: "Tatsuo SATO",
@@ -131,6 +135,7 @@ export const players = [
   },
 
   {
+    id: "P00006",
     number: "5",
     name: "重綱 正彦",
     latin: "Masahiko SHIGETSUNA",
@@ -142,6 +147,7 @@ export const players = [
   },
 
   {
+    id: "P00007",
     number: "6",
     name: "藤川 久孝",
     latin: "Hisataka FUJIKAWA",
@@ -153,6 +159,7 @@ export const players = [
   },
 
   {
+    id: "P00008",
     number: "7",
     name: "吉田 昭義",
     latin: "Akiyoshi YOSHIDA",
@@ -164,10 +171,11 @@ export const players = [
   },
 
   {
+    id: "P00009",
     number: "8",
     name: "沢入 重雄",
     latin: "Shigeo SAWAIRI",
-    position: "FW/MF/DF",
+    position: "FW",
     birth: "1963年5月8日",
     size: "180cm/70kg",
     birthplace: "静岡県",
@@ -183,10 +191,11 @@ export const players = [
     size: "175cm/65kg",
     birthplace: "ブラジル",
     previous:
-      "キンゼ・デ・ピラシカーバ - サントス - グレミオ - グアラニ - グレミオ",
+      "キンゼ・デ・ピラシカーバ(ブラジル) - サントス(ブラジル) - グレミオ(ブラジル) - グアラニ(ブラジル) - グレミオ(ブラジル)",
   },
 
   {
+    id: "P00010",
     number: "10",
     name: "平沢 政輝",
     latin: "Masaki HIRASAWA",
@@ -206,7 +215,7 @@ export const players = [
     size: "170cm/68kg",
     birthplace: "ブラジル",
     previous:
-      "インテルナシオナル・リメイラ - バイーア - パルメイラス - アメリカ",
+      "インテルナシオナル・リメイラ(ブラジル) - バイーア(ブラジル) - パルメイラス(ブラジル) - アメリカ(ブラジル)",
   },
 
   {
@@ -221,6 +230,7 @@ export const players = [
   },
 
   {
+    id: "P00011",
     number: "13",
     name: "柴田 圭志",
     latin: "Keiji SHIBATA",
@@ -232,6 +242,7 @@ export const players = [
   },
 
   {
+    id: "P00012",
     number: "14",
     name: "村上 一也",
     latin: "Kazuya MURAKAMI",
@@ -243,6 +254,7 @@ export const players = [
   },
 
   {
+    id: "P00013",
     number: "15",
     name: "夏賀 高弘",
     latin: "Takahiro NATSUGA",
@@ -254,6 +266,7 @@ export const players = [
   },
 
   {
+    id: "P00014",
     number: "16",
     name: "東 泰",
     latin: "Yutaka AZUMA",
@@ -265,6 +278,7 @@ export const players = [
   },
 
   {
+    id: "P00015",
     number: "17",
     name: "菅野 裕二",
     latin: "Yuji SUGANO",
@@ -276,6 +290,7 @@ export const players = [
   },
 
   {
+    id: "P00016",
     number: "18",
     name: "小椋 伸二",
     latin: "Shinji OGURA",
@@ -287,6 +302,7 @@ export const players = [
   },
 
   {
+    id: "P00017",
     number: "19",
     name: "市之瀬 秀樹",
     latin: "Hideki ICHINOSE",
@@ -298,6 +314,7 @@ export const players = [
   },
 
   {
+    id: "P00018",
     number: "20",
     name: "小川 誠一",
     latin: "Seiichi OGAWA",
@@ -309,6 +326,7 @@ export const players = [
   },
 
   {
+    id: "P00019",
     number: "21",
     name: "浜口 和義",
     latin: "Kazuyoshi HAMAGUCHI",
@@ -327,10 +345,11 @@ export const players = [
     birth: "1970年3月11日",
     size: "173cm/65kg",
     birthplace: "ブラジル",
-    previous: "ポルトゲーザ",
+    previous: "ポルトゲーザ(ブラジル)",
   },
 
   {
+    id: "P00020",
     number: "23",
     name: "森 浩作",
     latin: "Kosaku MORI",
@@ -342,6 +361,7 @@ export const players = [
   },
 
   {
+    id: "P00021",
     number: "25",
     name: "中村 聖",
     latin: "Kiyoshi NAKAMURA",
@@ -353,6 +373,7 @@ export const players = [
   },
 
   {
+    id: "P00022",
     number: "26",
     name: "島村 征志",
     latin: "Masashi SHIMAMURA",
@@ -364,6 +385,7 @@ export const players = [
   },
 
   {
+    id: "P00023",
     number: "28",
     name: "行徳 浩二",
     latin: "Koji GYOTOKU",
@@ -372,10 +394,11 @@ export const players = [
     size: "175cm/70kg",
     birthplace: "静岡県",
     previous:
-      "東海大一高 - 東海大 - ヴェルダー・ブレーメン・アマチュア",
+      "東海大一高 - 東海大 - ヴェルダー・ブレーメン・アマチュア(西ドイツ)",
   },
 
   {
+    id: "P00024",
     number: "29",
     name: "福元 誠",
     latin: "Makoto FUKUMOTO",
@@ -387,6 +410,7 @@ export const players = [
   },
 
   {
+    id: "P00025",
     number: "30",
     name: "松川 義和",
     latin: "Yoshikazu MATSUKAWA",
@@ -398,6 +422,7 @@ export const players = [
   },
 
   {
+    id: "P00026",
     number: "31",
     name: "佐野 友昭",
     latin: "Tomoaki SANO",
@@ -409,6 +434,7 @@ export const players = [
   },
 
   {
+    id: "P00001",
     number: "32",
     name: "太田 貴光",
     latin: "Takamitsu OTA",
@@ -417,10 +443,10 @@ export const players = [
     size: "172cm/62kg",
     birthplace: "静岡県",
     previous: "清水商高 - 富士通沼津",
-    playerUrl: "/players/ota-takamitsu",
   },
 
   {
+    id: "P00027",
     number: "33",
     name: "高橋 清志",
     latin: "Kiyoshi TAKAHASHI",
@@ -428,10 +454,11 @@ export const players = [
     birth: "1968年5月24日",
     size: "176cm/65kg",
     birthplace: "愛知県",
-    previous: "岡崎城西高 - トヨタ自動車東富士YFC",
+    previous: "岡崎城西高 - トヨタ自動車 - トヨタ自動車東富士YFC",
   },
 
   {
+    id: "P00028",
     number: "34",
     name: "田中 秀昌",
     latin: "Hidemasa TANAKA",
@@ -443,6 +470,7 @@ export const players = [
   },
 
   {
+    id: "P00029",
     number: "35",
     name: "近 彰彦",
     latin: "Akihiko KON",
@@ -454,6 +482,7 @@ export const players = [
   },
 
   {
+    id: "P00030",
     number: "36",
     name: "加藤 宏章",
     latin: "Hiroaki KATO",

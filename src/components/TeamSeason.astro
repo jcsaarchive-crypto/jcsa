@@ -1,10 +1,27 @@
 ---
+import { getPlayerUrl } from "../data/links.js";
+
 const {
   team,
   players,
   staff = [],
   sources = [],
 } = Astro.props;
+
+const birthColumnLabel =
+  team.birthColumnLabel ?? "生年月日";
+
+const hasLongBirthColumnLabel =
+  birthColumnLabel !== "生年月日";
+
+const leagueGoalDifference =
+  team.results?.league?.goalDifference ??
+  (
+    team.results?.league
+      ? team.results.league.goalsFor -
+        team.results.league.goalsAgainst
+      : 0
+  );
 ---
 
 <html lang="ja">
@@ -16,12 +33,17 @@ const {
 
 <body>
   <main>
+    <div class="top-nav">
+      <a href="/">← トップへ戻る</a>
+    </div>
+
     <div class="league">{team.competitionEn}</div>
 
     <h1>{team.name}</h1>
 
     <p class="season">
-      {team.season} {team.competition}
+      <strong class="season-year">{team.season}</strong>
+      <span class="season-competition">{team.competition}</span>
     </p>
 
     <!-- クラブ情報 -->
@@ -30,6 +52,13 @@ const {
 
       <div class="info-box">
         <dl class="info-list">
+          {team.corporateName && (
+            <>
+              <dt>法人名</dt>
+              <dd>{team.corporateName}</dd>
+            </>
+          )}
+
           {team.officialName && (
             <>
               <dt>正式名称</dt>
@@ -116,8 +145,12 @@ const {
                     <span>成績</span>
                     <strong>
                       {team.results.league.wins}勝
-                      {team.results.league.draws}分
+                      {team.results.league.draws !== undefined &&
+                        `${team.results.league.draws}分`}
                       {team.results.league.losses}敗
+                      {team.results.league.pkLosses !== undefined &&
+                        team.results.league.pkLosses > 0 &&
+                        `${team.results.league.pkLosses}PK負け`}
                     </strong>
                   </div>
 
@@ -134,12 +167,8 @@ const {
                   <div>
                     <span>得失点差</span>
                     <strong>
-                      {team.results.league.goalsFor -
-                        team.results.league.goalsAgainst > 0
-                        ? "+"
-                        : ""}
-                      {team.results.league.goalsFor -
-                        team.results.league.goalsAgainst}
+                      {leagueGoalDifference > 0 ? "+" : ""}
+                      {leagueGoalDifference}
                     </strong>
                   </div>
                 </div>
@@ -171,41 +200,66 @@ const {
       <h2>選手一覧</h2>
 
       <div class="table-wrap">
-        <table>
+        <table class:list={{ "long-birth-column": hasLongBirthColumnLabel }}>
           <thead>
             <tr>
-              <th>背番号</th>
-              <th>選手名</th>
-              <th>ラテン文字表記</th>
-              <th>Pos</th>
-              <th>生年月日</th>
-              <th>身長/体重</th>
-              <th>出身地</th>
-              <th>前所属チーム</th>
+              <th class="number-column">背番号</th>
+              <th class="name-column">選手名</th>
+              <th class="latin-column">ラテン文字表記</th>
+              <th class="position-column">Pos</th>
+              <th class="birth-column">{birthColumnLabel}</th>
+              <th class="size-column">身長/体重</th>
+              <th class="birthplace-column">出身地</th>
+              <th class="previous-column">前所属チーム</th>
             </tr>
           </thead>
 
           <tbody>
-            {players.map((player) => (
-              <tr>
-                <td class="number">{player.number}</td>
+            {players.map((player) => {
+              const playerUrl = getPlayerUrl(player.id);
 
-                <td class="player-name">
-                  {player.playerUrl ? (
-                    <a href={player.playerUrl}>{player.name}</a>
-                  ) : (
-                    player.name
-                  )}
-                </td>
+              return (
+                <tr>
+                  <td class="number number-column">
+                    {player.number}
+                  </td>
 
-                <td>{player.latin}</td>
-                <td class="position">{player.position}</td>
-                <td>{player.birth}</td>
-                <td>{player.size}</td>
-                <td>{player.birthplace}</td>
-                <td>{player.previous}</td>
-              </tr>
-            ))}
+                  <td class="player-name name-column">
+                    {playerUrl ? (
+                      <a href={playerUrl}>{player.name}</a>
+                    ) : (
+                      player.name
+                    )}
+                  </td>
+
+                  <td class="latin-column">
+                    {player.latin}
+                  </td>
+
+                  <td class="position position-column">
+                    {player.position}
+                  </td>
+
+                  <td class="birth-column">
+                    {player.birth}
+                  </td>
+
+                  <td class="size-column">
+                    {player.size}
+                  </td>
+
+                  <td class="birthplace-column">
+                    {player.birthplace}
+                  </td>
+
+                  <td class="previous-column">
+                    <span class="previous-text">
+                      {player.previous}
+                    </span>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
@@ -262,6 +316,105 @@ const {
       </section>
     )}
   </main>
+
+  <script>
+    const fitPreviousTeams = () => {
+      const elements =
+        document.querySelectorAll(".previous-text");
+
+      elements.forEach((element) => {
+        if (!(element instanceof HTMLElement)) return;
+
+        element.classList.remove(
+          "is-two-lines",
+          "is-small",
+          "is-smaller",
+          "is-smallest"
+        );
+
+        /*
+          まず通常サイズ・1段で確認。
+          セル幅に収まっている選手はそのまま。
+        */
+        element.classList.add("is-measuring-one-line");
+
+        const oneLineFits =
+          element.scrollWidth <= element.clientWidth + 1;
+
+        element.classList.remove("is-measuring-one-line");
+
+        if (oneLineFits) {
+          return;
+        }
+
+        /*
+          1段ではみ出した選手だけ2段表示。
+        */
+        element.classList.add("is-two-lines");
+
+        const fitsTwoLines = () => {
+          const style = getComputedStyle(element);
+          const lineHeight = parseFloat(style.lineHeight);
+
+          return (
+            element.scrollHeight <=
+            lineHeight * 2 + 1
+          );
+        };
+
+        /*
+          通常サイズの2段で収まれば終了。
+        */
+        if (fitsTwoLines()) {
+          return;
+        }
+
+        /*
+          2段でも収まらない場合だけ縮小。
+          13px → 12px → 11px。
+        */
+        element.classList.add("is-small");
+
+        if (fitsTwoLines()) {
+          return;
+        }
+
+        element.classList.remove("is-small");
+        element.classList.add("is-smaller");
+
+        if (fitsTwoLines()) {
+          return;
+        }
+
+        element.classList.remove("is-smaller");
+        element.classList.add("is-smallest");
+      });
+    };
+
+    const runPreviousTeamFit = () => {
+      requestAnimationFrame(() => {
+        fitPreviousTeams();
+      });
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener(
+        "DOMContentLoaded",
+        runPreviousTeamFit
+      );
+    } else {
+      runPreviousTeamFit();
+    }
+
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(runPreviousTeamFit);
+    }
+
+    window.addEventListener(
+      "resize",
+      runPreviousTeamFit
+    );
+  </script>
 </body>
 </html>
 
@@ -284,6 +437,21 @@ const {
     padding: 50px 0 80px;
   }
 
+  .top-nav {
+    margin-bottom: 28px;
+    font-size: 11px;
+  }
+
+  .top-nav a {
+    color: inherit;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .top-nav a:hover {
+    text-decoration: underline;
+  }
+
   .league {
     margin-bottom: 7px;
     color: #68716b;
@@ -299,8 +467,22 @@ const {
   }
 
   .season {
-    margin: 7px 0 42px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin: 8px 0 42px;
     color: #68716b;
+  }
+
+  .season-year {
+    color: #202522;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .season-competition {
     font-size: 14px;
   }
 
@@ -438,9 +620,12 @@ const {
     line-height: 1.4;
   }
 
-  /* 選手一覧 */
+  /* =========================
+     選手一覧
+     ========================= */
 
   .table-wrap {
+    width: 100%;
     overflow-x: auto;
     background: white;
     border: 1px solid #cfd5d0;
@@ -472,6 +657,90 @@ const {
     line-height: 1.5;
   }
 
+  /*
+    新日鐵室蘭用。
+
+    ここでは table-layout:fixed を使わない。
+    それを使うと他の列まで再配分されるため。
+
+    生年月日列だけ長い見出しに必要な幅を確保。
+  */
+
+  table.long-birth-column .birth-column {
+    width: 1%;
+    min-width: 245px;
+    white-space: nowrap;
+  }
+
+  /*
+    重要：
+    最後の「前所属チーム」を残り幅の受け皿にする。
+
+    width:auto のままにし、
+    min-widthだけを持たせる。
+
+    これにより表の右側に余った領域も
+    前所属チーム列そのものになる。
+  */
+
+  table.long-birth-column .previous-column {
+    width: auto;
+    min-width: 230px;
+  }
+
+  /*
+    前所属チーム表示ルール
+
+    1. セル幅は従来の幅を維持
+    2. 1段で収まれば1段
+    3. 1段からはみ出した時だけ2段
+    4. 2段でも収まらない時だけ文字を縮小
+    5. 最大2段を維持
+  */
+
+  .previous-column {
+    white-space: normal;
+  }
+
+  .previous-text {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.35;
+    white-space: nowrap;
+  }
+
+  .previous-text.is-measuring-one-line {
+    white-space: nowrap;
+  }
+
+  .previous-text.is-two-lines {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .previous-text.is-small {
+    font-size: 13px;
+  }
+
+  .previous-text.is-smaller {
+    font-size: 12px;
+  }
+
+  .previous-text.is-smallest {
+    font-size: 11px;
+  }
+
+  /*
+    最終列の右罫線を table-wrap の右端まで
+    明確に表示する。
+  */
+
+  table th:last-child,
+  table td:last-child {
+    border-right: 0;
+  }
+
   tbody tr:hover {
     background: #f3f6f3;
   }
@@ -484,6 +753,7 @@ const {
 
   .player-name {
     font-weight: 700;
+    font-size: 15px;
   }
 
   .player-name a {
@@ -574,8 +844,17 @@ const {
       padding-top: 28px;
     }
 
+    .top-nav {
+      margin-bottom: 22px;
+    }
+
     .season {
+      gap: 9px;
       margin-bottom: 30px;
+    }
+
+    .season-year {
+      font-size: 22px;
     }
 
     .info-list,

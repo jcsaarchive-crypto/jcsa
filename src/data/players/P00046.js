@@ -1,0 +1,77 @@
+export const player = {
+  id: "P00046",
+  name: "関根 多喜夫",
+  nameKana: "せきね たきお※",
+  nameEn: "※Takio SEKINE",
+  position: "MF",
+  birth: "1968年度",
+  death: "",
+  birthplace: "",
+  height: "172",
+  weight: "63",
+  education: "大宮東高",
+
+  history: [
+    {
+      season: "1987",
+      division: "JSL２部",
+      jersey: "16",
+      team: "東芝",
+      leagueMatches: "",
+      leagueGoals: "",
+      cupMatches: "",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+    {
+      season: "88/89",
+      division: "JSL２部",
+      jersey: "16",
+      team: "東芝",
+      leagueMatches: 3,
+      leagueGoals: 0,
+      cupMatches: 0,
+      cupGoals: 0,
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+  ],
+
+  totals: [
+    {
+      country: "日本",
+      division: "JSL２部",
+      leagueMatches: "",
+      leagueGoals: "",
+      cupMatches: "",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+  ],
+
+  grandTotal: {
+    leagueMatches: "",
+    leagueGoals: "",
+    cupMatches: "",
+    cupGoals: "",
+    emperorCupMatches: "",
+    emperorCupGoals: "",
+    totalMatches: "",
+    totalGoals: "",
+  },
+
+  otherOfficialMatches: [],
+
+  otherOfficialTotal: {
+    matches: "",
+    goals: "",
+  },
+};
