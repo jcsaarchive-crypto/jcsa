@@ -60,7 +60,7 @@ export const staff = [
   { role: "監督", name: "曾我見 健二" },
   { role: "コーチ", name: "エスピノーザ" },
   { role: "コーチ", name: "牧 弘和" },
-  { role: "コーチ", name: "小池 哲郎" },
+  { role: "コーチ", id: "P00139", name: "小池 哲郎" },
   { role: "コーチ", name: "築舘 範夫" },
   { role: "コーチ", name: "芦川 昌彦" },
   { role: "通訳", name: "アレシャンドレ・バリ" },

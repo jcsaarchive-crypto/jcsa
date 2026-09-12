@@ -320,7 +320,7 @@ export const players = [
     birth: "1966年2月17日",
     size: "177cm/69kg",
     birthplace: "福岡県",
-    previous: "八幡中央高 - 福岡大",
+    previous: "八幡中央高 - 福岡大 - 富士通",
   },
   {
     number: 27,
@@ -389,18 +389,22 @@ export const staff = [
     name: "高橋 武夫",
   },
   {
+    id: "P00053",
     role: "コーチ",
     name: "保坂 不二夫",
   },
   {
+    id: "P00054",
     role: "コーチ",
     name: "柳楽 雅幸",
   },
   {
+    id: "P00039",
     role: "コーチ",
     name: "羽賀 康徳",
   },
   {
+    id: "P00033",
     role: "審判員",
     name: "石井 克己",
   },

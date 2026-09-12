@@ -395,10 +395,12 @@ export const staff = [
   },
   {
     role: "コーチ兼選手",
+    id: "P00139",
     name: "小池哲郎",
   },
   {
     role: "コーチ兼選手",
+    id: "P00019",
     name: "浜口和義",
   },
   {
@@ -427,14 +429,17 @@ export const staff = [
   },
   {
     role: "主将",
+    id: "P00016",
     name: "小椋伸二",
   },
   {
     role: "副将",
+    id: "P00015",
     name: "菅野裕二",
   },
   {
     role: "副将",
+    id: "P00006",
     name: "重綱正彦",
   },
 ];

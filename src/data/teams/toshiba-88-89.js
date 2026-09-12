@@ -96,10 +96,12 @@ export const staff = [
     name: "永島 敏範",
   },
   {
+    id: "P00055",
     role: "コーチ兼選手",
     name: "石崎 信弘",
   },
   {
+    id: "P00054",
     role: "コーチ兼選手",
     name: "柳楽 雅幸",
   },
@@ -128,10 +130,12 @@ export const staff = [
     name: "田端 光男",
   },
   {
+    id: "P00040",
     role: "主将",
     name: "八木 裕二",
   },
   {
+    id: "P00038",
     role: "副主将",
     name: "新井 義一",
   },

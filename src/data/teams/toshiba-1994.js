@@ -139,7 +139,7 @@ export const players = [
     birth: "1966年2月17日",
     size: "177cm/70kg",
     birthplace: "福岡県",
-    previous: "八幡中央高 - 福岡大",
+    previous: "八幡中央高 - 福岡大 - 富士通",
   },
   {
     number: 9,
@@ -247,7 +247,7 @@ export const players = [
     birth: "1969年5月7日",
     size: "171cm/67kg",
     birthplace: "―",
-    previous: "清水東高 - 法政大",
+    previous: "清水東高 - 法政大 - NKK",
   },
   {
     id: "P00089",
@@ -368,6 +368,7 @@ export const staff = [
     name: "増田秀雄",
   },
   {
+    id: "P00043",
     role: "運営委員",
     name: "松元晋",
   },
@@ -376,14 +377,17 @@ export const staff = [
     name: "高橋武夫",
   },
   {
+    id: "P00053",
     role: "コーチ",
     name: "保坂不二夫",
   },
   {
+    id: "P00054",
     role: "コーチ",
     name: "柳楽雅幸",
   },
   {
+    id: "P00033",
     role: "審判員",
     name: "石井克己",
   },

@@ -494,12 +494,22 @@ const getGoalDifference = (result) =>
 
         <div class="staff-box">
           <dl class="staff-list">
-            {staff.map((member) => (
-              <div class="staff-row">
-                <dt>{member.role}</dt>
-                <dd>{member.name}</dd>
-              </div>
-            ))}
+            {staff.map((member) => {
+              const staffUrl = getPlayerUrl(member.id);
+
+              return (
+                <div class="staff-row">
+                  <dt>{member.role}</dt>
+                  <dd>
+                    {staffUrl ? (
+                      <a href={staffUrl}>{member.name}</a>
+                    ) : (
+                      member.name
+                    )}
+                  </dd>
+                </div>
+              );
+            })}
           </dl>
         </div>
       </section>
@@ -728,12 +738,12 @@ const getGoalDifference = (result) =>
   }
 
   .season-navigation-item {
-  display: inline-flex;
-  flex-direction: column;
-  max-width: 100%;
-  color: #2563eb;
-  text-decoration: none;
-}
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: #2563eb;
+    text-decoration: none;
+  }
 
   .season-navigation-next .season-navigation-item {
     align-items: flex-end;
@@ -1152,6 +1162,15 @@ const getGoalDifference = (result) =>
   .staff-row dd {
     background: white;
     font-weight: 400;
+  }
+
+  .staff-row dd a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .staff-row dd a:hover {
+    text-decoration: underline;
   }
 
   /* 出典 */

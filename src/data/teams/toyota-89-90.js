@@ -56,13 +56,13 @@ export const staff = [
   { role: "監督", name: "曾我見 健二" },
   { role: "コーチ", name: "エスピノーザ" },
   { role: "コーチ", name: "牧 弘和" },
-  { role: "コーチ", name: "小池 哲郎" },
+  { role: "コーチ", id: "P00139", name: "小池 哲郎" },
   { role: "コーチ", name: "築館 範男" },
   { role: "副務", name: "原 あゆみ" },
   { role: "ドクター", name: "高松 浩一" },
   { role: "ドクター", name: "土田 博和" },
-  { role: "主将", name: "小椋 伸二" },
-  { role: "副将", name: "重綱 正彦" },
+  { role: "主将", id: "P00016", name: "小椋 伸二" },
+  { role: "副将", id: "P00006", name: "重綱 正彦" },
 ];
 
 export const sources = [

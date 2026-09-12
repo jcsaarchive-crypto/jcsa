@@ -475,7 +475,7 @@ export const staff = [
     role: "コーチ",
     name: "ダニエル・エンリケス(Daniel ENRIQUEZ)",
   },
-  { role: "コーチ", name: "松山博明" },
+  { role: "コーチ", id: "P00105", name: "松山博明" },
   {
     role: "フィジカルコーチ",
     name: "カルロス・ノベリ(Carlos NOVELLI)",

@@ -337,6 +337,7 @@ export const staff = [
     name: "鎌滝好且",
   },
   {
+    id: "P00043",
     role: "運営委員",
     name: "松元晋",
   },
@@ -345,14 +346,17 @@ export const staff = [
     name: "高橋武夫",
   },
   {
+    id: "P00055",
     role: "ヘッドコーチ",
     name: "石崎信弘",
   },
   {
+    id: "P00054",
     role: "コーチ",
     name: "柳楽雅幸",
   },
   {
+    id: "P00033",
     role: "コーチ",
     name: "石井克己",
   },
