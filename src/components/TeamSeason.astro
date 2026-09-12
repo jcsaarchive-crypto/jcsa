@@ -413,6 +413,26 @@ const getGoalDifference = (result) =>
               </div>
             )}
           </div>
+
+          {team.results.konicaCup && (
+            <div class="other-competition-results">
+              <h3>その他の公式大会</h3>
+
+              <div class="other-competition-result">
+                <span>コニカカップ</span>
+
+                {Array.isArray(team.results.konicaCup) ? (
+                  <div class="other-competition-result-lines">
+                    {team.results.konicaCup.map((result) => (
+                      <strong>{result}</strong>
+                    ))}
+                  </div>
+                ) : (
+                  <strong>{team.results.konicaCup}</strong>
+                )}
+              </div>
+            </div>
+          )}
         </div>
       </section>
     )}
@@ -975,6 +995,35 @@ const getGoalDifference = (result) =>
   .cup-results strong {
     font-size: 14px;
     line-height: 1.4;
+  }
+
+  .other-competition-results {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #e0e4e1;
+  }
+
+  .other-competition-results h3 {
+    margin-bottom: 14px;
+  }
+
+  .other-competition-result span {
+    display: block;
+    margin-bottom: 4px;
+    color: #68716b;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .other-competition-result strong {
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .other-competition-result-lines {
+    display: grid;
+    gap: 3px;
   }
 
   /* =========================

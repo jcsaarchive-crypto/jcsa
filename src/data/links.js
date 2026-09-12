@@ -140,6 +140,12 @@ export const playerPages = {
   P00139: "/players/koike-tetsuro",
   P00140: "/players/taguchi-ryoji",
   P00141: "/players/ezaki-isao",
+  P00142: "/players/egawa-shigemitsu",
+  P00143: "/players/yasuhara-nariyasu",
+  P00144: "/players/yonekura-makoto",
+  P00145: "/players/yoshiyama-osamu",
+  P00146: "/players/mori-naoki1",
+  P00147: "/players/minematsu-tomomichi",
 };
 
 export const teamSeasonPages = {
@@ -157,6 +163,7 @@ export const teamSeasonPages = {
   "コンサドーレ札幌|1997": "/teams/consadole-sapporo-1997",
   "トヨタ自動車|89/90": "/teams/toyota-89-90",
   "トヨタ自動車|88/89": "/teams/toyota-88-89",
+  "トヨタ自動車|91/92": "/teams/toyota-91-92",
 };
 
 export const getPlayerUrl = (playerId) => {
