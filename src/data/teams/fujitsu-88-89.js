@@ -342,35 +342,35 @@ export const players = [
 export const staff = [
   {
     role: "評議員/部長",
-    name: "水木徹",
+    name: "水木　徹",
   },
   {
     role: "コーチ/審判員",
-    name: "来海章",
+    name: "来海　章",
   },
   {
     role: "コーチ",
-    name: "谷井正",
+    name: "谷井　正",
   },
   {
     role: "ドクター",
-    name: "高沢晴夫",
+    name: "高沢 晴夫",
   },
   {
     role: "ドクター",
-    name: "深谷茂",
+    name: "深谷　茂",
   },
   {
     role: "ドクター",
-    name: "高尾良英",
+    name: "高尾 良英",
   },
   {
     role: "主務",
-    name: "岩間徹",
+    name: "岩間　徹",
   },
   {
     role: "主将",
-    name: "城福浩",
+    name: "城福　浩",
   },
 ];
 

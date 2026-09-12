@@ -93,7 +93,7 @@ export const staff = [
   },
   {
     role: "コーチ",
-    name: "牧 弘和",
+    name: "牧　弘和",
   },
   {
     id: "P00139",

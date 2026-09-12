@@ -374,7 +374,7 @@ export const staff = [
   },
   {
     role: "副部長",
-    name: "清水 曙",
+    name: "清水　曙",
   },
   {
     role: "実行委員/副部長",
@@ -426,7 +426,7 @@ export const staff = [
   },
   {
     role: "通訳",
-    name: "フランシス（FRANCIS）",
+    name: "フランシス(FRANCIS)",
   },
 ];
 

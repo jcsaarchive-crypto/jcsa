@@ -363,84 +363,84 @@ export const players = [
 export const staff = [
   {
     role: "顧問",
-    name: "大橋正昭",
+    name: "大橋 正昭",
   },
   {
     role: "顧問",
-    name: "加藤伸一",
+    name: "加藤 伸一",
   },
   {
     role: "評議員",
-    name: "尾池正一",
+    name: "尾池 正一",
   },
   {
     role: "部長",
-    name: "清水信吾",
+    name: "清水 信吾",
   },
   {
     role: "監督",
-    name: "曾我見健二",
+    name: "曾我見 健二",
   },
   {
     role: "コーチ",
-    name: "牧弘和",
+    name: "牧　弘和",
   },
   {
     role: "コーチ",
-    name: "築館範男",
+    name: "築館 範男",
   },
   {
     role: "コーチ",
-    name: "小沢志郎",
+    name: "小沢 志郎",
   },
   {
     role: "コーチ兼選手",
     id: "P00139",
-    name: "小池哲郎",
+    name: "小池 哲郎",
   },
   {
     role: "コーチ兼選手",
     id: "P00019",
-    name: "浜口和義",
+    name: "浜口 和義",
   },
   {
     role: "運営",
-    name: "森岡義明",
+    name: "森岡 義明",
   },
   {
     role: "主務",
-    name: "原あゆみ",
+    name: "原 あゆみ",
   },
   {
     role: "ドクター",
-    name: "高松浩一",
+    name: "高松 浩一",
   },
   {
     role: "ドクター",
-    name: "土田博和",
+    name: "土田 博和",
   },
   {
     role: "渉外",
-    name: "西垣成美",
+    name: "西垣 成美",
   },
   {
     role: "渉外",
-    name: "小川幸司",
+    name: "小川 幸司",
   },
   {
     role: "主将",
     id: "P00016",
-    name: "小椋伸二",
+    name: "小椋 伸二",
   },
   {
     role: "副将",
     id: "P00015",
-    name: "菅野裕二",
+    name: "菅野 裕二",
   },
   {
     role: "副将",
     id: "P00006",
-    name: "重綱正彦",
+    name: "重綱 正彦",
   },
 ];
 

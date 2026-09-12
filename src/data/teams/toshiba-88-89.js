@@ -77,7 +77,7 @@ export const staff = [
   },
   {
     role: "副運営委員",
-    name: "安井 真",
+    name: "安井　真",
   },
   {
     role: "副部長",
@@ -85,7 +85,7 @@ export const staff = [
   },
   {
     role: "副部長",
-    name: "清水 曙",
+    name: "清水　曙",
   },
   {
     role: "監督",

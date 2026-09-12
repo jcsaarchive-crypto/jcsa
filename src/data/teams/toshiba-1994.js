@@ -353,63 +353,63 @@ export const players = [
 export const staff = [
   {
     role: "評議員",
-    name: "門野欽一",
+    name: "門野 欽一",
   },
   {
     role: "部長",
-    name: "吉村保男",
+    name: "吉村 保男",
   },
   {
     role: "副部長",
-    name: "清水曙",
+    name: "清水　曙",
   },
   {
     role: "実行委員/副部長",
-    name: "増田秀雄",
+    name: "増田 秀雄",
   },
   {
     id: "P00043",
     role: "運営委員",
-    name: "松元晋",
+    name: "松元　晋",
   },
   {
     role: "監督",
-    name: "高橋武夫",
+    name: "高橋 武夫",
   },
   {
     id: "P00053",
     role: "コーチ",
-    name: "保坂不二夫",
+    name: "保坂 不二夫",
   },
   {
     id: "P00054",
     role: "コーチ",
-    name: "柳楽雅幸",
+    name: "柳楽 雅幸",
   },
   {
     id: "P00033",
     role: "審判員",
-    name: "石井克己",
+    name: "石井 克己",
   },
   {
     role: "ドクター",
-    name: "土谷一晃",
+    name: "土谷 一晃",
   },
   {
     role: "ドクター",
-    name: "仁賀定雄",
+    name: "仁賀 定雄",
   },
   {
     role: "ドクター",
-    name: "北原正夫",
+    name: "北原 正夫",
   },
   {
     role: "トレーナー",
-    name: "堀尾邦彦",
+    name: "堀尾 邦彦",
   },
   {
     role: "通訳",
-    name: "フランシス（FRANCIS）",
+    name: "フランシス(FRANCIS)",
   },
 ];
 

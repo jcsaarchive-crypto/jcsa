@@ -383,7 +383,7 @@ export const staff = [
   },
   {
     role: "副部長",
-    name: "清水 曙",
+    name: "清水　曙",
   },
   {
     role: "副部長/実行委員",
@@ -415,7 +415,7 @@ export const staff = [
   {
     id: "P00043",
     role: "運営委員",
-    name: "松元 晋",
+    name: "松元　晋",
   },
   {
     role: "ドクター",
