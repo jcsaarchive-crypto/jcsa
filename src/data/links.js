@@ -146,6 +146,13 @@ export const playerPages = {
   P00145: "/players/yoshiyama-osamu",
   P00146: "/players/mori-naoki1",
   P00147: "/players/minematsu-tomomichi",
+  P00148: "/players/yamashita-hirohisa",
+  P00149: "/players/sasaki-naofumi",
+  P00150: "/players/tanaka-hisao",
+  P00151: "/players/toyama-tetsuji",
+  P00152: "/players/matsuda-takeo",
+  P00153: "/players/okimune-toshihiko",
+  P00154: "/players/jofuku-hiroshi",
 };
 
 export const teamSeasonPages = {
@@ -164,6 +171,7 @@ export const teamSeasonPages = {
   "トヨタ自動車|89/90": "/teams/toyota-89-90",
   "トヨタ自動車|88/89": "/teams/toyota-88-89",
   "トヨタ自動車|91/92": "/teams/toyota-91-92",
+  "富士通|88/89": "/teams/fujitsu-88-89",
 };
 
 export const getPlayerUrl = (playerId) => {

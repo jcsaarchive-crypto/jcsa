@@ -1,6 +1,6 @@
 export const player = {
   id: "P00108",
-  name: "渡邉 晋",
+  name: "渡邉　晋",
   nameKana: "わたなべ すすむ",
   nameEn: "Susumu WATANABE",
   position: "DF/MF",
