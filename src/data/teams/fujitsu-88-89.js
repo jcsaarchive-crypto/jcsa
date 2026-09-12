@@ -332,6 +332,7 @@ export const players = [
     previous: "遠野高",
   },
   {
+    id: "P00169",
     number: 27,
     name: "戸沢 一也",
     latin: "Kazuya TOZAWA",
@@ -342,6 +343,7 @@ export const players = [
     previous: "秋田経法大附高",
   },
   {
+    id: "P00170",
     number: 28,
     name: "河野 高伺",
     latin: "Takashi KONO",

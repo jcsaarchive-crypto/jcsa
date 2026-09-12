@@ -167,6 +167,8 @@ export const playerPages = {
   P00166: "/players/saito-masaru",
   P00167: "/players/uehata-masahiro",
   P00168: "/players/iwabuchi-hiromoto",
+  P00169: "/players/tozawa-kazuya",
+  P00170: "/players/kono-takashi",
 
 };
 
