@@ -1,6 +1,6 @@
 export const player = {
   id: "P00042",
-  name: "白 榮玉",
+  name: "白　榮玉",
   nameKana: "はく えいぎょく",
   nameEn: "Eigyoku HAKU",
   position: "FW",

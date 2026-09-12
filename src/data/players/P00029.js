@@ -1,6 +1,6 @@
 export const player = {
   id: "P00029",
-  name: "近 彰彦",
+  name: "近　彰彦",
   nameKana: "こん あきひこ",
   nameEn: "Akihiko KON",
   position: "DF/FW",

@@ -1,7 +1,7 @@
 export const player = {
   id: "P00119",
-  name: "田渕 （花垣） 龍二",
-  nameKana: "たぶち （はながき） りゅうじ",
+  name: "田渕 (花垣) 龍二",
+  nameKana: "たぶち (はながき) りゅうじ",
   nameEn: "Ryuji (HANAGAKI) TABUCHI",
   position: "DF",
   birth: "1973年2月16日",

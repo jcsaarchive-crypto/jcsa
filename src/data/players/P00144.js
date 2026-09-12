@@ -1,7 +1,7 @@
 export const player = {
   id: "P00144",
 
-  name: "米倉 誠",
+  name: "米倉　誠",
 
   nameKana: "よねくら まこと",
 

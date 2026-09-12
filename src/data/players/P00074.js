@@ -1,7 +1,7 @@
 export const player = {
   id: "P00074",
 
-  name: "木島 敦",
+  name: "木島　敦",
   nameKana: "きじま あつし",
   nameEn: "Atsushi KIJIMA",
 

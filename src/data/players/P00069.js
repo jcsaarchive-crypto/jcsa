@@ -1,7 +1,7 @@
 export const player = {
   id: "P00069",
 
-  name: "油 弘幸",
+  name: "油　弘幸",
   nameKana: "あぶら ひろゆき",
   nameEn: "Hiroyuki ABURA",
 

@@ -1,6 +1,6 @@
 export const player = {
   id: "P00118",
-  name: "ハーフナー・ディド（ディド、ディド・ハーフナー、ディルク・ハーフナー）",
+  name: "ハーフナー・ディド (ディド ディド・ハーフナー ディルク・ハーフナー)",
   nameKana: "はーふなー でぃど",
   nameEn: "Dido HAVENAAR",
   position: "GK",

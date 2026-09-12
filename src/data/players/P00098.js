@@ -1,7 +1,7 @@
 export const player = {
   id: "P00098",
 
-  name: "平川 弘",
+  name: "平川　弘",
   nameKana: "ひらかわ ひろし",
   nameEn: "Hiroshi HIRAKAWA",
 

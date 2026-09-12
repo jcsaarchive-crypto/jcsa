@@ -1,8 +1,8 @@
 export const player = {
   id: "P00002",
 
-  name: "大橋 （菅藤） 昭好",
-  nameKana: "おおはし（かんとう）あきよし",
+  name: "大橋 (菅藤) 昭好",
+  nameKana: "おおはし (かんとう) あきよし",
   nameEn: "Akiyoshi (KANTO) OHASHI",
 
   position: "GK",

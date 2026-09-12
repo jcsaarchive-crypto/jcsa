@@ -69,7 +69,7 @@ export const team = {
     }, 
     { 
       number: "3", 
-      name: "東坂 健", 
+      name: "東坂　健", 
       latin: "―", 
       position: "DF", 
       birth: "18歳", 
@@ -89,7 +89,7 @@ export const team = {
     }, 
     { 
       number: "5", 
-      name: "板林 勉", 
+      name: "板林　勉", 
       latin: "―", 
       position: "MF", 
       birth: "21歳", 
@@ -119,7 +119,7 @@ export const team = {
     }, 
     { 
       number: "8", 
-      name: "桜庭 清", 
+      name: "桜庭　清", 
       latin: "―", 
       position: "FW", 
       birth: "20歳", 
@@ -159,7 +159,7 @@ export const team = {
     }, 
     { 
       number: "12", 
-      name: "熊谷 勉", 
+      name: "熊谷　勉", 
       latin: "―", 
       position: "FW", 
       birth: "38歳", 
@@ -169,7 +169,7 @@ export const team = {
     }, 
     { 
       number: "13", 
-      name: "伊藤 公", 
+      name: "伊藤　公", 
       latin: "―", 
       position: "DF", 
       birth: "36歳", 
@@ -210,7 +210,7 @@ export const team = {
     }, 
     { 
       number: "17", 
-      name: "斉藤 保", 
+      name: "斉藤　保", 
       latin: "―", 
       position: "DF", 
       birth: "20歳", 

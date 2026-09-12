@@ -219,7 +219,7 @@ export const players = [
   {
     number: "16",
     id: "P00014",
-    name: "東 泰",
+    name: "東　　泰",
     latin: "Yutaka AZUMA",
     position: "MF",
     birth: "1967年9月21日",
@@ -295,7 +295,7 @@ export const players = [
   {
     number: "23",
     id: "P00020",
-    name: "森 浩作",
+    name: "森　浩作",
     latin: "Kosaku MORI",
     position: "FW",
     birth: "1966年7月1日",
@@ -306,7 +306,7 @@ export const players = [
   {
     id: "P00141",
     number: "24",
-    name: "江崎 功",
+    name: "江崎　功",
     latin: "Isao EZAKI",
     position: "DF",
     birth: "1964年10月6日",

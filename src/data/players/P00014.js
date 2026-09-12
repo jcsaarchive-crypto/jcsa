@@ -1,6 +1,6 @@
 export const player = {
   id: "P00014",
-  name: "東 泰",
+  name: "東　　泰",
   nameKana: "あずま ゆたか",
   nameEn: "Yutaka AZUMA",
   position: "MF",

@@ -1,6 +1,6 @@
 export const player = {
   id: "P00110",
-  name: "沖田 淳",
+  name: "沖田　淳",
   nameKana: "おきた すなお",
   nameEn: "Sunao OKITA",
   position: "MF",

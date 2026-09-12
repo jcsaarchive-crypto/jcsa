@@ -1,6 +1,6 @@
 export const player = {
   id: "P00041",
-  name: "向島 建",
+  name: "向島　建",
   nameKana: "むこうじま たつる",
   nameEn: "Tatsuru MUKOJIMA",
   position: "FW",

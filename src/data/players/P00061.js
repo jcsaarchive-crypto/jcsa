@@ -1,7 +1,7 @@
 export const player = {
   id: "P00061",
 
-  name: "堀 孝史",
+  name: "堀　孝史",
   nameKana: "ほり たかふみ",
   nameEn: "Takafumi HORI",
 

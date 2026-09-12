@@ -1,6 +1,6 @@
 export const player = {
   id: "P00120",
-  name: "古川 毅",
+  name: "古川　毅",
   nameKana: "ふるかわ つよし",
   nameEn: "Tsuyoshi FURUKAWA",
   position: "DF",

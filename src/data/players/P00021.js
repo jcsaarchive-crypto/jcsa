@@ -1,6 +1,6 @@
 export const player = {
   id: "P00021",
-  name: "中村 聖（樹佳）",
+  name: "中村　聖 (樹佳)",
   nameKana: "なかむら きよし",
   nameEn: "Kiyoshi NAKAMURA",
   position: "DF",

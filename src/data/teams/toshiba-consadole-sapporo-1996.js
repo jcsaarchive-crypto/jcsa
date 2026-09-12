@@ -86,7 +86,7 @@ export const players = [
   {
     id: "P00098",
     number: 2,
-    name: "平川 弘",
+    name: "平川　弘",
     latin: "Hiroshi HIRAKAWA",
     position: "DF",
     birth: "1965年1月10日",
@@ -157,7 +157,7 @@ export const players = [
   {
     id: "P00081",
     number: 8,
-    name: "加藤 剛",
+    name: "加藤　剛",
     latin: "Tsuyoshi KATO",
     position: "FW",
     birth: "1970年7月16日",
@@ -320,7 +320,7 @@ export const players = [
   {
     id: "P00069",
     number: 21,
-    name: "油 弘幸",
+    name: "油　弘幸",
     latin: "Hiroyuki ABURA",
     position: "DF",
     birth: "1968年5月11日",
@@ -343,7 +343,7 @@ export const players = [
   {
     id: "P00074",
     number: 23,
-    name: "木島 敦",
+    name: "木島　敦",
     latin: "Atsushi KIJIMA",
     position: "FW",
     birth: "1969年9月6日",
@@ -431,7 +431,7 @@ export const players = [
   {
     id: "P00052",
     number: 32,
-    name: "菊池 勲",
+    name: "菊池　勲",
     latin: "Isao KIKUCHI",
     position: "DF",
     birth: "1968年8月28日",
@@ -442,7 +442,7 @@ export const players = [
   {
     id: "P00108",
     number: 33,
-    name: "渡邉 晋",
+    name: "渡邉　晋",
     latin: "Susumu WATANABE",
     position: "DF",
     birth: "1973年10月10日",
@@ -464,7 +464,7 @@ export const players = [
   {
     id: "P00110",
     number: 35,
-    name: "沖田 淳",
+    name: "沖田　淳",
     latin: "Sunao OKITA",
     position: "MF",
     birth: "1973年8月30日",
@@ -508,7 +508,7 @@ export const players = [
   {
     id: "P00114",
     number: 39,
-    name: "吉成 大",
+    name: "吉成　大",
     latin: "Dai YOSHINARI",
     position: "MF",
     birth: "1977年9月18日",
@@ -542,7 +542,7 @@ export const players = [
   {
     id: "P00072",
     number: 43,
-    name: "白井 淳",
+    name: "白井　淳",
     latin: "Atsushi SHIRAI",
     position: "GK",
     birth: "1966年4月18日",
@@ -553,7 +553,7 @@ export const players = [
   {
     id: "P00117",
     number: 45,
-    name: "金 錘成",
+    name: "金　錘成",
     latin: "KIM Jong Song",
     position: "FW",
     birth: "1964年4月23日",

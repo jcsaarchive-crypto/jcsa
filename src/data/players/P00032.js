@@ -1,7 +1,7 @@
 export const player = {
   id: "P00032",
 
-  name: "吉村 聡",
+  name: "吉村　聡",
   nameKana: "よしむら さとし",
   nameEn: "Satoshi YOSHIMURA",
 

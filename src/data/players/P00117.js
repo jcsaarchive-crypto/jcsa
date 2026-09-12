@@ -1,6 +1,6 @@
 export const player = {
   id: "P00117",
-  name: "金 錘成",
+  name: "金　錘成",
   nameKana: "きむ じょんそん",
   nameEn: "KIM Jong Song",
   position: "FW",

@@ -1,7 +1,7 @@
 export const player = {
   id: "P00070",
 
-  name: "鈴木 政紀（将方）",
+  name: "鈴木 政紀 (将方)",
   nameKana: "すずき まさのり",
   nameEn: "Masanori SUZUKI",
 

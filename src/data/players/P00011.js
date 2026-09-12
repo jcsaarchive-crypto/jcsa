@@ -1,7 +1,7 @@
 export const player = {
   id: "P00011",
 
-  name: "柴田 圭志 （圭司）",
+  name: "柴田 圭志 (圭司)",
   nameKana: "しばた けいじ",
   nameEn: "Keiji SHIBATA",
 

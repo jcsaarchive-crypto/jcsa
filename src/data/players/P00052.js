@@ -1,6 +1,6 @@
 export const player = {
   id: "P00052",
-  name: "菊池 勲",
+  name: "菊池　勲",
   nameKana: "きくち いさお",
   nameEn: "Isao KIKUCHI",
   position: "DF/MF/FW",

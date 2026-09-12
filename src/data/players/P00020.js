@@ -1,6 +1,6 @@
 export const player = {
   id: "P00020",
-  name: "森 浩作",
+  name: "森　浩作",
   nameKana: "もり こうさく",
   nameEn: "Kosaku MORI",
   position: "FW",

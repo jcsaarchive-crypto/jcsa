@@ -1,6 +1,6 @@
 export const player = {
   id: "P00024",
-  name: "福元 誠",
+  name: "福元　誠",
   nameKana: "ふくもと まこと",
   nameEn: "Makoto FUKUMOTO",
   position: "DF",

@@ -280,7 +280,7 @@ export const players = [
   {
     id: "P00014",
     number: "16",
-    name: "東 泰",
+    name: "東　　泰",
     latin: "Yutaka AZUMA",
     position: "MF",
     birth: "1967年9月21日",
@@ -363,7 +363,7 @@ export const players = [
   {
     id: "P00020",
     number: "23",
-    name: "森 浩作",
+    name: "森　浩作",
     latin: "Kosaku MORI",
     position: "FW",
     birth: "1966年7月1日",
@@ -375,7 +375,7 @@ export const players = [
   {
     id: "P00021",
     number: "25",
-    name: "中村 聖",
+    name: "中村　聖",
     latin: "Kiyoshi NAKAMURA",
     position: "DF",
     birth: "1971年5月20日",
@@ -412,7 +412,7 @@ export const players = [
   {
     id: "P00024",
     number: "29",
-    name: "福元 誠",
+    name: "福元　誠",
     latin: "Makoto FUKUMOTO",
     position: "DF",
     birth: "1972年10月4日",
@@ -484,7 +484,7 @@ export const players = [
   {
     id: "P00029",
     number: "35",
-    name: "近 彰彦",
+    name: "近　彰彦",
     latin: "Akihiko KON",
     position: "FW",
     birth: "1968年9月26日",

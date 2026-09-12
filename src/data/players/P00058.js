@@ -1,6 +1,6 @@
 export const player = {
   id: "P00058",
-  name: "菊池 淳",
+  name: "菊池　淳",
   nameKana: "きくち じゅん",
   nameEn: "Jun KIKUCHI",
   position: "DF",

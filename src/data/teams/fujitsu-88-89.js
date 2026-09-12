@@ -83,7 +83,7 @@ export const players = [
   },
   {
     number: 3,
-    name: "呂 洪祥",
+    name: "呂　洪祥",
     latin: "LU HONGXIANG",
     position: "DF",
     birth: "1960年3月21日",
@@ -138,7 +138,7 @@ export const players = [
   {
     id: "P00154",
     number: 8,
-    name: "城福 浩",
+    name: "城福　浩",
     latin: "Hiroshi JOFUKU",
     position: "DF",
     birth: "1961年3月21日",
@@ -148,7 +148,7 @@ export const players = [
   },
   {
     number: 9,
-    name: "徐 樹剛",
+    name: "徐　樹剛",
     latin: "※JO Jugo",
     position: "MF",
     birth: "1958年10月29日",
@@ -158,7 +158,7 @@ export const players = [
   },
   {
     number: 10,
-    name: "大木 武",
+    name: "大木　武",
     latin: "Takeshi OKI",
     position: "FW",
     birth: "1961年7月16日",
@@ -198,7 +198,7 @@ export const players = [
   },
   {
     number: 14,
-    name: "沈 祥福",
+    name: "沈　祥福",
     latin: "SHEIN XIANGFU",
     position: "MF",
     birth: "1957年5月27日",
@@ -248,7 +248,7 @@ export const players = [
   },
   {
     number: 19,
-    name: "柴崎 仁",
+    name: "柴崎　仁",
     latin: "Hitoshi SHIBAZAKI",
     position: "FW",
     birth: "1969年7月11日",
@@ -289,7 +289,7 @@ export const players = [
   },
   {
     number: 23,
-    name: "齋藤 勝",
+    name: "齋藤　勝",
     latin: "Masaru SAITO",
     position: "DF",
     birth: "1962年9月1日",

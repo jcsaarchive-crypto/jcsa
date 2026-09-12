@@ -99,7 +99,7 @@ export const players = [
   {
     id: "P00120",
     number: "4",
-    name: "古川 毅",
+    name: "古川　毅",
     latin: "Tsuyoshi FURUKAWA",
     position: "DF",
     birth: "1972年9月21日",
@@ -229,7 +229,7 @@ export const players = [
   {
     id: "P00122",
     number: "14",
-    name: "渡辺 卓",
+    name: "渡辺　卓",
     latin: "Taku WATANABE",
     position: "DF",
     birth: "1971年11月9日",
@@ -307,7 +307,7 @@ export const players = [
   {
     id: "P00114",
     number: "20",
-    name: "吉成 大",
+    name: "吉成　大",
     latin: "Dai YOSHINARI",
     position: "MF",
     birth: "1977年9月18日",
@@ -437,7 +437,7 @@ export const players = [
   {
     id: "P00133",
     number: "30",
-    name: "森 敦彦",
+    name: "森　敦彦",
     latin: "Atsuhiko MORI",
     position: "GK",
     birth: "1972年5月31日",

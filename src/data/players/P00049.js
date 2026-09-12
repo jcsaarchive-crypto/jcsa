@@ -1,6 +1,6 @@
 export const player = {
   id: "P00049",
-  name: "大松 暢",
+  name: "大松　暢",
   nameKana: "おおまつ とおる",
   nameEn: "Toru OMATSU",
   position: "DF/FW",

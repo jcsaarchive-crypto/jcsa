@@ -1,6 +1,6 @@
 export const player = {
   id: "P00114",
-  name: "吉成　大（ダビド・ソリア）",
+  name: "吉成　大 (ダビド・ソリア)",
   nameKana: "よしなり だい",
   nameEn: "Dai YOSHINARI (David Soria Yoshinari)",
   position: "MF",

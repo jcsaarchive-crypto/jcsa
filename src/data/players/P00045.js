@@ -1,6 +1,6 @@
 export const player = {
   id: "P00045",
-  name: "柴崎 薫",
+  name: "柴崎　薫",
   nameKana: "しばさき かおる",
   nameEn: "Kaoru SHIBASAKI",
   position: "FW/MF",

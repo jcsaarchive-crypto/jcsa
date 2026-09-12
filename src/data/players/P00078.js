@@ -1,7 +1,7 @@
 export const player = {
   id: "P00078",
 
-  name: "金 相煥",
+  name: "金　相煥",
   nameKana: "きむ さんふぁん",
   nameEn: "KIM Sang Hwan",
 

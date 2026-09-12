@@ -1,7 +1,7 @@
 export const player = {
   id: "P00105",
 
-  name: "松山 博明（広淳）",
+  name: "松山 博明 (広淳)",
   nameKana: "まつやま ひろあき",
   nameEn: "Hiroaki MATSUYAMA",
 
