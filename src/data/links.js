@@ -153,6 +153,21 @@ export const playerPages = {
   P00152: "/players/matsuda-takeo",
   P00153: "/players/okimune-toshihiko",
   P00154: "/players/jofuku-hiroshi",
+  P00156: "/players/abe-kazuo1",
+  P00155: "/players/oki-takeshi",
+  P00157: "/players/soda-shoji",
+  P00158: "/players/oba-kenya",
+  P00159: "/players/kaneda-ryusuke",
+  P00160: "/players/yagihashi-satoshi",
+  P00161: "/players/otsuka-tatsuo",
+  P00162: "/players/handa-kazuo",
+  P00163: "/players/shibazaki-hitoshi",
+  P00164: "/players/toyoshima-toshifumi",
+  P00165: "/players/onozawa-noriyuki",
+  P00166: "/players/saito-masaru",
+  P00167: "/players/uehata-masahiro",
+  P00168: "/players/iwabuchi-hiromoto",
+
 };
 
 export const teamSeasonPages = {

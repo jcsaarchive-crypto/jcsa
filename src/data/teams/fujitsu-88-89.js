@@ -157,6 +157,7 @@ export const players = [
     previous: "天津体育大",
   },
   {
+    id: "P00155",
     number: 10,
     name: "大木　武",
     latin: "Takeshi OKI",
@@ -167,6 +168,7 @@ export const players = [
     previous: "清水東高-東京農業大",
   },
   {
+    id: "P00156",
     number: 11,
     name: "安部 一雄",
     latin: "Kazuo ABE",
@@ -177,6 +179,7 @@ export const players = [
     previous: "帝京高",
   },
   {
+    id: "P00157",
     number: 12,
     name: "早田 正司",
     latin: "Shoji SODA",
@@ -187,6 +190,7 @@ export const players = [
     previous: "佐賀商高",
   },
   {
+    id: "P00158",
     number: 13,
     name: "大場 健哉",
     latin: "Kenya OBA",
@@ -207,6 +211,7 @@ export const players = [
     previous: "北京足球倶楽部(中国)",
   },
   {
+    id: "P00159",
     number: 15,
     name: "金田 龍輔",
     latin: "Ryusuke KANEDA",
@@ -217,6 +222,7 @@ export const players = [
     previous: "北陽高-大阪体育大",
   },
   {
+    id: "P00160",
     number: 16,
     name: "八木橋 智",
     latin: "Satoshi YAGIHASHI",
@@ -227,6 +233,7 @@ export const players = [
     previous: "秋田経法大附高",
   },
   {
+    id: "P00161",
     number: 17,
     name: "大塚 達夫",
     latin: "Tatsuo OTSUKA",
@@ -237,6 +244,7 @@ export const players = [
     previous: "前橋高-筑波大",
   },
   {
+    id: "P00162",
     number: 18,
     name: "半田 一夫",
     latin: "Kazuo HANDA",
@@ -247,6 +255,7 @@ export const players = [
     previous: "宇都宮東高-早稲田大",
   },
   {
+    id: "P00163",
     number: 19,
     name: "柴崎　仁",
     latin: "Hitoshi SHIBAZAKI",
@@ -257,6 +266,7 @@ export const players = [
     previous: "三本木高",
   },
   {
+    id: "P00164",
     number: 20,
     name: "豊島 寿文",
     latin: "Toshifumi TOYOSHIMA",
@@ -267,8 +277,9 @@ export const players = [
     previous: "清水商高",
   },
   {
+    id: "P00165",
     number: 21,
-    name: "小野澤 教至",
+    name: "小野沢 教至",
     latin: "Noriyuki ONOZAWA",
     position: "GK",
     birth: "1964年9月24日",
@@ -288,8 +299,9 @@ export const players = [
     previous: "八幡中央高-福岡大",
   },
   {
+    id: "P00166",
     number: 23,
-    name: "齋藤　勝",
+    name: "斉藤　勝",
     latin: "Masaru SAITO",
     position: "DF",
     birth: "1962年9月1日",
@@ -298,6 +310,7 @@ export const players = [
     previous: "郡山商高-東海大",
   },
   {
+    id: "P00167",
     number: 24,
     name: "上畑 政博",
     latin: "Masahiro UEHATA",
@@ -308,6 +321,7 @@ export const players = [
     previous: "駒大高-駒澤大",
   },
   {
+    id: "P00168",
     number: 25,
     name: "岩渕 弘幹",
     latin: "Hiromoto IWABUCHI",
