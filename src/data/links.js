@@ -175,6 +175,12 @@ export const playerPages = {
   P00174: "/players/kadowaki-tango",
   P00175: "/players/asano-hiroshi",
   P00176: "/players/kishimoto-kosuke",
+  P00177: "/players/kojima-mitsuaki",
+  P00178: "/players/takahata-tsutomu",
+  P00179: "/players/ukishima-bin",
+  P00180: "/players/ogata-tetsu",
+  P00181: "/players/danbara-wataru",
+  P00182: "/players/ito-katsutoshi",
 
 };
 
@@ -197,6 +203,7 @@ export const teamSeasonPages = {
   "富士通|88/89": "/teams/fujitsu-88-89",
   "富士通|89/90": "/teams/fujitsu-89-90",
   "富士通|90/91": "/teams/fujitsu-90-91",
+  "富士通|91/92": "/teams/fujitsu-91-92",
 
 };
 
