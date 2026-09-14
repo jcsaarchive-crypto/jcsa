@@ -181,6 +181,12 @@ export const playerPages = {
   P00180: "/players/ogata-tetsu",
   P00181: "/players/danbara-wataru",
   P00182: "/players/ito-katsutoshi",
+  P00183: "/players/ogishima-hiroyuki",
+  P00184: "/players/endo-yasunari",
+  P00185: "/players/abe-kazuo2",
+  P00186: "/players/endo-masaki",
+  P00187: "/players/bajo-masayuki",
+  P00188: "/players/shimizu-tomoya",
 
 };
 
@@ -204,6 +210,7 @@ export const teamSeasonPages = {
   "富士通|89/90": "/teams/fujitsu-89-90",
   "富士通|90/91": "/teams/fujitsu-90-91",
   "富士通|91/92": "/teams/fujitsu-91-92",
+  "富士通|1992": "/teams/fujitsu-1992",
 
 };
 

@@ -10,7 +10,7 @@ export const team = {
   location: "神奈川県川崎市中原区上小田中1015",
 
   founding: {
-    year: 1960,
+    year: 1955,
     note: "",
   },
 
@@ -19,7 +19,10 @@ export const team = {
   ],
 
   seasonNavigation: {
-  previous: null,
+  previous: {
+      label: "1987 富士通",
+      url: "",
+  },
   next: {
     label: "89/90 富士通",
     url: "/teams/fujitsu-89-90",

@@ -10,7 +10,7 @@ export const team = {
   location: "神奈川県川崎市中原区上小田中1015",
 
   founding: {
-    year: 1960,
+    year: 1955,
     note: "",
   },
 
