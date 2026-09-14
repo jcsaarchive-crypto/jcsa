@@ -169,6 +169,12 @@ export const playerPages = {
   P00168: "/players/iwabuchi-hiromoto",
   P00169: "/players/tozawa-kazuya",
   P00170: "/players/kono-takashi",
+  P00171: "/players/yahagi-norifumi",
+  P00172: "/players/ozeki-yoshiyuki",
+  P00173: "/players/ikeda-tadamasa",
+  P00174: "/players/kadowaki-tango",
+  P00175: "/players/asano-hiroshi",
+  P00176: "/players/kishimoto-kosuke",
 
 };
 
@@ -189,6 +195,9 @@ export const teamSeasonPages = {
   "トヨタ自動車|88/89": "/teams/toyota-88-89",
   "トヨタ自動車|91/92": "/teams/toyota-91-92",
   "富士通|88/89": "/teams/fujitsu-88-89",
+  "富士通|89/90": "/teams/fujitsu-89-90",
+  "富士通|90/91": "/teams/fujitsu-90-91",
+
 };
 
 export const getPlayerUrl = (playerId) => {
