@@ -219,6 +219,7 @@ export const playerPages = {
   P00218: "/players/kuno-tomoaki",
   P00219: "/players/eda-hiroshi",
   P00220: "/players/mishima-shinya",
+  P00221: "/players/oba-kenji1",
 
 };
 
@@ -247,6 +248,7 @@ export const teamSeasonPages = {
   "富士通|1994": "/teams/fujitsu-1994",
   "富士通|1995": "/teams/fujitsu-1995",
   "富士通川崎FC|1996": "/teams/fujitsu-kawasaki-fc-1996",
+  "川崎フロンターレ|1997": "/teams/kawasaki-frontale-1997",
 
 };
 

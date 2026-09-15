@@ -36,7 +36,7 @@ export const team = {
 
     next: {
       label: "1997 川崎フロンターレ",
-      url: "",
+      url: "/teams/kawasaki-frontale-1997",
     },
   },
 
