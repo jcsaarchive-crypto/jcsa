@@ -193,6 +193,11 @@ export const playerPages = {
   P00192: "/players/shimada-toyohisa",
   P00193: "/players/yanagida-nobuaki",
   P00194: "/players/sakai-akinori",
+  P00195: "/players/kobayashi-shinji",
+  P00196: "/players/tozawa-makoto",
+  P00197: "/players/kawamoto-masahide",
+  P00198: "/players/hosoya-hirofumi",
+  P00199: "/players/makita-seiichi",
 
 };
 
@@ -218,6 +223,7 @@ export const teamSeasonPages = {
   "富士通|91/92": "/teams/fujitsu-91-92",
   "富士通|1992": "/teams/fujitsu-1992",
   "富士通|1993": "/teams/fujitsu-1993",
+  "富士通|1994": "/teams/fujitsu-1994",
 
 };
 

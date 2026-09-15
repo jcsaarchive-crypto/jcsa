@@ -32,7 +32,7 @@ export const team = {
 
     next: {
       label: "1994 富士通",
-      url: "",
+      url: "/teams/fujitsu-1994",
     },
   },
 
