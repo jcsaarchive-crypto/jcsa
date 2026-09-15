@@ -32,7 +32,7 @@ export const team = {
 
     next: {
       label: "1993 富士通",
-      url: "",
+      url: "/teams/fujitsu-1993",
     },
   },
 
@@ -63,7 +63,7 @@ export const players = [
     birth: "1962年3月14日",
     size: "179cm/78kg",
     birthplace: "―",
-    previous: "崇徳高-新日本製鐵-東京農業大",
+    previous: "崇徳高 - 新日本製鐵 - 東京農業大",
   },
 
   {
@@ -110,7 +110,7 @@ export const players = [
     birth: "1962年5月6日",
     size: "182cm/73kg",
     birthplace: "―",
-    previous: "飯田風越高-青山学院大",
+    previous: "飯田風越高 - 青山学院大",
   },
 
   {
@@ -134,7 +134,7 @@ export const players = [
     birth: "1970年5月5日",
     size: "171cm/68kg",
     birthplace: "秋田県",
-    previous: "秋田経法大附高-秋田市役所",
+    previous: "秋田経法大附高 - 秋田市役所",
   },
 
   {
@@ -146,7 +146,7 @@ export const players = [
     birth: "1970年2月25日",
     size: "180cm/72kg",
     birthplace: "―",
-    previous: "東京農大三高-東京農業大",
+    previous: "東京農大三高 - 東京農業大",
   },
 
   {
@@ -158,7 +158,7 @@ export const players = [
     birth: "1966年12月3日",
     size: "172cm/64kg",
     birthplace: "北海道",
-    previous: "札幌一高-札幌大",
+    previous: "札幌一高 - 札幌大",
   },
 
   {
@@ -193,7 +193,7 @@ export const players = [
     birth: "1969年12月6日",
     size: "171cm/68kg",
     birthplace: "―",
-    previous: "旭高-東京農業大",
+    previous: "旭高 - 東京農業大",
   },
 
   {
@@ -216,7 +216,7 @@ export const players = [
     birth: "1968年7月14日",
     size: "173cm/69kg",
     birthplace: "長崎県",
-    previous: "国見高-東京農業大",
+    previous: "国見高 - 東京農業大",
   },
 
   {
@@ -252,7 +252,7 @@ export const players = [
     birth: "1968年6月16日",
     size: "174cm/68kg",
     birthplace: "大阪府",
-    previous: "北陽高-大阪体育大",
+    previous: "北陽高 - 大阪体育大",
   },
 
   {
@@ -276,7 +276,7 @@ export const players = [
     birth: "1967年9月4日",
     size: "175cm/65kg",
     birthplace: "東京都",
-    previous: "日産工高-日産FCファーム",
+    previous: "日産工高 - 日産FCファーム",
   },
 
   {
@@ -300,7 +300,7 @@ export const players = [
     birth: "1967年10月13日",
     size: "186cm/79kg",
     birthplace: "京都府",
-    previous: "東稜高-大阪体育大",
+    previous: "東稜高 - 大阪体育大",
   },
 
   {
@@ -324,7 +324,7 @@ export const players = [
     birth: "1967年5月22日",
     size: "168cm/62kg",
     birthplace: "―",
-    previous: "浦和南高-東京農業大",
+    previous: "浦和南高 - 東京農業大",
   },
 
   {
@@ -348,7 +348,7 @@ export const players = [
     birth: "1967年4月4日",
     size: "178cm/72kg",
     birthplace: "神奈川県",
-    previous: "向の岡工高-富士通川崎-日産FCファーム",
+    previous: "向の岡工高 - 富士通川崎 - 日産FCファーム",
   },
 
   {

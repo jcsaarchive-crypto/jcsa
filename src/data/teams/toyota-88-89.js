@@ -73,7 +73,7 @@ export const players = [
     birth: "1966年12月3日",
     size: "182cm/82kg",
     birthplace: "長崎県",
-    previous: "島原商高-東海大",
+    previous: "島原商高 - 東海大",
   },
   {
     number: "2",
@@ -84,7 +84,7 @@ export const players = [
     birth: "1965年8月2日",
     size: "180cm/77kg",
     birthplace: "",
-    previous: "中京高-中京大",
+    previous: "中京高 - 中京大",
   },
   {
     number: "3",
@@ -95,7 +95,7 @@ export const players = [
     birth: "1964年3月30日",
     size: "178cm/68kg",
     birthplace: "静岡県",
-    previous: "日大三島高-大阪商業大",
+    previous: "日大三島高 - 大阪商業大",
   },
   {
     number: "4",
@@ -127,7 +127,7 @@ export const players = [
     birth: "1963年5月8日",
     size: "180cm/70kg",
     birthplace: "静岡県",
-    previous: "清水東高-法政大",
+    previous: "清水東高 - 法政大",
   },
   {
     number: "7",
@@ -138,7 +138,7 @@ export const players = [
     birth: "1963年9月11日",
     size: "175cm/68kg",
     birthplace: "愛知県",
-    previous: "熱田高-中京大",
+    previous: "熱田高 - 中京大",
   },
   {
     id: "P00139",
@@ -149,7 +149,7 @@ export const players = [
     birth: "1956年4月12日",
     size: "174cm/74kg",
     birthplace: "静岡県",
-    previous: "浜名高-日本大",
+    previous: "浜名高 - 日本大",
   },
   {
     number: "9",
@@ -236,7 +236,7 @@ export const players = [
     birth: "1961年4月14日",
     size: "176.3cm/70kg",
     birthplace: "愛知県",
-    previous: "岡崎城西高-大阪商業大",
+    previous: "岡崎城西高 - 大阪商業大",
   },
   {
     number: "18",
@@ -247,7 +247,7 @@ export const players = [
     birth: "1962年1月29日",
     size: "163cm/59kg",
     birthplace: "大分県",
-    previous: "大分工高-東海大",
+    previous: "大分工高 - 東海大",
   },
   {
     number: "19",
@@ -258,7 +258,7 @@ export const players = [
     birth: "1964年5月1日",
     size: "179cm/69kg",
     birthplace: "千葉県",
-    previous: "習志野高-法政大",
+    previous: "習志野高 - 法政大",
   },
   {
     number: "20",
@@ -279,7 +279,7 @@ export const players = [
     birth: "1960年5月25日",
     size: "177cm/80kg",
     birthplace: "三重県",
-    previous: "四日市中央工高-フジタ工業クラブ",
+    previous: "四日市中央工高 - フジタ工業クラブ",
   },
   {
     number: "22",
@@ -312,7 +312,7 @@ export const players = [
     birth: "1964年10月6日",
     size: "182.2cm/72kg",
     birthplace: "福岡県",
-    previous: "島原商高-大阪商業大",
+    previous: "島原商高 - 大阪商業大",
   },
   {
     number: "25",
@@ -323,7 +323,7 @@ export const players = [
     birth: "1967年2月23日",
     size: "183.5cm/77kg",
     birthplace: "茨城県",
-    previous: "鉾田一高-トヨタ蹴球団",
+    previous: "鉾田一高 - トヨタ蹴球団",
   },
   {
     number: "26",

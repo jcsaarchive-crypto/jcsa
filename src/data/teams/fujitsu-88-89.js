@@ -74,7 +74,7 @@ export const players = [
     birth: "1962年3月14日",
     size: "179cm/71kg",
     birthplace: "―",
-    previous: "崇徳高-新日本製鐵-東京農業大",
+    previous: "崇徳高 - 新日本製鐵 - 東京農業大",
   },
   {
     id: "P00149",
@@ -85,7 +85,7 @@ export const players = [
     birth: "1963年8月23日",
     size: "173cm/65kg",
     birthplace: "―",
-    previous: "苫小牧東高-札幌大",
+    previous: "苫小牧東高 - 札幌大",
   },
   {
     number: 3,
@@ -106,7 +106,7 @@ export const players = [
     birth: "1964年8月10日",
     size: "173cm/67kg",
     birthplace: "―",
-    previous: "静岡高-早稲田大",
+    previous: "静岡高 - 早稲田大",
   },
   {
     id: "P00151",
@@ -117,7 +117,7 @@ export const players = [
     birth: "1962年5月6日",
     size: "183cm/74kg",
     birthplace: "―",
-    previous: "飯田風越高-青山学院大",
+    previous: "飯田風越高 - 青山学院大",
   },
   {
     id: "P00152",
@@ -128,7 +128,7 @@ export const players = [
     birth: "1961年10月13日",
     size: "170cm/63kg",
     birthplace: "東京都",
-    previous: "日大高-日本大",
+    previous: "日大高 - 日本大",
   },
   {
     id: "P00153",
@@ -150,7 +150,7 @@ export const players = [
     birth: "1961年3月21日",
     size: "168cm/62kg",
     birthplace: "徳島県",
-    previous: "徳島城北高-早稲田大",
+    previous: "徳島城北高 - 早稲田大",
   },
   {
     number: 9,
@@ -171,7 +171,7 @@ export const players = [
     birth: "1961年7月16日",
     size: "170cm/63kg",
     birthplace: "静岡県",
-    previous: "清水東高-東京農業大",
+    previous: "清水東高 - 東京農業大",
   },
   {
     id: "P00156",
@@ -225,7 +225,7 @@ export const players = [
     birth: "1963年12月16日",
     size: "175cm/70kg",
     birthplace: "―",
-    previous: "北陽高-大阪体育大",
+    previous: "北陽高 - 大阪体育大",
   },
   {
     id: "P00160",
@@ -247,7 +247,7 @@ export const players = [
     birth: "1964年5月12日",
     size: "173cm/69kg",
     birthplace: "―",
-    previous: "前橋高-筑波大",
+    previous: "前橋高 - 筑波大",
   },
   {
     id: "P00162",
@@ -258,7 +258,7 @@ export const players = [
     birth: "196?年",
     size: "178cm/66kg",
     birthplace: "―",
-    previous: "宇都宮東高-早稲田大",
+    previous: "宇都宮東高 - 早稲田大",
   },
   {
     id: "P00163",
@@ -291,7 +291,7 @@ export const players = [
     birth: "1964年9月24日",
     size: "180cm/73kg",
     birthplace: "―",
-    previous: "八千代高-早稲田大",
+    previous: "八千代高 - 早稲田大",
   },
   {
     id: "P00065",
@@ -302,7 +302,7 @@ export const players = [
     birth: "1966年2月17日",
     size: "177cm/68kg",
     birthplace: "福岡県",
-    previous: "八幡中央高-福岡大",
+    previous: "八幡中央高 - 福岡大",
   },
   {
     id: "P00166",
@@ -313,7 +313,7 @@ export const players = [
     birth: "1962年9月1日",
     size: "176cm/68kg",
     birthplace: "福島県",
-    previous: "郡山商高-東海大",
+    previous: "郡山商高 - 東海大",
   },
   {
     id: "P00167",
@@ -324,7 +324,7 @@ export const players = [
     birth: "1962年11月16日",
     size: "170cm/64kg",
     birthplace: "東京都",
-    previous: "駒大高-駒澤大",
+    previous: "駒大高 - 駒澤大",
   },
   {
     id: "P00168",

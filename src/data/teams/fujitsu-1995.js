@@ -1,5 +1,5 @@
 export const team = {
-  season: "1994",
+  season: "1995",
 
   competition: "ジャパンフットボールリーグ（旧JFL）",
 
@@ -21,63 +21,53 @@ export const team = {
   trainingGround: "富士通多摩総合グラウンド",
 
   mainGrounds: [
-    "等々力緑地運動公園陸上競技場",
-    "西が丘サッカー場",
     "大和スポーツセンター",
-    "稲城中央公園総合グラウンド",
-    "秋津総合運動公園サッカー場",
+    "等々力緑地運動公園陸上競技場",
     "厚木市荻野運動公園陸上競技場",
+    "町田市立陸上競技場",
+    "西が丘サッカー場",
+    "秋津総合運動公園サッカー場",
   ],
 
   seasonNavigation: {
     previous: {
-      label: "1993 富士通",
-      url: "/teams/fujitsu-1993",
+      label: "1994 富士通",
+      url: "/teams/fujitsu-1994",
     },
 
     next: {
-      label: "1995 富士通",
-      url: "/teams/fujitsu-1995",
+      label: "1996 富士通川崎FC",
+      url: "",
     },
   },
 
   results: {
     league: {
-      competition: "第3回ジャパンフットボールリーグ",
-      rank: 10,
+      competition: "第4回ジャパンフットボールリーグ",
+      rank: 12,
+      points: 34,
       wins: 11,
-      losses: 19,
-      goalsFor: 39,
-      goalsAgainst: 52,
-      goalDifference: -13,
+      losses: 18,
+      pkLosses: 1,
+      goalsFor: 45,
+      goalsAgainst: 61,
+      goalDifference: -16,
     },
-    emperorCup: "関東予選敗退",
+    emperorCup: "1回戦敗退",
   },
 };
 
 export const players = [
   {
-    number: "0",
+    number: "1",
     id: "P00194",
     name: "境　秋範",
     latin: "Akinori SAKAI",
     position: "GK",
     birth: "1970年10月6日",
-    size: "185cm/82kg",
+    size: "184cm/80kg",
     birthplace: "千葉県",
     previous: "市立船橋高 - 専修大",
-  },
-
-  {
-    number: "1",
-    id: "P00176",
-    name: "岸本 浩右",
-    latin: "Kosuke KISHIMOTO",
-    position: "GK",
-    birth: "1967年10月13日",
-    size: "186cm/79kg",
-    birthplace: "京都府",
-    previous: "東稜高 - 大阪体育大",
   },
 
   {
@@ -87,7 +77,7 @@ export const players = [
     latin: "Yoshiyuki OZEKI",
     position: "DF",
     birth: "1967年4月4日",
-    size: "179cm/72kg",
+    size: "179cm/73kg",
     birthplace: "神奈川県",
     previous: "向の岡工高 - 富士通川崎工場 - 日産FCファーム",
   },
@@ -99,7 +89,7 @@ export const players = [
     latin: "Bin UKISHIMA",
     position: "DF",
     birth: "1967年9月4日",
-    size: "176cm/70kg",
+    size: "177cm/68kg",
     birthplace: "東京都",
     previous: "日産工高 - 日産FCファーム",
   },
@@ -123,7 +113,7 @@ export const players = [
     latin: "Kazuya TOZAWA",
     position: "DF",
     birth: "1966年7月11日",
-    size: "175cm/68kg",
+    size: "175cm/67kg",
     birthplace: "秋田県",
     previous: "秋田経法大附高",
   },
@@ -152,14 +142,14 @@ export const players = [
 
   {
     number: "8",
-    id: "P00183",
-    name: "荻島 広行",
-    latin: "Hiroyuki OGISHIMA",
-    position: "DF",
-    birth: "1970年2月25日",
-    size: "180cm/70kg",
-    birthplace: "―",
-    previous: "東京農大三高 - 東京農業大",
+    id: "P00199",
+    name: "巻田 清一",
+    latin: "Seiichi MAKITA",
+    position: "MF",
+    birth: "1968年7月11日",
+    size: "182cm/74kg",
+    birthplace: "東京都",
+    previous: "帝京高 - 東海大 - NTT関東 - 浦和レッドダイヤモンズ",
   },
 
   {
@@ -169,21 +159,20 @@ export const players = [
     latin: "Toyohisa SHIMADA",
     position: "FW",
     birth: "1970年5月28日",
-    size: "175cm/70kg",
+    size: "175cm/73kg",
     birthplace: "京都府",
     previous: "八千代高 - 順天堂大",
   },
 
   {
     number: "10",
-    id: "P00195",
-    name: "小林 慎二",
-    latin: "Shinji KOBAYASHI",
+    name: "魏　克興",
+    latin: "WEI Kexing",
     position: "MF",
-    birth: "1963年10月17日",
-    size: "169cm/62kg",
-    birthplace: "山梨県",
-    previous: "韮崎高 - 明治大 - 甲府サッカークラブ - 横浜フリューゲルス",
+    birth: "1963年2月13日",
+    size: "180cm/70kg",
+    birthplace: "中国",
+    previous: "北京足球倶楽部(中国) - 富士通 - 愉園体育会(香港) - 北京国安足球倶楽部(中国)",
   },
 
   {
@@ -200,13 +189,14 @@ export const players = [
 
   {
     number: "12",
-    name: "黄　　崇",
-    latin: "HUANG Chong",
-    position: "FW",
-    birth: "1963年2月28日",
-    size: "182cm/78kg",
-    birthplace: "中国",
-    previous: "遼寧足球倶楽部(中国)",
+    id: "P00174",
+    name: "門脇 端午",
+    latin: "Tango KADOWAKI",
+    position: "MF",
+    birth: "1970年5月5日",
+    size: "172cm/72kg",
+    birthplace: "秋田県",
+    previous: "秋田経法大附高 - 秋田市役所",
   },
 
   {
@@ -214,7 +204,7 @@ export const players = [
     id: "P00191",
     name: "堀越 亮太",
     latin: "Ryota HORIKOSHI",
-    position: "DF",
+    position: "MF",
     birth: "1970年7月19日",
     size: "170cm/64kg",
     birthplace: "神奈川県",
@@ -235,14 +225,14 @@ export const players = [
 
   {
     number: "15",
-    id: "P00181",
-    name: "檀原　亘",
-    latin: "Wataru DANBARA",
+    id: "P00185",
+    name: "安倍 一夫",
+    latin: "Kazuo ABE",
     position: "MF",
-    birth: "1973年2月25日",
-    size: "174cm/67kg",
-    birthplace: "―",
-    previous: "向上高",
+    birth: "1973年7月8日",
+    size: "172cm/65kg",
+    birthplace: "宮城県",
+    previous: "宮城工高",
   },
 
   {
@@ -264,7 +254,7 @@ export const players = [
     latin: "Makoto TOZAWA",
     position: "FW",
     birth: "1971年9月3日",
-    size: "183cm/74kg",
+    size: "183cm/76kg",
     birthplace: "宮崎県",
     previous: "宮崎工高 - 順天堂大",
   },
@@ -274,59 +264,59 @@ export const players = [
     id: "P00197",
     name: "川元 正英",
     latin: "Masahide KAWAMOTO",
-    position: "DF",
+    position: "MF",
     birth: "1971年6月21日",
-    size: "182cm/73kg",
+    size: "182cm/72kg",
     birthplace: "神奈川県",
     previous: "厚木南高 - 東海大",
   },
 
   {
     number: "19",
-    id: "P00190",
-    name: "水内 俊博",
-    latin: "Toshihiro MIZUUCHI",
-    position: "FW",
-    birth: "1970年5月22日",
-    size: "182cm/79kg",
-    birthplace: "―",
-    previous: "市立船橋高 - 明治大",
-  },
-
-  {
-    number: "20",
-    id: "P00185",
-    name: "安倍 一夫",
-    latin: "Kazuo ABE",
-    position: "MF",
-    birth: "1973年7月8日",
-    size: "172cm/67kg",
-    birthplace: "宮城県",
-    previous: "宮城工高",
-  },
-
-  {
-    number: "21",
-    id: "P00198",
-    name: "細谷 裕史",
-    latin: "Hirofumi HOSOYA",
-    position: "DF",
-    birth: "1971年9月17日",
-    size: "178cm/73kg",
-    birthplace: "―",
-    previous: "藤枝東高 - 法政大",
-  },
-
-  {
-    number: "22",
     id: "P00186",
     name: "遠藤 雅貴",
     latin: "Masaki ENDO",
     position: "MF",
     birth: "1973年12月27日",
-    size: "170cm/62kg",
+    size: "170cm/64kg",
     birthplace: "宮城県",
     previous: "石巻工高",
+  },
+
+  {
+    number: "20",
+    id: "P00200",
+    name: "木村 裕之",
+    latin: "Hiroyuki KIMURA",
+    position: "MF",
+    birth: "1972年3月16日",
+    size: "172cm/62kg",
+    birthplace: "埼玉県",
+    previous: "帝京高 - 駒澤大",
+  },
+
+  {
+    number: "21",
+    id: "P00201",
+    name: "竹内 弘明",
+    latin: "Hiroaki TAKEUCHI",
+    position: "GK",
+    birth: "1972年5月18日",
+    size: "182cm/75kg",
+    birthplace: "千葉県",
+    previous: "習志野高 - 青山学院大",
+  },
+
+  {
+    number: "22",
+    id: "P00202",
+    name: "伊藤　彰",
+    latin: "Akira ITO",
+    position: "MF",
+    birth: "1972年9月19日",
+    size: "176cm/66kg",
+    birthplace: "埼玉県",
+    previous: "武南高 - 国士舘大",
   },
 
   {
@@ -336,44 +326,69 @@ export const players = [
     latin: "Tomoya SHIMIZU",
     position: "GK",
     birth: "1973年7月28日",
-    size: "178cm/68kg",
+    size: "178cm/70kg",
     birthplace: "愛媛県",
     previous: "南宇和高",
   },
 
   {
     number: "24",
-    id: "P00156",
-    name: "安部 一雄",
-    latin: "Kazuo ABE",
-    position: "MF",
-    birth: "1962年10月16日",
-    size: "173cm/64kg",
-    birthplace: "埼玉県",
-    previous: "帝京高",
+    id: "P00203",
+    name: "源平 貴久",
+    latin: "Takahisa GENPEI",
+    position: "FW",
+    birth: "1972年10月26日",
+    size: "174cm/68kg",
+    birthplace: "静岡県",
+    previous: "清水商高 - 専修大",
   },
 
   {
     number: "25",
-    id: "P00199",
-    name: "巻田 清一",
-    latin: "Seiichi MAKITA",
-    position: "MF",
-    birth: "1968年7月11日",
-    size: "182cm/76kg",
-    birthplace: "東京都",
-    previous: "帝京高 - 東海大 - NTT関東 - 浦和レッドダイヤモンズ",
+    id: "P00204",
+    name: "小坂 圭亮",
+    latin: "Keisuke KOSAKA",
+    position: "FW",
+    birth: "1972年4月2日",
+    size: "180cm/70kg",
+    birthplace: "静岡県",
+    previous: "清水東高 - 青山学院大",
   },
+
   {
-    number: "",
-    id: "P00174",
-    name: "門脇 端午",
-    latin: "Tango KADOWAKI",
+    number: "26",
+    id: "P00205",
+    name: "三浦 祐二",
+    latin: "Yuji MIURA",
+    position: "DF",
+    birth: "1972年7月3日",
+    size: "178cm/71kg",
+    birthplace: "大阪府",
+    previous: "北陽高 - 天理大",
+  },
+
+  {
+    number: "27",
+    id: "P00206",
+    name: "鈴木　純",
+    latin: "Jun SUZUKI",
     position: "MF",
-    birth: "1970年5月5日",
-    size: "172cm/72kg",
-    birthplace: "秋田県",
-    previous: "秋田経法大附高 - 秋田市役所",
+    birth: "1977年2月12日",
+    size: "165cm/55kg",
+    birthplace: "北海道",
+    previous: "室蘭大谷高",
+  },
+
+  {
+    number: "28",
+    id: "P00207",
+    name: "中山 貴夫",
+    latin: "Takao NAKAYAMA",
+    position: "DF",
+    birth: "1974年7月20日",
+    size: "180cm/70kg",
+    birthplace: "山梨県",
+    previous: "韮崎高 - マッキーフットボールクラブ",
   },
 ];
 
@@ -416,7 +431,7 @@ export const staff = [
   },
 
   {
-    role: "コーチ兼選手",
+    role: "コーチ",
     id: "P00156",
     name: "安部 一雄",
   },
@@ -428,16 +443,16 @@ export const staff = [
 
   {
     role: "コーチ兼選手",
-    name: "王　　軍",
+    name: "魏　克興",
   },
 
   {
     role: "コーチ兼選手",
-    name: "黄　　崇",
+    name: "王　　軍",
   },
 
   {
-    role: "トレーナー/フィジカルコーチ",
+    role: "フィジカルコーチ",
     name: "清田 祥之",
   },
 
@@ -447,28 +462,49 @@ export const staff = [
   },
 
   {
+    role: "副務",
+    id: "P00158",
+    name: "大場 健哉",
+  },
+
+  {
     role: "ドクター",
     name: "大沼　寧",
+  },
+
+  {
+    role: "ドクター",
+    name: "誉田 明弘",
+  },
+
+  {
+    role: "ドクター",
+    name: "内田 宗志",
   },
 
   {
     role: "審判員",
     name: "柴田 耕三",
   },
+
+  {
+    role: "審判員",
+    name: "中村 一彦",
+  },
 ];
 
 export const sources = [
   {
-    title: "1994-1995第3回ジャパンフットボールリーグ公式プログラム",
+    title: "1995-1996第4回ジャパンフットボールリーグ公式プログラム",
     publisher: "ジャパンフットボールリーグ事務局",
-    year: "1994年（平成6年）",
+    year: "1995年（平成7年）",
     isbn: "",
   },
 
   {
-    title: "1995-1996第4回ジャパンフットボールリーグ公式プログラム",
+    title: "1996-1997第5回ジャパンフットボールリーグ公式プログラム",
     publisher: "ジャパンフットボールリーグ事務局",
-    year: "1995年（平成7年）",
+    year: "1996年（平成8年）",
     isbn: "",
   },
 ];

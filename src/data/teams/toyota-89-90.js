@@ -100,7 +100,7 @@ export const players = [
     birth: "1966年12月3日",
     size: "182cm/82kg",
     birthplace: "長崎県",
-    previous: "島原商高-東海大",
+    previous: "島原商高 - 東海大",
   },
 
   {
@@ -112,7 +112,7 @@ export const players = [
     birth: "1965年8月2日",
     size: "180cm/77kg",
     birthplace: "―",
-    previous: "中京高-中京大",
+    previous: "中京高 - 中京大",
   },
 
   {
@@ -124,7 +124,7 @@ export const players = [
     birth: "1964年3月30日",
     size: "178cm/68kg",
     birthplace: "静岡県",
-    previous: "日大三島高-大阪商業大",
+    previous: "日大三島高 - 大阪商業大",
   },
 
   {
@@ -159,7 +159,7 @@ export const players = [
     birth: "1963年5月8日",
     size: "180cm/70kg",
     birthplace: "静岡県",
-    previous: "清水東高-法政大",
+    previous: "清水東高 - 法政大",
   },
 
   {
@@ -171,7 +171,7 @@ export const players = [
     birth: "1963年9月11日",
     size: "175cm/68kg",
     birthplace: "愛知県",
-    previous: "熱田高-中京大",
+    previous: "熱田高 - 中京大",
   },
 
   {
@@ -278,7 +278,7 @@ export const players = [
     birth: "1961年4月14日",
     size: "176.3cm/70kg",
     birthplace: "愛知県",
-    previous: "岡崎城西高-大阪商業大",
+    previous: "岡崎城西高 - 大阪商業大",
   },
 
   {
@@ -290,7 +290,7 @@ export const players = [
     birth: "1962年1月29日",
     size: "163cm/59kg",
     birthplace: "大分県",
-    previous: "大分工高-東海大",
+    previous: "大分工高 - 東海大",
   },
 
   {
@@ -302,7 +302,7 @@ export const players = [
     birth: "1964年5月1日",
     size: "179cm/69kg",
     birthplace: "千葉県",
-    previous: "習志野高-法政大",
+    previous: "習志野高 - 法政大",
   },
 
   {
@@ -386,7 +386,7 @@ export const players = [
     birth: "1965年1月28日",
     size: "175cm/70kg",
     birthplace: "静岡県",
-    previous: "東海大一高-東海大 - ヴェルダー・ブレーメン・アマチュア(西ドイツ)",
+    previous: "東海大一高 - 東海大 - ヴェルダー・ブレーメン・アマチュア(西ドイツ)",
   },
 
   {

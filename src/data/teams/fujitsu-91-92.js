@@ -52,7 +52,7 @@ export const players = [
     birth: "1962年3月14日",
     size: "179cm/73kg",
     birthplace: "―",
-    previous: "崇徳高-新日本製鐵-東京農業大",
+    previous: "崇徳高 - 新日本製鐵 - 東京農業大",
   },
   {
     number: "2",
@@ -84,7 +84,7 @@ export const players = [
     birth: "1964年8月10日",
     size: "173cm/68kg",
     birthplace: "―",
-    previous: "静岡高-早稲田大",
+    previous: "静岡高 - 早稲田大",
   },
   {
     number: "5",
@@ -95,7 +95,7 @@ export const players = [
     birth: "1962年5月6日",
     size: "182cm/74kg",
     birthplace: "―",
-    previous: "飯田風越高-青山学院大",
+    previous: "飯田風越高 - 青山学院大",
   },
   {
     number: "6",
@@ -117,7 +117,7 @@ export const players = [
     birth: "1970年5月5日",
     size: "171cm/68kg",
     birthplace: "秋田県",
-    previous: "秋田経法大附高-秋田市役所",
+    previous: "秋田経法大附高 - 秋田市役所",
   },
   {
     number: "8",
@@ -128,7 +128,7 @@ export const players = [
     birth: "1963年12月16日",
     size: "175cm/70kg",
     birthplace: "―",
-    previous: "北陽高-大阪体育大",
+    previous: "北陽高 - 大阪体育大",
   },
   {
     number: "9",
@@ -139,7 +139,7 @@ export const players = [
     birth: "1966年12月3日",
     size: "172cm/64kg",
     birthplace: "北海道",
-    previous: "札幌一高-札幌大",
+    previous: "札幌一高 - 札幌大",
   },
   {
     number: "10",
@@ -150,7 +150,7 @@ export const players = [
     birth: "1961年7月16日",
     size: "170cm/64kg",
     birthplace: "静岡県",
-    previous: "清水東高-東京農業大",
+    previous: "清水東高 - 東京農業大",
   },
   {
     number: "11",
@@ -192,7 +192,7 @@ export const players = [
     birth: "1968年7月14日",
     size: "173cm/70kg",
     birthplace: "長崎県",
-    previous: "国見高-東京農業大",
+    previous: "国見高 - 東京農業大",
   },
   {
     number: "15",
@@ -225,7 +225,7 @@ export const players = [
     birth: "1968年6月16日",
     size: "173cm/65kg",
     birthplace: "大阪府",
-    previous: "北陽高-大阪体育大",
+    previous: "北陽高 - 大阪体育大",
   },
   {
     number: "18",
@@ -247,7 +247,7 @@ export const players = [
     birth: "1967年9月4日",
     size: "175cm/65kg",
     birthplace: "東京都",
-    previous: "日産工高-日産FCファーム",
+    previous: "日産工高 - 日産FCファーム",
   },
   {
     number: "20",
@@ -269,7 +269,7 @@ export const players = [
     birth: "1967年10月13日",
     size: "186cm/79kg",
     birthplace: "京都府",
-    previous: "東稜高-大阪体育大",
+    previous: "東稜高 - 大阪体育大",
   },
   {
     number: "22",
@@ -280,7 +280,7 @@ export const players = [
     birth: "1963年11月13日",
     size: "174cm/69kg",
     birthplace: "埼玉県",
-    previous: "読売ユース-読売サッカークラブ-U.S.I.U.(アメリカ)-アセノSC",
+    previous: "読売ユース - 読売ジュニア - 読売サッカークラブ - U.S.I.U.(アメリカ) - アセノSC",
   },
   {
     number: "23",
@@ -291,7 +291,7 @@ export const players = [
     birth: "1967年5月22日",
     size: "169cm/66kg",
     birthplace: "―",
-    previous: "浦和南高-東京農業大",
+    previous: "浦和南高 - 東京農業大",
   },
   {
     number: "24",
@@ -313,7 +313,7 @@ export const players = [
     birth: "1967年4月4日",
     size: "179cm/73kg",
     birthplace: "神奈川県",
-    previous: "向の岡工高-富士通川崎-日産FCファーム",
+    previous: "向の岡工高 - 富士通川崎 - 日産FCファーム",
   },
   {
     number: "26",

@@ -1,0 +1,75 @@
+export const player = {
+  id: "P00206",
+  name: "鈴木　純",
+  nameKana: "すずき じゅん",
+  nameEn: "Jun SUZUKI",
+  position: "MF",
+  birth: "1977年2月12日",
+  birthplace: "北海道",
+  height: 165,
+  weight: 55,
+  education: "室蘭大谷高",
+
+  history: [
+    {
+      season: "1995",
+      division: "旧JFL",
+      jersey: "27",
+      team: "富士通",
+      leagueMatches: 17,
+      leagueGoals: 1,
+      cupMatches: "-",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: 0,
+      totalMatches: "",
+      totalGoals: 1,
+    },
+    {
+      season: "1996",
+      division: "旧JFL",
+      jersey: "24",
+      team: "富士通川崎FC",
+      leagueMatches: 0,
+      leagueGoals: 0,
+      cupMatches: "-",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: 0,
+      totalMatches: "",
+      totalGoals: 0,
+    },
+  ],
+
+  totals: [
+    {
+      division: "旧JFL",
+      leagueMatches: 17,
+      leagueGoals: 1,
+      cupMatches: "-",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: 0,
+      totalMatches: "",
+      totalGoals: 1,
+    },
+  ],
+
+  grandTotal: {
+    leagueMatches: 17,
+    leagueGoals: 1,
+    cupMatches: "-",
+    cupGoals: "",
+    emperorCupMatches: "",
+    emperorCupGoals: 0,
+    totalMatches: "",
+    totalGoals: 1,
+  },
+
+  otherOfficialMatches: [],
+
+  otherOfficialTotal: {
+    matches: "",
+    goals: "",
+  },
+};

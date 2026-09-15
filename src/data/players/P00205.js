@@ -1,0 +1,75 @@
+export const player = {
+  id: "P00205",
+  name: "三浦 祐二",
+  nameKana: "みうら ゆうじ",
+  nameEn: "Yuji MIURA",
+  position: "DF",
+  birth: "1972年7月3日",
+  birthplace: "大阪府",
+  height: 178,
+  weight: 72,
+  education: "北陽高-天理大",
+
+  history: [
+    {
+      season: "1995",
+      division: "旧JFL",
+      jersey: "26",
+      team: "富士通",
+      leagueMatches: 2,
+      leagueGoals: 0,
+      cupMatches: "-",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+    {
+      season: "1996",
+      division: "旧JFL",
+      jersey: "21",
+      team: "富士通川崎FC",
+      leagueMatches: 7,
+      leagueGoals: 0,
+      cupMatches: "-",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: 0,
+      totalMatches: "",
+      totalGoals: 0,
+    },
+  ],
+
+  totals: [
+    {
+      division: "旧JFL",
+      leagueMatches: 9,
+      leagueGoals: 0,
+      cupMatches: "-",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+  ],
+
+  grandTotal: {
+    leagueMatches: 9,
+    leagueGoals: 0,
+    cupMatches: "-",
+    cupGoals: "",
+    emperorCupMatches: "",
+    emperorCupGoals: "",
+    totalMatches: "",
+    totalGoals: "",
+  },
+
+  otherOfficialMatches: [],
+
+  otherOfficialTotal: {
+    matches: "",
+    goals: "",
+  },
+};

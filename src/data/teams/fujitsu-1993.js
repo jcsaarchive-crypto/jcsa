@@ -61,7 +61,7 @@ export const players = [
     birth: "1967年10月13日",
     size: "186cm/79kg",
     birthplace: "京都府",
-    previous: "東稜高-大阪体育大",
+    previous: "東稜高 - 大阪体育大",
   },
 
   {
@@ -96,7 +96,7 @@ export const players = [
     birth: "1970年7月10日",
     size: "172cm/63kg",
     birthplace: "千葉県",
-    previous: "八千代高-順天堂大",
+    previous: "八千代高 - 順天堂大",
   },
 
   {
@@ -108,7 +108,7 @@ export const players = [
     birth: "1970年5月22日",
     size: "183cm/80kg",
     birthplace: "―",
-    previous: "市立船橋高-明治大",
+    previous: "市立船橋高 - 明治大",
   },
 
   {
@@ -120,7 +120,7 @@ export const players = [
     birth: "1970年7月19日",
     size: "170cm/68kg",
     birthplace: "神奈川県",
-    previous: "藤沢西高-東海大",
+    previous: "藤沢西高 - 東海大",
   },
 
   {
@@ -132,7 +132,7 @@ export const players = [
     birth: "1970年2月25日",
     size: "180cm/67kg",
     birthplace: "―",
-    previous: "東京農大三高-東京農業大",
+    previous: "東京農大三高 - 東京農業大",
   },
 
   {
@@ -144,7 +144,7 @@ export const players = [
     birth: "1970年5月28日",
     size: "177cm/72kg",
     birthplace: "京都府",
-    previous: "八千代高-順天堂大",
+    previous: "八千代高 - 順天堂大",
   },
 
   {
@@ -156,7 +156,7 @@ export const players = [
     birth: "1970年12月9日",
     size: "170cm/65kg",
     birthplace: "東京都",
-    previous: "創価高-創価大",
+    previous: "創価高 - 創価大",
   },
 
   {
@@ -168,7 +168,7 @@ export const players = [
     birth: "1969年12月6日",
     size: "175cm/66kg",
     birthplace: "―",
-    previous: "旭高-東京農業大",
+    previous: "旭高 - 東京農業大",
   },
 
   {
@@ -215,7 +215,7 @@ export const players = [
     birth: "1968年6月16日",
     size: "175cm/68kg",
     birthplace: "大阪府",
-    previous: "北陽高-大阪体育大",
+    previous: "北陽高 - 大阪体育大",
   },
 
   {
@@ -239,7 +239,7 @@ export const players = [
     birth: "1967年9月4日",
     size: "176cm/67kg",
     birthplace: "東京都",
-    previous: "日産工高-日産FCファーム",
+    previous: "日産工高 - 日産FCファーム",
   },
 
   {
@@ -263,7 +263,7 @@ export const players = [
     birth: "1970年10月6日",
     size: "184cm/80kg",
     birthplace: "千葉県",
-    previous: "市立船橋高-専修大",
+    previous: "市立船橋高 - 専修大",
   },
 
   {
@@ -311,7 +311,7 @@ export const players = [
     birth: "1967年4月4日",
     size: "178cm/73kg",
     birthplace: "神奈川県",
-    previous: "向の岡工高-富士通川崎-日産FCファーム",
+    previous: "向の岡工高 - 富士通川崎 - 日産FCファーム",
   },
 
   {
