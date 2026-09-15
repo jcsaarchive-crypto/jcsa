@@ -37,7 +37,7 @@ export const team = {
 
     next: {
       label: "1996 富士通川崎FC",
-      url: "",
+      url: "/teams/fujitsu-kawasaki-fc-1996",
     },
   },
 

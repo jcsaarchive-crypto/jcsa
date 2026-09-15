@@ -206,6 +206,19 @@ export const playerPages = {
   P00205: "/players/miura-yuji",
   P00206: "/players/suzuki-jun",
   P00207: "/players/nakayama-takao",
+  P00208: "/players/kawaguchi-ryosuke",
+  P00209: "/players/muramatsu-yukinori",
+  P00210: "/players/hosaka-nobuyuki",
+  P00211: "/players/shin-che-bon",
+  P00212: "/players/shigeno-kozaburo",
+  P00213: "/players/hasumi-tomohiro",
+  P00214: "/players/makino-yasumasa",
+  P00215: "/players/takehana-tomoya",
+  P00216: "/players/fujita-shinichi",
+  P00217: "/players/nakamura-akira",
+  P00218: "/players/kuno-tomoaki",
+  P00219: "/players/eda-hiroshi",
+  P00220: "/players/mishima-shinya",
 
 };
 
@@ -233,6 +246,7 @@ export const teamSeasonPages = {
   "富士通|1993": "/teams/fujitsu-1993",
   "富士通|1994": "/teams/fujitsu-1994",
   "富士通|1995": "/teams/fujitsu-1995",
+  "富士通川崎FC|1996": "/teams/fujitsu-kawasaki-fc-1996",
 
 };
 
