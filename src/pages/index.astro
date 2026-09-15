@@ -22,18 +22,25 @@
 
 const updates = [
   {
-  season: "1992",
-  team: "富士通",
-  url: "/teams/fujitsu-1992",
-  updated: "2026-09-14",
-  order: 20,
+    season: "1993",
+    team: "富士通",
+    url: "/teams/fujitsu-1993",
+    updated: "2026-09-15",
+    order: 21,
   },
   {
-  season: "91/92",
-  team: "富士通",
-  url: "/teams/fujitsu-91-92",
-  updated: "2026-09-14",
-  order: 19,
+    season: "1992",
+    team: "富士通",
+    url: "/teams/fujitsu-1992",
+    updated: "2026-09-14",
+    order: 20,
+  },
+  {
+    season: "91/92",
+    team: "富士通",
+    url: "/teams/fujitsu-91-92",
+    updated: "2026-09-14",
+    order: 19,
   },
   {
     season: "90/91",
@@ -245,7 +252,7 @@ const recentUpdates = sortedUpdates.slice(0, 3);
           aria-label="メインナビゲーション"
         >
           <a href="/">ホーム</a>
-          <a href="#decades">年代から探す</a>
+          <a href="#decades">年代、チームから探す</a>
           <a href="/players/">選手</a>
           <a href="#recent">チーム</a>
           <a href="#about">このサイトについて</a>
@@ -310,16 +317,60 @@ const recentUpdates = sortedUpdates.slice(0, 3);
       </section>
 
       <section
+        class="content-section player-search-section"
+        id="players"
+      >
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">
+              PLAYER INDEX
+            </div>
+
+            <h2>選手から探す</h2>
+          </div>
+
+          <p>
+            収録選手を名前から探します。
+          </p>
+        </div>
+
+        <a
+          class="player-index-card"
+          href="/players/"
+        >
+          <div class="player-index-left">
+            <span class="player-index-kicker">
+              PLAYER INDEX
+            </span>
+
+            <strong class="player-index-title">
+              選手索引
+            </strong>
+          </div>
+
+          <div class="player-index-right">
+            <span class="player-index-description">
+              収録選手を名前から探す
+            </span>
+
+            <span class="player-index-arrow">
+              →
+            </span>
+          </div>
+        </a>
+      </section>
+
+      <section
         class="content-section"
         id="decades"
       >
         <div class="section-heading">
           <div>
             <div class="section-kicker">
-              BROWSE BY DECADE
+              BROWSE BY DECADE / TEAM
             </div>
 
-            <h2>年代から探す</h2>
+            <h2>年代、チームから探す</h2>
           </div>
 
           <p>
@@ -430,31 +481,6 @@ const recentUpdates = sortedUpdates.slice(0, 3);
             ))
           }
         </div>
-
-        <a
-          class="player-index-card"
-          href="/players/"
-        >
-          <div class="player-index-left">
-            <span class="player-index-kicker">
-              PLAYER INDEX
-            </span>
-
-            <strong class="player-index-title">
-              選手索引
-            </strong>
-          </div>
-
-          <div class="player-index-right">
-            <span class="player-index-description">
-              収録選手を名前から探す
-            </span>
-
-            <span class="player-index-arrow">
-              →
-            </span>
-          </div>
-        </a>
       </section>
 
       <section
@@ -975,7 +1001,7 @@ const recentUpdates = sortedUpdates.slice(0, 3);
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    margin-top: 28px;
+    margin-top: 0;
     min-height: 112px;
     padding: 24px 28px;
     background: #202522;
