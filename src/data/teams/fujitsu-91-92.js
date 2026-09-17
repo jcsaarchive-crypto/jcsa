@@ -1,6 +1,6 @@
 export const team = {
   season: "91/92",
-  competition: "日本サッカーリーグ2部",
+  competition: "日本サッカーリーグ2部（JSL2部）",
   competitionEn: "JAPAN SOCCER LEAGUE（JSL）DIVISION 2",
   name: "富士通",
   officialName: "富士通(株)サッカー部",

@@ -1,6 +1,6 @@
 export const player = {
   id: "P00261",
-  name: "杉山 学",
+  name: "杉山　学",
   nameKana: "すぎやま まなぶ",
   nameEn: "Manabu SUGIYAMA",
   position: "FW",

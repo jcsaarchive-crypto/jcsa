@@ -1,6 +1,6 @@
 export const team = {
   season: "90/91",
-  competition: "日本サッカーリーグ1部",
+  competition: "日本サッカーリーグ1部（JSL1部）",
   competitionEn: "JAPAN SOCCER LEAGUE（JSL）DIVISION 1",
 
   name: "トヨタ自動車",

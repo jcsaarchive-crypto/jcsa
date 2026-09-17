@@ -1,7 +1,7 @@
 export const team = {
   season: "1993",
 
-  competition: "ジャパンフットボールリーグ1部",
+  competition: "ジャパンフットボールリーグ1部（旧JFL1部）",
 
   competitionEn: "JAPAN FOOTBALL LEAGUE（JFL）DIVISION 1",
 

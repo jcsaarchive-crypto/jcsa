@@ -1,6 +1,6 @@
 export const player = {
   id: "P00264",
-  name: "岩下 潤",
+  name: "岩下　潤",
   nameKana: "いわした じゅん",
   nameEn: "Jun IWASHITA",
   position: "FW",

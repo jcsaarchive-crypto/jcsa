@@ -11,7 +11,7 @@ export const team = {
 
   season: "91/92",
 
-  competition: "日本サッカーリーグ1部",
+  competition: "日本サッカーリーグ1部（JSL1部）",
   competitionEn: "JAPAN SOCCER LEAGUE（JSL）DIVISION 1",
 
   trainingGround: "東芝磯子サッカー場",

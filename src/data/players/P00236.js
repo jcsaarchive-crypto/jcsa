@@ -1,6 +1,6 @@
 export const player = {
   id: "P00236",
-  name: "平山 大",
+  name: "平山　大",
   nameKana: "ひらやま まさる",
   nameEn: "Masaru HIRAYAMA",
   position: "DF",

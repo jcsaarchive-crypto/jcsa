@@ -19,7 +19,7 @@ export const team = {
 
   season: "1994",
 
-  competition: "ジャパンフットボールリーグ（旧JFL）",
+  competition: "ジャパンフットボールリーグ1部（旧JFL1部）",
 
   competitionEn: "JAPAN FOOTBALL LEAGUE（JFL）",
 

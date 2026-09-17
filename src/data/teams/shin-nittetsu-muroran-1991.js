@@ -4,7 +4,7 @@ export const team = {
  
   season: "1991", 
   competition: "北海道サッカーリーグ１部", 
-  competitionEn: "HOKKAIDO SOCCER LEAGUE 1991", 
+  competitionEn: "HOKKAIDO SOCCER LEAGUE DIVISION 1", 
  
   location: "北海道室蘭市仲町12", 
  

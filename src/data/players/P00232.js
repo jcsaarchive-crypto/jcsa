@@ -1,6 +1,6 @@
 export const player = {
   id: "P00232",
-  name: "森 一哉",
+  name: "森　一哉",
   nameKana: "もり かずや",
   nameEn: "Kazuya MORI",
   position: "MF",

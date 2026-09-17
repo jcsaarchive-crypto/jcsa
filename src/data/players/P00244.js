@@ -1,6 +1,6 @@
 export const player = {
   id: "P00244",
-  name: "堀池 巧",
+  name: "堀池　巧",
   nameKana: "ほりいけ たくみ",
   nameEn: "Takumi HORIIKE",
   position: "DF/MF",

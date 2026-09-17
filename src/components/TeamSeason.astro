@@ -166,7 +166,7 @@ const getGoalDifference = (result) =>
 
           {team.founding && (
             <>
-              <dt>{team.founding.label ?? "創部"}</dt>
+              <dt>{team.founding.label ?? "発足"}</dt>
               <dd>
                 {team.founding.year}年
                 {team.founding.note && (
@@ -1160,7 +1160,7 @@ const getGoalDifference = (result) =>
   }
 
   .latin-column {
-    width: 210px;
+    width: 235px;
   }
 
   .position-column {
@@ -1216,15 +1216,15 @@ const getGoalDifference = (result) =>
   /*
     前所属。
 
-    ラテン文字を20px広げたため、
-    前版360pxから少しだけ削って340pxを最低基準とする。
+    ラテン文字を広げたぶん、
+    前所属を315pxの最低基準とする。
 
     1行・2行・3行を内容に応じて使い分ける。
   */
 
   .previous-column {
     width: auto;
-    min-width: 340px;
+    min-width: 315px;
     white-space: normal;
   }
 

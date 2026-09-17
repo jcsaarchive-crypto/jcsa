@@ -1,6 +1,6 @@
 export const player = {
   id: "P00258",
-  name: "齋藤 亮",
+  name: "齋藤　亮",
   nameKana: "さいとう あきら",
   nameEn: "Akira SAITO",
   position: "MF",
