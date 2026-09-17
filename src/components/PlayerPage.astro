@@ -757,31 +757,57 @@ const hasOtherOfficialMatches =
     border-left: 2px solid #6f7972 !important;
   }
 
+  /*
+   * 所属・公式戦記録の列幅を固定。
+   *
+   * 年：
+   * 「2000」「1999」「98/99」などを基準に68px。
+   *
+   * Div.：
+   * 将来の地域リーグ収録を考え、
+   * 「鹿児島県１部」程度までを基準に120px。
+   *
+   * 背番号：
+   * 3桁までを想定して64px。
+   *
+   * 所属：
+   * 長いクラブ名を文字縮小せず表示するため380px。
+   *
+   * 試合・得点：
+   * 最大3桁を想定し、8列すべて58pxで統一。
+   */
+
   .year-column {
-    width: 76px;
-    min-width: 76px;
+    width: 68px;
+    min-width: 68px;
+    max-width: 68px;
   }
 
   .division-column,
   .division-cell {
-    width: 1%;
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
     white-space: nowrap;
   }
 
   .jersey-column {
-    width: 78px;
-    min-width: 78px;
+    width: 80px;
+    min-width: 80px;
+    max-width: 80px;
     white-space: nowrap;
   }
 
   .team-column {
-    width: 230px;
-    min-width: 230px;
+    width: 380px;
+    min-width: 380px;
+    max-width: 380px;
   }
 
   .stat-column {
-    width: 67px;
-    min-width: 67px;
+    width: 58px;
+    min-width: 58px;
+    max-width: 58px;
   }
 
   .competition-heading {
