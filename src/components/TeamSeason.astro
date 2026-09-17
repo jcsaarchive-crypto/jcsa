@@ -136,6 +136,13 @@ const getGoalDifference = (result) =>
             </>
           )}
 
+          {team.hometown && (
+            <>
+              <dt>ホームタウン</dt>
+              <dd>{team.hometown}</dd>
+            </>
+          )}
+
           {team.officialName && (
             <>
               <dt>正式名称</dt>
@@ -159,7 +166,7 @@ const getGoalDifference = (result) =>
 
           {team.founding && (
             <>
-              <dt>創部</dt>
+              <dt>{team.founding.label ?? "創部"}</dt>
               <dd>
                 {team.founding.year}年
                 {team.founding.note && (
@@ -168,6 +175,13 @@ const getGoalDifference = (result) =>
                   </span>
                 )}
               </dd>
+            </>
+          )}
+
+          {team.homeStadium && (
+            <>
+              <dt>ホームスタジアム</dt>
+              <dd>{team.homeStadium}</dd>
             </>
           )}
 
@@ -401,7 +415,7 @@ const getGoalDifference = (result) =>
 
             {team.results.nabiscoCup && (
               <div>
-                <span>ナビスコカップ</span>
+                <span>ヤマザキナビスコカップ</span>
                 <strong>{team.results.nabiscoCup}</strong>
               </div>
             )}
