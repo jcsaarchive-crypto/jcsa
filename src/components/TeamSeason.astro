@@ -136,13 +136,6 @@ const getGoalDifference = (result) =>
             </>
           )}
 
-          {team.hometown && (
-            <>
-              <dt>ホームタウン</dt>
-              <dd>{team.hometown}</dd>
-            </>
-          )}
-
           {team.officialName && (
             <>
               <dt>正式名称</dt>
@@ -154,6 +147,13 @@ const getGoalDifference = (result) =>
             <>
               <dt>略称</dt>
               <dd>{team.abbreviation}</dd>
+            </>
+          )}
+          
+          {team.hometown && (
+            <>
+              <dt>ホームタウン</dt>
+              <dd>{team.hometown}</dd>
             </>
           )}
 
@@ -481,15 +481,19 @@ const getGoalDifference = (result) =>
                   </td>
 
                   <td class="player-name name-column">
-                    {playerUrl ? (
-                      <a href={playerUrl}>{player.name}</a>
-                    ) : (
-                      player.name
-                    )}
+                    <span class="single-line-fit name-fit">
+                      {playerUrl ? (
+                        <a href={playerUrl}>{player.name}</a>
+                      ) : (
+                        player.name
+                      )}
+                    </span>
                   </td>
 
                   <td class="latin-column">
-                    {player.latin}
+                    <span class="single-line-fit latin-fit">
+                      {player.latin}
+                    </span>
                   </td>
 
                   <td class="position position-column">
@@ -584,6 +588,54 @@ const getGoalDifference = (result) =>
   </main>
 
   <script>
+    /*
+      選手名・ラテン文字表記
+
+      列幅は固定。
+      必ず1行表示。
+      入りきらない場合だけ文字サイズを縮小する。
+    */
+    const fitSingleLineCells = () => {
+      const elements =
+        document.querySelectorAll(".single-line-fit");
+
+      elements.forEach((element) => {
+        if (!(element instanceof HTMLElement)) return;
+
+        const isName =
+          element.classList.contains("name-fit");
+
+        const baseSize = isName ? 15 : 14;
+        const minimumSize = 9;
+
+        element.style.fontSize = `${baseSize}px`;
+
+        let currentSize = baseSize;
+
+        while (
+          element.scrollWidth > element.clientWidth + 1 &&
+          currentSize > minimumSize
+        ) {
+          currentSize -= 0.5;
+          element.style.fontSize = `${currentSize}px`;
+        }
+      });
+    };
+
+    /*
+      前所属チーム
+
+      1行で入るものは14px・1行。
+
+      1行で入らない場合、
+      まず2行の範囲内で全文が収まるように縮小する。
+
+      2行に収めるために文字が小さくなりすぎる場合は
+      3行へ切り替え、3行の範囲内で全文が収まるようにする。
+
+      4行以上にはしない。
+      文字列の省略・切断はしない。
+    */
     const fitPreviousTeams = () => {
       const elements =
         document.querySelectorAll(".previous-text");
@@ -594,14 +646,13 @@ const getGoalDifference = (result) =>
         element.classList.remove(
           "is-one-line",
           "is-two-lines",
-          "is-small",
-          "is-smaller",
-          "is-smallest"
+          "is-three-lines"
         );
 
+        element.style.fontSize = "14px";
+
         /*
-          まず通常サイズ・1段で確認。
-          セル幅に収まっている選手はそのまま。
+          まず14px・1行で必要な幅を測る。
         */
         const probe = element.cloneNode(true);
 
@@ -610,9 +661,7 @@ const getGoalDifference = (result) =>
         probe.classList.remove(
           "is-one-line",
           "is-two-lines",
-          "is-small",
-          "is-smaller",
-          "is-smallest"
+          "is-three-lines"
         );
 
         probe.classList.add("is-measuring-one-line");
@@ -624,6 +673,7 @@ const getGoalDifference = (result) =>
         probe.style.maxWidth = "none";
         probe.style.visibility = "hidden";
         probe.style.pointerEvents = "none";
+        probe.style.fontSize = "14px";
 
         document.body.appendChild(probe);
 
@@ -635,63 +685,81 @@ const getGoalDifference = (result) =>
 
         probe.remove();
 
-        const oneLineFits =
-          oneLineWidth <= availableWidth + 1;
-
-        if (oneLineFits) {
+        /*
+          14px・1行で入る場合。
+        */
+        if (oneLineWidth <= availableWidth + 1) {
           element.classList.add("is-one-line");
           return;
         }
 
         /*
-          1段ではみ出した選手だけ2段表示。
+          まず2行で処理する。
         */
         element.classList.add("is-two-lines");
 
-        const fitsTwoLines = () => {
-          const style =
-            getComputedStyle(element);
-
-          const lineHeight =
-            parseFloat(style.lineHeight);
+        const fitsLines = (lines) => {
+          const style = getComputedStyle(element);
+          const lineHeight = parseFloat(style.lineHeight);
 
           return (
             element.scrollHeight <=
-            lineHeight * 2 + 1
+            lineHeight * lines + 1
           );
         };
 
         /*
-          通常サイズの2段で収まれば終了。
+          2行なら、まず14pxから11pxまで縮小。
+
+          11px以上で2行に収まるなら、
+          そのサイズで2行表示する。
         */
-        if (fitsTwoLines()) {
+        let currentSize = 14;
+        const twoLineMinimumSize = 11;
+
+        while (
+          !fitsLines(2) &&
+          currentSize > twoLineMinimumSize
+        ) {
+          currentSize -= 0.5;
+          element.style.fontSize = `${currentSize}px`;
+        }
+
+        if (fitsLines(2)) {
           return;
         }
 
         /*
-          2段でも収まらない場合だけ縮小。
-          13px → 12px → 11px。
+          11pxまで縮めても2行に入らないものは
+          無理に小さくせず3行へ移す。
+
+          3行では14pxから開始し直す。
         */
-        element.classList.add("is-small");
+        element.classList.remove("is-two-lines");
+        element.classList.add("is-three-lines");
 
-        if (fitsTwoLines()) {
-          return;
+        currentSize = 14;
+        element.style.fontSize = `${currentSize}px`;
+
+        /*
+          3行でも長い場合だけ縮小。
+          最低9pxまで。
+        */
+        const threeLineMinimumSize = 9;
+
+        while (
+          !fitsLines(3) &&
+          currentSize > threeLineMinimumSize
+        ) {
+          currentSize -= 0.5;
+          element.style.fontSize = `${currentSize}px`;
         }
-
-        element.classList.remove("is-small");
-        element.classList.add("is-smaller");
-
-        if (fitsTwoLines()) {
-          return;
-        }
-
-        element.classList.remove("is-smaller");
-        element.classList.add("is-smallest");
       });
     };
 
-    const runPreviousTeamFit = () => {
+    const runTableFit = () => {
       requestAnimationFrame(() => {
+        fitSingleLineCells();
         fitPreviousTeams();
       });
     };
@@ -699,21 +767,19 @@ const getGoalDifference = (result) =>
     if (document.readyState === "loading") {
       document.addEventListener(
         "DOMContentLoaded",
-        runPreviousTeamFit
+        runTableFit
       );
     } else {
-      runPreviousTeamFit();
+      runTableFit();
     }
 
     if (document.fonts?.ready) {
-      document.fonts.ready.then(
-        runPreviousTeamFit
-      );
+      document.fonts.ready.then(runTableFit);
     }
 
     window.addEventListener(
       "resize",
-      runPreviousTeamFit
+      runTableFit
     );
   </script>
 </body>
@@ -1053,7 +1119,8 @@ const getGoalDifference = (result) =>
 
   table {
     width: 100%;
-    min-width: 1100px;
+    min-width: 1180px;
+    table-layout: fixed;
     border-collapse: collapse;
     font-size: 14px;
   }
@@ -1078,86 +1145,114 @@ const getGoalDifference = (result) =>
   }
 
   /*
-    新日鐵室蘭用。
+    固定列。
 
-    ここでは table-layout:fixed を使わない。
-    それを使うと他の列まで再配分されるため。
+    ラテン文字を前版より少し広げる。
+    そのぶん前所属へ割り当てる幅を少しだけ減らす。
+  */
 
-    生年月日列だけ長い見出しに必要な幅を確保。
+  .number-column {
+    width: 70px;
+  }
+
+  .name-column {
+    width: 155px;
+  }
+
+  .latin-column {
+    width: 210px;
+  }
+
+  .position-column {
+    width: 55px;
+  }
+
+  .birth-column {
+    width: 125px;
+  }
+
+  .size-column {
+    width: 100px;
+  }
+
+  .birthplace-column {
+    width: 100px;
+  }
+
+  /*
+    新日鐵室蘭など、
+    生年月日の見出し自体が長いページだけの特例。
   */
 
   table.long-birth-column .birth-column {
-    width: 1%;
-    min-width: 245px;
-    white-space: nowrap;
+    width: 245px;
   }
 
   /*
-    重要：
-    最後の「前所属チーム」を残り幅の受け皿にする。
+    選手名・ラテン文字。
 
-    width:auto のままにし、
-    min-widthだけを持たせる。
-
-    これにより表の右側に余った領域も
-    前所属チーム列そのものになる。
+    固定幅・1行表示。
+    入らない場合だけフォントを縮小。
   */
 
-  table.long-birth-column .previous-column {
-    width: auto;
-    min-width: 230px;
+  .single-line-fit {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: visible;
+    line-height: 1.5;
+  }
+
+  .name-fit {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .latin-fit {
+    font-size: 14px;
   }
 
   /*
-    前所属チーム表示ルール
+    前所属。
 
-    1. セル幅は従来の幅を維持
-    2. 1段で収まれば1段
-    3. 1段からはみ出した時だけ2段
-    4. 2段でも収まらない時だけ文字を縮小
-    5. 最大2段を維持
+    ラテン文字を20px広げたため、
+    前版360pxから少しだけ削って340pxを最低基準とする。
+
+    1行・2行・3行を内容に応じて使い分ける。
   */
 
   .previous-column {
+    width: auto;
+    min-width: 340px;
     white-space: normal;
   }
 
   .previous-text {
     display: block;
     width: 100%;
+    max-width: 100%;
     font-size: 14px;
     line-height: 1.35;
     white-space: normal;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+    word-break: normal;
+    overflow: visible;
   }
 
   .previous-text.is-one-line,
   .previous-text.is-measuring-one-line {
     white-space: nowrap;
     overflow-wrap: normal;
+    word-break: normal;
   }
 
-  .previous-text.is-two-lines {
+  .previous-text.is-two-lines,
+  .previous-text.is-three-lines {
     white-space: normal;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+    word-break: normal;
   }
-
-  .previous-text.is-small {
-    font-size: 13px;
-  }
-
-  .previous-text.is-smaller {
-    font-size: 12px;
-  }
-
-  .previous-text.is-smallest {
-    font-size: 11px;
-  }
-
-  /*
-    最終列の右罫線を table-wrap の右端まで
-    明確に表示する。
-  */
 
   table th:last-child,
   table td:last-child {
@@ -1182,6 +1277,7 @@ const getGoalDifference = (result) =>
   .player-name a {
     color: #2563eb;
     text-decoration: none;
+    font-size: inherit;
   }
 
   .player-name a:hover {

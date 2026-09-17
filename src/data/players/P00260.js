@@ -138,7 +138,7 @@ export const player = {
       totalGoals: 0,
     },
     {
-      season: "",
+      season: "1995",
       division: "旧JFL",
       jersey: "0→(10)",
       team: "鳥栖フューチャーズ",
@@ -166,7 +166,7 @@ export const player = {
       totalGoals: 3,
     },
     {
-      season: "",
+      season: "1996",
       division: "旧JFL",
       jersey: "28",
       team: "本田技研工業",

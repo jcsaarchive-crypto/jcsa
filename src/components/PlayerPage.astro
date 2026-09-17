@@ -21,11 +21,25 @@ const isNotApplicable = (value) => value === "-";
 /*
  * 同一シーズンが連続する場合は、最初の行だけ年を表示し、
  * その年の連続行数ぶん rowspan する。
+ *
+ * ただし season が空欄の場合は所属年不明として扱い、
+ * 空欄同士を縦結合せず、各行に独立した年セルを表示する。
  */
 const getSeasonRowspan = (items, index) => {
   const season = items[index].season;
 
-  if (index > 0 && items[index - 1].season === season) {
+  if (
+    season === null ||
+    season === undefined ||
+    season === ""
+  ) {
+    return 1;
+  }
+
+  if (
+    index > 0 &&
+    items[index - 1].season === season
+  ) {
     return 0;
   }
 
@@ -166,9 +180,14 @@ const hasOtherOfficialMatches =
 
             <tbody>
               {player.history.map((item, index) => {
-                const seasonRowspan = getSeasonRowspan(player.history, index);
+                const seasonRowspan = getSeasonRowspan(
+                  player.history,
+                  index
+                );
+
                 const teamUrl =
-                  item.teamUrl || getTeamSeasonUrl(item.team, item.season);
+                  item.teamUrl ||
+                  getTeamSeasonUrl(item.team, item.season);
 
                 return (
                   <tr>
@@ -181,8 +200,13 @@ const hasOtherOfficialMatches =
                       </td>
                     )}
 
-                    <td class="center division-cell">{item.division}</td>
-                    <td class="center nowrap">{show(item.jersey)}</td>
+                    <td class="center division-cell">
+                      {item.division}
+                    </td>
+
+                    <td class="center nowrap">
+                      {show(item.jersey)}
+                    </td>
 
                     <td class="team-name">
                       {teamUrl ? (
@@ -193,7 +217,10 @@ const hasOtherOfficialMatches =
                     </td>
 
                     {isNotApplicable(item.leagueMatches) ? (
-                      <td colspan="2" class="not-applicable group-start">
+                      <td
+                        colspan="2"
+                        class="not-applicable group-start"
+                      >
                         <span>-</span>
                       </td>
                     ) : (
@@ -201,6 +228,7 @@ const hasOtherOfficialMatches =
                         <td class="number group-start">
                           {showStat(item.leagueMatches)}
                         </td>
+
                         <td class="number">
                           {showStat(item.leagueGoals)}
                         </td>
@@ -208,7 +236,10 @@ const hasOtherOfficialMatches =
                     )}
 
                     {isNotApplicable(item.cupMatches) ? (
-                      <td colspan="2" class="not-applicable group-start">
+                      <td
+                        colspan="2"
+                        class="not-applicable group-start"
+                      >
                         <span>-</span>
                       </td>
                     ) : (
@@ -216,6 +247,7 @@ const hasOtherOfficialMatches =
                         <td class="number group-start">
                           {showStat(item.cupMatches)}
                         </td>
+
                         <td class="number">
                           {showStat(item.cupGoals)}
                         </td>
@@ -223,7 +255,10 @@ const hasOtherOfficialMatches =
                     )}
 
                     {isNotApplicable(item.emperorCupMatches) ? (
-                      <td colspan="2" class="not-applicable group-start">
+                      <td
+                        colspan="2"
+                        class="not-applicable group-start"
+                      >
                         <span>-</span>
                       </td>
                     ) : (
@@ -231,6 +266,7 @@ const hasOtherOfficialMatches =
                         <td class="number group-start">
                           {showStat(item.emperorCupMatches)}
                         </td>
+
                         <td class="number">
                           {showStat(item.emperorCupGoals)}
                         </td>
@@ -238,7 +274,10 @@ const hasOtherOfficialMatches =
                     )}
 
                     {isNotApplicable(item.totalMatches) ? (
-                      <td colspan="2" class="not-applicable group-start">
+                      <td
+                        colspan="2"
+                        class="not-applicable group-start"
+                      >
                         <span>-</span>
                       </td>
                     ) : (
@@ -246,6 +285,7 @@ const hasOtherOfficialMatches =
                         <td class="number group-start">
                           {showStat(item.totalMatches)}
                         </td>
+
                         <td class="number">
                           {showStat(item.totalGoals)}
                         </td>
@@ -283,7 +323,10 @@ const hasOtherOfficialMatches =
                         colspan="2"
                         class="total-country center"
                       >
-                        {getEffectiveCountry(player.totals, index)}
+                        {getEffectiveCountry(
+                          player.totals,
+                          index
+                        )}
                       </td>
                     )}
 
@@ -292,7 +335,10 @@ const hasOtherOfficialMatches =
                     </td>
 
                     {isNotApplicable(item.leagueMatches) ? (
-                      <td colspan="2" class="not-applicable group-start">
+                      <td
+                        colspan="2"
+                        class="not-applicable group-start"
+                      >
                         <span>-</span>
                       </td>
                     ) : (
@@ -300,6 +346,7 @@ const hasOtherOfficialMatches =
                         <td class="number group-start">
                           {showStat(item.leagueMatches)}
                         </td>
+
                         <td class="number">
                           {showStat(item.leagueGoals)}
                         </td>
@@ -307,7 +354,10 @@ const hasOtherOfficialMatches =
                     )}
 
                     {isNotApplicable(item.cupMatches) ? (
-                      <td colspan="2" class="not-applicable group-start">
+                      <td
+                        colspan="2"
+                        class="not-applicable group-start"
+                      >
                         <span>-</span>
                       </td>
                     ) : (
@@ -315,6 +365,7 @@ const hasOtherOfficialMatches =
                         <td class="number group-start">
                           {showStat(item.cupMatches)}
                         </td>
+
                         <td class="number">
                           {showStat(item.cupGoals)}
                         </td>
@@ -322,7 +373,10 @@ const hasOtherOfficialMatches =
                     )}
 
                     {isNotApplicable(item.emperorCupMatches) ? (
-                      <td colspan="2" class="not-applicable group-start">
+                      <td
+                        colspan="2"
+                        class="not-applicable group-start"
+                      >
                         <span>-</span>
                       </td>
                     ) : (
@@ -330,6 +384,7 @@ const hasOtherOfficialMatches =
                         <td class="number group-start">
                           {showStat(item.emperorCupMatches)}
                         </td>
+
                         <td class="number">
                           {showStat(item.emperorCupGoals)}
                         </td>
@@ -337,7 +392,10 @@ const hasOtherOfficialMatches =
                     )}
 
                     {isNotApplicable(item.totalMatches) ? (
-                      <td colspan="2" class="not-applicable group-start">
+                      <td
+                        colspan="2"
+                        class="not-applicable group-start"
+                      >
                         <span>-</span>
                       </td>
                     ) : (
@@ -345,6 +403,7 @@ const hasOtherOfficialMatches =
                         <td class="number group-start">
                           {showStat(item.totalMatches)}
                         </td>
+
                         <td class="number">
                           {showStat(item.totalGoals)}
                         </td>
@@ -355,66 +414,109 @@ const hasOtherOfficialMatches =
               })}
 
               <tr class="grand-total-row">
-                <td colspan="4" class="grand-total-label center">
+                <td
+                  colspan="4"
+                  class="grand-total-label center"
+                >
                   総通算
                 </td>
 
-                {isNotApplicable(player.grandTotal.leagueMatches) ? (
-                  <td colspan="2" class="not-applicable group-start">
+                {isNotApplicable(
+                  player.grandTotal.leagueMatches
+                ) ? (
+                  <td
+                    colspan="2"
+                    class="not-applicable group-start"
+                  >
                     <span>-</span>
                   </td>
                 ) : (
                   <>
                     <td class="number group-start">
-                      {showStat(player.grandTotal.leagueMatches)}
+                      {showStat(
+                        player.grandTotal.leagueMatches
+                      )}
                     </td>
+
                     <td class="number">
-                      {showStat(player.grandTotal.leagueGoals)}
+                      {showStat(
+                        player.grandTotal.leagueGoals
+                      )}
                     </td>
                   </>
                 )}
 
-                {isNotApplicable(player.grandTotal.cupMatches) ? (
-                  <td colspan="2" class="not-applicable group-start">
+                {isNotApplicable(
+                  player.grandTotal.cupMatches
+                ) ? (
+                  <td
+                    colspan="2"
+                    class="not-applicable group-start"
+                  >
                     <span>-</span>
                   </td>
                 ) : (
                   <>
                     <td class="number group-start">
-                      {showStat(player.grandTotal.cupMatches)}
+                      {showStat(
+                        player.grandTotal.cupMatches
+                      )}
                     </td>
+
                     <td class="number">
-                      {showStat(player.grandTotal.cupGoals)}
+                      {showStat(
+                        player.grandTotal.cupGoals
+                      )}
                     </td>
                   </>
                 )}
 
-                {isNotApplicable(player.grandTotal.emperorCupMatches) ? (
-                  <td colspan="2" class="not-applicable group-start">
+                {isNotApplicable(
+                  player.grandTotal.emperorCupMatches
+                ) ? (
+                  <td
+                    colspan="2"
+                    class="not-applicable group-start"
+                  >
                     <span>-</span>
                   </td>
                 ) : (
                   <>
                     <td class="number group-start">
-                      {showStat(player.grandTotal.emperorCupMatches)}
+                      {showStat(
+                        player.grandTotal.emperorCupMatches
+                      )}
                     </td>
+
                     <td class="number">
-                      {showStat(player.grandTotal.emperorCupGoals)}
+                      {showStat(
+                        player.grandTotal.emperorCupGoals
+                      )}
                     </td>
                   </>
                 )}
 
-                {isNotApplicable(player.grandTotal.totalMatches) ? (
-                  <td colspan="2" class="not-applicable group-start">
+                {isNotApplicable(
+                  player.grandTotal.totalMatches
+                ) ? (
+                  <td
+                    colspan="2"
+                    class="not-applicable group-start"
+                  >
                     <span>-</span>
                   </td>
                 ) : (
                   <>
                     <td class="number group-start">
-                      {showStat(player.grandTotal.totalMatches)}
+                      {showStat(
+                        player.grandTotal.totalMatches
+                      )}
                     </td>
+
                     <td class="number">
-                      {showStat(player.grandTotal.totalGoals)}
+                      {showStat(
+                        player.grandTotal.totalGoals
+                      )}
                     </td>
                   </>
                 )}
@@ -441,42 +543,61 @@ const hasOtherOfficialMatches =
               </thead>
 
               <tbody>
-                {player.otherOfficialMatches.map((item, index) => {
-                  const seasonRowspan = getSeasonRowspan(
-                    player.otherOfficialMatches,
-                    index
-                  );
+                {player.otherOfficialMatches.map(
+                  (item, index) => {
+                    const seasonRowspan =
+                      getSeasonRowspan(
+                        player.otherOfficialMatches,
+                        index
+                      );
 
-                  return (
-                    <tr>
-                      {seasonRowspan > 0 && (
-                        <td
-                          rowspan={seasonRowspan}
-                          class="center nowrap other-season-cell"
-                        >
-                          {item.season}
+                    return (
+                      <tr>
+                        {seasonRowspan > 0 && (
+                          <td
+                            rowspan={seasonRowspan}
+                            class="center nowrap other-season-cell"
+                          >
+                            {item.season}
+                          </td>
+                        )}
+
+                        <td class="other-competition-cell">
+                          {item.competition}
                         </td>
-                      )}
 
-                      <td class="other-competition-cell">
-                        {item.competition}
-                      </td>
-                      <td>{item.team}</td>
-                      <td class="number">{showStat(item.matches)}</td>
-                      <td class="number">{showStat(item.goals)}</td>
-                    </tr>
-                  );
-                })}
+                        <td>{item.team}</td>
+
+                        <td class="number">
+                          {showStat(item.matches)}
+                        </td>
+
+                        <td class="number">
+                          {showStat(item.goals)}
+                        </td>
+                      </tr>
+                    );
+                  }
+                )}
 
                 <tr class="grand-total-row">
-                  <td colspan="3" class="other-total-label center">
+                  <td
+                    colspan="3"
+                    class="other-total-label center"
+                  >
                     通算
                   </td>
+
                   <td class="number">
-                    {showStat(player.otherOfficialTotal?.matches)}
+                    {showStat(
+                      player.otherOfficialTotal?.matches
+                    )}
                   </td>
+
                   <td class="number">
-                    {showStat(player.otherOfficialTotal?.goals)}
+                    {showStat(
+                      player.otherOfficialTotal?.goals
+                    )}
                   </td>
                 </tr>
               </tbody>
@@ -707,7 +828,10 @@ const hasOtherOfficialMatches =
     text-decoration: underline;
   }
 
-  .career-table tbody tr:not(.total-row):not(.grand-total-row) td {
+  .career-table
+    tbody
+    tr:not(.total-row):not(.grand-total-row)
+    td {
     background: #ffffff;
   }
 

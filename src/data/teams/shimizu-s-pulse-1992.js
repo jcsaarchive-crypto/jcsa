@@ -1,6 +1,7 @@
 export const team = {
   name: "清水FCエスパルス",
-  officialName: "(株)エスラップ・コミュニケーションズ",
+  corporateName: "(株)エスラップ・コミュニケーションズ",
+  officialName: "清水FCエスパルス",
   hometown: "静岡県清水市",
   location: "静岡県静岡市粟原198",
 
@@ -17,7 +18,10 @@ export const team = {
 
   seasonNavigation: {
     previous: null,
-    next: null,
+    next: {
+      label: "1993 清水エスパルス",
+      url: "",
+    },
   },
 
   results: {
