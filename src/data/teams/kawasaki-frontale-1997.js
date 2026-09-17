@@ -11,8 +11,6 @@ export const team = {
 
   officialName: "川崎フロンターレ",
 
-  abbreviation: "川崎",
-
   location:
     "神奈川県川崎市中原区小杉町1-403　武蔵小杉タワープレイス14F",
 
@@ -88,6 +86,7 @@ export const players = [
 
   {
     number: "3",
+    id: "P00222",
     name: "小泉 淳嗣",
     latin: "Junji KOIZUMI",
     position: "DF",
@@ -124,6 +123,7 @@ export const players = [
 
   {
     number: "6",
+    id: "P00223",
     name: "戸倉 健一郎",
     latin: "Kenichiro TOKURA",
     position: "DF",
@@ -135,6 +135,7 @@ export const players = [
 
   {
     number: "7",
+    id: "P00224",
     name: "菅野 賢一",
     latin: "Kenichi SUGANO",
     position: "FW",
@@ -194,6 +195,7 @@ export const players = [
 
   {
     number: "12",
+    id: "P00225",
     name: "桂　秀樹",
     latin: "Hideki KATSURA",
     position: "MF",
@@ -217,6 +219,7 @@ export const players = [
 
   {
     number: "14",
+    id: "P00226",
     name: "中西 哲生",
     latin: "Tetsuo NAKANISHI",
     position: "MF",
@@ -228,6 +231,7 @@ export const players = [
 
   {
     number: "15",
+    id: "P00227",
     name: "土居 義典",
     latin: "Yoshinori DOI",
     position: "MF",
@@ -239,6 +243,7 @@ export const players = [
 
   {
     number: "16",
+    id: "P00228",
     name: "大塚 真司",
     latin: "Shinji OTSUKA",
     position: "MF",
@@ -287,6 +292,7 @@ export const players = [
 
   {
     number: "20",
+    id: "P00229",
     name: "長橋 康弘",
     latin: "Yasuhiro NAGAHASHI",
     position: "DF",
@@ -298,6 +304,7 @@ export const players = [
 
   {
     number: "21",
+    id: "P00230",
     name: "浦上 壮史",
     latin: "Takeshi URAKAMI",
     position: "GK",
@@ -334,6 +341,7 @@ export const players = [
 
   {
     number: "24",
+    id: "P00231",
     name: "浦田 尚希",
     latin: "Naoki URATA",
     position: "FW",
@@ -345,6 +353,7 @@ export const players = [
 
   {
     number: "25",
+    id: "P00232",
     name: "森　一哉",
     latin: "Kazuya MORI",
     position: "MF",
@@ -356,6 +365,7 @@ export const players = [
 
   {
     number: "26",
+    id: "P00233",
     name: "高田 栄二",
     latin: "Eiji TAKADA",
     position: "DF",
@@ -403,6 +413,7 @@ export const players = [
 
   {
     number: "30",
+    id: "P00234",
     name: "佐原 秀樹",
     latin: "Hideki SAHARA",
     position: "DF",
@@ -426,6 +437,7 @@ export const players = [
 
   {
     number: "32",
+    id: "P00235",
     name: "村松 勇輝",
     latin: "Yuki MURAMATSU",
     position: "GK",
@@ -437,6 +449,7 @@ export const players = [
 
   {
   number: "33",
+  id: "P00236",
   name: "平山　大",
   latin: "Masaru HIRAYAMA",
   position: "DF",
@@ -459,6 +472,7 @@ export const players = [
 
   {
   number: "35",
+  id: "P00237",
   name: "長谷部 茂利",
   latin: "Shigetoshi HASEBE",
   position: "MF",
@@ -470,6 +484,7 @@ export const players = [
 
   {
   number: "36",
+  id: "P00238",
   name: "野口 幸司",
   latin: "Koji NOGUCHI",
   position: "FW",

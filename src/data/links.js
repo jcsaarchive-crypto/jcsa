@@ -220,6 +220,23 @@ export const playerPages = {
   P00219: "/players/eda-hiroshi",
   P00220: "/players/mishima-shinya",
   P00221: "/players/oba-kenji1",
+  P00222: "/players/koizumi-junji",
+  P00223: "/players/tokura-kenichiro",
+  P00224: "/players/sugano-kenichi",
+  P00225: "/players/katsura-hideki",
+  P00226: "/players/nakanishi-tetsuo",
+  P00227: "/players/doi-yoshinori",
+  P00228: "/players/otsuka-shinji",
+  P00229: "/players/nagahashi-yasuhiro",
+  P00230: "/players/urakami-takeshi",
+  P00231: "/players/urata-naoki",
+  P00232: "/players/mori-kazuya",
+  P00233: "/players/takada-eiji",
+  P00234: "/players/sahara-hideki",
+  P00235: "/players/muramatsu-yuki",
+  P00236: "/players/hirayama-masaru",
+  P00237: "/players/hasebe-shigetoshi",
+  P00238: "/players/noguchi-koji",
 
 };
 
