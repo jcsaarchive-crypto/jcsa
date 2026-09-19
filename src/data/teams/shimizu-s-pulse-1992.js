@@ -20,7 +20,7 @@ export const team = {
     previous: null,
     next: {
       label: "1993 清水エスパルス",
-      url: "",
+      url: "/teams/shimizu-s-pulse-1993",
     },
   },
 
@@ -512,7 +512,7 @@ export const sources = [
   {
     title: "清水エスパルスオフィシャルイヤーブック1993/94",
     publisher: "(株)エスラップ・コミュニケーションズ",
-    year: "1992年（平成4年）",
+    year: "1993年（平成5年）",
     isbn: "",
   },
 ];

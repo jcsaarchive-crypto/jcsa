@@ -54,6 +54,51 @@ const getSeasonRowspan = (items, index) => {
 };
 
 /*
+ * その他公式戦の大会欄。
+ * 同一シーズン・同一大会が連続する場合は、
+ * 最初の行だけ大会名を表示し、
+ * その連続行数ぶん rowspan する。
+ *
+ * 同じ大会名でもシーズンが異なる場合は結合しない。
+ * 大会名が空欄の場合も結合せず、各行を独立して表示する。
+ */
+const getCompetitionRowspan = (items, index) => {
+  const season = items[index].season;
+  const competition = items[index].competition;
+
+  if (
+    competition === null ||
+    competition === undefined ||
+    competition === ""
+  ) {
+    return 1;
+  }
+
+  if (
+    index > 0 &&
+    items[index - 1].season === season &&
+    items[index - 1].competition === competition
+  ) {
+    return 0;
+  }
+
+  let rowspan = 1;
+
+  for (let i = index + 1; i < items.length; i += 1) {
+    if (
+      items[i].season !== season ||
+      items[i].competition !== competition
+    ) {
+      break;
+    }
+
+    rowspan += 1;
+  }
+
+  return rowspan;
+};
+
+/*
  * 通算表の国欄。
  * 空欄は直前の国名を引き継ぎ、
  * 同じ国が連続する場合は最初の行だけ国名を表示して
@@ -551,6 +596,12 @@ const hasOtherOfficialMatches =
                         index
                       );
 
+                    const competitionRowspan =
+                      getCompetitionRowspan(
+                        player.otherOfficialMatches,
+                        index
+                      );
+
                     return (
                       <tr>
                         {seasonRowspan > 0 && (
@@ -562,9 +613,14 @@ const hasOtherOfficialMatches =
                           </td>
                         )}
 
-                        <td class="other-competition-cell">
-                          {item.competition}
-                        </td>
+                        {competitionRowspan > 0 && (
+                          <td
+                            rowspan={competitionRowspan}
+                            class="other-competition-cell"
+                          >
+                            {item.competition}
+                          </td>
+                        )}
 
                         <td>{item.team}</td>
 
@@ -933,6 +989,7 @@ const hasOtherOfficialMatches =
    * 大会名が長い場合は大会列だけ必要なぶん横へ伸ばす。
    * 外枠は表の実際の幅に合わせ、右側に不要な白い余白を作らない。
    */
+
   .other-scroll {
     width: fit-content;
     max-width: 100%;
@@ -970,6 +1027,7 @@ const hasOtherOfficialMatches =
 
   .other-table td.other-competition-cell {
     white-space: nowrap;
+    vertical-align: middle;
   }
 
   .other-table td {

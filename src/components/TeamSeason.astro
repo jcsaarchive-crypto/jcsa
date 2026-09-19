@@ -30,6 +30,24 @@ const getGoalDifference = (result) =>
       ? result.goalsFor - result.goalsAgainst
       : 0
   );
+
+const normalizeSeasonNavigation = (navigation) => {
+  if (!navigation) return [];
+
+  return Array.isArray(navigation)
+    ? navigation
+    : [navigation];
+};
+
+const previousSeasonNavigation =
+  normalizeSeasonNavigation(
+    team.seasonNavigation?.previous
+  );
+
+const nextSeasonNavigation =
+  normalizeSeasonNavigation(
+    team.seasonNavigation?.next
+  );
 ---
 
 <html lang="ja">
@@ -53,17 +71,17 @@ const getGoalDifference = (result) =>
         <div
           class="season-navigation-side season-navigation-previous"
         >
-          {team.seasonNavigation.previous && (
-            team.seasonNavigation.previous.url ? (
+          {previousSeasonNavigation.map((navigation) => (
+            navigation.url ? (
               <a
-                href={team.seasonNavigation.previous.url}
+                href={navigation.url}
                 class="season-navigation-item"
               >
                 <span class="season-navigation-direction">
                   ← 前年
                 </span>
                 <span class="season-navigation-label">
-                  {team.seasonNavigation.previous.label}
+                  {navigation.label}
                 </span>
               </a>
             ) : (
@@ -74,27 +92,27 @@ const getGoalDifference = (result) =>
                   ← 前年
                 </span>
                 <span class="season-navigation-label">
-                  {team.seasonNavigation.previous.label}
+                  {navigation.label}
                 </span>
               </div>
             )
-          )}
+          ))}
         </div>
 
         <div
           class="season-navigation-side season-navigation-next"
         >
-          {team.seasonNavigation.next && (
-            team.seasonNavigation.next.url ? (
+          {nextSeasonNavigation.map((navigation) => (
+            navigation.url ? (
               <a
-                href={team.seasonNavigation.next.url}
+                href={navigation.url}
                 class="season-navigation-item"
               >
                 <span class="season-navigation-direction">
                   翌年 →
                 </span>
                 <span class="season-navigation-label">
-                  {team.seasonNavigation.next.label}
+                  {navigation.label}
                 </span>
               </a>
             ) : (
@@ -105,11 +123,11 @@ const getGoalDifference = (result) =>
                   翌年 →
                 </span>
                 <span class="season-navigation-label">
-                  {team.seasonNavigation.next.label}
+                  {navigation.label}
                 </span>
               </div>
             )
-          )}
+          ))}
         </div>
       </nav>
     )}
@@ -830,6 +848,9 @@ const getGoalDifference = (result) =>
   }
 
   .season-navigation-side {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     min-width: 0;
   }
 
@@ -845,8 +866,13 @@ const getGoalDifference = (result) =>
     text-decoration: none;
   }
 
+  .season-navigation-previous .season-navigation-item {
+    align-self: flex-start;
+  }
+
   .season-navigation-next .season-navigation-item {
     align-items: flex-end;
+    align-self: flex-end;
   }
 
   .season-navigation-direction {
@@ -1380,6 +1406,10 @@ const getGoalDifference = (result) =>
       gap: 14px;
       margin-bottom: 22px;
       padding: 10px 0;
+    }
+
+    .season-navigation-side {
+      gap: 7px;
     }
 
     .season-navigation-label {

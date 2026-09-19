@@ -23,15 +23,22 @@ export const team = {
   ],
 
   seasonNavigation: {
-    previous: {
-      label: "90/91 トヨタ自動車",
-      url: "/teams/toyota-90-91",
+  previous: {
+    label: "90/91 トヨタ自動車",
+    url: "/teams/toyota-90-91",
+  },
+
+  next: [
+    {
+      label: "1992 名古屋グランパスエイト",
+      url: "",
     },
-    next: {
-    label: "1992 トヨタ自動車東富士",
-    url: "",
+    {
+      label: "1992 トヨタ自動車東富士",
+      url: "",
     },
-   },
+  ],
+　},
 
   results: {
     league: {

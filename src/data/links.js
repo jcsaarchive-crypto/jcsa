@@ -263,6 +263,20 @@ export const playerPages = {
   P00262: "/players/imaizumi-yukihiro",
   P00263: "/players/matsubara-shinya",
   P00264: "/players/iwashita-jun",
+  P00265: "/players/nakahara-koji",
+  P00266: "/players/kato-shinichiro",
+  P00267: "/players/tanaka-shoichi",
+  P00268: "/players/saito-hiroshi",
+  P00269: "/players/shirai-hiroyuki",
+  P00270: "/players/mochizuki-manabu",
+  P00271: "/players/kato-hisashi",
+  P00272: "/players/sugimoto-masao",
+  P00273: "/players/takada-osamu",
+  P00274: "/players/kawasumi-kazuhiro",
+  P00275: "/players/ito-teruyoshi",
+  P00276: "/players/ito-yuzuki",
+  P00277: "/players/tajima-hiroaki",
+  P00278: "/players/okada-ryuji",
 
 };
 
@@ -293,6 +307,8 @@ export const teamSeasonPages = {
   "富士通川崎FC|1996": "/teams/fujitsu-kawasaki-fc-1996",
   "川崎フロンターレ|1997": "/teams/kawasaki-frontale-1997",
   "清水FCエスパルス|1992": "/teams/shimizu-s-pulse-1992",
+  "清水エスパルス|1993": "/teams/shimizu-s-pulse-1993",
+
 
 };
 
