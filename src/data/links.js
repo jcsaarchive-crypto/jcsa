@@ -277,6 +277,12 @@ export const playerPages = {
   P00276: "/players/ito-yuzuki",
   P00277: "/players/tajima-hiroaki",
   P00278: "/players/okada-ryuji",
+  P00279: "/players/chiba-keiji",
+  P00280: "/players/yamamoto-takahiro",
+  P00281: "/players/suzuki-noriaki",
+  P00282: "/players/nagashima-akihiro",
+  P00283: "/players/saito-takeshi1",
+  P00284: "/players/shimizu-ryuzo",
 
 };
 
@@ -308,6 +314,7 @@ export const teamSeasonPages = {
   "川崎フロンターレ|1997": "/teams/kawasaki-frontale-1997",
   "清水FCエスパルス|1992": "/teams/shimizu-s-pulse-1992",
   "清水エスパルス|1993": "/teams/shimizu-s-pulse-1993",
+  "清水エスパルス|1994": "/teams/shimizu-s-pulse-1994",
 
 
 };
