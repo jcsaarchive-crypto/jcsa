@@ -64,6 +64,7 @@ export const team = {
         goalDifference: -20,
       },
     },
+    emperorCup: "1回戦敗退",
   },
 };
 
