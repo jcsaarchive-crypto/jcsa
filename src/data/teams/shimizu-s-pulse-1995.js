@@ -23,7 +23,7 @@ export const team = {
     },
     next: {
       label: "1996 清水エスパルス",
-      url: "",
+      url: "/teams/shimizu-s-pulse-1996",
     },
   },
 

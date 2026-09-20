@@ -288,6 +288,17 @@ export const playerPages = {
   P00287: "/players/morioka-ryuzo",
   P00288: "/players/yoshida-yasuhiro",
   P00289: "/players/sato-yukihiko",
+  P00290: "/players/hada-keisuke",
+  P00291: "/players/saito-toshihide",
+  P00292: "/players/iguchi-makoto",
+  P00293: "/players/matsubara-tadaaki",
+  P00294: "/players/oishi-ryo",
+  P00295: "/players/toda-kazuyuki",
+  P00296: "/players/nagai-hideki",
+  P00297: "/players/inoue-kazuaki",
+  P00298: "/players/yamaguchi-kentaro",
+  P00299: "/players/matsubara-hiroki",
+  P00300: "/players/matsubara-yoshika",
 
 };
 
@@ -321,6 +332,7 @@ export const teamSeasonPages = {
   "清水エスパルス|1993": "/teams/shimizu-s-pulse-1993",
   "清水エスパルス|1994": "/teams/shimizu-s-pulse-1994",
   "清水エスパルス|1995": "/teams/shimizu-s-pulse-1995",
+  "清水エスパルス|1996": "/teams/shimizu-s-pulse-1996",
 
 
 };
