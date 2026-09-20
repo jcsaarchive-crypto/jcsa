@@ -283,6 +283,11 @@ export const playerPages = {
   P00282: "/players/nagashima-akihiro",
   P00283: "/players/saito-takeshi1",
   P00284: "/players/shimizu-ryuzo",
+  P00285: "/players/ando-masahiro",
+  P00286: "/players/niimura-shinichi",
+  P00287: "/players/morioka-ryuzo",
+  P00288: "/players/yoshida-yasuhiro",
+  P00289: "/players/sato-yukihiko",
 
 };
 
@@ -315,6 +320,7 @@ export const teamSeasonPages = {
   "清水FCエスパルス|1992": "/teams/shimizu-s-pulse-1992",
   "清水エスパルス|1993": "/teams/shimizu-s-pulse-1993",
   "清水エスパルス|1994": "/teams/shimizu-s-pulse-1994",
+  "清水エスパルス|1995": "/teams/shimizu-s-pulse-1995",
 
 
 };

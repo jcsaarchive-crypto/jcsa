@@ -220,7 +220,7 @@ export const players = [
   birth: "1965年4月3日",
   size: "178cm/71kg",
   birthplace: "静岡県",
-  previous: "清水東高 - 早稲田大 - ヤマハ発動機",
+  previous: "清水東高 - 早稲田大 - ヤマハ発動機 - 清水クラブ",
   },
   {
     id: "P00252",
@@ -231,7 +231,7 @@ export const players = [
     birth: "1968年3月28日",
     size: "174cm/64kg",
     birthplace: "ブラジル",
-    previous: "CAジュベントス(ブラジル) - 東海大一高 - ヤマハ発動機",
+    previous: "CAジュベントス(ブラジル) - 東海大一高 - ヤマハ発動機 - 清水クラブ",
   },
   {
     id: "P00253",
@@ -352,7 +352,7 @@ export const players = [
     birth: "1965年9月25日",
     size: "177cm/77kg",
     birthplace: "静岡県",
-    previous: "清水東高 - 筑波大 - 日産自動車",
+    previous: "清水東高 - 筑波大 - 日産自動車 - 清水クラブ",
   },
   {
     id: "P00041",
@@ -374,7 +374,7 @@ export const players = [
     birth: "1968年7月12日",
     size: "178cm/76kg",
     birthplace: "静岡県",
-    previous: "清水商高 - ヤマハ発動機",
+    previous: "清水商高 - ヤマハ発動機 - 清水クラブ",
   },
   {
     id: "P00261",
@@ -385,7 +385,7 @@ export const players = [
     birth: "1968年7月24日",
     size: "179cm/68kg",
     birthplace: "静岡県",
-    previous: "静岡北高 - 国士舘大",
+    previous: "静岡北高 - 国士舘大 - 清水クラブ",
   },
   {
     id: "P00262",
