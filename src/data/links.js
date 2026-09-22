@@ -309,6 +309,20 @@ export const playerPages = {
   P00308: "/players/tanikawa-tsuyoshi",
   P00309: "/players/wada-yuzo",
   P00310: "/players/watanabe-kosuke",
+  P00311: "/players/sekiya-hiromi",
+  P00312: "/players/ishida-hiroyuki3",
+  P00313: "/players/nozawa-yosuke",
+  P00314: "/players/wakamatsu-daiki",
+  P00315: "/players/kajino-satoshi",
+  P00316: "/players/kiyama-takashi",
+  P00317: "/players/arima-kenji",
+  P00318: "/players/kato-ryuji",
+  P00319: "/players/fukagawa-tomotaka",
+  P00320: "/players/suguri-hiromasa",
+  P00321: "/players/tanada-shin",
+  P00322: "/players/nonoshita-shoji",
+  P00323: "/players/seki-koji",
+  
 
 };
 
@@ -344,6 +358,8 @@ export const teamSeasonPages = {
   "清水エスパルス|1995": "/teams/shimizu-s-pulse-1995",
   "清水エスパルス|1996": "/teams/shimizu-s-pulse-1996",
   "清水エスパルス|1997": "/teams/shimizu-s-pulse-1997",
+  "清水エスパルス|1998": "/teams/shimizu-s-pulse-1998",
+  "コンサドーレ札幌|1998": "/teams/consadole-sapporo-1998",
 
 
 };

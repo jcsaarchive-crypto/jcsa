@@ -31,7 +31,7 @@ export const team = {
     },
     next: {
       label: "1998 コンサドーレ札幌",
-      url: "",
+      url: "/teams/consadole-sapporo-1998",
     },
   },
 
