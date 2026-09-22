@@ -299,6 +299,16 @@ export const playerPages = {
   P00298: "/players/yamaguchi-kentaro",
   P00299: "/players/matsubara-hiroki",
   P00300: "/players/matsubara-yoshika",
+  P00301: "/players/okitsu-daizo",
+  P00302: "/players/nishizawa-junji",
+  P00303: "/players/naito-nobuhiro",
+  P00304: "/players/kobayashi-hisaaki",
+  P00305: "/players/santos-alessandro",
+  P00306: "/players/ichikawa-daisuke",
+  P00307: "/players/hiramatsu-kohei",
+  P00308: "/players/tanikawa-tsuyoshi",
+  P00309: "/players/wada-yuzo",
+  P00310: "/players/watanabe-kosuke",
 
 };
 
@@ -333,6 +343,7 @@ export const teamSeasonPages = {
   "清水エスパルス|1994": "/teams/shimizu-s-pulse-1994",
   "清水エスパルス|1995": "/teams/shimizu-s-pulse-1995",
   "清水エスパルス|1996": "/teams/shimizu-s-pulse-1996",
+  "清水エスパルス|1997": "/teams/shimizu-s-pulse-1997",
 
 
 };

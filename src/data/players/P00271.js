@@ -1,6 +1,6 @@
 export const player = {
   id: "P00271",
-  name: "加藤 久",
+  name: "加藤　久",
   nameKana: "かとう ひさし",
   nameEn: "Hisashi KATO",
   position: "DF",
