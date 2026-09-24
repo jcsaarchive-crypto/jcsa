@@ -65,6 +65,8 @@ export const team = {
       goalDifference: -17,
     },
   },
+    nabiscoCup: "予選C組5位敗退",
+    emperorCup: "4回戦敗退",
 },
 };
 

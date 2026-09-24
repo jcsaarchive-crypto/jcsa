@@ -36,7 +36,7 @@ export const team = {
 
     next: {
       label: "1998 川崎フロンターレ",
-      url: "",
+      url: "/teams/kawasaki-frontale-1998",
     },
   },
 
@@ -172,7 +172,7 @@ export const players = [
   {
     number: "10",
     name: "ベッチーニョ",
-    latin: "Gilberto Carlos Nascimento [BETINHO]",
+    latin: "Gilberto Carlos Nascimento <BETINHO>",
     position: "MF",
     birth: "1966年6月14日",
     size: "172cm/70kg",

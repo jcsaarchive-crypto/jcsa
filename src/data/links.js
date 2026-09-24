@@ -322,6 +322,12 @@ export const playerPages = {
   P00321: "/players/tanada-shin",
   P00322: "/players/nonoshita-shoji",
   P00323: "/players/seki-koji",
+  P00324: "/players/oniki-toru",
+  P00325: "/players/ito-shingo",
+  P00326: "/players/oishi-tetsuya",
+  P00327: "/players/aratani-hiroki",
+  P00328: "/players/hattori-hiroki",
+  P00329: "/players/hayashi-yoshiaki",
   
 
 };
@@ -360,6 +366,7 @@ export const teamSeasonPages = {
   "清水エスパルス|1997": "/teams/shimizu-s-pulse-1997",
   "清水エスパルス|1998": "/teams/shimizu-s-pulse-1998",
   "コンサドーレ札幌|1998": "/teams/consadole-sapporo-1998",
+  "川崎フロンターレ|1998": "/teams/kawasaki-frontale-1998",
 
 
 };
