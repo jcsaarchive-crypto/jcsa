@@ -328,6 +328,35 @@ export const playerPages = {
   P00327: "/players/aratani-hiroki",
   P00328: "/players/hattori-hiroki",
   P00329: "/players/hayashi-yoshiaki",
+  P00330: "/players/morishita-shinichi",
+  P00331: "/players/ishii-tomoyuki",
+  P00332: "/players/mukaida-tetsuo",
+  P00333: "/players/ishigami-yoshinori",
+  P00334: "/players/arita-kazuya",
+  P00335: "/players/yamashita-hiroyuki1",
+  P00336: "/players/yanagishita-masaaki",
+  P00337: "/players/mochizuki-tatsuya",
+  P00338: "/players/sano-hiromitsu",
+  P00339: "/players/nagasawa-kazuaki",
+  P00340: "/players/tashiro-masanobu",
+  P00341: "/players/kishimoto-mamoru",
+  P00342: "/players/uchiyama-masaru",
+  P00343: "/players/yoshida-mitsunori",
+  P00344: "/players/oishi-takao",
+  P00345: "/players/uchiyama-atsushi",
+  P00346: "/players/oishi-michihiro",
+  P00347: "/players/shida-fuminori",
+  P00348: "/players/higashikawa-yoshinori",
+  P00349: "/players/komata-kenji",
+  P00350: "/players/tada-mitsuhiro",
+  P00351: "/players/kusakabe-mitsuru",
+  P00352: "/players/okouchi-junichi",
+  P00353: "/players/yazaki-kazuhiko",
+  P00354: "/players/sawa-toshihiko",
+  P00355: "/players/takao-tadashi",
+  P00356: "/players/ozaki-yushi",
+  P00357: "/players/iwatani-muneki",
+  P00358: "/players/yoneyama-tetsuji",
   
 
 };
@@ -367,6 +396,7 @@ export const teamSeasonPages = {
   "清水エスパルス|1998": "/teams/shimizu-s-pulse-1998",
   "コンサドーレ札幌|1998": "/teams/consadole-sapporo-1998",
   "川崎フロンターレ|1998": "/teams/kawasaki-frontale-1998",
+  "ヤマハ発動機|88/89": "/teams/yamaha-88-89",
 
 
 };
