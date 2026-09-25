@@ -128,7 +128,7 @@ export const players = [
     name: "ロペス",
     latin: "Wagner Augusto LOPES",
     position: "FW",
-    birth: "1969年１月29日",
+    birth: "1969年1月29日",
     size: "182cm/72kg",
     birthplace: "ブラジル",
     previous: "サンパウロFC(ブラジル)",
