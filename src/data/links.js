@@ -448,6 +448,7 @@ export const teamSeasonPages = {
   "ヤマハ発動機|88/89": "/teams/yamaha-88-89",
   "NKK|88/89": "/teams/nkk-88-89",
   "三菱重工業|88/89": "/teams/mitsubishi-heavy-industries-88-89",
+  "日産自動車|88/89": "/teams/nissan-88-89",
 
 
 };
