@@ -387,6 +387,9 @@ export const playerPages = {
   P00386: "/players/miyazaki-yoshimasa",
   P00387: "/players/kitazato-satoshi",
   P00388: "/players/muramatsu-hiroshi",
+  P00389: "/players/tsujiya-hiroyuki",
+  P00390: "/players/natori-atsushi",
+  P00391: "/players/hara-hiromi",
   
 
 };

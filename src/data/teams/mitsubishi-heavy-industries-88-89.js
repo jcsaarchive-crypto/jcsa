@@ -105,10 +105,11 @@ export const players = [
     position: "MF",
     birth: "1959年1月22日",
     size: "163.2cm/61kg",
-    birthplace: "静岡県/愛知県",
+    birthplace: "静岡県",
     previous: "中京高",
   },
   {
+    id: "P00389",
     number: "7",
     name: "辻谷 浩幸",
     latin: "Hiroyuki TSUJIYA",
@@ -119,6 +120,7 @@ export const players = [
     previous: "帝京高",
   },
   {
+    id: "P00390",
     number: "8",
     name: "名取　篤",
     latin: "Atsushi NATORI",
@@ -129,6 +131,7 @@ export const players = [
     previous: "帝京高",
   },
   {
+    id: "P00391",
     number: "9",
     name: "原　博実",
     latin: "Hiromi HARA",
