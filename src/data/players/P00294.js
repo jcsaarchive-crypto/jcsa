@@ -1,6 +1,6 @@
 export const player = {
   id: "P00294",
-  name: "大石 玲",
+  name: "大石　玲",
   nameKana: "おおいし りょう",
   nameEn: "Ryo OISHI",
   position: "DF/MF",

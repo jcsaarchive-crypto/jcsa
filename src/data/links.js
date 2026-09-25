@@ -357,6 +357,30 @@ export const playerPages = {
   P00356: "/players/ozaki-yushi",
   P00357: "/players/iwatani-muneki",
   P00358: "/players/yoneyama-tetsuji",
+  P00359: "/players/nakamoto-kuniharu",
+  P00360: "/players/fukui-kazuya",
+  P00361: "/players/inagaki-kikuo",
+  P00362: "/players/kuramata-hisao",
+  P00363: "/players/kawakami-akira",
+  P00364: "/players/konishi-osamu",
+  P00365: "/players/tamura-katsuyoshi",
+  P00366: "/players/matsuura-toshio",
+  P00367: "/players/oikawa-koji",
+  P00368: "/players/mukai-hiroyasu",
+  P00369: "/players/hayashi-yoichi",
+  P00370: "/players/saito-kenji",
+  P00371: "/players/mochizuki-satoru",
+  P00372: "/players/fujishiro-nobuyo",
+  P00373: "/players/sakai-takashi",
+  P00374: "/players/sakamoto-hiroaki",
+  P00375: "/players/ozono-koichi",
+  P00376: "/players/ueda-haruhito",
+  P00377: "/players/isoda-yoshikazu",
+  P00378: "/players/tashiro-eiichi",
+  P00379: "/players/shibata-toshio",
+  P00380: "/players/hasebe-shinya",
+  P00381: "/players/tanaka-koji",
+  P00382: "/players/yamamoto-kinya",
   
 
 };
@@ -397,6 +421,7 @@ export const teamSeasonPages = {
   "コンサドーレ札幌|1998": "/teams/consadole-sapporo-1998",
   "川崎フロンターレ|1998": "/teams/kawasaki-frontale-1998",
   "ヤマハ発動機|88/89": "/teams/yamaha-88-89",
+  "NKK|88/89": "/teams/nkk-88-89",
 
 
 };
