@@ -271,7 +271,7 @@ export const players = [
     number: "23",
     name: "清水 秀彦",
     latin: "Hidehiko SHIMIZU",
-    position: "MF/FW/DF",
+    position: "MF",
     birth: "1954年11月4日",
     size: "178cm/69kg",
     birthplace: "千葉県",
