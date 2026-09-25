@@ -390,6 +390,22 @@ export const playerPages = {
   P00389: "/players/tsujiya-hiroyuki",
   P00390: "/players/natori-atsushi",
   P00391: "/players/hara-hiromi",
+  P00392: "/players/nakamura-shuzo",
+  P00393: "/players/yoshida-yasushi",
+  P00394: "/players/sasaki-tadashi",
+  P00395: "/players/hirose-osamu",
+  P00396: "/players/tachibana-yoichi",
+  P00397: "/players/ikuta-hisataka",
+  P00398: "/players/yamaji-morihiko",
+  P00399: "/players/nagatomi-hiroshi",
+  P00400: "/players/yuda-hideyuki",
+  P00401: "/players/matsumoto-yasushi",
+  P00402: "/players/mikami-akinori",
+  P00403: "/players/yasuda-norihiro",
+  P00404: "/players/sonobe-akihisa",
+  P00405: "/players/watabe-satoru",
+  P00406: "/players/hagino-yukishige",
+  P00407: "/players/ikoma-takehito",
   
 
 };
