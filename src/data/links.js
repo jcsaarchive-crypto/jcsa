@@ -381,6 +381,12 @@ export const playerPages = {
   P00380: "/players/hasebe-shinya",
   P00381: "/players/tanaka-koji",
   P00382: "/players/yamamoto-kinya",
+  P00383: "/players/takahashi-hiroyuki",
+  P00384: "/players/taguchi-makoto",
+  P00385: "/players/saito-kazuo",
+  P00386: "/players/miyazaki-yoshimasa",
+  P00387: "/players/kitazato-satoshi",
+  P00388: "/players/muramatsu-hiroshi",
   
 
 };
@@ -422,6 +428,7 @@ export const teamSeasonPages = {
   "川崎フロンターレ|1998": "/teams/kawasaki-frontale-1998",
   "ヤマハ発動機|88/89": "/teams/yamaha-88-89",
   "NKK|88/89": "/teams/nkk-88-89",
+  "三菱重工業|88/89": "/teams/mitsubishi-heavy-industries-88-89",
 
 
 };

@@ -23,6 +23,14 @@
 const updates = [
   {
   season: "88/89",
+  team: "三菱重工業",
+  competition: "JSL1部",
+  url: "/teams/mitsubishi-heavy-industries-88-89",
+  updated: "2026-09-25",
+  order: 37,
+  },
+  {
+  season: "88/89",
   team: "NKK",
   competition: "JSL1部",
   url: "/teams/nkk-88-89",
@@ -366,6 +374,7 @@ const recentUpdates = sortedUpdates.slice(0, 3);
           <a href="#decades">年代、チームから探す</a>
           <a href="#recent">チーム</a>
           <a href="#about">このサイトについて</a>
+          <a href="/about/data-policy">データ表記・編集方針</a>
           <a href="#contact">情報提供・お問い合わせ</a>
         </nav>
       </div>
@@ -704,12 +713,18 @@ const recentUpdates = sortedUpdates.slice(0, 3);
           ARCHIVE POLICY
         </div>
 
-        <p>
-          資料に残された記録を尊重し、
-          空欄や表記差を推測で補正しないことを基本方針としています。
-          資料間で記録が異なる場合も、
-          その違い自体を記録として扱います。
-        </p>
+        <div class="policy-content">
+          <p>
+            資料に残された記録を尊重し、
+            空欄や表記差を推測で補正しないことを基本方針としています。
+            資料間で記録が異なる場合も、
+            その違い自体を記録として扱います。
+          </p>
+
+          <a class="policy-link" href="/about/data-policy">
+            データ表記・編集方針を見る →
+          </a>
+        </div>
       </section>
     </main>
 
@@ -1259,12 +1274,29 @@ const recentUpdates = sortedUpdates.slice(0, 3);
     padding-top: 3px;
   }
 
-  .policy-section p {
+  .policy-content {
     max-width: 820px;
+  }
+
+  .policy-section p {
     margin: 0;
     color: #68716b;
     font-size: 12px;
     line-height: 1.9;
+  }
+
+  .policy-link {
+    display: inline-block;
+    margin-top: 14px;
+    color: #202522;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .policy-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
   .site-footer {

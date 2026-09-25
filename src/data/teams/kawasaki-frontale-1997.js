@@ -528,6 +528,7 @@ export const staff = [
   },
 
   {
+    id: "P00385",
     role: "監督",
     name: "斉藤 和夫",
   },
