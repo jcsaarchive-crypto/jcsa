@@ -43,6 +43,7 @@ export const team = {
 
 export const players = [
   {
+    id: "P00427",
     number: "1",
     name: "中村 和哉",
     latin: "Kazuya NAKAMURA",
@@ -53,6 +54,7 @@ export const players = [
     previous: "北陽高 - 大阪商業大",
   },
   {
+    id: "P00428",
     number: "2",
     name: "森　栄次",
     latin: "Eiji MORI",
@@ -63,6 +65,7 @@ export const players = [
     previous: "川崎工高",
   },
   {
+    id: "P00429",
     number: "3",
     name: "松木 安太郎",
     latin: "Yasutaro MATSUKI",
@@ -94,6 +97,7 @@ export const players = [
     previous: "仙台二高 - 早稲田大",
   },
   {
+    id: "P00430",
     number: "6",
     name: "都並 敏史",
     latin: "Satoshi TSUNAMI",
@@ -104,6 +108,7 @@ export const players = [
     previous: "読売ユース",
   },
   {
+    id: "P00431",
     number: "7",
     name: "千疋 美徳",
     latin: "Yoshinori SENBIKI",
@@ -114,6 +119,7 @@ export const players = [
     previous: "豊国学園高 - 九州共立大",
   },
   {
+    id: "P00432",
     number: "8",
     name: "戸塚 哲也",
     latin: "Tetsuya TOTSUKA",
@@ -124,6 +130,7 @@ export const players = [
     previous: "読売ユース",
   },
   {
+    id: "P00433",
     number: "9",
     name: "上島 康夫",
     latin: "Yasuo UEJIMA",
@@ -134,6 +141,7 @@ export const players = [
     previous: "読売ユース",
   },
   {
+    id: "P00434",
     number: "10",
     name: "ラモス",
     latin: "Ruy Goncalves RAMOS Sobrinho",
@@ -144,6 +152,7 @@ export const players = [
     previous: "サージFC(ブラジル)",
   },
   {
+    id: "P00435",
     number: "11",
     name: "大友 正人",
     latin: "Masato OTOMO",
@@ -175,6 +184,7 @@ export const players = [
     previous: "清水東高 - 順天堂大",
   },
   {
+    id: "P00436",
     number: "14",
     name: "加藤 善之",
     latin: "Yoshiyuki KATO",
@@ -185,6 +195,7 @@ export const players = [
     previous: "暁星高",
   },
   {
+    id: "P00437",
     number: "15",
     name: "湯田 一弘",
     latin: "Kazuhiro YUDA",
@@ -195,6 +206,7 @@ export const players = [
     previous: "今市高 - 順天堂大",
   },
   {
+    id: "P00438",
     number: "16",
     name: "菊原 志郎",
     latin: "Shiro KIKUHARA",
@@ -216,6 +228,7 @@ export const players = [
     previous: "静岡学園高 - サントスFC(ブラジル)",
   },
   {
+    id: "P00439",
     number: "18",
     name: "藤川 孝幸",
     latin: "Takayuki FUJIKAWA",
@@ -226,6 +239,7 @@ export const players = [
     previous: "読売ユース",
   },
   {
+    id: "P00440",
     number: "19",
     name: "岸野 靖之",
     latin: "Yasuyuki KISHINO",
@@ -246,6 +260,7 @@ export const players = [
     previous: "サンパウロFC(ブラジル) - ダラス・トルネード(アメリカ) - CDグアダラハラ(メキシコ) - ダラス・トルネード(アメリカ) - ナシオナル・モンテビデオ(ウルグアイ) - SCインテルナシオナル(ブラジル) - コリチーバFC(ブラジル) - スポルチ・レシフェ(ブラジル) - ナウチコ(ブラジル)",
   },
   {
+    id: "P00441",
     number: "21",
     name: "菊池 新吉",
     latin: "Shinkichi KIKUCHI",
@@ -256,6 +271,7 @@ export const players = [
     previous: "遠野高",
   },
   {
+    id: "P00442",
     number: "22",
     name: "武田 修宏",
     latin: "Nobuhiro TAKEDA",
@@ -266,6 +282,7 @@ export const players = [
     previous: "清水東高",
   },
   {
+    id: "P00443",
     number: "23",
     name: "浅岡 朝泰",
     latin: "Tomoyasu ASAOKA",

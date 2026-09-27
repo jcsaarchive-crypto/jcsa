@@ -425,6 +425,23 @@ export const playerPages = {
   P00424: "/players/shimizu-hidehiko",
   P00425: "/players/matsunaga-shigetatsu",
   P00426: "/players/yoneda-toshitaka",
+  P00427: "/players/nakamura-kazuya",
+  P00428: "/players/mori-eiji",
+  P00429: "/players/matsuki-yasutaro",
+  P00430: "/players/tsunami-satoshi",
+  P00431: "/players/senbiki-yoshinori",
+  P00432: "/players/totsuka-tetsuya",
+  P00433: "/players/uejima-yasuo",
+  P00434: "/players/ramos-ruy",
+  P00435: "/players/otomo-masato",
+  P00436: "/players/kato-yoshiyuki",
+  P00437: "/players/yuda-kazuhiro",
+  P00438: "/players/kikuhara-shiro",
+  P00439: "/players/fujikawa-takayuki",
+  P00440: "/players/kishino-yasuyuki",
+  P00441: "/players/kikuchi-shinkichi",
+  P00442: "/players/takeda-nobuhiro2",
+  P00443: "/players/asaoka-tomoyasu",
   
 };
 
