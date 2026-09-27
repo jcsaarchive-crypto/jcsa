@@ -1,7 +1,7 @@
 export const team = {
   name: "日産自動車",
   officialName: "日産自動車(株)サッカー部",
-  abbreviation: "日産",
+  abbreviation: "日産 / 日産自動車",
   location: "東京都中央区銀座6-17-1",
   founding: {
     year: 1972,
@@ -335,7 +335,7 @@ export const staff = [
   { role: "運営委員/主務", name: "鈴木 徳昭" },
   { role: "監督", name: "加茂　周" },
   { role: "コーチ", name: "下條 佳明" },
-  { role: "コーチ兼選手", name: "清水 秀彦" },
+  { role: "コーチ兼選手", id: "P00424", name: "清水 秀彦" },
 ];
 
 export const sources = [

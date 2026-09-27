@@ -160,7 +160,9 @@ export const sources = [
   {
     title: "1993-1994 第2回ジャパンフットボールリーグ公式プログラム",
     publisher: "ジャパンフットボールリーグ事務局",
+    year: "1993年（平成5年）",
   },
+
 ];
 
 export const players = [
@@ -263,7 +265,7 @@ export const players = [
   {
     number: "9",
     name: "ジョルジーニョ",
-    latin: "Jorge Antonio Putinatti",
+    latin: "Jorge Antonio Putinatti <JORGENYO>",
     position: "MF",
     birth: "1959年8月23日",
     size: "175cm/65kg",
@@ -287,19 +289,19 @@ export const players = [
   {
     number: "11",
     name: "クリシューマ",
-    latin: "Pauro Roberto Rocha",
+    latin: "Pauro Roberto Rocha <CRICIUMA>",
     position: "MF",
     birth: "1961年8月30日",
     size: "180cm/78kg",
     birthplace: "ブラジル",
     previous:
-      "アメリカ(ブラジル) - バングー(ブラジル) - 浦項製鉄アトムズ(韓国) - バングー(ブラジル) - ボタフォゴ(ブラジル) - インテルナシオナル(ブラジル)",
+      "クリシューマEC(ブラジル) - アメリカ(ブラジル) - バングー(ブラジル) - 浦項製鉄アトムズ(韓国) - バングー(ブラジル) - ボタフォゴ(ブラジル) - インテルナシオナル(ブラジル)",
   },
 
   {
     number: "12",
     name: "バチスタ",
-    latin: "Joao Batista Pereira",
+    latin: "Joao BATISTA Pereira",
     position: "DF",
     birth: "1966年9月27日",
     size: "185cm/78kg",
@@ -416,6 +418,19 @@ export const players = [
     previous: "四日市中央工高 - 本田技研工業",
   },
 
+  
+  {
+    id: "P00143",
+    number: "23",
+    name: "安原 成泰",
+    latin: "Naruyasu YASUHARA",
+    position: "MF",
+    birth: "1968年8月9日",
+    size: "172cm/64kg",
+    birthplace: "愛知県",
+    previous: "中京高 - 大阪商業大",
+  },
+
   {
     id: "P00020",
     number: "23",
@@ -428,17 +443,6 @@ export const players = [
     previous: "鹿児島商高",
   },
 
-  {
-    id: "P00143",
-    number: "23",
-    name: "安原 成泰",
-    latin: "Naruyasu YASUHARA",
-    position: "MF",
-    birth: "1968年8月9日",
-    size: "172cm/64kg",
-    birthplace: "愛知県",
-    previous: "中京高 - 大阪商業大",
-  },
 
   {
     id: "P00144",

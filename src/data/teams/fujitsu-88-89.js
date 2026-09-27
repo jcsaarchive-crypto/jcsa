@@ -90,7 +90,7 @@ export const players = [
   {
     number: 3,
     name: "呂　洪祥",
-    latin: "LU HONGXIANG",
+    latin: "LU Hongxiang",
     position: "DF",
     birth: "1960年3月21日",
     size: "178cm/75kg",
@@ -209,7 +209,7 @@ export const players = [
   {
     number: 14,
     name: "沈　祥福",
-    latin: "SHEIN XIANGFU",
+    latin: "SHEIN Xiangfu",
     position: "MF",
     birth: "1957年5月27日",
     size: "170cm/62kg",

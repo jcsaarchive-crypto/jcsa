@@ -421,12 +421,12 @@ export const players = [
   {
     number: "25",
     name: "カルバネッセ",
-    latin: "FERNAND GABRIEL CALBANESE",
+    latin: "Fernand Gabriel CALBANESE",
     position: "FW",
     birth: "1967年1月6日",
     size: "173cm/70kg",
     birthplace: "アルゼンチン",
-    previous: "サンロレンソ",
+    previous: "サンロレンソ(アルゼンチン)",
   },
 
   {

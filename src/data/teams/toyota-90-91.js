@@ -197,7 +197,7 @@ export const players = [
   {
     number: "9",
     name: "ジョルジーニョ",
-    latin: "Jorge Antonio Putinatti",
+    latin: "Jorge Antonio Putinatti <JORGENYO>",
     position: "MF",
     birth: "1959年8月23日",
     size: "175cm/65kg",
@@ -221,7 +221,7 @@ export const players = [
   {
     number: "11",
     name: "ジルシマール",
-    latin: "Gilcimar Wilson Francisco",
+    latin: "GILCIMAR Wilson Francisco",
     position: "FW",
     birth: "1959年11月26日",
     size: "170cm/68kg",
@@ -352,7 +352,7 @@ export const players = [
   {
     number: "22",
     name: "マルコン",
-    latin: "Malcolm Adriano Da Silva",
+    latin: "MALCOLM Adriano Da Silva",
     position: "FW",
     birth: "1970年3月11日",
     size: "173cm/65kg",

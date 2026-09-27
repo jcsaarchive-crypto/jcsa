@@ -304,7 +304,7 @@ export const players = [
     birth: "1968年12月18日",
     size: "167cm/59kg",
     birthplace: "東京都",
-    previous: "1.FCカイザースラウテルンユース - ゲルマニア(ドイツ)",
+    previous: "1.FCカイザースラウテルンユース(ドイツ) - ゲルマニア(ドイツ)",
   },
   {
     id: "P00072",

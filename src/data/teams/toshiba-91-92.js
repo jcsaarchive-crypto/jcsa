@@ -109,7 +109,7 @@ export const players = [
   {
     number: "6",
     name: "デレオン",
-    latin: "HUGO DE LEON",
+    latin: "Hugo DE LEON",
     position: "DF",
     birth: "1958年2月27日",
     size: "188cm/81kg",
@@ -142,7 +142,7 @@ export const players = [
   {
     number: "9",
     name: "ロペス",
-    latin: "MARIO LOPEZ",
+    latin: "Mario LOPEZ",
     position: "FW",
     birth: "1964年7月29日",
     size: "168cm/65kg",
@@ -153,7 +153,7 @@ export const players = [
   {
     number: "10",
     name: "ペデルッチ",
-    latin: "PEDRO PEDRUCCI",
+    latin: "Pedro PEDRUCCI",
     position: "MF",
     birth: "1961年9月30日",
     size: "180cm/77kg",

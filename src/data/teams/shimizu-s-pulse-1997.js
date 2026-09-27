@@ -316,7 +316,7 @@ export const players = [
     id: "P00305",
     number: "23",
     name: "アレックス",
-    latin: "Alessandro Dos Santos (ALEX)",
+    latin: "Alessandro Dos Santos <ALEX>",
     position: "MF",
     birth: "1977年7月20日",
     size: "178cm/69kg",

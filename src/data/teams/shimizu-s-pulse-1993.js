@@ -370,7 +370,7 @@ export const players = [
     id: "P00252",
     number: "―",
     name: "サントス",
-    latin: "Ademir SANTOS",
+    latin: "Ademir Vieira Dos SANTOS",
     position: "MF",
     birth: "1968年3月28日",
     size: "174cm/68kg",

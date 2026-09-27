@@ -1,7 +1,7 @@
 export const team = {
   name: "三菱重工業",
   officialName: "三菱重工業(株)サッカー部",
-  abbreviation: "三菱",
+  abbreviation: "三菱 / 三菱重工",
   location: "東京都千代田区丸の内2-5-1",
   founding: {
     year: 1950,

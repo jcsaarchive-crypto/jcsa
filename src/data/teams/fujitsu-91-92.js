@@ -57,7 +57,7 @@ export const players = [
   {
     number: "2",
     name: "高　　升",
-    latin: "GAO SHENG",
+    latin: "GAO Sheng",
     position: "DF",
     birth: "1962年5月10日",
     size: "182cm/72kg",
@@ -166,7 +166,7 @@ export const players = [
   {
     number: "12",
     name: "魏　克興",
-    latin: "WAI KEXING",
+    latin: "WAI Kexing",
     position: "MF",
     birth: "1963年2月13日",
     size: "180cm/70kg",
@@ -176,7 +176,7 @@ export const players = [
   {
     number: "13",
     name: "楊　朝輝",
-    latin: "YANG ZHAO HVI",
+    latin: "YANG Zhaohui",
     position: "FW",
     birth: "1962年9月14日",
     size: "181cm/75kg",

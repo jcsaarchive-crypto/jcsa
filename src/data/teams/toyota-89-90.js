@@ -142,7 +142,7 @@ export const players = [
   {
     number: "5",
     name: "アセド",
-    latin: "EDISON APARECIDO ACEDO",
+    latin: "Edison Aparecido ACEDO",
     position: "DF",
     birth: "1957年3月4日",
     size: "180cm/70kg",
@@ -177,7 +177,7 @@ export const players = [
   {
     number: "8",
     name: "ウンベルト",
-    latin: "CARLOS HUMBERTO SUZIGAN",
+    latin: "Carlos HUMBERTO Suzigan",
     position: "MF",
     birth: "1957年8月3日",
     size: "175cm/70kg",
@@ -212,7 +212,7 @@ export const players = [
   {
     number: "11",
     name: "ジルシマール",
-    latin: "Gilcimar Wilson Francisco",
+    latin: "GILCIMAR Wilson Francisco",
     position: "FW",
     birth: "1959年11月26日",
     size: "170cm/68kg",
@@ -416,7 +416,7 @@ export const players = [
   {
     number: "―",
     name: "アレシャンドレ・バリ",
-    latin: "ALEXANDRE BARI",
+    latin: "Alexandre BARI",
     position: "DF",
     birth: "1959年8月17日",
     size: "172.5cm/75kg",

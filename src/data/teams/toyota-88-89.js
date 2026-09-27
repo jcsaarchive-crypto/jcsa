@@ -111,7 +111,7 @@ export const players = [
   {
     number: "5",
     name: "アレシャンドレ・バリ",
-    latin: "ALEXANDRE BARI",
+    latin: "Alexandre BARI",
     position: "DF",
     birth: "1959年8月17日",
     size: "172.5cm/75kg",

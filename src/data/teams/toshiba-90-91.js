@@ -132,7 +132,7 @@ export const players = [
   {
     number: "8",
     name: "ロペス",
-    latin: "MARIO LOPEZ",
+    latin: "Mario LOPEZ",
     position: "FW",
     birth: "1964年7月29日",
     size: "168cm/65kg",
@@ -142,7 +142,7 @@ export const players = [
   {
     number: "9",
     name: "カルバネッセ",
-    latin: "FERNAND GABRIEL CALBANESE",
+    latin: "Fernando Gabriel CALBANESE",
     position: "FW",
     birth: "1967年1月6日",
     size: "173cm/70kg",
@@ -152,7 +152,7 @@ export const players = [
   {
     number: "10",
     name: "ペデルッチ",
-    latin: "PEDRO PEDRUCCI",
+    latin: "Pedro PEDRUCCI",
     position: "MF",
     birth: "1961年9月30日",
     size: "180cm/77kg",

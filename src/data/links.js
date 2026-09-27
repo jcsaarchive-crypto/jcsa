@@ -467,6 +467,7 @@ export const teamSeasonPages = {
   "NKK|88/89": "/teams/nkk-88-89",
   "三菱重工業|88/89": "/teams/mitsubishi-heavy-industries-88-89",
   "日産自動車|88/89": "/teams/nissan-motors-88-89",
+  "読売サッカークラブ|88/89": "/teams/yomiuri-soccer-club-88-89",
 
 
 };

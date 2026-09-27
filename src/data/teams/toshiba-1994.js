@@ -19,7 +19,7 @@ export const team = {
 
   season: "1994",
 
-  competition: "ジャパンフットボールリーグ1部（旧JFL1部）",
+  competition: "ジャパンフットボールリーグ（旧JFL）",
 
   competitionEn: "JAPAN FOOTBALL LEAGUE（JFL）",
 
@@ -245,7 +245,7 @@ export const players = [
     latin: "Katsuya MOCHIZUKI",
     position: "MF",
     birth: "1969年5月7日",
-    size: "171cm/67kg",
+    size: "168cm/68kg",
     birthplace: "―",
     previous: "清水東高 - 法政大 - NKK",
   },
