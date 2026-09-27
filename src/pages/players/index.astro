@@ -22,60 +22,61 @@ const players = Object.values(playerModules)
   );
 
 const kanaGroups = [
-  {
-    key: "あ",
-    label: "あ行",
-    chars: ["あ", "い", "う", "え", "お"],
-  },
-  {
-    key: "か",
-    label: "か行",
-    chars: ["か", "き", "く", "け", "こ", "が", "ぎ", "ぐ", "げ", "ご"],
-  },
-  {
-    key: "さ",
-    label: "さ行",
-    chars: ["さ", "し", "す", "せ", "そ", "ざ", "じ", "ず", "ぜ", "ぞ"],
-  },
-  {
-    key: "た",
-    label: "た行",
-    chars: ["た", "ち", "つ", "て", "と", "だ", "ぢ", "づ", "で", "ど"],
-  },
-  {
-    key: "な",
-    label: "な行",
-    chars: ["な", "に", "ぬ", "ね", "の"],
-  },
-  {
-    key: "は",
-    label: "は行",
-    chars: [
-      "は", "ひ", "ふ", "へ", "ほ",
-      "ば", "び", "ぶ", "べ", "ぼ",
-      "ぱ", "ぴ", "ぷ", "ぺ", "ぽ",
-    ],
-  },
-  {
-    key: "ま",
-    label: "ま行",
-    chars: ["ま", "み", "む", "め", "も"],
-  },
-  {
-    key: "や",
-    label: "や行",
-    chars: ["や", "ゆ", "よ"],
-  },
-  {
-    key: "ら",
-    label: "ら行",
-    chars: ["ら", "り", "る", "れ", "ろ"],
-  },
-  {
-    key: "わ",
-    label: "わ行",
-    chars: ["わ", "を", "ん"],
-  },
+  { key: "あ", label: "あ", chars: ["あ"] },
+  { key: "い", label: "い", chars: ["い"] },
+  { key: "う", label: "う", chars: ["う"] },
+  { key: "え", label: "え", chars: ["え"] },
+  { key: "お", label: "お", chars: ["お"] },
+
+  { key: "か", label: "か", chars: ["か", "が"] },
+  { key: "き", label: "き", chars: ["き", "ぎ"] },
+  { key: "く", label: "く", chars: ["く", "ぐ"] },
+  { key: "け", label: "け", chars: ["け", "げ"] },
+  { key: "こ", label: "こ", chars: ["こ", "ご"] },
+
+  { key: "さ", label: "さ", chars: ["さ", "ざ"] },
+  { key: "し", label: "し", chars: ["し", "じ"] },
+  { key: "す", label: "す", chars: ["す", "ず"] },
+  { key: "せ", label: "せ", chars: ["せ", "ぜ"] },
+  { key: "そ", label: "そ", chars: ["そ", "ぞ"] },
+
+  { key: "た", label: "た", chars: ["た", "だ"] },
+  { key: "ち", label: "ち", chars: ["ち", "ぢ"] },
+  { key: "つ", label: "つ", chars: ["つ", "づ"] },
+  { key: "て", label: "て", chars: ["て", "で"] },
+  { key: "と", label: "と", chars: ["と", "ど"] },
+
+  { key: "な", label: "な", chars: ["な"] },
+  { key: "に", label: "に", chars: ["に"] },
+  { key: "ぬ", label: "ぬ", chars: ["ぬ"] },
+  { key: "ね", label: "ね", chars: ["ね"] },
+  { key: "の", label: "の", chars: ["の"] },
+
+  { key: "は", label: "は", chars: ["は", "ば", "ぱ"] },
+  { key: "ひ", label: "ひ", chars: ["ひ", "び", "ぴ"] },
+  { key: "ふ", label: "ふ", chars: ["ふ", "ぶ", "ぷ"] },
+  { key: "へ", label: "へ", chars: ["へ", "べ", "ぺ"] },
+  { key: "ほ", label: "ほ", chars: ["ほ", "ぼ", "ぽ"] },
+
+  { key: "ま", label: "ま", chars: ["ま"] },
+  { key: "み", label: "み", chars: ["み"] },
+  { key: "む", label: "む", chars: ["む"] },
+  { key: "め", label: "め", chars: ["め"] },
+  { key: "も", label: "も", chars: ["も"] },
+
+  { key: "や", label: "や", chars: ["や"] },
+  { key: "ゆ", label: "ゆ", chars: ["ゆ"] },
+  { key: "よ", label: "よ", chars: ["よ"] },
+
+  { key: "ら", label: "ら", chars: ["ら"] },
+  { key: "り", label: "り", chars: ["り"] },
+  { key: "る", label: "る", chars: ["る"] },
+  { key: "れ", label: "れ", chars: ["れ"] },
+  { key: "ろ", label: "ろ", chars: ["ろ"] },
+
+  { key: "わ", label: "わ", chars: ["わ"] },
+  { key: "を", label: "を", chars: ["を"] },
+  { key: "ん", label: "ん", chars: ["ん"] },
 ];
 
 const groups = kanaGroups
@@ -162,7 +163,7 @@ const groups = kanaGroups
   }
 
   main {
-    width: min(1000px, calc(100% - 40px));
+    width: min(1100px, calc(100% - 40px));
     margin: 0 auto;
     padding: 50px 0 90px;
   }
@@ -201,22 +202,24 @@ const groups = kanaGroups
   }
 
   .kana-nav {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(10, 46px);
     gap: 8px;
     margin-top: 42px;
   }
 
   .kana-nav a {
-    display: block;
-    min-width: 62px;
-    padding: 10px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 42px;
     background: #ffffff;
     border: 1px solid #cfd5d0;
     color: #202522;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
   }
 
@@ -231,7 +234,7 @@ const groups = kanaGroups
   }
 
   .kana-group {
-    max-width: 700px;
+    max-width: 900px;
     scroll-margin-top: 25px;
   }
 
@@ -243,7 +246,7 @@ const groups = kanaGroups
 
   h2 {
     margin: 0 0 16px;
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .player-list {
@@ -253,11 +256,13 @@ const groups = kanaGroups
   }
 
   .player-row {
-    display: flex;
-    align-items: baseline;
-    gap: 28px;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) minmax(220px, 0.8fr);
+    align-items: center;
+    gap: 32px;
     width: 100%;
-    padding: 13px 16px;
+    min-height: 52px;
+    padding: 13px 18px;
     background: #ffffff;
     border: 1px solid #cfd5d0;
     color: #202522;
@@ -269,35 +274,72 @@ const groups = kanaGroups
   }
 
   .player-name {
-    min-width: 190px;
+    min-width: 0;
     font-size: 16px;
     font-weight: 700;
-    white-space: nowrap;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
   }
 
   .player-kana {
+    min-width: 0;
     color: #68716b;
     font-size: 12px;
-    white-space: nowrap;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
   }
 
   @media (max-width: 700px) {
     main {
-      width: calc(100% - 24px);
+      width: calc(100% - 16px);
       padding-top: 40px;
     }
 
+    .kana-nav {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 7px;
+    }
+
     .kana-nav a {
-      min-width: 54px;
-      padding: 9px 10px;
+      width: 100%;
+      height: 42px;
+      padding: 0;
+    }
+
+    .kana-group {
+      max-width: none;
     }
 
     .player-row {
-      gap: 16px;
+      grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+      gap: 12px;
+      padding: 13px 12px;
     }
 
     .player-name {
-      min-width: 145px;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    .player-kana {
+      font-size: 11px;
+      line-height: 1.45;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .player-row {
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.9fr);
+      gap: 8px;
+      padding: 12px 10px;
+    }
+
+    .player-name {
+      font-size: 15px;
+    }
+
+    .player-kana {
+      font-size: 10px;
     }
   }
 </style>
