@@ -406,8 +406,26 @@ export const playerPages = {
   P00405: "/players/watabe-satoru",
   P00406: "/players/hagino-yukishige",
   P00407: "/players/ikoma-takehito",
+  P00408: "/players/yasui-takashi",
+  P00409: "/players/sano-toru",
+  P00410: "/players/tanaka-shinji",
+  P00411: "/players/koshida-takeshi",
+  P00412: "/players/ikeda-shinobu",
+  P00413: "/players/sakaida-masaaki",
+  P00414: "/players/kaneda-nobutoshi",
+  P00415: "/players/mizunuma-takashi",
+  P00416: "/players/lopes-wagner",
+  P00417: "/players/kimura-kazushi",
+  P00418: "/players/hashiratani-koichi",
+  P00419: "/players/kimura-kokichi",
+  P00420: "/players/sugiyama-makoto",
+  P00421: "/players/hashiratani-tetsuji",
+  P00422: "/players/okamoto-yoshiaki",
+  P00423: "/players/murakami-hiroshi",
+  P00424: "/players/shimizu-hidehiko",
+  P00425: "/players/matsunaga-shigetatsu",
+  P00426: "/players/yoneda-toshitaka",
   
-
 };
 
 export const teamSeasonPages = {

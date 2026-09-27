@@ -1,6 +1,6 @@
 export const player = {
   id: "P00252",
-  name: "三渡洲 アデミール(アデミール・サントス)",
+  name: "三渡洲 アデミール (アデミール・サントス)",
   nameKana: "さんとす あでみーる",
   nameEn: "Ademir SANTOS",
   position: "MF/FW",
