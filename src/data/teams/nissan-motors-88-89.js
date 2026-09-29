@@ -8,8 +8,8 @@ export const team = {
     note: "",
   },
   season: "88/89",
-  competition: "日本サッカーリーグ1部",
-  competitionEn: "JAPAN SOCCER LEAGUE",
+  competition: "日本サッカーリーグ1部（JSL1部）",
+  competitionEn: "JAPAN SOCCER LEAGUE（JSL）DIVISION 1",
   mainGrounds: [
     "三ツ沢球技場",
     "平塚競技場",
