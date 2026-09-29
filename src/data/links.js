@@ -463,6 +463,13 @@ export const playerPages = {
   P00462: "/players/ito-yuji",
   P00463: "/players/tanaka-kazuya1",
   P00464: "/players/nagao-mitsuhiro",
+  P00465: "/players/kato-yoshio",
+  P00466: "/players/okada-takeshi",
+  P00467: "/players/igarashi-kazuya",
+  P00468: "/players/yamamoto-kenji1",
+  P00469: "/players/kaneko-hisashi",
+  P00470: "/players/kobayashi-hiroshi",
+  P00471: "/players/yoshida-toru",
   
 };
 
@@ -507,6 +514,7 @@ export const teamSeasonPages = {
   "日産自動車|88/89": "/teams/nissan-motors-88-89",
   "読売サッカークラブ|88/89": "/teams/yomiuri-soccer-club-88-89",
   "ヤンマーディーゼル|88/89": "/teams/yanmar-diesel-88-89",
+  "古河電気工業|88/89": "/teams/furukawa-electric-88-89",
 
 
 };

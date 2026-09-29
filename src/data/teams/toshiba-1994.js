@@ -112,7 +112,7 @@ export const players = [
   {
     number: 6,
     name: "朴 純泰(パク・スンタイ)",
-    latin: "Park Sun-tae",
+    latin: "PARK Sun-tae",
     position: "DF",
     birth: "1968年12月1日",
     size: "182cm/77kg",
