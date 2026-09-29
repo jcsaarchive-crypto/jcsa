@@ -442,6 +442,27 @@ export const playerPages = {
   P00441: "/players/kikuchi-shinkichi",
   P00442: "/players/takeda-nobuhiro2",
   P00443: "/players/asaoka-tomoyasu",
+  P00444: "/players/tsubota-kazumi",
+  P00445: "/players/kajino-tomoyuki",
+  P00446: "/players/kishi-shunji",
+  P00447: "/players/nishimura-akihiro",
+  P00448: "/players/shirasawa-hisanori",
+  P00449: "/players/soejima-hiroshi",
+  P00450: "/players/okazaki-yuzo",
+  P00451: "/players/kusaki-katsuhiro",
+  P00452: "/players/komatsu-akira",
+  P00453: "/players/sowa-hiroshi",
+  P00454: "/players/shimomura-toshio",
+  P00455: "/players/higashi-kenji",
+  P00456: "/players/dazai-yoshikazu",
+  P00457: "/players/itani-shoji",
+  P00458: "/players/matsushita-koichi",
+  P00459: "/players/nishide-takuji",
+  P00460: "/players/misaki-toshihiro",
+  P00461: "/players/kutsukake-hideki",
+  P00462: "/players/ito-yuji",
+  P00463: "/players/tanaka-kazuya1",
+  P00464: "/players/nagao-mitsuhiro",
   
 };
 
@@ -485,6 +506,7 @@ export const teamSeasonPages = {
   "三菱重工業|88/89": "/teams/mitsubishi-heavy-industries-88-89",
   "日産自動車|88/89": "/teams/nissan-motors-88-89",
   "読売サッカークラブ|88/89": "/teams/yomiuri-soccer-club-88-89",
+  "ヤンマーディーゼル|88/89": "/teams/yanmar-diesel-88-89",
 
 
 };
