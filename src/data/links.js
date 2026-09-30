@@ -487,6 +487,17 @@ export const playerPages = {
   P00486: "/players/ayukawa-yoshifusa",
   P00487: "/players/kizawa-masanori",
   P00488: "/players/makino-keisuke",
+  P00489: "/players/imai-masataka",
+  P00490: "/players/yoshikoshi-toshimitsu",
+  P00491: "/players/nonaka-takao",
+  P00492: "/players/hirata-makoto",
+  P00493: "/players/kurata-yasuharu",
+  P00494: "/players/kanzaki-mikiya",
+  P00495: "/players/katsuya-toshinobu",
+  P00496: "/players/sekizuka-takashi",
+  P00497: "/players/sasaki-masanao",
+  P00498: "/players/ando-shigeru",
+
   
 };
 
@@ -532,6 +543,7 @@ export const teamSeasonPages = {
   "読売サッカークラブ|88/89": "/teams/yomiuri-soccer-club-88-89",
   "ヤンマーディーゼル|88/89": "/teams/yanmar-diesel-88-89",
   "古河電気工業|88/89": "/teams/furukawa-electric-88-89",
+  "本田技研工業|88/89": "/teams/honda-giken-88-89",
 
 
 };

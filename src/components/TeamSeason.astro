@@ -30,6 +30,40 @@ const getGoalDifference = (result) =>
       ? result.goalsFor - result.goalsAgainst
       : 0
   );
+
+const normalizeSeasonNavigation = (navigation) => {
+  if (!navigation) return [];
+
+  return Array.isArray(navigation)
+    ? navigation
+    : [navigation];
+};
+
+const previousSeasonNavigation =
+  normalizeSeasonNavigation(
+    team.seasonNavigation?.previous
+  );
+
+const nextSeasonNavigation =
+  normalizeSeasonNavigation(
+    team.seasonNavigation?.next
+  );
+
+const splitPlayerName = (name = "") => {
+  const match = name.match(/^(.*?)(\([^()]+\))$/);
+
+  if (!match) {
+    return {
+      main: name,
+      reading: "",
+    };
+  }
+
+  return {
+    main: match[1],
+    reading: match[2],
+  };
+};
 ---
 
 <html lang="ja">
@@ -53,17 +87,17 @@ const getGoalDifference = (result) =>
         <div
           class="season-navigation-side season-navigation-previous"
         >
-          {team.seasonNavigation.previous && (
-            team.seasonNavigation.previous.url ? (
+          {previousSeasonNavigation.map((navigation) => (
+            navigation.url ? (
               <a
-                href={team.seasonNavigation.previous.url}
+                href={navigation.url}
                 class="season-navigation-item"
               >
                 <span class="season-navigation-direction">
                   ← 前年
                 </span>
                 <span class="season-navigation-label">
-                  {team.seasonNavigation.previous.label}
+                  {navigation.label}
                 </span>
               </a>
             ) : (
@@ -74,27 +108,27 @@ const getGoalDifference = (result) =>
                   ← 前年
                 </span>
                 <span class="season-navigation-label">
-                  {team.seasonNavigation.previous.label}
+                  {navigation.label}
                 </span>
               </div>
             )
-          )}
+          ))}
         </div>
 
         <div
           class="season-navigation-side season-navigation-next"
         >
-          {team.seasonNavigation.next && (
-            team.seasonNavigation.next.url ? (
+          {nextSeasonNavigation.map((navigation) => (
+            navigation.url ? (
               <a
-                href={team.seasonNavigation.next.url}
+                href={navigation.url}
                 class="season-navigation-item"
               >
                 <span class="season-navigation-direction">
                   翌年 →
                 </span>
                 <span class="season-navigation-label">
-                  {team.seasonNavigation.next.label}
+                  {navigation.label}
                 </span>
               </a>
             ) : (
@@ -105,11 +139,11 @@ const getGoalDifference = (result) =>
                   翌年 →
                 </span>
                 <span class="season-navigation-label">
-                  {team.seasonNavigation.next.label}
+                  {navigation.label}
                 </span>
               </div>
             )
-          )}
+          ))}
         </div>
       </nav>
     )}
@@ -473,6 +507,7 @@ const getGoalDifference = (result) =>
           <tbody>
             {players.map((player) => {
               const playerUrl = getPlayerUrl(player.id);
+              const playerName = splitPlayerName(player.name);
 
               return (
                 <tr>
@@ -481,13 +516,35 @@ const getGoalDifference = (result) =>
                   </td>
 
                   <td class="player-name name-column">
-                    <span class="single-line-fit name-fit">
-                      {playerUrl ? (
-                        <a href={playerUrl}>{player.name}</a>
-                      ) : (
-                        player.name
+                    <div class="player-name-row">
+                      <span class="single-line-fit name-fit">
+                        {playerUrl ? (
+                          <a href={playerUrl}>
+                            <span class="name-main">{playerName.main}</span>
+                            {playerName.reading && (
+                              <span class="name-reading">
+                                {playerName.reading}
+                              </span>
+                            )}
+                          </a>
+                        ) : (
+                          <>
+                            <span class="name-main">{playerName.main}</span>
+                            {playerName.reading && (
+                              <span class="name-reading">
+                                {playerName.reading}
+                              </span>
+                            )}
+                          </>
+                        )}
+                      </span>
+
+                      {player.status && (
+                        <span class="player-status">
+                          {player.status}
+                        </span>
                       )}
-                    </span>
+                    </div>
                   </td>
 
                   <td class="latin-column">
@@ -830,6 +887,9 @@ const getGoalDifference = (result) =>
   }
 
   .season-navigation-side {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     min-width: 0;
   }
 
@@ -845,8 +905,13 @@ const getGoalDifference = (result) =>
     text-decoration: none;
   }
 
+  .season-navigation-previous .season-navigation-item {
+    align-self: flex-start;
+  }
+
   .season-navigation-next .season-navigation-item {
     align-items: flex-end;
+    align-self: flex-end;
   }
 
   .season-navigation-direction {
@@ -1119,7 +1184,7 @@ const getGoalDifference = (result) =>
 
   table {
     width: 100%;
-    min-width: 1180px;
+    min-width: 1230px;
     table-layout: fixed;
     border-collapse: collapse;
     font-size: 14px;
@@ -1147,8 +1212,8 @@ const getGoalDifference = (result) =>
   /*
     固定列。
 
-    ラテン文字を前版より少し広げる。
-    そのぶん前所属へ割り当てる幅を少しだけ減らす。
+    各列幅は既存値を維持。
+    選手名列を広げた分はテーブル全体の最小幅で吸収する。
   */
 
   .number-column {
@@ -1156,7 +1221,7 @@ const getGoalDifference = (result) =>
   }
 
   .name-column {
-    width: 155px;
+    width: 175px;
   }
 
   .latin-column {
@@ -1172,7 +1237,7 @@ const getGoalDifference = (result) =>
   }
 
   .size-column {
-    width: 115px;
+    width: 130px;
   }
 
   .birthplace-column {
@@ -1207,6 +1272,17 @@ const getGoalDifference = (result) =>
   .name-fit {
     font-size: 15px;
     font-weight: 700;
+  }
+
+  .name-main {
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .name-reading {
+    margin-left: 2px;
+    font-size: 0.73em;
+    font-weight: 400;
   }
 
   .latin-fit {
@@ -1273,6 +1349,35 @@ const getGoalDifference = (result) =>
     font-weight: 700;
     font-size: 15px;
   }
+  
+  .player-name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  min-width: 0;
+}
+
+.player-name-row .name-fit {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.player-status {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  border: 1px solid #b8c0ba;
+  border-radius: 999px;
+  background: #f1f3f1;
+  color: #59615c;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+}
 
   .player-name a {
     color: #2563eb;
@@ -1380,6 +1485,10 @@ const getGoalDifference = (result) =>
       gap: 14px;
       margin-bottom: 22px;
       padding: 10px 0;
+    }
+
+    .season-navigation-side {
+      gap: 7px;
     }
 
     .season-navigation-label {

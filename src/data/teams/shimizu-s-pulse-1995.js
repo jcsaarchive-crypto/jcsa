@@ -555,6 +555,7 @@ export const staff = [
     name: "宮本 征勝",
   },
   {
+    id: "P00496",
     role: "ヘッドコーチ/サテライトヘッドコーチ",
     name: "関塚　隆",
   },
