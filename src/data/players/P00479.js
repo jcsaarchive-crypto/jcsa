@@ -130,7 +130,7 @@ export const player = {
       totalGoals: "",
     },
     {
-      season: "",
+      season: "1992",
       division: "地域決勝",
       jersey: "18",
       team: "PJMフューチャーズ",
@@ -186,7 +186,7 @@ export const player = {
       totalGoals: 2,
     },
     {
-      season: "",
+      season: "1995",
       division: "地域決勝",
       jersey: "24",
       team: "大分フットボールクラブ",

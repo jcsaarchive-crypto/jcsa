@@ -130,7 +130,7 @@ export const player = {
       totalGoals: "",
     },
     {
-      season: "",
+      season: "1992",
       division: "地域決勝",
       jersey: "17",
       team: "PJMフューチャーズ",
