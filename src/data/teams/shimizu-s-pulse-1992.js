@@ -451,6 +451,7 @@ export const staff = [
     name: "イナルド・ジョゼ・アルベス",
   },
   {
+    id: "P00473",
     role: "ファーム監督",
     name: "吉田　弘",
   },

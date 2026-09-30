@@ -470,6 +470,23 @@ export const playerPages = {
   P00469: "/players/kaneko-hisashi",
   P00470: "/players/kobayashi-hiroshi",
   P00471: "/players/yoshida-toru",
+  P00472: "/players/maeda-hideki",
+  P00473: "/players/yoshida-hiroshi",
+  P00474: "/players/ikeda-seigo",
+  P00475: "/players/kanno-masaaki",
+  P00476: "/players/echigo-kazuo",
+  P00477: "/players/miyabe-kazuhiro",
+  P00478: "/players/shibuya-hiroki",
+  P00479: "/players/minoguchi-yusuke",
+  P00480: "/players/maruyama-keiichi",
+  P00481: "/players/masubuchi-hitoshi",
+  P00482: "/players/ishii-taketoshi",
+  P00483: "/players/suwabe-atsunori",
+  P00484: "/players/otsuka-ichiro",
+  P00485: "/players/iwamoto-saburo",
+  P00486: "/players/ayukawa-yoshifusa",
+  P00487: "/players/kizawa-masanori",
+  P00488: "/players/makino-keisuke",
   
 };
 

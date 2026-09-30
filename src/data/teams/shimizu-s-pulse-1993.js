@@ -680,6 +680,7 @@ export const staff = [
     name: "今泉 幸広",
   },
   {
+    id: "P00473",
     role: "サテライト監督",
     name: "吉田　弘",
   },

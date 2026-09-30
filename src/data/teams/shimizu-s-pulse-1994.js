@@ -547,6 +547,7 @@ export const staff = [
     name: "リベリーノ",
   },
   {
+    id: "P00473",
     role: "コーチ/サテライト監督",
     name: "吉田　弘",
   },
