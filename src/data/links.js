@@ -497,6 +497,16 @@ export const playerPages = {
   P00496: "/players/sekizuka-takashi",
   P00497: "/players/sasaki-masanao",
   P00498: "/players/ando-shigeru",
+  P00499: "/players/kitazawa-tsuyoshi",
+  P00500: "/players/yamada-matsuichi",
+  P00501: "/players/kanbe-sugao",
+  P00502: "/players/yato-toshinori",
+  P00503: "/players/kurosaki-hisashi",
+  P00504: "/players/kitamura-kunio",
+  P00505: "/players/takeda-nobuhiro1",
+  P00506: "/players/negishi-seiichi",
+  P00507: "/players/honda-yasuto",
+  P00508: "/players/furukawa-masaaki",
 
   
 };
