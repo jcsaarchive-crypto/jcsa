@@ -507,6 +507,15 @@ export const playerPages = {
   P00506: "/players/negishi-seiichi",
   P00507: "/players/honda-yasuto",
   P00508: "/players/furukawa-masaaki",
+  P00509: "/players/yokokawa-izumi",
+  P00510: "/players/ikeuchi-yutaka",
+  P00511: "/players/sonobe-tsutomu",
+  P00512: "/players/mori-atsushi",
+  P00513: "/players/sakashita-hiroyuki",
+  P00514: "/players/nomura-mitsugu",
+  P00515: "/players/nakata-hitoshi",
+  P00516: "/players/tezuka-satoshi",
+  P00517: "/players/kobayashi-koichi",
 
   
 };
@@ -554,6 +563,7 @@ export const teamSeasonPages = {
   "ヤンマーディーゼル|88/89": "/teams/yanmar-diesel-88-89",
   "古河電気工業|88/89": "/teams/furukawa-electric-88-89",
   "本田技研工業|88/89": "/teams/honda-giken-88-89",
+  "フジタ工業クラブ|88/89": "/teams/fujita-kogyo-88-89",
 
 
 };
