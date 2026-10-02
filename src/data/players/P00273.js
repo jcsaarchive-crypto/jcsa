@@ -1,6 +1,6 @@
 export const player = {
   id: "P00273",
-  name: "高田 修",
+  name: "高田　修",
   nameKana: "たかだ おさむ",
   nameEn: "Osamu TAKADA",
   position: "MF",
