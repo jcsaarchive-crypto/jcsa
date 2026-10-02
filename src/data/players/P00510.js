@@ -1,7 +1,7 @@
 export const player = {
   id: "P00510",
 
-  name: "池内 豊",
+  name: "池内　豊",
   nameKana: "いけうち ゆたか",
   nameEn: "Yutaka IKEUCHI",
 
