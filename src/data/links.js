@@ -516,6 +516,23 @@ export const playerPages = {
   P00515: "/players/nakata-hitoshi",
   P00516: "/players/tezuka-satoshi",
   P00517: "/players/kobayashi-koichi",
+  P00518: "/players/taninaka-osamu",
+  P00519: "/players/kuboyama-masahiko",
+  P00520: "/players/mori-masaaki",
+  P00521: "/players/takahashi-kenji1",
+  P00522: "/players/yamada-takaaki",
+  P00523: "/players/baba-yasufumi",
+  P00524: "/players/kojima-takeshi2",
+  P00525: "/players/miyazawa-michel",
+  P00526: "/players/furuya-michihisa",
+  P00527: "/players/kojima-nobuyuki",
+  P00528: "/players/kamikawa-toru",
+  P00529: "/players/yuki-haruo",
+  P00530: "/players/kokubo-masahiro",
+  P00531: "/players/shimoda-masahiro",
+  P00532: "/players/kuroda-yushi",
+  P00533: "/players/natsuka-yoshihiro",
+  P00534: "/players/furushima-kiyoto",
 
   
 };

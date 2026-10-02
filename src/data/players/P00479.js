@@ -9,7 +9,7 @@ export const player = {
 
   birth: "1965年8月23日",
   death: "",
-  birthplace: "北海道（千葉県）",
+  birthplace: "北海道(千葉県)",
 
   height: 181,
   weight: 78,
