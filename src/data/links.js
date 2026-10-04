@@ -533,6 +533,12 @@ export const playerPages = {
   P00532: "/players/kuroda-yushi",
   P00533: "/players/natsuka-yoshihiro",
   P00534: "/players/furushima-kiyoto",
+  P00535: "/players/sato-ken",
+  P00536: "/players/nishino-noboru",
+  P00537: "/players/gaya-eiji",
+  P00538: "/players/okutomo-toshiaki",
+  P00539: "/players/suzuki-mitsuru",
+  P00540: "/players/mogi-kazuhiro",
 
   
 };
@@ -581,6 +587,7 @@ export const teamSeasonPages = {
   "古河電気工業|88/89": "/teams/furukawa-electric-88-89",
   "本田技研工業|88/89": "/teams/honda-giken-88-89",
   "フジタ工業クラブ|88/89": "/teams/fujita-kogyo-88-89",
+  "住友金属工業|88/89": "/teams/sumitomo-metal-industries-88-89",
 
 
 };
