@@ -559,6 +559,23 @@ export const playerPages = {
   P00558: "/players/teguramori-makoto",
   P00559: "/players/teguramori-hiroshi",
   P00560: "/players/inukai-ichiro",
+  P00561: "/players/osawa-koji",
+  P00562: "/players/shishido-takashi",
+  P00563: "/players/hori-naoto",
+  P00564: "/players/morishige-junya",
+  P00565: "/players/mishima-toshitaka",
+  P00566: "/players/sorimachi-yasuharu",
+  P00567: "/players/hamada-hideki",
+  P00568: "/players/jorge-omar-arbelo",
+  P00569: "/players/tomishima-hitoshi",
+  P00570: "/players/kishida-hiroshi",
+  P00571: "/players/iwasawa-akihiko",
+  P00572: "/players/onuki-keiichi",
+  P00573: "/players/makiuchi-tatsuya",
+  P00574: "/players/suzuki-takehiro",
+  P00575: "/players/horimizo-yuji",
+  P00576: "/players/ishikawa-hideshi",
+  P00577: "/players/ishizue-ryuji",
 
   
 };
@@ -608,6 +625,7 @@ export const teamSeasonPages = {
   "本田技研工業|88/89": "/teams/honda-giken-88-89",
   "フジタ工業クラブ|88/89": "/teams/fujita-kogyo-88-89",
   "住友金属工業|88/89": "/teams/sumitomo-metal-industries-88-89",
+  "全日空サッカークラブ|88/89": "/teams/ana-soccer-club-88-89",
 
 
 };
