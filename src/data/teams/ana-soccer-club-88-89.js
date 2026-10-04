@@ -271,6 +271,7 @@ export const players = [
     previous: "伊丹北高 - 東海大",
   },
   {
+    id: "P00578",
     number: "22",
     name: "前田　治",
     latin: "Osamu MAEDA",
@@ -281,6 +282,7 @@ export const players = [
     previous: "帝京高 - 東海大",
   },
   {
+    id: "P00579",
     number: "23",
     name: "池田 直人",
     latin: "Naoto IKEDA",
@@ -291,6 +293,7 @@ export const players = [
     previous: "武南高 - 早稲田大",
   },
   {
+    id: "P00580",
     number: "24",
     name: "馬場 芳浩",
     latin: "Yoshihiro BABA",
@@ -301,6 +304,7 @@ export const players = [
     previous: "静岡学園高 - 法政大",
   },
   {
+    id: "P00581",
     number: "25",
     name: "佐々木 重人",
     latin: "Shigeto SASAKI",
@@ -311,6 +315,7 @@ export const players = [
     previous: "浦和ルーテル学院高 - 中央大",
   },
   {
+    id: "P00582",
     number: "26",
     name: "其田 秀太",
     latin: "Shuta SONODA",

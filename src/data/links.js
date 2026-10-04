@@ -576,6 +576,11 @@ export const playerPages = {
   P00575: "/players/horimizo-yuji",
   P00576: "/players/ishikawa-hideshi",
   P00577: "/players/ishizue-ryuji",
+  P00578: "/players/maeda-osamu1",
+  P00579: "/players/ikeda-naoto",
+  P00580: "/players/baba-yoshihiro",
+  P00581: "/players/sasaki-shigeto",
+  P00582: "/players/sonoda-shuta",
 
   
 };
