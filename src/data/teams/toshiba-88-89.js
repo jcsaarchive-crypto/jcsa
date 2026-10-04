@@ -68,7 +68,7 @@ export const team = {
 
 export const staff = [
   {
-    role: "評議員・部長",
+    role: "評議員/部長",
     name: "北林 敬三",
   },
   {
@@ -421,7 +421,7 @@ export const players = [
   {
     number: "25",
     name: "カルバネッセ",
-    latin: "Fernand Gabriel CALBANESE",
+    latin: "Fernando Gabriel CALBANESE",
     position: "FW",
     birth: "1967年1月6日",
     size: "173cm/70kg",
