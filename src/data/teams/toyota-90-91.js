@@ -53,7 +53,7 @@ export const team = {
 };
 
 export const staff = [
-  { role: "顧問（評議員）", name: "大橋 正昭" },
+  { role: "評議員/顧問", name: "大橋 正昭" },
   { role: "顧問", name: "加藤 伸一" },
   { role: "実行委員", name: "西垣 成美" },
   { role: "運営委員", name: "森岡 義明" },

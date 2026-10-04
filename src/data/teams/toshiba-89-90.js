@@ -372,7 +372,7 @@ export const staff = [
     name: "門野 欽一",
   },
   {
-    role: "実行委員／副部長",
+    role: "実行委員/副部長",
     name: "石渡 久男",
   },
   {
@@ -445,7 +445,7 @@ export const staff = [
   },
   {
     id: "P00048",
-    role: "副主将／主務",
+    role: "副主将/主務",
     name: "鈴木 豊人",
   },
 ];

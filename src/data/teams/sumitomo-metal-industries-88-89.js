@@ -109,6 +109,7 @@ export const players = [
     previous: "宮城工高",
   },
   {
+    id: "P00541",
     number: "8",
     name: "河崎 淳一",
     latin: "Junichi KAWASAKI",
@@ -119,6 +120,7 @@ export const players = [
     previous: "浦和南高 - 中央大",
   },
   {
+    id: "P00542",
     number: "9",
     name: "山崎 勇次",
     latin: "Yuji YAMAZAKI",
@@ -129,6 +131,7 @@ export const players = [
     previous: "武南高",
   },
   {
+    id: "P00543",
     number: "10",
     name: "大野 俊三",
     latin: "Shunzo ONO",
@@ -139,6 +142,7 @@ export const players = [
     previous: "習志野高",
   },
   {
+    id: "P00544",
     number: "11",
     name: "井口　司",
     latin: "Tsukasa IGUCHI",
@@ -149,6 +153,7 @@ export const players = [
     previous: "古河一高 - 中央大",
   },
   {
+    id: "P00545",
     number: "12",
     name: "横山 秀憲",
     latin: "Hidenori YOKOYAMA",
@@ -159,6 +164,7 @@ export const players = [
     previous: "広島東城高 - 大阪体育大",
   },
   {
+    id: "P00546",
     number: "13",
     name: "森島　勉",
     latin: "Tsutomu MORISHIMA",
@@ -169,6 +175,7 @@ export const players = [
     previous: "岡崎城西高 - 愛知学院大",
   },
   {
+    id: "P00547",
     number: "14",
     name: "永井 直人",
     latin: "Naoto NAGAI",
@@ -179,6 +186,7 @@ export const players = [
     previous: "新潟高 - 早稲田大",
   },
   {
+    id: "P00548",
     number: "16",
     name: "茂木 亮一",
     latin: "Ryoichi MOGI",
@@ -189,6 +197,7 @@ export const players = [
     previous: "今市高",
   },
   {
+    id: "P00549",
     number: "18",
     name: "滝沢　明",
     latin: "Akira TAKIZAWA",
@@ -199,6 +208,7 @@ export const players = [
     previous: "新潟工高",
   },
   {
+    id: "P00550",
     number: "19",
     name: "蒲原 正公",
     latin: "Masahiro KAMOHARA",
@@ -209,6 +219,7 @@ export const players = [
     previous: "佐賀商高 - 大阪商業大",
   },
   {
+    id: "P00551",
     number: "20",
     name: "椎本 邦一",
     latin: "Kunihito SHIMOTO",
@@ -219,6 +230,7 @@ export const players = [
     previous: "駒大高 - 駒澤大",
   },
   {
+    id: "P00552",
     number: "21",
     name: "佐藤 和正",
     latin: "Kazumasa SATO",
@@ -229,6 +241,7 @@ export const players = [
     previous: "武南高",
   },
   {
+    id: "P00553",
     number: "22",
     name: "森島　修",
     latin: "Osamu MORISHIMA",
@@ -239,6 +252,7 @@ export const players = [
     previous: "岡崎城西高 - 愛知学院大",
   },
   {
+    id: "P00554",
     number: "23",
     name: "横堀 武史",
     latin: "Takeshi YOKOBORI",
@@ -249,6 +263,7 @@ export const players = [
     previous: "本郷高",
   },
   {
+    id: "P00555",
     number: "25",
     name: "茶屋 利彦",
     latin: "Toshihiko CHAYA",
@@ -259,6 +274,7 @@ export const players = [
     previous: "鹿児島商高",
   },
   {
+    id: "P00556",
     number: "26",
     name: "鈴木 孝裕",
     latin: "Takahiro SUZUKI",
@@ -269,6 +285,7 @@ export const players = [
     previous: "浦和南高",
   },
   {
+    id: "P00557",
     number: "27",
     name: "城　祐万",
     latin: "Yuman JO",
@@ -279,6 +296,7 @@ export const players = [
     previous: "東海大五高",
   },
   {
+    id: "P00558",
     number: "28",
     name: "手倉森 誠",
     latin: "Makoto TEGURAMORI",
@@ -289,6 +307,7 @@ export const players = [
     previous: "五戸高",
   },
   {
+    id: "P00559",
     number: "29",
     name: "手倉森 浩",
     latin: "Hiroshi TEGURAMORI",
@@ -299,6 +318,7 @@ export const players = [
     previous: "五戸高",
   },
   {
+    id: "P00560",
     number: "30",
     name: "犬飼 一郎",
     latin: "Ichiro INUKAI",
@@ -319,7 +339,7 @@ export const staff = [
   { role: "監督", name: "野見山 篤" },
   { role: "コーチ", name: "里内　猛" },
   { role: "コーチ兼選手", id: "P00539", name: "鈴木　満" },
-  { role: "コーチ兼選手", name: "椎本 邦一" },
+  { role: "コーチ兼選手", id: "P00551", name: "椎本 邦一" },
   { role: "副務", name: "明石 まゆ美" },
 ];
 

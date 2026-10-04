@@ -66,7 +66,7 @@ export const team = {
 
 export const staff = [
   {
-    role: "顧問/評議員",
+    role: "評議員/顧問",
     name: "大橋 正昭",
   },
   {
