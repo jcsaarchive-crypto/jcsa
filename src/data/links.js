@@ -193,7 +193,7 @@ export const playerPages = {
   P00192: "/players/shimada-toyohisa",
   P00193: "/players/yanagida-nobuaki",
   P00194: "/players/sakai-akinori",
-  P00195: "/players/kobayashi-shinji",
+  P00195: "/players/kobayashi-shinji2",
   P00196: "/players/tozawa-makoto",
   P00197: "/players/kawamoto-masahide",
   P00198: "/players/hosoya-hirofumi",
@@ -654,6 +654,7 @@ export const teamSeasonPages = {
   "住友金属工業|88/89": "/teams/sumitomo-metal-industries-88-89",
   "全日空サッカークラブ|88/89": "/teams/ana-soccer-club-88-89",
   "松下電器産業|88/89": "/teams/matsushita-electric-88-89",
+  "マツダサッカークラブ|88/89": "/teams/mazda-soccer-club-88-89",
 
 
 };
