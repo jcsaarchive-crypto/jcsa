@@ -70,6 +70,7 @@ export const players = [
     previous: "ADOデン・ハーグ(オランダ) - マツダスポーツクラブ",
   },
   {
+    id: "P00605",
     number: "2",
     name: "中村 重和",
     latin: "Shigekazu NAKAMURA",
@@ -80,6 +81,7 @@ export const players = [
     previous: "島原商高 - 大阪商業大",
   },
   {
+    id: "P00606",
     number: "3",
     name: "松田　浩",
     latin: "Hiroshi MATSUDA",
@@ -100,6 +102,7 @@ export const players = [
     previous: "ソウル光云電子高(韓国 出身校)",
   },
   {
+    id: "P00607",
     number: "5",
     name: "信藤 克義",
     latin: "Katsuyoshi SHINTO",
@@ -110,6 +113,7 @@ export const players = [
     previous: "安古市高 - 中央大",
   },
   {
+    id: "P00608",
     number: "6",
     name: "猿沢　茂",
     latin: "Shigeru SARUSAWA",
@@ -120,6 +124,7 @@ export const players = [
     previous: "広島工高 - 大阪体育大",
   },
   {
+    id: "P00609",
     number: "7",
     name: "高橋 真一郎",
     latin: "Shinichiro TAKAHASHI",
@@ -140,6 +145,7 @@ export const players = [
     previous: "ソウル市役所(韓国) - 油公コッキリFC(韓国) - ラッキー金星ファンソFC(韓国)",
   },
   {
+    id: "P00610",
     number: "9",
     name: "島　卓視",
     latin: "Takumi SHIMA",
@@ -150,6 +156,7 @@ export const players = [
     previous: "徳島商高",
   },
   {
+    id: "P00611",
     number: "10",
     name: "木村 孝洋",
     latin: "Takahiro KIMURA",
@@ -170,6 +177,7 @@ export const players = [
     previous: "大宇ロイヤルズ(韓国) - ラッキー金星ファンソFC(韓国)",
   },
   {
+    id: "P00612",
     number: "12",
     name: "小林 伸二",
     latin: "Shinji KOBAYASHI",
@@ -180,6 +188,7 @@ export const players = [
     previous: "島原商高 - 大阪商業大",
   },
   {
+    id: "P00613",
     number: "13",
     name: "山西 博文",
     latin: "Hirofumi YAMANISHI",
@@ -190,6 +199,7 @@ export const players = [
     previous: "舟入高 - 東京農業大",
   },
   {
+    id: "P00614",
     number: "16",
     name: "山田　隆",
     latin: "Takashi YAMADA",
@@ -200,6 +210,7 @@ export const players = [
     previous: "本郷高 - 東海大",
   },
   {
+    id: "P00615",
     number: "17",
     name: "牧田 有史",
     latin: "Yushi MAKITA",
@@ -210,6 +221,7 @@ export const players = [
     previous: "清水東高 - 東京農業大",
   },
   {
+    id: "P00616",
     number: "18",
     name: "木原 重信",
     latin: "Shigenobu KIHARA",
@@ -220,6 +232,7 @@ export const players = [
     previous: "東海大一高 - 中央大 - マツダSC東洋",
   },
   {
+    id: "P00617",
     number: "19",
     name: "河村　孝",
     latin: "Takashi KAWAMURA",
@@ -230,6 +243,7 @@ export const players = [
     previous: "山口高",
   },
   {
+    id: "P00618",
     number: "20",
     name: "織田 秀和",
     latin: "Hidekazu ORITA",
@@ -240,6 +254,7 @@ export const players = [
     previous: "広島大附高 - 筑波大",
   },
   {
+    id: "P00619",
     number: "22",
     name: "佐藤 康之",
     latin: "Yasuyuki SATO",
@@ -250,6 +265,7 @@ export const players = [
     previous: "山陽高",
   },
   {
+    id: "P00620",
     number: "23",
     name: "前川 和也",
     latin: "Kazuya MEKAWA",
@@ -260,6 +276,7 @@ export const players = [
     previous: "平戸高 - マツダSC東洋",
   },
   {
+    id: "P00621",
     number: "24",
     name: "田原 輝幸",
     latin: "Teruyuki TAHARA",
@@ -270,6 +287,7 @@ export const players = [
     previous: "鹿児島実高 - マツダSC東洋",
   },
   {
+    id: "P00622",
     number: "25",
     name: "辻　勝憲",
     latin: "Katsunori TSUJI",
@@ -280,6 +298,7 @@ export const players = [
     previous: "御影工高 - マツダSC東洋",
   },
   {
+    id: "P00623",
     number: "26",
     name: "利重　忍",
     latin: "Shinobu TOSHISHIGE",
@@ -290,6 +309,7 @@ export const players = [
     previous: "宇部工高",
   },
   {
+    id: "P00624",
     number: "27",
     name: "森保　一",
     latin: "Hajime MORIYASU",
@@ -300,6 +320,7 @@ export const players = [
     previous: "長崎日大高 - マツダSC東洋",
   },
   {
+    id: "P00625",
     number: "28",
     name: "横内 昭展",
     latin: "Akinobu YOKOUCHI",
@@ -310,6 +331,7 @@ export const players = [
     previous: "東海大五高",
   },
   {
+    id: "P00626",
     number: "29",
     name: "緒方 光彦",
     latin: "Mitsuhiko OGATA",
@@ -320,6 +342,7 @@ export const players = [
     previous: "熊本農高 - マツダSC東洋",
   },
   {
+    id: "P00627",
     number: "",
     name: "幸田 将和",
     latin: "Masakazu KODA",
@@ -330,6 +353,7 @@ export const players = [
     previous: "南宇和高 - マツダSC東洋",
   },
   {
+    id: "P00628",
     number: "",
     name: "望月 一頼",
     latin: "Kazuyori MOCHIZUKI",
@@ -351,12 +375,12 @@ export const staff = [
   { role: "コーチ", name: "小原 秀男" },
   { role: "コーチ", name: "田村　誠" },
   { role: "コーチ", name: "河内 勝幸" },
-  { role: "コーチ", name: "望月 一頼" },
+  { role: "コーチ", id: "P00628", name: "望月 一頼" },
   { role: "ドクター", name: "奥平 信義" },
   { role: "ドクター", name: "寛田　司" },
-  { role: "主将", name: "ディド・ハーフナー" },
-  { role: "副主将", name: "高橋 真一郎" },
-  { role: "副主将", name: "木村 孝洋" },
+  { role: "主将", id: "P00118", name: "ディド・ハーフナー" },
+  { role: "副主将", id: "P00609", name: "高橋 真一郎" },
+  { role: "副主将", id: "P00611", name: "木村 孝洋" },
 ];
 
 export const sources = [
