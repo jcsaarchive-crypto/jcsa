@@ -299,7 +299,7 @@ export const players = [
     birth: "1965年11月22日",
     size: "185cm/80kg",
     birthplace: "アルゼンチン",
-    previous: "FCサンロレンソ(アルゼンチン)",
+    previous: "サンロレンソ(アルゼンチン)",
   },
   {
     number: "25",
@@ -309,7 +309,7 @@ export const players = [
     birth: "1969年5月2日",
     size: "170cm/68kg",
     birthplace: "アルゼンチン",
-    previous: "FCサンロレンソ(アルゼンチン)",
+    previous: "サンロレンソ(アルゼンチン)",
   },
   {
     number: "26",
@@ -319,7 +319,7 @@ export const players = [
     birth: "1969年2月8日",
     size: "175cm/70kg",
     birthplace: "アルゼンチン",
-    previous: "FCベレス(アルゼンチン)",
+    previous: "CAベレス・サルスフィエルド(アルゼンチン)",
   },
   {
     id: "P00053",
@@ -357,12 +357,12 @@ export const players = [
   {
     number: "30",
     name: "ルイディアス",
-    latin: "―",
-    position: "―",
-    birth: "―",
-    size: "―",
-    birthplace: "―",
-    previous: "―",
+    latin: "Alejandro RUIDIAZ",
+    position: "MF",
+    birth: "1969年9月3日",
+    size: "172cm/69kg",
+    birthplace: "アルゼンチン",
+    previous: "CAインデペンディエンテ(アルゼンチン)",
   },
 ];
 
