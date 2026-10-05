@@ -581,6 +581,28 @@ export const playerPages = {
   P00580: "/players/baba-yoshihiro",
   P00581: "/players/sasaki-shigeto",
   P00582: "/players/sonoda-shuta",
+  P00583: "/players/keigoshi-yuji",
+  P00584: "/players/masumoto-atsushi",
+  P00585: "/players/shimada-takahiro",
+  P00586: "/players/minobe-naohiko",
+  P00587: "/players/yuki-hideo",
+  P00588: "/players/saito-toshiaki",
+  P00589: "/players/kudaka-tomoo",
+  P00590: "/players/yamaguchi-masanobu",
+  P00591: "/players/sasaki-hirokazu",
+  P00592: "/players/kajii-katsushi",
+  P00593: "/players/matsunaga-hideki",
+  P00594: "/players/kurahashi-katsunori",
+  P00595: "/players/wada-masahiro",
+  P00596: "/players/hirooka-shigenori",
+  P00597: "/players/bono-tatsuya",
+  P00598: "/players/okano-hisahito",
+  P00599: "/players/honnami-kenji",
+  P00600: "/players/koso-kazuhiro",
+  P00601: "/players/uemura-susumu",
+  P00602: "/players/hirano-naoki",
+  P00603: "/players/yanagi-hiroki",
+  P00604: "/players/fujita-yoshihiro",
 
   
 };
@@ -631,6 +653,7 @@ export const teamSeasonPages = {
   "フジタ工業クラブ|88/89": "/teams/fujita-kogyo-88-89",
   "住友金属工業|88/89": "/teams/sumitomo-metal-industries-88-89",
   "全日空サッカークラブ|88/89": "/teams/ana-soccer-club-88-89",
+  "松下電器産業|88/89": "/teams/matsushita-electric-88-89",
 
 
 };
