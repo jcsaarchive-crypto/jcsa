@@ -679,6 +679,7 @@ export const teamSeasonPages = {
   "全日空サッカークラブ|88/89": "/teams/ana-soccer-club-88-89",
   "松下電器産業|88/89": "/teams/matsushita-electric-88-89",
   "マツダサッカークラブ|88/89": "/teams/mazda-soccer-club-88-89",
+  "日立製作所|88/89": "/teams/hitachi-88-89",
 
 
 };

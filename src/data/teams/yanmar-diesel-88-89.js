@@ -300,12 +300,12 @@ export const players = [
   {
     number: "26",
     name: "ジョセ",
-    latin: "JOSE A. N. Silva",
+    latin: "JOSE Antonio Nunes Da Silva",
     position: "MF",
     birth: "1961年12月10日",
     size: "172cm/72kg",
     birthplace: "ブラジル",
-    previous: "―",
+    previous: "コリンチャンス(ブラジル) - サント・アンドレ(ブラジル) - モジ・ダス・クルーゼス(ブラジル) - アナポリス(ブラジル) - イリアソウテリア(ブラジル)",
   },
   {
     id: "P00464",
