@@ -15,7 +15,7 @@ export const team = {
   ],
   seasonNavigation: {
     previous: {
-      label: "87/88 日立製作所",
+      label: "1987 日立製作所",
       url: "",
     },
     next: {
@@ -412,7 +412,7 @@ export const staff = [
   { role: "コーチ兼選手", name: "ゼ・セルジオ" },
   { role: "トレーナー", name: "荒川　薫" },
   { role: "ドクター", name: "万納寺 毅智" },
-  { role: "主将", name: "田橋 勝秀" },
+  { role: "主将", id: "P00631", name: "田橋 勝秀" },
 ];
 
 export const sources = [

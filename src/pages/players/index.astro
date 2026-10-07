@@ -17,9 +17,41 @@ const players = Object.values(playerModules)
       playerPages[player.id]
     );
   })
-  .sort((a, b) =>
-    a.nameKana.localeCompare(b.nameKana, "ja")
-  );
+  .sort((a, b) => {
+    const kanaCompare = a.nameKana.localeCompare(b.nameKana, "ja");
+
+    if (kanaCompare !== 0) {
+      return kanaCompare;
+    }
+
+    if (a.name === b.name) {
+      const birthA = a.birth?.match(/^(\d{4})年/)?.[1] ?? "9999";
+      const birthB = b.birth?.match(/^(\d{4})年/)?.[1] ?? "9999";
+
+      return Number(birthA) - Number(birthB);
+    }
+
+    return 0;
+  });
+
+const nameCounts = players.reduce((counts, player) => {
+  counts[player.name] = (counts[player.name] || 0) + 1;
+  return counts;
+}, {});
+
+const getPlayerDisplayName = (player) => {
+  if (nameCounts[player.name] <= 1) {
+    return player.name;
+  }
+
+  const birthYear = player.birth?.match(/^(\d{4})年/)?.[1];
+
+  if (!birthYear) {
+    return player.name;
+  }
+
+  return `${player.name}（${birthYear}年生）`;
+};
 
 const kanaGroups = [
   { key: "あ", label: "あ", chars: ["あ"] },
@@ -125,7 +157,7 @@ const groups = kanaGroups
                   href={playerPages[player.id]}
                 >
                   <span class="player-name">
-                    {player.name}
+                    {getPlayerDisplayName(player)}
                   </span>
 
                   <span class="player-kana">
