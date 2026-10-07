@@ -1,0 +1,76 @@
+export const player = {
+  id: "P00679",
+  name: "祝田 憲克",
+  nameKana: "いわいだ のりかつ",
+  nameEn: "Norikatsu IWAIDA",
+  position: "FW",
+  birth: "195?年",
+  birthplace: "",
+  height: "178",
+  weight: "64",
+  education: "中央大",
+
+  history: [
+    {
+      season: "1987",
+      division: "JSL２部",
+      jersey: "20",
+      team: "NTT関東",
+      leagueMatches: "",
+      leagueGoals: "",
+      cupMatches: "",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+    {
+      season: "88/89",
+      division: "JSL２部",
+      jersey: "24",
+      team: "NTT関東",
+      leagueMatches: 0,
+      leagueGoals: 0,
+      cupMatches: 0,
+      cupGoals: 0,
+      emperorCupMatches: "-",
+      emperorCupGoals: "",
+      totalMatches: 0,
+      totalGoals: 0,
+    },
+  ],
+
+  totals: [
+    {
+      country: "日本",
+      division: "JSL２部",
+      leagueMatches: "",
+      leagueGoals: "",
+      cupMatches: "",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+  ],
+
+  grandTotal: {
+    leagueMatches: "",
+    leagueGoals: "",
+    cupMatches: "",
+    cupGoals: "",
+    emperorCupMatches: "",
+    emperorCupGoals: "",
+    totalMatches: "",
+    totalGoals: "",
+  },
+
+  otherOfficialMatches: [],
+
+  otherOfficialTotal: {
+    matches: "",
+    goals: "",
+  },
+};

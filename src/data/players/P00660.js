@@ -1,0 +1,76 @@
+export const player = {
+  id: "P00660",
+  name: "山下 兼弘",
+  nameKana: "やました かねひろ",
+  nameEn: "Kanehiro YAMASHITA",
+  position: "MF",
+  birth: "196?年",
+  birthplace: "",
+  height: "173",
+  weight: "64",
+  education: "東海大",
+
+  history: [
+    {
+      season: "1987",
+      division: "JSL２部",
+      jersey: "4",
+      team: "NTT関東",
+      leagueMatches: "",
+      leagueGoals: "",
+      cupMatches: "",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+    {
+      season: "88/89",
+      division: "JSL２部",
+      jersey: "4",
+      team: "NTT関東",
+      leagueMatches: 9,
+      leagueGoals: 1,
+      cupMatches: 2,
+      cupGoals: 0,
+      emperorCupMatches: "-",
+      emperorCupGoals: "",
+      totalMatches: 11,
+      totalGoals: 1,
+    },
+  ],
+
+  totals: [
+    {
+      country: "日本",
+      division: "JSL２部",
+      leagueMatches: "",
+      leagueGoals: "",
+      cupMatches: "",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+  ],
+
+  grandTotal: {
+    leagueMatches: "",
+    leagueGoals: "",
+    cupMatches: "",
+    cupGoals: "",
+    emperorCupMatches: "",
+    emperorCupGoals: "",
+    totalMatches: "",
+    totalGoals: "",
+  },
+
+  otherOfficialMatches: [],
+
+  otherOfficialTotal: {
+    matches: "",
+    goals: "",
+  },
+};

@@ -65,6 +65,7 @@ export const team = {
 
 export const players = [
   {
+    id: "P00658",
     number: "1",
     name: "青木 賢司",
     latin: "Kenji AOKI",
@@ -75,6 +76,7 @@ export const players = [
     previous: "城西大川越高 - 駒澤大",
   },
   {
+    id: "P00659",
     number: "2",
     name: "児玉 浩一",
     latin: "Koichi KODAMA",
@@ -85,6 +87,7 @@ export const players = [
     previous: "東海大甲府高",
   },
   {
+    id: "P00660",
     number: "4",
     name: "山下 兼弘",
     latin: "Kanehiro YAMASHITA",
@@ -95,6 +98,7 @@ export const players = [
     previous: "東海大",
   },
   {
+    id: "P00661",
     number: "5",
     name: "栗田 政之",
     latin: "Masayuki KURITA",
@@ -105,6 +109,7 @@ export const players = [
     previous: "清水商高 - 駒澤大",
   },
   {
+    id: "P00662",
     number: "6",
     name: "塚原 光男",
     latin: "Mitsuo TSUKAHARA",
@@ -115,6 +120,7 @@ export const players = [
     previous: "古河一高 - 法政大",
   },
   {
+    id: "P00663",
     number: "7",
     name: "鈴木　博",
     latin: "Hiroshi SUZUKI",
@@ -125,6 +131,7 @@ export const players = [
     previous: "東海大",
   },
   {
+    id: "P00664",
     number: "8",
     name: "佐々木 則夫",
     latin: "Norio SASAKI",
@@ -135,6 +142,7 @@ export const players = [
     previous: "帝京高 - 明治大",
   },
   {
+    id: "P00665",
     number: "9",
     name: "草薙 徹夫",
     latin: "Tetsuo KUSANAGI",
@@ -145,6 +153,7 @@ export const players = [
     previous: "東海大",
   },
   {
+    id: "P00666",
     number: "10",
     name: "赤井 勝弘",
     latin: "Katsuhiro AKAI",
@@ -155,6 +164,7 @@ export const players = [
     previous: "浅野高 - 専修大",
   },
   {
+    id: "P00667",
     number: "11",
     name: "久保田 信行",
     latin: "Nobuyuki KUBOTA",
@@ -165,6 +175,7 @@ export const players = [
     previous: "清水商高 - 専修大",
   },
   {
+    id: "P00668",
     number: "12",
     name: "石田 浩之",
     latin: "Hiroyuki ISHIDA",
@@ -175,6 +186,7 @@ export const players = [
     previous: "川口北高 - 駒澤大",
   },
   {
+    id: "P00669",
     number: "13",
     name: "岡田 浩一",
     latin: "Koichi OKADA",
@@ -185,6 +197,7 @@ export const players = [
     previous: "大槌高 - 大阪商業大",
   },
   {
+    id: "P00670",
     number: "14",
     name: "永山 一久",
     latin: "Kazuhisa NAGAYAMA",
@@ -195,6 +208,7 @@ export const players = [
     previous: "川口東高",
   },
   {
+    id: "P00671",
     number: "15",
     name: "鈴木 知将",
     latin: "Chikamasa SUZUKI",
@@ -205,6 +219,7 @@ export const players = [
     previous: "大宮東高",
   },
   {
+    id: "P00672",
     number: "16",
     name: "渡辺　哲",
     latin: "Satoshi WATANABE",
@@ -215,6 +230,7 @@ export const players = [
     previous: "藤枝東高 - 専修大",
   },
   {
+    id: "P00673",
     number: "17",
     name: "佐久間 悟",
     latin: "Satoru SAKUMA",
@@ -225,6 +241,7 @@ export const players = [
     previous: "城西大川越高 - 駒澤大",
   },
   {
+    id: "P00674",
     number: "18",
     name: "朝倉　潤",
     latin: "Jun ASAKURA",
@@ -246,6 +263,7 @@ export const players = [
     previous: "島原商高 - 法政大",
   },
   {
+    id: "P00675",
     number: "20",
     name: "鈴木　剛",
     latin: "Tsuyoshi SUZUKI",
@@ -256,6 +274,7 @@ export const players = [
     previous: "八千代高 - 青山学院大",
   },
   {
+    id: "P00676",
     number: "21",
     name: "今野 英明",
     latin: "Hideaki KONNO",
@@ -266,6 +285,7 @@ export const players = [
     previous: "古河一高 - 法政大",
   },
   {
+    id: "P00677",
     number: "22",
     name: "飯田　勉",
     latin: "Tsutomu IIDA",
@@ -276,6 +296,7 @@ export const players = [
     previous: "本郷高 - 東海大",
   },
   {
+    id: "P00678",
     number: "23",
     name: "大橋　勉",
     latin: "Tsutomu OHASHI",
@@ -286,6 +307,7 @@ export const players = [
     previous: "帝京高 - 中央大",
   },
   {
+    id: "P00679",
     number: "24",
     name: "祝田 憲克",
     latin: "Norikatsu IWAIDA",
@@ -296,6 +318,7 @@ export const players = [
     previous: "中央大",
   },
   {
+    id: "P00680",
     number: "25",
     name: "白𡈽　功",
     latin: "Isao SHIRADO",
@@ -321,22 +344,27 @@ export const staff = [
     name: "徳善 義昌",
   },
   {
+    id: "P00679",
     role: "運営委員/主務兼選手",
     name: "祝田 憲克",
   },
   {
+    id: "P00680",
     role: "監督兼選手",
     name: "白𡈽　功",
   },
   {
+    id: "P00664",
     role: "コーチ兼選手",
     name: "佐々木 則夫",
   },
   {
+    id: "P00666",
     role: "主将",
     name: "赤井 勝弘",
   },
   {
+    id: "P00673",
     role: "副将",
     name: "佐久間 悟",
   },
