@@ -72,7 +72,7 @@ export const players = [
     position: "GK",
     birth: "1961年12月17日",
     size: "183cm/83kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "城西大川越高 - 駒澤大",
   },
   {
@@ -83,7 +83,7 @@ export const players = [
     position: "DF",
     birth: "1969年4月8日",
     size: "169cm/63kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "東海大甲府高",
   },
   {
@@ -94,7 +94,7 @@ export const players = [
     position: "MF",
     birth: "196?年",
     size: "173cm/64kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "東海大",
   },
   {
@@ -105,7 +105,7 @@ export const players = [
     position: "DF",
     birth: "1960年4月2日",
     size: "177cm/70kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "清水商高 - 駒澤大",
   },
   {
@@ -116,7 +116,7 @@ export const players = [
     position: "FW",
     birth: "1963年5月29日",
     size: "168cm/65kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "古河一高 - 法政大",
   },
   {
@@ -127,7 +127,7 @@ export const players = [
     position: "MF",
     birth: "1964年8月22日",
     size: "177cm/73kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "東海大",
   },
   {
@@ -149,7 +149,7 @@ export const players = [
     position: "DF",
     birth: "1962年3月15日",
     size: "173cm/65kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "東海大",
   },
   {
@@ -171,7 +171,7 @@ export const players = [
     position: "FW",
     birth: "1964年11月12日",
     size: "179cm/75kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "清水商高 - 専修大",
   },
   {
@@ -182,7 +182,7 @@ export const players = [
     position: "MF",
     birth: "1962年1月31日",
     size: "179cm/70kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "川口北高 - 駒澤大",
   },
   {
@@ -193,7 +193,7 @@ export const players = [
     position: "DF",
     birth: "1962年2月15日",
     size: "178cm/65kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "大槌高 - 大阪商業大",
   },
   {
@@ -204,7 +204,7 @@ export const players = [
     position: "MF",
     birth: "1964年11月4日",
     size: "175cm/64kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "川口東高",
   },
   {
@@ -215,7 +215,7 @@ export const players = [
     position: "DF",
     birth: "1968年4月9日",
     size: "169cm/63kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "大宮東高",
   },
   {
@@ -226,7 +226,7 @@ export const players = [
     position: "MF",
     birth: "1960年6月24日",
     size: "169cm/66kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "藤枝東高 - 専修大",
   },
   {
@@ -248,7 +248,7 @@ export const players = [
     position: "DF",
     birth: "1965年3月28日",
     size: "182cm/75kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "遠野高 - 大阪商業大",
   },
   {
@@ -259,7 +259,7 @@ export const players = [
     position: "FW",
     birth: "1963年4月11日",
     size: "184cm/76kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "島原商高 - 法政大",
   },
   {
@@ -270,7 +270,7 @@ export const players = [
     position: "FW",
     birth: "1965年7月10日",
     size: "178cm/75kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "八千代高 - 青山学院大",
   },
   {
@@ -281,7 +281,7 @@ export const players = [
     position: "GK",
     birth: "1964年5月10日",
     size: "184cm/80kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "古河一高 - 法政大",
   },
   {
@@ -314,7 +314,7 @@ export const players = [
     position: "FW",
     birth: "195?年",
     size: "178cm/64kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "中央大",
   },
   {
@@ -325,7 +325,7 @@ export const players = [
     position: "FW",
     birth: "1958年3月23日",
     size: "172cm/67kg",
-    birthplace: "",
+    birthplace: "―",
     previous: "日本大",
   },
 ];

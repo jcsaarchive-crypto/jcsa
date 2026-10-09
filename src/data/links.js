@@ -679,8 +679,29 @@ export const playerPages = {
   P00678: "/players/ohashi-tsutomu",
   P00679: "/players/iwaida-norikatsu",
   P00680: "/players/shirado-isao",
+  P00681: "/players/ezumi-kiyoshi",
+  P00682: "/players/oguri-kazuya",
+  P00683: "/players/kagawa-masaki",
+  P00684: "/players/yagyu-hitoshi",
+  P00685: "/players/nakakubo-yasuhiko",
+  P00686: "/players/fujimoto-masaya",
+  P00687: "/players/zaima-yasuhiro",
+  P00688: "/players/higashikawa-seiichi",
+  P00689: "/players/hasegawa-isao",
+  P00690: "/players/kobayakawa-shuji",
+  P00691: "/players/yoshiyama-shinji",
+  P00692: "/players/nakamura-ryuji1",
+  P00693: "/players/kuroda-yoshiyuki",
+  P00694: "/players/azuma-yasumitsu",
+  P00695: "/players/matsumoto-mitsuo",
+  P00696: "/players/yamada-masao",
+  P00697: "/players/nakagawa-kazuhisa",
+  P00698: "/players/mori-fumitaka",
+  P00699: "/players/koga-mitsuru",
+  P00700: "/players/murakami-hiroyuki",
 
-  
+
+
 };
 
 export const teamSeasonPages = {
@@ -733,6 +754,7 @@ export const teamSeasonPages = {
   "マツダサッカークラブ|88/89": "/teams/mazda-soccer-club-88-89",
   "日立製作所|88/89": "/teams/hitachi-88-89",
   "NTT関東|88/89": "/teams/ntt-kanto-88-89",
+  "田辺製薬|88/89": "/teams/tanabe-seiyaku-88-89",
 
 
 };
