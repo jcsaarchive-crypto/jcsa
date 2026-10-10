@@ -320,7 +320,9 @@ const splitPlayerName = (name = "") => {
 
                   {team.results.league.overall && (
                     <div class="overall-result-block">
-                      <h4>総合</h4>
+                      <h4>
+                        {team.results.league.overall.label ?? "総合"}
+                      </h4>
 
                       <div class="league-result">
                         <div class="result-rank">
@@ -330,56 +332,61 @@ const splitPlayerName = (name = "") => {
                           </strong>
                         </div>
 
-                        <div class="result-stats">
-                          {team.results.league.overall.points !==
-                            undefined && (
-                            <div>
-                              <span>勝点</span>
-                              <strong>
-                                {team.results.league.overall.points}
-                              </strong>
-                            </div>
-                          )}
+                        {(
+                          team.results.league.overall.points !== undefined ||
+                          team.results.league.overall.wins !== undefined ||
+                          team.results.league.overall.draws !== undefined ||
+                          team.results.league.overall.losses !== undefined ||
+                          team.results.league.overall.goalsFor !== undefined ||
+                          team.results.league.overall.goalsAgainst !== undefined
+                        ) && (
+                          <div class="result-stats">
+                            {team.results.league.overall.points !== undefined && (
+                              <div>
+                                <span>勝点</span>
+                                <strong>{team.results.league.overall.points}</strong>
+                              </div>
+                            )}
 
-                          <div>
-                            <span>成績</span>
-                            <strong>
-                              {team.results.league.overall.wins}勝
-                              {team.results.league.overall.draws !==
-                                undefined &&
-                                `${team.results.league.overall.draws}分`}
-                              {team.results.league.overall.losses}敗
-                            </strong>
-                          </div>
+                            {team.results.league.overall.wins !== undefined &&
+                              team.results.league.overall.losses !== undefined && (
+                              <div>
+                                <span>成績</span>
+                                <strong>
+                                  {team.results.league.overall.wins}勝
+                                  {team.results.league.overall.draws !== undefined &&
+                                    `${team.results.league.overall.draws}分`}
+                                  {team.results.league.overall.losses}敗
+                                </strong>
+                              </div>
+                            )}
 
-                          <div>
-                            <span>得点</span>
-                            <strong>
-                              {team.results.league.overall.goalsFor}
-                            </strong>
-                          </div>
+                            {team.results.league.overall.goalsFor !== undefined && (
+                              <div>
+                                <span>得点</span>
+                                <strong>{team.results.league.overall.goalsFor}</strong>
+                              </div>
+                            )}
 
-                          <div>
-                            <span>失点</span>
-                            <strong>
-                              {team.results.league.overall.goalsAgainst}
-                            </strong>
-                          </div>
+                            {team.results.league.overall.goalsAgainst !== undefined && (
+                              <div>
+                                <span>失点</span>
+                                <strong>{team.results.league.overall.goalsAgainst}</strong>
+                              </div>
+                            )}
 
-                          <div>
-                            <span>得失点差</span>
-                            <strong>
-                              {getGoalDifference(
-                                team.results.league.overall
-                              ) > 0
-                                ? "+"
-                                : ""}
-                              {getGoalDifference(
-                                team.results.league.overall
-                              )}
-                            </strong>
+                            {team.results.league.overall.goalsFor !== undefined &&
+                              team.results.league.overall.goalsAgainst !== undefined && (
+                              <div>
+                                <span>得失点差</span>
+                                <strong>
+                                  {getGoalDifference(team.results.league.overall) > 0 ? "+" : ""}
+                                  {getGoalDifference(team.results.league.overall)}
+                                </strong>
+                              </div>
+                            )}
                           </div>
-                        </div>
+                        )}
                       </div>
                     </div>
                   )}

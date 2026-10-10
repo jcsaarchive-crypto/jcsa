@@ -699,7 +699,26 @@ export const playerPages = {
   P00698: "/players/mori-fumitaka",
   P00699: "/players/koga-mitsuru",
   P00700: "/players/murakami-hiroyuki",
-
+  P00701: "/players/sato-yoshinori",
+  P00702: "/players/yamamoto-yoshihiko",
+  P00703: "/players/katsumata-toru",
+  P00704: "/players/sasaki-shingo",
+  P00705: "/players/hirano-yoshiyuki",
+  P00706: "/players/miyahara-shinji",
+  P00707: "/players/sugimoto-makoto",
+  P00708: "/players/ando-michio",
+  P00709: "/players/fujita-masami",
+  P00710: "/players/nanbu-kazuya",
+  P00711: "/players/hattori-kazuhiko",
+  P00712: "/players/komoda-yosuke",
+  P00713: "/players/kubota-yoshizumi",
+  P00714: "/players/nomachi-junichi",
+  P00715: "/players/furuta-norihiko",
+  P00716: "/players/tanahashi-masahiro",
+  P00717: "/players/sasaki-yasuhiro",
+  P00718: "/players/sato-masaru",
+  P00719: "/players/takagi-yoshihiro",
+  P00720: "/players/goto-masaaki",
 
 
 };
@@ -755,6 +774,7 @@ export const teamSeasonPages = {
   "日立製作所|88/89": "/teams/hitachi-88-89",
   "NTT関東|88/89": "/teams/ntt-kanto-88-89",
   "田辺製薬|88/89": "/teams/tanabe-seiyaku-88-89",
+  "コスモ石油|88/89": "/teams/cosmo-oil-88-89",
 
 
 };
