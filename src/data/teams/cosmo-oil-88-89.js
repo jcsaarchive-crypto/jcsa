@@ -282,6 +282,7 @@ export const players = [
     previous: "四日市工高",
   },
   {
+    id: "P00721",
     number: "22",
     name: "浜口 俊明",
     latin: "Toshiaki HAMAGUCHI",
@@ -292,6 +293,7 @@ export const players = [
     previous: "高知工高",
   },
   {
+    id: "P00722",
     number: "23",
     name: "江渕 雄二",
     latin: "Yuji EBUCHI",
@@ -302,6 +304,7 @@ export const players = [
     previous: "中津工高",
   },
   {
+    id: "P00723",
     number: "24",
     name: "山川 直之",
     latin: "Naoyuki YAMAKAWA",
@@ -318,12 +321,12 @@ export const staff = [
   { role: "部長", name: "川辺 喜美雄" },
   { role: "副部長", name: "徳永　隆" },
   { role: "運営委員/主務", name: "五領 継太" },
-  { role: "副運営委員/副務", name: "後藤 公昭" },
+  { role: "副運営委員/副務", id: "P00720", name: "後藤 公昭" },
   { role: "監督", name: "鎌田 光夫" },
   { role: "コーチ", name: "伊藤 隆夫" },
   { role: "審判員", name: "川崎 英隆" },
-  { role: "主将", name: "山本 好彦" },
-  { role: "副将", name: "宮原 真司" },
+  { role: "主将", id: "P00702", name: "山本 好彦" },
+  { role: "副将", id: "P00706", name: "宮原 真司" },
 ];
 
 export const sources = [

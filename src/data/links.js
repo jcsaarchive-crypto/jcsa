@@ -719,6 +719,9 @@ export const playerPages = {
   P00718: "/players/sato-masaru",
   P00719: "/players/takagi-yoshihiro",
   P00720: "/players/goto-masaaki",
+  P00721: "/players/hamaguchi-toshiaki",
+  P00722: "/players/ebuchi-yuji",
+  P00723: "/players/yamakawa-naoyuki",
 
 
 };
