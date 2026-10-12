@@ -13,7 +13,7 @@ export const player = {
     {
       season: "1989",
       division: "大学",
-      jersey: "-7",
+      jersey: "(7)",
       team: "明治大",
       leagueMatches: "-",
       leagueGoals: "",
@@ -27,7 +27,7 @@ export const player = {
     {
       season: "1992",
       division: "J",
-      jersey: "-14",
+      jersey: "(14)",
       team: "鹿島アントラーズ",
       leagueMatches: "-",
       leagueGoals: "",
@@ -41,7 +41,7 @@ export const player = {
     {
       season: "1993",
       division: "J",
-      jersey: "-19",
+      jersey: "(19)",
       team: "鹿島アントラーズ",
       leagueMatches: 13,
       leagueGoals: 2,
@@ -55,7 +55,7 @@ export const player = {
     {
       season: "1994",
       division: "J",
-      jersey: "-14",
+      jersey: "(14)",
       team: "鹿島アントラーズ",
       leagueMatches: 9,
       leagueGoals: 1,
@@ -69,7 +69,7 @@ export const player = {
     {
       season: "1995",
       division: "J",
-      jersey: "-17",
+      jersey: "(17)",
       team: "清水エスパルス",
       leagueMatches: 33,
       leagueGoals: 2,
@@ -83,7 +83,7 @@ export const player = {
     {
       season: "1996",
       division: "J",
-      jersey: "-8",
+      jersey: "(8)",
       team: "サンフレッチェ広島",
       leagueMatches: 27,
       leagueGoals: 1,

@@ -722,6 +722,15 @@ export const playerPages = {
   P00721: "/players/hamaguchi-toshiaki",
   P00722: "/players/ebuchi-yuji",
   P00723: "/players/yamakawa-naoyuki",
+  P00724: "/players/kanemoto-masamitsu",
+  P00725: "/players/nakamura-katsuya",
+  P00726: "/players/nishigami-yasuhiro",
+  P00727: "/players/fujieda-hiroaki",
+  P00728: "/players/uno-yasumasa",
+  P00729: "/players/nobukawa-hiroshi",
+  P00730: "/players/wada-takanori",
+  P00731: "/players/hashiguchi-yasuji",
+
 
 
 };
@@ -778,6 +787,7 @@ export const teamSeasonPages = {
   "NTT関東|88/89": "/teams/ntt-kanto-88-89",
   "田辺製薬|88/89": "/teams/tanabe-seiyaku-88-89",
   "コスモ石油|88/89": "/teams/cosmo-oil-88-89",
+  "川崎製鉄|88/89": "/teams/kawasaki-steel-88-89",
 
 
 };
