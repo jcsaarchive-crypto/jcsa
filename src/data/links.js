@@ -730,7 +730,22 @@ export const playerPages = {
   P00729: "/players/nobukawa-hiroshi",
   P00730: "/players/wada-takanori",
   P00731: "/players/hashiguchi-yasuji",
-
+  P00732: "/players/fukunaga-junji",
+  P00733: "/players/nakano-masayuki",
+  P00734: "/players/maruno-katsuichiro",
+  P00735: "/players/okazaki-takashi",
+  P00736: "/players/nakamura-yasuyuki",
+  P00737: "/players/himeno-shinkichi",
+  P00738: "/players/sakamoto-katsuhiro",
+  P00739: "/players/yamashita-kenji",
+  P00740: "/players/katagiri-chikara",
+  P00741: "/players/miyake-eiji",
+  P00742: "/players/otsuchi-haruhiko",
+  P00743: "/players/omura-masakazu",
+  P00744: "/players/moriyama-koji",
+  P00745: "/players/ishida-yasuyuki",
+  P00746: "/players/fukuike-futoshi",
+  P00747: "/players/takeuchi-takashi",
 
 
 };
