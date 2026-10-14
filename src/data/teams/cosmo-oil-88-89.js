@@ -15,7 +15,7 @@ export const team = {
   ],
   seasonNavigation: {
     previous: {
-      label: "87/88 コスモ石油",
+      label: "1987 コスモ石油",
       url: "",
     },
     next: {

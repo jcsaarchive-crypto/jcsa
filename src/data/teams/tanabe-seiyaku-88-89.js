@@ -21,7 +21,7 @@ export const team = {
   ],
   seasonNavigation: {
     previous: {
-      label: "87/88 田辺製薬",
+      label: "1987 田辺製薬",
       url: "",
     },
     next: {

@@ -15,7 +15,7 @@ export const team = {
   ],
   seasonNavigation: {
     previous: {
-      label: "87/88 新日本製鐵",
+      label: "1987 新日本製鐵",
       url: "",
     },
     next: {

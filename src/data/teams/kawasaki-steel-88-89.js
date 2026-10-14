@@ -16,7 +16,7 @@ export const team = {
   ],
   seasonNavigation: {
     previous: {
-      label: "87/88 川崎製鉄",
+      label: "1987 川崎製鉄",
       url: "",
     },
     next: {
