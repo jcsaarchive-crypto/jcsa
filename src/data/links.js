@@ -746,6 +746,22 @@ export const playerPages = {
   P00745: "/players/ishida-yasuyuki",
   P00746: "/players/fukuike-futoshi",
   P00747: "/players/takeuchi-takashi",
+  P00748: "/players/toriya-toshiaki",
+  P00749: "/players/hyuga-yasuhiro",
+  P00750: "/players/abe-yoshinori1",
+  P00751: "/players/kudo-katsutoshi1",
+  P00752: "/players/yamaguchi-takashi",
+  P00753: "/players/miyakawa-masahiro",
+  P00754: "/players/nishimoto-koji",
+  P00755: "/players/oi-narimoto",
+  P00756: "/players/hirata-mitsunori",
+  P00757: "/players/tanaka-kio",
+  P00758: "/players/nishida-hiroshi",
+  P00759: "/players/shimokawa-naoyuki",
+  P00760: "/players/seki-shinsei",
+  P00761: "/players/izumi-keiichiro",
+  P00762: "/players/hase-yasuhiro",
+  P00763: "/players/miyata-kiyonori",
 
 
 };
@@ -803,6 +819,7 @@ export const teamSeasonPages = {
   "田辺製薬|88/89": "/teams/tanabe-seiyaku-88-89",
   "コスモ石油|88/89": "/teams/cosmo-oil-88-89",
   "川崎製鉄|88/89": "/teams/kawasaki-steel-88-89",
+  "新日本製鐵|88/89": "/teams/shin-nippon-steel-88-89",
 
 
 };
