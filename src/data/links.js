@@ -762,6 +762,26 @@ export const playerPages = {
   P00761: "/players/izumi-keiichiro",
   P00762: "/players/hase-yasuhiro",
   P00763: "/players/miyata-kiyonori",
+  P00764: "/players/nagaoka-nobuhiro",
+  P00765: "/players/mochizuki-yasushi",
+  P00766: "/players/sano-tsutomu",
+  P00767: "/players/takamura-yoshiaki",
+  P00768: "/players/takasaki-daisuke",
+  P00769: "/players/furuya-atsushi",
+  P00770: "/players/inoue-seiki",
+  P00771: "/players/kashihara-joji",
+  P00772: "/players/yamada-katsuto",
+  P00773: "/players/yasuda-kazuaki",
+  P00774: "/players/yabuki-osamu",
+  P00775: "/players/hasegawa-mitsunori",
+  P00776: "/players/hiraga-hideki",
+  P00777: "/players/ebihara-atsushi",
+  P00778: "/players/kakiuchi-yuji",
+  P00779: "/players/mishima-yoji",
+  P00780: "/players/sugawara-takehiko",
+  P00781: "/players/kikuchi-atsushi",
+  P00782: "/players/noda-shoichi",
+
 
 
 };

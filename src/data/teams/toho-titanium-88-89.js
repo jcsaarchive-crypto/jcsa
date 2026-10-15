@@ -63,6 +63,8 @@ export const team = {
 
 export const players = [
   {
+    
+    id: "P00764",
     number: "1",
     name: "長岡 伸浩",
     latin: "Nobuhiro NAGAOKA",
@@ -73,6 +75,7 @@ export const players = [
     previous: "帝京高",
   },
   {
+    id: "P00765",
     number: "2",
     name: "望月 康史",
     latin: "Yasushi MOCHIZUKI",
@@ -83,6 +86,7 @@ export const players = [
     previous: "清水商高",
   },
   {
+    id: "P00766",
     number: "3",
     name: "佐野　勉",
     latin: "Tsutomu SANO",
@@ -93,6 +97,7 @@ export const players = [
     previous: "藤沢西高",
   },
   {
+    id: "P00767",
     number: "4",
     name: "高村 義明",
     latin: "Yoshiaki TAKAMURA",
@@ -103,6 +108,7 @@ export const players = [
     previous: "沼津工高 - トヨタ自動車工業",
   },
   {
+    id: "P00768",
     number: "5",
     name: "高崎 大介",
     latin: "Daisuke TAKASAKI",
@@ -113,6 +119,7 @@ export const players = [
     previous: "浦和南高 - 中央大",
   },
   {
+    id: "P00769",
     number: "7",
     name: "古谷 厚四",
     latin: "Atsushi FURUYA",
@@ -123,6 +130,7 @@ export const players = [
     previous: "相模工大附高",
   },
   {
+    id: "P00770",
     number: "8",
     name: "井上 正貴",
     latin: "Seiki INOUE",
@@ -133,6 +141,7 @@ export const players = [
     previous: "読売ユース - 読売サッカークラブ",
   },
   {
+    id: "P00771",
     number: "9",
     name: "柏原 丈二",
     latin: "Joji KASHIHARA",
@@ -143,6 +152,7 @@ export const players = [
     previous: "寒川高",
   },
   {
+    id: "P00772",
     number: "10",
     name: "山田 克人",
     latin: "Katsuto YAMADA",
@@ -153,6 +163,7 @@ export const players = [
     previous: "相模工大附高",
   },
   {
+    id: "P00773",
     number: "11",
     name: "安田 一昭",
     latin: "Kazuaki YASUDA",
@@ -163,6 +174,7 @@ export const players = [
     previous: "秋田商高",
   },
   {
+    id: "P00774",
     number: "12",
     name: "矢吹　治",
     latin: "Osamu YABUKI",
@@ -173,6 +185,7 @@ export const players = [
     previous: "向上高",
   },
   {
+    id: "P00775",
     number: "13",
     name: "長谷川 光典",
     latin: "Mitsunori HASEGAWA",
@@ -183,6 +196,7 @@ export const players = [
     previous: "東金沢高",
   },
   {
+    id: "P00776",
     number: "14",
     name: "平賀 英樹",
     latin: "Hideki Hiraga",
@@ -193,6 +207,7 @@ export const players = [
     previous: "相模工大附高",
   },
   {
+    id: "P00777",
     number: "15",
     name: "蛯原　淳",
     latin: "Atsushi EBIHARA",
@@ -203,6 +218,7 @@ export const players = [
     previous: "帝京高",
   },
   {
+    id: "P00778",
     number: "16",
     name: "垣内 友二",
     latin: "Yuji KAKIUCHI",
@@ -213,6 +229,7 @@ export const players = [
     previous: "藤沢北高",
   },
   {
+    id: "P00779",
     number: "17",
     name: "三島 洋治",
     latin: "Yoji MISHIMA",
@@ -223,6 +240,7 @@ export const players = [
     previous: "境高",
   },
   {
+    id: "P00780",
     number: "18",
     name: "菅原 武彦",
     latin: "Takehiko SUGAWARA",
@@ -233,6 +251,7 @@ export const players = [
     previous: "相模工大附高",
   },
   {
+    id: "P00781",
     number: "19",
     name: "菊池　淳",
     latin: "Atsushi KIKUCHI",
@@ -243,6 +262,7 @@ export const players = [
     previous: "藤嶺藤沢高",
   },
   {
+    id: "P00782",
     number: "28",
     name: "野田 正一",
     latin: "Shoichi NODA",
@@ -292,14 +312,17 @@ export const staff = [
     name: "川崎　衛",
   },
   {
+    id: "P00769",
     role: "主将",
     name: "古谷 厚四",
   },
   {
+    id: "P00764",
     role: "副主将",
     name: "長岡 伸浩",
   },
   {
+    id: "P00773",
     role: "副主将",
     name: "安田 一昭",
   },
