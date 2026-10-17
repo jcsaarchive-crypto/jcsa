@@ -781,7 +781,29 @@ export const playerPages = {
   P00780: "/players/sugawara-takehiko",
   P00781: "/players/kikuchi-atsushi",
   P00782: "/players/noda-shoichi",
-
+  P00783: "/players/kaminota-tsukasa",
+  P00784: "/players/hara-katsuhiko",
+  P00785: "/players/terao-yasunobu",
+  P00786: "/players/kuratani-junichi",
+  P00787: "/players/minato-kunizo",
+  P00788: "/players/sonoda-shinji",
+  P00789: "/players/okamoto-seishi",
+  P00790: "/players/takeshita-eiichi",
+  P00791: "/players/fujita-keizo1",
+  P00792: "/players/nakabayashi-shinichi",
+  P00793: "/players/nagae-kazutomi",
+  P00794: "/players/hirai-nobuo",
+  P00795: "/players/nakamura-yoshitaka",
+  P00796: "/players/iwamoto-hiroshi",
+  P00797: "/players/yamano-takayoshi",
+  P00798: "/players/hatakeyama-yoshifumi",
+  P00799: "/players/nakano-yoshihisa",
+  P00800: "/players/yamashita-yoshihiko",
+  P00801: "/players/hichino-shigehiro",
+  P00802: "/players/kawamoto-shigekazu",
+  P00803: "/players/ebina-shiro",
+  P00804: "/players/kishi-masahiro",
+  P00805: "/players/sasaki-takeshi",
 
 
 };
@@ -840,6 +862,8 @@ export const teamSeasonPages = {
   "コスモ石油|88/89": "/teams/cosmo-oil-88-89",
   "川崎製鉄|88/89": "/teams/kawasaki-steel-88-89",
   "新日本製鐵|88/89": "/teams/shin-nippon-steel-88-89",
+  "東邦チタニウム|88/89": "/teams/toho-titanium-88-89",
+  "大阪ガス|88/89": "/teams/osaka-gas-88-89",
 
 
 };
