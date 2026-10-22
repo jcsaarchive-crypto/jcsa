@@ -804,6 +804,27 @@ export const playerPages = {
   P00803: "/players/ebina-shiro",
   P00804: "/players/kishi-masahiro",
   P00805: "/players/sasaki-takeshi",
+  P00806: "/players/iijima-takashi",
+  P00807: "/players/iwasaki-yuji1",
+  P00808: "/players/naito-hidetoshi",
+  P00809: "/players/koshiishi-futoshi",
+  P00810: "/players/tanabe-yuzo",
+  P00811: "/players/yamada-koichi",
+  P00812: "/players/ishikawa-akira",
+  P00813: "/players/fukasawa-kazutomo",
+  P00814: "/players/takano-keiji",
+  P00815: "/players/takita-osamu",
+  P00816: "/players/uematsu-fumio",
+  P00817: "/players/yamada-kazuhiro1",
+  P00818: "/players/imaizumi-shoei",
+  P00819: "/players/fujita-yukio",
+  P00820: "/players/imamura-yuji",
+  P00821: "/players/toyozumi-kazunori",
+  P00822: "/players/kobayashi-kazutoshi",
+  P00823: "/players/ishikura-akio",
+  P00824: "/players/aoyagi-noboru",
+  P00825: "/players/shindo-michiya",
+  P00826: "/players/tsukada-yuji",
 
 
 };
@@ -864,6 +885,7 @@ export const teamSeasonPages = {
   "新日本製鐵|88/89": "/teams/shin-nippon-steel-88-89",
   "東邦チタニウム|88/89": "/teams/toho-titanium-88-89",
   "大阪ガス|88/89": "/teams/osaka-gas-88-89",
+  "甲府サッカークラブ|88/89": "/teams/kofu-soccer-club-88-89",
 
 
 };
