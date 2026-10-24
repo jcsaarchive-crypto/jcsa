@@ -833,7 +833,25 @@ export const playerPages = {
   P00832: "/players/unagiike-haruo",
   P00833: "/players/kazuno-atsuhito",
   P00834: "/players/aoyagi-osamu",
-
+  P00835: "/players/matsumoto-shinji",
+  P00836: "/players/ikegami-yasuo",
+  P00837: "/players/taniguchi-kazutaka",
+  P00838: "/players/sakaguchi-toshikazu",
+  P00839: "/players/shirai-hiroji",
+  P00840: "/players/nakamura-masatoshi",
+  P00841: "/players/yamazaki-tsuyoshi",
+  P00842: "/players/akita-koji",
+  P00843: "/players/hamada-yoji",
+  P00844: "/players/hattori-kunio",
+  P00845: "/players/taguchi-yasushi",
+  P00846: "/players/kusumoto-tsutomu",
+  P00847: "/players/sakami-nobuo",
+  P00848: "/players/matsumoto-shigeru",
+  P00849: "/players/takahashi-kazuki1",
+  P00850: "/players/hara-keiji",
+  P00851: "/players/kajiwara-akihito",
+  P00852: "/players/shinozaki-ryo",
+  P00853: "/players/kakuta-norihiko",
 
 
 };
@@ -895,6 +913,7 @@ export const teamSeasonPages = {
   "東邦チタニウム|88/89": "/teams/toho-titanium-88-89",
   "大阪ガス|88/89": "/teams/osaka-gas-88-89",
   "甲府サッカークラブ|88/89": "/teams/kofu-soccer-club-88-89",
+  "NTT関西|88/89": "/teams/ntt-kansai-88-89",
 
 
 };
