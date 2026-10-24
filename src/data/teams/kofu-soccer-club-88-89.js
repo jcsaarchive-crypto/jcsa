@@ -304,6 +304,7 @@ export const players = [
     previous: "韮崎高 - 日本体育大",
   },
   {
+    id: "P00827",
     number: "25",
     name: "進藤　弘",
     latin: "Hiroshi SHINDO",
@@ -314,6 +315,7 @@ export const players = [
     previous: "機山工高",
   },
   {
+    id: "P00828",
     number: "27",
     name: "戸沢　正",
     latin: "Masashi TOZAWA",
@@ -324,6 +326,7 @@ export const players = [
     previous: "東海大甲府高",
   },
   {
+    id: "P00829",
     number: "28",
     name: "広瀬　龍",
     latin: "Ryu HIROSE",
@@ -331,9 +334,10 @@ export const players = [
     birth: "1956年4月19日",
     size: "175cm/68kg",
     birthplace: "東京都",
-    previous: "帝京高 - 中央大",
+    previous: "帝京高 - 中央大 - フジタ工業クラブ",
   },
   {
+    id: "P00830",
     number: "29",
     name: "小林　実",
     latin: "Minoru KOBAYASHI",
@@ -344,6 +348,7 @@ export const players = [
     previous: "韮崎高 - 日本体育大",
   },
   {
+    id: "P00831",
     number: "30",
     name: "丸山　孝",
     latin: "Takashi MARUYAMA",
@@ -354,6 +359,7 @@ export const players = [
     previous: "甲府西高 - 筑波大",
   },
   {
+    id: "P00832",
     number: "31",
     name: "鰻池 春雄",
     latin: "Haruo UNAGIIKE",
@@ -364,6 +370,7 @@ export const players = [
     previous: "韮崎高 - 筑波大",
   },
   {
+    id: "P00833",
     number: "32",
     name: "数野 篤人",
     latin: "Atsuhito KAZUNO",
@@ -374,6 +381,7 @@ export const players = [
     previous: "機山工高 - 日本体育大",
   },
   {
+    id: "P00834",
     number: "33",
     name: "青柳　修",
     latin: "Osamu AOYAGI",
@@ -408,10 +416,12 @@ export const staff = [
     name: "新藤 道也",
   },
   {
+    id: "P00826",
     role: "コーチ兼選手",
     name: "塚田 雄二",
   },
   {
+    id: "P00832",
     role: "コーチ兼選手",
     name: "鰻池 春雄",
   },

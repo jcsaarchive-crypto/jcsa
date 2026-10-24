@@ -825,6 +825,15 @@ export const playerPages = {
   P00824: "/players/aoyagi-noboru",
   P00825: "/players/shindo-michiya",
   P00826: "/players/tsukada-yuji",
+  P00827: "/players/shindo-hiroshi",
+  P00828: "/players/tozawa-masashi",
+  P00829: "/players/hirose-ryu",
+  P00830: "/players/kobayashi-minoru",
+  P00831: "/players/maruyama-takashi",
+  P00832: "/players/unagiike-haruo",
+  P00833: "/players/kazuno-atsuhito",
+  P00834: "/players/aoyagi-osamu",
+
 
 
 };
