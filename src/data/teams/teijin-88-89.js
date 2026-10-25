@@ -174,6 +174,7 @@ export const players = [
     previous: "八幡浜工高",
   },
   {
+    id: "P00864",
     number: "11",
     name: "田中 則夫",
     latin: "Norio TANAKA",
@@ -184,6 +185,7 @@ export const players = [
     previous: "新田高",
   },
   {
+    id: "P00865",
     number: "12",
     name: "真鍋 一典",
     latin: "Kazunori MANABE",
@@ -194,6 +196,7 @@ export const players = [
     previous: "新居浜工高",
   },
   {
+    id: "P00866",
     number: "13",
     name: "森本 直人",
     latin: "Naoto MORIMOTO",
@@ -204,6 +207,7 @@ export const players = [
     previous: "新居浜工高",
   },
   {
+    id: "P00867",
     number: "14",
     name: "松下　豊",
     latin: "Yutaka MATSUSHITA",
@@ -214,6 +218,7 @@ export const players = [
     previous: "天理大",
   },
   {
+    id: "P00868",
     number: "15",
     name: "好岡　直",
     latin: "Sunao YOSHIOKA",
@@ -224,6 +229,7 @@ export const players = [
     previous: "南宇和高",
   },
   {
+    id: "P00869",
     number: "16",
     name: "若木 祥孝",
     latin: "Yoshitaka WAKAGI",
@@ -234,6 +240,7 @@ export const players = [
     previous: "八幡浜工高",
   },
   {
+    id: "P00870",
     number: "17",
     name: "青野 俊幸",
     latin: "Toshiyuki AONO",
@@ -244,6 +251,7 @@ export const players = [
     previous: "丹原西中",
   },
   {
+    id: "P00871",
     number: "18",
     name: "中野 智史",
     latin: "Tomofumi NAKANO",
@@ -269,10 +277,12 @@ export const staff = [
     name: "山下 明寛",
   },
   {
+    id: "P00870",
     role: "監督兼選手",
     name: "青野 俊幸",
   },
   {
+    id: "P00855",
     role: "コーチ兼選手",
     name: "松木 喜久夫",
   },
@@ -281,10 +291,12 @@ export const staff = [
     name: "麦谷　馨",
   },
   {
+    id: "P00867",
     role: "主務兼選手",
     name: "松下　豊",
   },
   {
+    id: "P00862",
     role: "主将",
     name: "兵頭 昭一",
   },

@@ -862,6 +862,14 @@ export const playerPages = {
   P00861: "/players/tsushima-kuniyoshi",
   P00862: "/players/hyodo-shoichi",
   P00863: "/players/harada-tatsuya",
+  P00864: "/players/tanaka-norio",
+  P00865: "/players/manabe-kazunori",
+  P00866: "/players/morimoto-naoto",
+  P00867: "/players/matsushita-yutaka1",
+  P00868: "/players/yoshioka-sunao",
+  P00869: "/players/wakagi-yoshitaka",
+  P00870: "/players/aono-toshiyuki",
+  P00871: "/players/nakano-tomofumi",
 
 
 };
