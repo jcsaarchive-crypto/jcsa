@@ -852,6 +852,16 @@ export const playerPages = {
   P00851: "/players/kajiwara-akihito",
   P00852: "/players/shinozaki-ryo",
   P00853: "/players/kakuta-norihiko",
+  P00854: "/players/masuda-koji",
+  P00855: "/players/matsuki-kikuo",
+  P00856: "/players/narukawa-tatsuo",
+  P00857: "/players/shirai-yutaka",
+  P00858: "/players/higashioka-yasuhiro",
+  P00859: "/players/shiroishi-mitsuaki",
+  P00860: "/players/yamazaki-tomohiro",
+  P00861: "/players/tsushima-kuniyoshi",
+  P00862: "/players/hyodo-shoichi",
+  P00863: "/players/harada-tatsuya",
 
 
 };
@@ -914,6 +924,7 @@ export const teamSeasonPages = {
   "大阪ガス|88/89": "/teams/osaka-gas-88-89",
   "甲府サッカークラブ|88/89": "/teams/kofu-soccer-club-88-89",
   "NTT関西|88/89": "/teams/ntt-kansai-88-89",
+  "帝人|88/89": "/teams/teijin-88-89",
 
 
 };
