@@ -424,6 +424,18 @@ const groupedSeasons = allSeasons
                         </span>
                       </h3>
 
+                      {seasonGroup.season === "88/89" && competitionGroup.competitionKey === "JSL1" && (
+                        <p class="standings-link">
+                          <a href="/standings/1988-89-jsl1">最終順位表を見る →</a>
+                        </p>
+                      )}
+
+                      {seasonGroup.season === "88/89" && competitionGroup.competitionKey === "JSL2" && (
+                        <p class="standings-link">
+                          <a href="/standings/1988-89-jsl2">最終順位表を見る →</a>
+                        </p>
+                      )}
+
                       <div class="team-section">
                         <h4>収録チーム</h4>
 
@@ -570,6 +582,21 @@ const groupedSeasons = allSeasons
     font-weight: 600;
   }
 
+  .standings-link {
+    margin: -3px 0 18px 18px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .standings-link a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .standings-link a:hover {
+    text-decoration: underline;
+  }
+
   .team-section {
     padding-left: 18px;
   }
@@ -616,6 +643,10 @@ const groupedSeasons = allSeasons
     main {
       width: calc(100% - 24px);
       padding-top: 40px;
+    }
+
+    .standings-link {
+      margin-left: 0;
     }
 
     .team-section {

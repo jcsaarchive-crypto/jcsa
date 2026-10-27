@@ -725,6 +725,35 @@ const recentUpdates = sortedUpdates.slice(0, 3);
         </div>
       </section>
 
+      <section class="content-section" id="standings">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">
+              LEAGUE STANDINGS
+            </div>
+
+            <h2>大会順位表</h2>
+          </div>
+
+          <p>
+            各大会・シーズンの最終順位を辿ります。
+          </p>
+        </div>
+
+        <div class="standings-list">
+          <a class="standings-item" href="/standings/1988-89-jsl1">
+            <span class="standings-season">88/89</span>
+            <strong class="standings-title">第24回日本サッカーリーグ1部（JSL1部）</strong>
+            <span class="standings-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="standings-item" href="/standings/1988-89-jsl2">
+            <span class="standings-season">88/89</span>
+            <strong class="standings-title">第17回日本サッカーリーグ2部（JSL2部）</strong>
+            <span class="standings-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
       <section
         class="content-section"
         id="recent"
@@ -1245,6 +1274,43 @@ const recentUpdates = sortedUpdates.slice(0, 3);
     color: #a3aaa5;
   }
 
+  .standings-list {
+    border-top: 1px solid #cfd5d0;
+  }
+
+  .standings-item {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    min-height: 77px;
+    padding: 15px 18px;
+    background: #ffffff;
+    border-right: 1px solid #cfd5d0;
+    border-bottom: 1px solid #cfd5d0;
+    border-left: 1px solid #cfd5d0;
+    text-decoration: none;
+  }
+
+  .standings-item:hover {
+    background: #e7ebe8;
+  }
+
+  .standings-season {
+    min-width: 70px;
+    color: #68716b;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .standings-title {
+    flex: 1;
+    font-size: 16px;
+  }
+
+  .standings-arrow {
+    font-size: 17px;
+  }
+
   .recent-list {
     border-top: 1px solid #cfd5d0;
   }
@@ -1276,7 +1342,8 @@ const recentUpdates = sortedUpdates.slice(0, 3);
   .recent-season {
     min-width: 55px;
     color: #68716b;
-    font-size: 13px;
+    font-size: 18px;
+    font-weight: 700;
   }
 
   .recent-team {
@@ -1671,7 +1738,7 @@ const recentUpdates = sortedUpdates.slice(0, 3);
 
     .recent-season {
       min-width: 45px;
-      font-size: 12px;
+      font-size: 18px;
     }
 
     .recent-team {

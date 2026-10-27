@@ -1,0 +1,536 @@
+
+---
+import { team as toshiba } from "../../data/teams/toshiba-88-89.js";
+import { team as hitachi } from "../../data/teams/hitachi-88-89.js";
+import { team as tanabe } from "../../data/teams/tanabe-seiyaku-88-89.js";
+import { team as fujitsu } from "../../data/teams/fujitsu-88-89.js";
+import { team as mazda } from "../../data/teams/mazda-soccer-club-88-89.js";
+import { team as toyota } from "../../data/teams/toyota-88-89.js";
+import { team as nttKanto } from "../../data/teams/ntt-kanto-88-89.js";
+import { team as osakaGas } from "../../data/teams/osaka-gas-88-89.js";
+import { team as kofu } from "../../data/teams/kofu-soccer-club-88-89.js";
+import { team as shinNippon } from "../../data/teams/shin-nippon-steel-88-89.js";
+import { team as cosmo } from "../../data/teams/cosmo-oil-88-89.js";
+import { team as kawasaki } from "../../data/teams/kawasaki-steel-88-89.js";
+import { team as teijin } from "../../data/teams/teijin-88-89.js";
+import { team as toho } from "../../data/teams/toho-titanium-88-89.js";
+import { team as nttKansai } from "../../data/teams/ntt-kansai-88-89.js";
+import { team as fujieda } from "../../data/teams/fujieda-shiyakusho-88-89.js";
+
+const teams = [
+  { data: toshiba, slug: "toshiba-88-89" },
+  { data: hitachi, slug: "hitachi-88-89" },
+  { data: tanabe, slug: "tanabe-seiyaku-88-89" },
+  { data: fujitsu, slug: "fujitsu-88-89" },
+  { data: mazda, slug: "mazda-soccer-club-88-89" },
+  { data: toyota, slug: "toyota-88-89" },
+  { data: nttKanto, slug: "ntt-kanto-88-89" },
+  { data: osakaGas, slug: "osaka-gas-88-89" },
+  { data: kofu, slug: "kofu-soccer-club-88-89" },
+  { data: shinNippon, slug: "shin-nippon-steel-88-89" },
+  { data: cosmo, slug: "cosmo-oil-88-89" },
+  { data: kawasaki, slug: "kawasaki-steel-88-89" },
+  { data: teijin, slug: "teijin-88-89" },
+  { data: toho, slug: "toho-titanium-88-89" },
+  { data: nttKansai, slug: "ntt-kansai-88-89" },
+  { data: fujieda, slug: "fujieda-shiyakusho-88-89" },
+];
+
+const statKeys = [
+  "points",
+  "wins",
+  "draws",
+  "losses",
+  "goalsFor",
+  "goalsAgainst",
+];
+
+const getNumber = (value, teamName, stageName, key) => {
+  if (
+    value === null ||
+    value === undefined ||
+    value === "" ||
+    !Number.isFinite(Number(value))
+  ) {
+    throw new Error(
+      `${teamName}: ${stageName} の ${key} を確認してください。`
+    );
+  }
+
+  return Number(value);
+};
+
+const standings = teams
+  .map(({ data, slug }) => {
+    const league = data.results?.league;
+    const stages = league?.stages;
+
+    if (!Array.isArray(stages) || stages.length !== 2) {
+      throw new Error(
+        `${data.name}: 前期・後期の成績が2件揃っていません。`
+      );
+    }
+
+    const upperStage = stages.find(
+      (stage) => stage.name === "後期上位リーグ"
+    );
+
+    const finalRank = upperStage
+      ? upperStage.rank
+      : league?.overall?.rank;
+
+    if (
+      finalRank === null ||
+      finalRank === undefined ||
+      finalRank === "" ||
+      !Number.isInteger(Number(finalRank)) ||
+      Number(finalRank) < 1 ||
+      Number(finalRank) > 16
+    ) {
+      throw new Error(
+        `${data.name}: 最終順位をJSから取得できません。`
+      );
+    }
+
+    const totals = {};
+
+    for (const key of statKeys) {
+      totals[key] = stages.reduce(
+        (sum, stage) =>
+          sum + getNumber(
+            stage[key],
+            data.name,
+            stage.name,
+            key
+          ),
+        0
+      );
+    }
+
+    const goalDifference = stages.reduce(
+      (sum, stage) => {
+        const value = stage.goalDifference;
+
+        if (
+          value !== null &&
+          value !== undefined &&
+          value !== ""
+        ) {
+          return sum + getNumber(
+            value,
+            data.name,
+            stage.name,
+            "goalDifference"
+          );
+        }
+
+        const goalsFor = getNumber(
+          stage.goalsFor,
+          data.name,
+          stage.name,
+          "goalsFor"
+        );
+
+        const goalsAgainst = getNumber(
+          stage.goalsAgainst,
+          data.name,
+          stage.name,
+          "goalsAgainst"
+        );
+
+        return sum + (goalsFor - goalsAgainst);
+      },
+      0
+    );
+
+    return {
+      name: data.name,
+      url: `/teams/${slug}`,
+      rank: Number(finalRank),
+      ...totals,
+      goalDifference,
+    };
+  })
+  .sort((a, b) => a.rank - b.rank);
+
+if (standings.length !== 16) {
+  throw new Error("JSL2部の参加チーム数が16ではありません。");
+}
+
+const ranks = standings.map((item) => item.rank);
+
+if (new Set(ranks).size !== 16) {
+  throw new Error("JSL2部の最終順位に重複があります。");
+}
+
+for (let rank = 1; rank <= 16; rank++) {
+  if (!ranks.includes(rank)) {
+    throw new Error(`JSL2部の最終順位 ${rank} 位がありません。`);
+  }
+}
+
+const show = (value) => {
+  if (value === null || value === undefined) return "";
+  return value;
+};
+
+const showGoalDifference = (value) => {
+  if (value === null || value === undefined || value === "") return "";
+  return Number(value) > 0 ? `+${value}` : value;
+};
+
+const isPromoted = (rank) =>
+  Number(rank) === 1 || Number(rank) === 2;
+
+const isRelegated = (rank) =>
+  Number(rank) === 15 || Number(rank) === 16;
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>1988/89 第17回日本サッカーリーグ2部 JSL2部 順位表 | 日本クラブサッカーアーカイブ</title>
+  </head>
+
+  <body>
+    <main>
+      <p class="back">
+        <a href="/">← トップへ戻る</a>
+      </p>
+
+      <header class="league-header">
+        <h1 class="league-heading">
+          <span>1988/89</span>
+          <span>第17回日本サッカーリーグ2部</span>
+          <span>JSL2部</span>
+        </h1>
+
+        <div class="league-profile">
+          <p>参加チーム数：{standings.length}</p>
+        </div>
+      </header>
+
+      <section class="archive-section">
+        <h2>最終順位表</h2>
+
+        <div class="table-scroll">
+          <table class="standings-table">
+            <thead>
+              <tr>
+                <th class="rank-column" scope="col">順位</th>
+                <th class="team-column" scope="col">チーム</th>
+                <th class="stat-column" scope="col">勝点</th>
+                <th class="stat-column" scope="col">勝</th>
+                <th class="stat-column" scope="col">分</th>
+                <th class="stat-column" scope="col">敗</th>
+                <th class="stat-column" scope="col">得点</th>
+                <th class="stat-column" scope="col">失点</th>
+                <th class="difference-column" scope="col">得失点差</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {standings.map((item) => (
+                <tr>
+                  <td class="rank-cell">
+                    <span class="rank-content">
+                      {isPromoted(item.rank) && (
+                        <span
+                          class="promotion-arrow"
+                          aria-label="JSL1部昇格"
+                          title="JSL1部昇格"
+                        >▲</span>
+                      )}
+                      {isRelegated(item.rank) && (
+                        <span
+                          class="relegation-arrow"
+                          aria-label="地域リーグ降格"
+                          title="地域リーグ降格"
+                        >▼</span>
+                      )}
+                      <span>{show(item.rank)}</span>
+                    </span>
+                  </td>
+                  <td class="team-name">
+                    <a href={item.url}>{item.name}</a>
+                  </td>
+                  <td class="points-cell">{show(item.points)}</td>
+                  <td class="number">{show(item.wins)}</td>
+                  <td class="number">{show(item.draws)}</td>
+                  <td class="number">{show(item.losses)}</td>
+                  <td class="number">{show(item.goalsFor)}</td>
+                  <td class="number">{show(item.goalsAgainst)}</td>
+                  <td class="number">{showGoalDifference(item.goalDifference)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-notes">
+          <p class="table-note">
+            <span class="promotion-arrow" aria-hidden="true">▲</span>
+            JSL1部昇格
+          </p>
+          <p class="table-note">
+            <span class="relegation-arrow" aria-hidden="true">▼</span>
+            地域リーグ降格
+          </p>
+        </div>
+
+        <p class="competition-note">
+          ※成績は前期・後期リーグの合計。下位8チームの最終順位は、東西同順位チームによる順位決定戦を経て決定された。順位決定戦の成績は通算成績に含まない。
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #f4f5f3;
+    color: #202522;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+  }
+
+  main {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 50px 0 90px;
+  }
+
+  .back {
+    margin: 0 0 55px;
+    font-size: 14px;
+  }
+
+  .back a {
+    color: #68716b;
+    text-decoration: none;
+  }
+
+  .back a:hover {
+    text-decoration: underline;
+  }
+
+  .league-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: -0.02em;
+  }
+
+  .league-heading span {
+    display: block;
+  }
+
+  .league-profile {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #cfd5d0;
+  }
+
+  .league-profile p {
+    margin: 7px 0;
+    font-size: 15px;
+    color: #68716b;
+  }
+
+  .archive-section {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #cfd5d0;
+  }
+
+  .archive-section h2 {
+    margin: 0 0 25px;
+    font-size: 22px;
+  }
+
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border: 2px solid #7f8982;
+  }
+
+  table {
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 14px;
+  }
+
+  .standings-table {
+    width: 100%;
+    min-width: 790px;
+    table-layout: fixed;
+  }
+
+  th,
+  td {
+    border: 1px solid #8f9992;
+    padding: 12px 10px;
+    vertical-align: middle;
+  }
+
+  table tr:first-child th {
+    border-top: 0;
+  }
+
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  table th:first-child,
+  table td:first-child {
+    border-left: 0;
+  }
+
+  table th:last-child,
+  table td:last-child {
+    border-right: 0;
+  }
+
+  th {
+    background: #dde3df;
+    color: #202522;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .rank-column {
+    width: 72px;
+  }
+
+  .team-column {
+    width: 300px;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .stat-column {
+    width: 80px;
+  }
+
+  .difference-column {
+    width: 100px;
+  }
+
+  .rank-cell {
+    text-align: center;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rank-content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .promotion-arrow,
+  .relegation-arrow {
+    color: #b63d36;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .team-name {
+    padding-left: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .team-name a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .team-name a:hover {
+    text-decoration: underline;
+  }
+
+  .points-cell {
+    text-align: center;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    background: #f3f5f3;
+  }
+
+  .number {
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+
+  tbody tr:hover td {
+    background: #f3f5f3;
+  }
+
+  tbody tr:hover .points-cell {
+    background: #e7ebe8;
+  }
+
+  .table-notes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 25px;
+    margin-top: 13px;
+  }
+
+  .table-note {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    font-size: 13px;
+    color: #68716b;
+  }
+
+  .competition-note {
+    margin: 15px 0 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #68716b;
+  }
+
+  @media (max-width: 600px) {
+    main {
+      width: calc(100% - 24px);
+      padding-top: 30px;
+    }
+
+    .back {
+      margin-bottom: 40px;
+    }
+
+    .league-heading {
+      font-size: 26px;
+      gap: 6px;
+    }
+
+    .archive-section {
+      margin-top: 45px;
+    }
+
+    th,
+    td {
+      padding: 10px 8px;
+    }
+  }
+</style>

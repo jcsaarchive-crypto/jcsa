@@ -1,0 +1,366 @@
+
+---
+import { team as nissan } from "../../data/teams/nissan-motors-88-89.js";
+import { team as ana } from "../../data/teams/ana-soccer-club-88-89.js";
+import { team as yamaha } from "../../data/teams/yamaha-88-89.js";
+import { team as fujita } from "../../data/teams/fujita-kogyo-88-89.js";
+import { team as yomiuri } from "../../data/teams/yomiuri-soccer-club-88-89.js";
+import { team as furukawa } from "../../data/teams/furukawa-electric-88-89.js";
+import { team as matsushita } from "../../data/teams/matsushita-electric-88-89.js";
+import { team as yanmar } from "../../data/teams/yanmar-diesel-88-89.js";
+import { team as honda } from "../../data/teams/honda-giken-88-89.js";
+import { team as nkk } from "../../data/teams/nkk-88-89.js";
+import { team as sumitomo } from "../../data/teams/sumitomo-metal-industries-88-89.js";
+import { team as mitsubishi } from "../../data/teams/mitsubishi-heavy-industries-88-89.js";
+
+const teams = [
+  { data: nissan, url: "/teams/nissan-motors-88-89" },
+  { data: ana, url: "/teams/ana-soccer-club-88-89" },
+  { data: yamaha, url: "/teams/yamaha-88-89" },
+  { data: fujita, url: "/teams/fujita-kogyo-88-89" },
+  { data: yomiuri, url: "/teams/yomiuri-soccer-club-88-89" },
+  { data: furukawa, url: "/teams/furukawa-electric-88-89" },
+  { data: matsushita, url: "/teams/matsushita-electric-88-89" },
+  { data: yanmar, url: "/teams/yanmar-diesel-88-89" },
+  { data: honda, url: "/teams/honda-giken-88-89" },
+  { data: nkk, url: "/teams/nkk-88-89" },
+  { data: sumitomo, url: "/teams/sumitomo-metal-industries-88-89" },
+  { data: mitsubishi, url: "/teams/mitsubishi-heavy-industries-88-89" },
+];
+
+const standings = teams
+  .map(({ data, url }) => ({
+    name: data.name,
+    url,
+    ...data.results.league,
+  }))
+  .sort((a, b) => a.rank - b.rank);
+
+const show = (value) => {
+  if (value === null || value === undefined) return "";
+  return value;
+};
+
+const showGoalDifference = (value) => {
+  if (value === null || value === undefined || value === "") return "";
+  return Number(value) > 0 ? `+${value}` : value;
+};
+
+const isRelegated = (rank) => Number(rank) === 11 || Number(rank) === 12;
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>1988/89 第24回日本サッカーリーグ1部 JSL1部 順位表 | 日本クラブサッカーアーカイブ</title>
+  </head>
+
+  <body>
+    <main>
+      <p class="back">
+        <a href="/">← トップへ戻る</a>
+      </p>
+
+      <header class="league-header">
+        <h1 class="league-heading">
+          <span>1988/89</span>
+          <span>第24回日本サッカーリーグ1部</span>
+          <span>JSL1部</span>
+        </h1>
+
+        <div class="league-profile">
+          <p>参加チーム数：{standings.length}</p>
+        </div>
+      </header>
+
+      <section class="archive-section">
+        <h2>最終順位表</h2>
+
+        <div class="table-scroll">
+          <table class="standings-table">
+            <thead>
+              <tr>
+                <th class="rank-column" scope="col">順位</th>
+                <th class="team-column" scope="col">チーム</th>
+                <th class="stat-column" scope="col">勝点</th>
+                <th class="stat-column" scope="col">勝</th>
+                <th class="stat-column" scope="col">分</th>
+                <th class="stat-column" scope="col">敗</th>
+                <th class="stat-column" scope="col">得点</th>
+                <th class="stat-column" scope="col">失点</th>
+                <th class="difference-column" scope="col">得失点差</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {standings.map((item) => (
+                <tr>
+                  <td class="rank-cell">
+                    <span class="rank-content">
+                      {isRelegated(item.rank) && (
+                        <span
+                          class="relegation-arrow"
+                          aria-label="JSL2部降格"
+                          title="JSL2部降格"
+                        >▼</span>
+                      )}
+                      <span>{show(item.rank)}</span>
+                    </span>
+                  </td>
+                  <td class="team-name">
+                    <a href={item.url}>{item.name}</a>
+                  </td>
+                  <td class="points-cell">{show(item.points)}</td>
+                  <td class="number">{show(item.wins)}</td>
+                  <td class="number">{show(item.draws)}</td>
+                  <td class="number">{show(item.losses)}</td>
+                  <td class="number">{show(item.goalsFor)}</td>
+                  <td class="number">{show(item.goalsAgainst)}</td>
+                  <td class="number">{showGoalDifference(item.goalDifference)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p class="table-note">
+          <span class="relegation-arrow" aria-hidden="true">▼</span>
+          JSL2部降格
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #f4f5f3;
+    color: #202522;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+  }
+
+  main {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 50px 0 90px;
+  }
+
+  .back {
+    margin: 0 0 55px;
+    font-size: 14px;
+  }
+
+  .back a {
+    color: #68716b;
+    text-decoration: none;
+  }
+
+  .back a:hover {
+    text-decoration: underline;
+  }
+
+  .league-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: -0.02em;
+  }
+
+  .league-heading span {
+    display: block;
+  }
+
+  .league-profile {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #cfd5d0;
+  }
+
+  .league-profile p {
+    margin: 7px 0;
+    font-size: 15px;
+    color: #68716b;
+  }
+
+  .archive-section {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #cfd5d0;
+  }
+
+  .archive-section h2 {
+    margin: 0 0 25px;
+    font-size: 22px;
+  }
+
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border: 2px solid #7f8982;
+  }
+
+  table {
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 14px;
+  }
+
+  .standings-table {
+    width: 100%;
+    min-width: 790px;
+    table-layout: fixed;
+  }
+
+  th,
+  td {
+    border: 1px solid #8f9992;
+    padding: 12px 10px;
+    vertical-align: middle;
+  }
+
+  table tr:first-child th {
+    border-top: 0;
+  }
+
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  table th:first-child,
+  table td:first-child {
+    border-left: 0;
+  }
+
+  table th:last-child,
+  table td:last-child {
+    border-right: 0;
+  }
+
+  th {
+    background: #dde3df;
+    color: #202522;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .rank-column {
+    width: 72px;
+  }
+
+  .team-column {
+    width: 300px;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .stat-column {
+    width: 80px;
+  }
+
+  .difference-column {
+    width: 100px;
+  }
+
+  .rank-cell {
+    text-align: center;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rank-content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .relegation-arrow {
+    color: #b63d36;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .team-name {
+    padding-left: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .team-name a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .team-name a:hover {
+    text-decoration: underline;
+  }
+
+  .points-cell {
+    text-align: center;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    background: #f3f5f3;
+  }
+
+  .number {
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+
+  tbody tr:hover td {
+    background: #f3f5f3;
+  }
+
+  tbody tr:hover .points-cell {
+    background: #e7ebe8;
+  }
+
+  .table-note {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 13px 0 0;
+    font-size: 13px;
+    color: #68716b;
+  }
+
+  @media (max-width: 600px) {
+    main {
+      width: calc(100% - 24px);
+      padding-top: 30px;
+    }
+
+    .back {
+      margin-bottom: 40px;
+    }
+
+    .league-heading {
+      font-size: 26px;
+      gap: 6px;
+    }
+
+    .archive-section {
+      margin-top: 45px;
+    }
+
+    th,
+    td {
+      padding: 10px 8px;
+    }
+  }
+</style>

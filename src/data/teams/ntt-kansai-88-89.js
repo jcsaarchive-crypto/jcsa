@@ -22,7 +22,7 @@ export const team = {
       url: "",
     },
     next: {
-      label: "89/90 NTT関西",
+      label: "1989 NTT関西",
       url: "",
     },
   },
