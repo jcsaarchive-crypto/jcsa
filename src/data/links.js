@@ -870,6 +870,31 @@ export const playerPages = {
   P00869: "/players/wakagi-yoshitaka",
   P00870: "/players/aono-toshiyuki",
   P00871: "/players/nakano-tomofumi",
+  P00872: "/players/kanto-masanori",
+  P00873: "/players/kuwabara-yutaka",
+  P00874: "/players/adachi-takemasa",
+  P00875: "/players/nagata-katsumi",
+  P00876: "/players/okada-masafumi",
+  P00877: "/players/sugimura-taiji",
+  P00878: "/players/konishi-hiromitsu",
+  P00879: "/players/otsuka-hiromitsu",
+  P00880: "/players/okajima-hiroshi",
+  P00881: "/players/tanaka-akimoto",
+  P00882: "/players/uno-takanobu",
+  P00883: "/players/matsuura-kazuhito",
+  P00884: "/players/totsuka-yasunari",
+  P00885: "/players/iida-naozumi",
+  P00886: "/players/yamauchi-toshifumi",
+  P00887: "/players/nakamura-masashi",
+  P00888: "/players/morita-yuji",
+  P00889: "/players/okamura-shigeo",
+  P00890: "/players/asaba-takamasa",
+  P00891: "/players/yamauchi-nobuji",
+  P00892: "/players/takishita-atsushi",
+  P00893: "/players/taki-hiroo",
+  P00894: "/players/nakada-hisao",
+  P00895: "/players/sugimoto-naomi",
+  P00896: "/players/osada-katsunori",
 
 
 };
@@ -933,6 +958,7 @@ export const teamSeasonPages = {
   "甲府サッカークラブ|88/89": "/teams/kofu-soccer-club-88-89",
   "NTT関西|88/89": "/teams/ntt-kansai-88-89",
   "帝人|88/89": "/teams/teijin-88-89",
+  "藤枝市役所|88/89": "/teams/fujieda-shiyakusho-88-89",
 
 
 };
