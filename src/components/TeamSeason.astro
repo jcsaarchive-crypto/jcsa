@@ -8,6 +8,9 @@ const {
   sources = [],
 } = Astro.props;
 
+const seoTitle = `${team.season} ${team.name}｜${team.competition ? `${team.competition} ` : ""}選手名鑑・成績｜日本クラブサッカーアーカイブ`;
+const seoDescription = `${team.season}シーズンの${team.name}${team.competition ? `（${team.competition}）` : ""}の選手名鑑・チームデータ。所属選手一覧、クラブ情報、シーズン成績などを当時の資料に基づいて掲載しています。`;
+
 const birthColumnLabel =
   team.birthColumnLabel ?? "生年月日";
 
@@ -70,7 +73,8 @@ const splitPlayerName = (name = "") => {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>{team.season} {team.name} | 日本クラブサッカーアーカイブ</title>
+  <title>{seoTitle}</title>
+  <meta name="description" content={seoDescription} />
 </head>
 
 <body>
