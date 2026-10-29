@@ -22,7 +22,7 @@ export const team = {
     },
     next: {
       label: "89/90 日産自動車",
-      url: "",
+      url: "/teams/nissan-motors-89-90",
     },
   },
   results: {
@@ -228,7 +228,7 @@ export const players = [
     birth: "1963年3月16日",
     size: "173cm/68kg",
     birthplace: "神奈川県",
-    previous: "帝京高",
+    previous: "帝京高 - 三菱養和SC - アルミニア・ビーレフェルト(西ドイツ)",
   },
   {
     id: "P00103",

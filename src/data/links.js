@@ -895,6 +895,10 @@ export const playerPages = {
   P00894: "/players/nakada-hisao",
   P00895: "/players/sugimoto-naomi",
   P00896: "/players/osada-katsunori",
+  P00897: "/players/jinno-takuya",
+  P00898: "/players/suzuki-masaharu",
+  P00899: "/players/matsuhashi-rikizo",
+  P00900: "/players/nagayama-kunio",
 
 
 };
@@ -959,6 +963,7 @@ export const teamSeasonPages = {
   "NTT関西|88/89": "/teams/ntt-kansai-88-89",
   "帝人|88/89": "/teams/teijin-88-89",
   "藤枝市役所|88/89": "/teams/fujieda-shiyakusho-88-89",
+  "日産自動車|89/90": "/teams/nissan-motors-89-90",
 
 
 };
