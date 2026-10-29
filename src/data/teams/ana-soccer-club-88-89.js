@@ -16,12 +16,12 @@ export const team = {
   ],
   seasonNavigation: {
     previous: {
-      label: "1987 全日空サッカークラブ",
+      label: "1987 全日空横浜サッカークラブ",
       url: "",
     },
     next: {
       label: "89/90 全日空サッカークラブ",
-      url: "",
+      url: "/teams/ana-soccer-club-89-90",
     },
   },
   results: {

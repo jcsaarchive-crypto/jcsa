@@ -964,6 +964,7 @@ export const teamSeasonPages = {
   "帝人|88/89": "/teams/teijin-88-89",
   "藤枝市役所|88/89": "/teams/fujieda-shiyakusho-88-89",
   "日産自動車|89/90": "/teams/nissan-motors-89-90",
+  "全日空サッカークラブ|89/90": "/teams/ana-soccer-club-89-90",
 
 
 };

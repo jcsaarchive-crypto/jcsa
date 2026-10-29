@@ -7,6 +7,9 @@ export const team = {
     year: 1972,
     note: "",
   },
+
+  trainingGround: "日産自動車獅子ケ谷グラウンド",
+  
   season: "89/90",
   competition: "日本サッカーリーグ1部（JSL1部）",
   competitionEn: "JAPAN SOCCER LEAGUE（JSL）DIVISION 1",
