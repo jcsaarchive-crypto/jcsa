@@ -21,7 +21,7 @@ export const team = {
     },
     next: {
       label: "89/90 ヤマハ発動機",
-      url: "",
+      url: "/teams/yamaha-89-90",
     },
   },
   results: {
@@ -354,7 +354,7 @@ export const players = [
     number: "29",
     id: "P00252",
     name: "サントス",
-    latin: "Ademir SANTOS",
+    latin: "Ademir Vieira Dos SANTOS",
     position: "FW",
     birth: "1968年3月28日",
     size: "174cm/63kg",

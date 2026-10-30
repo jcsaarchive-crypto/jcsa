@@ -16,7 +16,7 @@ export const team = {
   ],
   seasonNavigation: {
     previous: {
-      label: "1987 全日空横浜サッカークラブ",
+      label: "1987 全日空横浜クラブ",
       url: "",
     },
     next: {

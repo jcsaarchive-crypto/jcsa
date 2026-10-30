@@ -20,11 +20,11 @@ export const team = {
   ],
   seasonNavigation: {
     previous: {
-      label: "88/89 全日空",
+      label: "88/89 全日空サッカークラブ",
       url: "/teams/ana-soccer-club-88-89",
     },
     next: {
-      label: "90/91 全日空",
+      label: "90/91 全日空サッカークラブ",
       url: "",
     },
   },
@@ -286,6 +286,7 @@ export const players = [
     previous: "静岡学園高 - 法政大",
   },
   {
+    id: "P00901",
     number: "23",
     name: "岩井 厚裕",
     latin: "Atsuhiro IWAI",
@@ -296,6 +297,7 @@ export const players = [
     previous: "帝京高 - 東海大",
   },
   {
+    id: "P00902",
     number: "24",
     name: "田口 禎則",
     latin: "Yoshinori TAGUCHI",
@@ -306,6 +308,7 @@ export const players = [
     previous: "浦和南高 - 筑波大",
   },
   {
+    id: "P00903",
     number: "25",
     name: "上野 展裕",
     latin: "Nobuhiro UENO",
@@ -316,6 +319,7 @@ export const players = [
     previous: "膳所高 - 早稲田大",
   },
   {
+    id: "P00904",
     number: "26",
     name: "柴田　峡",
     latin: "Kei SHIBATA",

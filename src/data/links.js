@@ -899,6 +899,13 @@ export const playerPages = {
   P00898: "/players/suzuki-masaharu",
   P00899: "/players/matsuhashi-rikizo",
   P00900: "/players/nagayama-kunio",
+  P00901: "/players/iwai-atsuhiro",
+  P00902: "/players/taguchi-yoshinori",
+  P00903: "/players/ueno-nobuhiro",
+  P00904: "/players/shibata-kei",
+  P00905: "/players/date-michihisa",
+  P00906: "/players/seto-taiji",
+
 
 
 };
@@ -965,6 +972,7 @@ export const teamSeasonPages = {
   "藤枝市役所|88/89": "/teams/fujieda-shiyakusho-88-89",
   "日産自動車|89/90": "/teams/nissan-motors-89-90",
   "全日空サッカークラブ|89/90": "/teams/ana-soccer-club-89-90",
+  "ヤマハ発動機|89/90": "/teams/yamaha-89-90",
 
 
 };
