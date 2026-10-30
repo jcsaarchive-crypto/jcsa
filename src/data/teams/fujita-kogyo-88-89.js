@@ -22,7 +22,7 @@ export const team = {
     },
     next: {
       label: "89/90 フジタ工業クラブ",
-      url: "",
+      url: "/teams/fujita-kogyo-89-90",
     },
   },
   results: {
