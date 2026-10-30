@@ -24,7 +24,7 @@ export const team = {
     },
     next: {
       label: "89/90 古河電気工業",
-      url: "",
+      url: "/teams/furukawa-electric-89-90",
     },
   },
   results: {

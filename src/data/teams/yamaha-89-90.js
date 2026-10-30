@@ -166,6 +166,16 @@ export const players = [
     previous: "インテル・デ・ベベドウロ(ブラジル) - インテル・ジ・リメイラ(ブラジル) - AAポンチ・プレッタ(ブラジル) - コリンチャンス(ブラジル) - スポルチ・レシフェ(ブラジル) - キンゼ・デ・ジャウー(ブラジル)",
   },
   {
+    number: "11",
+    name: "バルボーザ",
+    latin: "―",
+    position: "―",
+    birth: "―",
+    size: "―",
+    birthplace: "―",
+    previous: "―",
+  },
+  {
     id: "P00341",
     number: "12",
     name: "岸本　衛",

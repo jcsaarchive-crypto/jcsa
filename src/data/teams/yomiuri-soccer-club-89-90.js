@@ -337,6 +337,7 @@ export const staff = [
     name: "奥田 卓良",
   },
   {
+    id: "P00429",
     role: "コーチ兼選手",
     name: "松木 安太郎",
   },
@@ -349,6 +350,7 @@ export const staff = [
     name: "馬場 克也",
   },
   {
+    id: "P00440",
     role: "副務兼選手",
     name: "岸野 靖之",
   },
@@ -377,14 +379,17 @@ export const staff = [
     name: "浜口 和明",
   },
   {
+    id: "P00430",
     role: "主将",
     name: "都並 敏史",
   },
   {
+    id: "P00244",
     role: "副将",
     name: "堀池　巧",
   },
   {
+    id: "P00432",
     role: "副将",
     name: "戸塚 哲也",
   },
