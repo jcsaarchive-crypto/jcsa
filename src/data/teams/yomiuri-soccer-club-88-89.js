@@ -21,7 +21,7 @@ export const team = {
     },
     next: {
       label: "89/90 読売サッカークラブ",
-      url: "",
+      url: "/teams/yomiuri-soccer-club-89-90",
     },
   },
   results: {
@@ -247,7 +247,7 @@ export const players = [
     birth: "1958年6月13日",
     size: "184cm/83kg",
     birthplace: "和歌山県",
-    previous: "新宮商高",
+    previous: "新宮商高 - 三菱重工業 - 読売ジュニア",
   },
   {
     number: "20",
@@ -290,7 +290,7 @@ export const players = [
     birth: "1962年4月6日",
     size: "177cm/72kg",
     birthplace: "東京都",
-    previous: "創価高 - 筑波大",
+    previous: "創価高 - 筑波大 - 日本鋼管",
   },
 ];
 

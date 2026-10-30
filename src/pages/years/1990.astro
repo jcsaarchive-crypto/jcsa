@@ -344,6 +344,56 @@ const groupedSeasons = allSeasons
     (seasonGroup) =>
       seasonGroup.competitions.length > 0
   );
+
+// 大会・地域目次。リンク先が存在するものだけクリック可能にする。
+// 都府県リーグ追加時は、該当チームに regionKey（例: "KANTO"）を指定する。
+const regionIndex = [
+  { key: "HOKKAIDO", label: "北海道" },
+  { key: "TOHOKU", label: "東北" },
+  { key: "KANTO", label: "関東" },
+  { key: "HOKUSHINETSU", label: "北信越" },
+  { key: "TOKAI", label: "東海" },
+  { key: "KANSAI", label: "関西" },
+  { key: "CHUGOKU", label: "中国" },
+  { key: "SHIKOKU", label: "四国" },
+  { key: "KYUSHU", label: "九州" }
+];
+
+const leagueIndex = [
+  { key: "JSL1", label: "JSL1部" },
+  { key: "JSL2", label: "JSL2部" },
+  { key: "J", keys: ["J", "J1"], label: "Jリーグ／J1" },
+  { key: "J2", label: "J2" },
+  { key: "OLD_JFL", keys: ["OLD_JFL", "OLD_JFL1"], label: "旧JFL／旧JFL1部" },
+  { key: "OLD_JFL2", label: "旧JFL2部" },
+  { key: "JFL", label: "JFL" },
+];
+
+const regionalKeys = regionIndex.map((region) => region.key);
+const regionOf = (team) =>
+  team.regionKey ||
+  (regionalKeys.includes(team.competitionKey) ? team.competitionKey : null);
+
+const firstCompetitionAnchor = (key) => {
+  const first = groupedSeasons.find((group) =>
+    group.competitions.some((competition) => competition.competitionKey === key)
+  );
+  return first ? `#competition-${key}-${first.season.replace(/[^0-9a-z]/gi, "-")}` : null;
+};
+
+const firstRegionAnchor = (key) => {
+  const first = groupedSeasons.find((group) =>
+    group.competitions.some((competition) =>
+      competition.teams.some((team) => regionOf(team) === key)
+    )
+  );
+  if (!first) return null;
+  const competition = first.competitions.find((entry) =>
+    entry.teams.some((team) => regionOf(team) === key)
+  );
+  return `#competition-${competition.competitionKey}-${first.season.replace(/[^0-9a-z]/gi, "-")}`;
+};
+
 ---
 
 <html lang="ja">
@@ -372,6 +422,37 @@ const groupedSeasons = allSeasons
         1990年代の日本サッカーを、シーズンとチームから辿る。
       </p>
 
+
+      <nav class="archive-index" aria-label="大会・地域別目次">
+        <h2>大会・地域から探す</h2>
+        <p class="index-note">収録済みの大会・地域は、クリックすると最初の掲載箇所へ移動します。</p>
+        <h3>全国リーグ</h3>
+        <div class="index-grid">
+          {leagueIndex.map((item) => {
+            const href = (item.keys ?? [item.key])
+              .map((key) => firstCompetitionAnchor(key))
+              .find(Boolean) ?? null;
+            return href ? (
+              <a class="index-item" href={href}>{item.label} <span aria-hidden="true">↓</span></a>
+            ) : (
+              <span class="index-item index-disabled">{item.label}</span>
+            );
+          })}
+        </div>
+        <h3>地域リーグ・都道府県リーグ</h3>
+        <div class="index-grid">
+          {regionIndex.map((item) => {
+            const href = firstRegionAnchor(item.key);
+            return href ? (
+              <a class="index-item" href={href}>{item.label} <span aria-hidden="true">↓</span></a>
+            ) : (
+              <span class="index-item index-disabled">{item.label}</span>
+            );
+          })}
+        </div>
+        <p class="index-note">都府県リーグは各地域に含めて整理します。未収録の項目にはリンクを設けていません。</p>
+      </nav>
+
       <section class="archive-section">
         <h2>収録シーズン</h2>
 
@@ -385,7 +466,7 @@ const groupedSeasons = allSeasons
               {
                 seasonGroup.competitions.map(
                   (competitionGroup) => (
-                    <div class="competition-group">
+                    <div class="competition-group" id={`competition-${competitionGroup.competitionKey}-${seasonGroup.season.replace(/[^0-9a-z]/gi, "-")}`}>
                       <h3>
                         <span class="competition-name">
                           {
@@ -436,6 +517,29 @@ const groupedSeasons = allSeasons
 </html>
 
 <style>
+
+  .archive-index {
+    margin-top: 42px;
+    padding: 26px;
+    background: #ffffff;
+    border: 1px solid #cfd5d0;
+  }
+  .archive-index h2 { margin: 0 0 8px; }
+  .archive-index h3 { display: block; margin: 25px 0 12px; font-size: 15px; }
+  .index-note { margin: 8px 0; color: #68716b; font-size: 12px; line-height: 1.7; }
+  .index-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+  .index-item {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 8px; padding: 12px; border: 1px solid #cfd5d0;
+    color: #202522; text-decoration: none; font-size: 13px; font-weight: 700;
+  }
+  a.index-item:hover { background: #e7ebe8; }
+  .index-disabled { background: #f4f5f3; color: #9ba29d; }
+  .competition-group { scroll-margin-top: 24px; }
+  @media (max-width: 700px) {
+    .archive-index { padding: 18px; }
+    .index-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
   :global(*) {
     box-sizing: border-box;
   }
