@@ -11,6 +11,25 @@ const {
 const seoTitle = `${team.season} ${team.name}｜${team.competition ? `${team.competition} ` : ""}選手名鑑・成績｜日本クラブサッカーアーカイブ`;
 const seoDescription = `${team.season}シーズンの${team.name}${team.competition ? `（${team.competition}）` : ""}の選手名鑑・チームデータ。所属選手一覧、クラブ情報、シーズン成績などを当時の資料に基づいて掲載しています。`;
 
+// 完成済み順位表のみリンクを表示する。未完成シーズンには表示しない。
+const standingsLinks = {
+  "1988/89": {
+    JSL1: "/standings/1988-89-jsl1",
+    JSL2: "/standings/1988-89-jsl2",
+  },
+};
+
+const normalizedSeason = String(team.season ?? "").trim().replace(/^88\/89$/, "1988/89");
+const competitionText = String(team.competition ?? "");
+const leagueCompetitionText = String(team.results?.league?.competition ?? "");
+const combinedCompetitionText = `${competitionText} ${leagueCompetitionText}`;
+const standingsDivision = /(?:JSL\s*1|日本サッカーリーグ\s*1|日本サッカーリーグ\s*１|JSL\s*１)/i.test(combinedCompetitionText)
+  ? "JSL1"
+  : /(?:JSL\s*2|日本サッカーリーグ\s*2|日本サッカーリーグ\s*２|JSL\s*２)/i.test(combinedCompetitionText)
+    ? "JSL2"
+    : null;
+const standingsUrl = standingsDivision ? standingsLinks[normalizedSeason]?.[standingsDivision] : null;
+
 const birthColumnLabel =
   team.birthColumnLabel ?? "生年月日";
 
@@ -72,6 +91,7 @@ const splitPlayerName = (name = "") => {
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="viewport" content="width=device-width" />
   <title>{seoTitle}</title>
   <meta name="description" content={seoDescription} />
@@ -249,7 +269,14 @@ const splitPlayerName = (name = "") => {
     <!-- 今シーズンの成績 -->
     {team.results && (
       <section class="info-section">
-        <h2>今シーズンの成績</h2>
+        <div class="results-heading">
+          <h2>今シーズンの成績</h2>
+          {standingsUrl && (
+            <a class="standings-page-link" href={standingsUrl}>
+              最終順位表を見る <span aria-hidden="true">→</span>
+            </a>
+          )}
+        </div>
 
         <div class="result-box">
           {team.results.league && (
@@ -1055,6 +1082,40 @@ const splitPlayerName = (name = "") => {
 
   .ground-list li + li {
     margin-top: 3px;
+  }
+
+  /* 成績見出しと完成済み順位表へのリンク */
+  .results-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin-bottom: 16px;
+  }
+
+  .results-heading h2 {
+    margin: 0;
+  }
+
+  .standings-page-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 13px;
+    background: #ffffff;
+    border: 1px solid #cfd5d0;
+    border-radius: 6px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  .standings-page-link:hover {
+    background: #e7ebe8;
+    text-decoration: underline;
   }
 
   /* 成績 */

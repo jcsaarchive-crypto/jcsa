@@ -23,22 +23,6 @@
 const updates = [
  {
   season: "89/90",
-  team: "古河電気工業",
-  competition: "JSL1部",
-  url: "/teams/furukawa-electric-89-90",
-  updated: "2026-10-30",
-  order: 65,
- },
- {
-  season: "89/90",
-  team: "読売サッカークラブ",
-  competition: "JSL1部",
-  url: "/teams/yomiuri-soccer-club-89-90",
-  updated: "2026-10-30",
-  order: 64,
- },
- {
-  season: "89/90",
   team: "フジタ工業クラブ",
   competition: "JSL1部",
   url: "/teams/fujita-kogyo-89-90",
@@ -566,6 +550,17 @@ const recentUpdates = sortedUpdates.slice(0, 3);
       content="日本クラブサッカーアーカイブ（JCSA）は、JSL、Jリーグ（J1・J2・J3）、旧JFL、JFL、地域リーグ、都道府県リーグを対象とした日本サッカー史のデータベース。シーズンごとの選手名鑑、所属選手、チーム成績、リーグ順位表、選手の経歴・出場記録などを当時の資料に基づいて整理しています。"
     />
 
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <meta property="og:site_name" content="日本クラブサッカーアーカイブ" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "日本クラブサッカーアーカイブ",
+      "alternateName": "JCSA",
+      "url": "https://jcsa.pages.dev/"
+    })} />
+
     <title>
       日本クラブサッカーアーカイブ｜JSL・Jリーグ（J1・J2・J3）・旧JFL・JFL・地域リーグのシーズン別選手名鑑・データベース
     </title>
@@ -575,9 +570,13 @@ const recentUpdates = sortedUpdates.slice(0, 3);
     <header class="site-header">
       <div class="header-inner">
         <a class="site-brand" href="/">
-          <span class="brand-mark">
-            JCSA
-          </span>
+          <img
+            class="brand-mark"
+            src="/images/jcsa-emblem.png"
+            alt="JCSA エンブレム"
+            width="80"
+            height="80"
+          />
 
           <span class="brand-names">
             <strong>
@@ -1024,16 +1023,11 @@ const recentUpdates = sortedUpdates.slice(0, 3);
   }
 
   .brand-mark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 52px;
-    height: 52px;
-    background: #202522;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 0.08em;
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    flex-shrink: 0;
   }
 
   .brand-names {
@@ -1624,7 +1618,6 @@ const recentUpdates = sortedUpdates.slice(0, 3);
     .brand-mark {
       width: 46px;
       height: 46px;
-      font-size: 11px;
     }
 
     .brand-names strong {
