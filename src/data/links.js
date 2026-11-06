@@ -913,6 +913,10 @@ export const playerPages = {
   P00912: "/players/matsuyama-yoshiyuki",
   P00913: "/players/kumon-hiroaki",
   P00914: "/players/shimokawa-kenichi",
+  P00915: "/players/ikenoue-shunichi",
+  P00916: "/players/koezuka-kazuaki",
+  P00917: "/players/azuma-hiroki",
+  P00918: "/players/morikawa-toru",
 
 
 
@@ -984,6 +988,7 @@ export const teamSeasonPages = {
   "フジタ工業クラブ|89/90": "/teams/fujita-kogyo-89-90",
   "読売サッカークラブ|89/90": "/teams/yomiuri-soccer-club-89-90",
   "古河電気工業|89/90": "/teams/furukawa-electric-89-90",
+  "松下電器産業|89/90": "/teams/matsushita-electric-89-90",
 
 
 };

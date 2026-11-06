@@ -23,7 +23,7 @@ export const team = {
     },
     next: {
       label: "89/90 松下電器産業",
-      url: "",
+      url: "/teams/matsushita-electric-89-90",
     },
   },
   results: {
