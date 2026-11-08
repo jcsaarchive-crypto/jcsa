@@ -5,7 +5,7 @@ export const player = {
   nameKana: "ほんだ やすと",
   nameEn: "Yasuto HONDA",
 
-  position: "MF",
+  position: "MF/FW",
 
   birth: "1969年6月25日",
   death: "",

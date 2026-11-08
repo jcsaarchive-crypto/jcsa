@@ -21,7 +21,7 @@ export const team = {
     },
     next: {
       label: "89/90 本田技研工業",
-      url: "",
+      url: "/teams/honda-giken-89-90",
     },
   },
   results: {
