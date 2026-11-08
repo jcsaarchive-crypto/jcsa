@@ -22,7 +22,7 @@ export const team = {
     },
     next: {
       label: "89/90 NKK",
-      url: "",
+      url: "/teams/nkk-89-90",
     },
   },
   results: {
