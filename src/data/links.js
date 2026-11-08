@@ -923,6 +923,7 @@ export const playerPages = {
   P00922: "/players/tsuno-kenji",
   P00923: "/players/irii-kazuhisa",
   P00924: "/players/kanda-katsuo",
+  P00925: "/players/endo-yoshimune",
 
 
 

@@ -275,6 +275,7 @@ export const players = [
     previous: "東海大甲府高",
   },
   {
+    id: "P00925",
     number: "23",
     name: "遠藤 善主",
     latin: "Yoshimune ENDO",
