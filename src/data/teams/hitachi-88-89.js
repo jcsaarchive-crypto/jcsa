@@ -20,7 +20,7 @@ export const team = {
     },
     next: {
       label: "89/90 日立製作所",
-      url: "",
+      url: "/teams/hitachi-89-90",
     },
   },
   results: {

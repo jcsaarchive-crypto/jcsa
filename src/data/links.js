@@ -924,6 +924,8 @@ export const playerPages = {
   P00923: "/players/irii-kazuhisa",
   P00924: "/players/kanda-katsuo",
   P00925: "/players/endo-yoshimune",
+  P00926: "/players/musashi-mizushima",
+  P00927: "/players/kiyoshi-seo",
 
 
 
@@ -999,6 +1001,8 @@ export const teamSeasonPages = {
   "ヤンマーディーゼル|89/90": "/teams/yanmar-diesel-89-90",
   "本田技研工業|89/90": "/teams/honda-giken-89-90",
   "NKK|89/90": "/teams/nkk-89-90",
+  "日立製作所|89/90": "/teams/hitachi-89-90",
+
 
 
 };

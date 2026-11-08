@@ -17,9 +17,12 @@ const standingsLinks = {
     JSL1: "/standings/1988-89-jsl1",
     JSL2: "/standings/1988-89-jsl2",
   },
+  "1989/90": {
+    JSL1: "/standings/1989-90-jsl1",
+  },
 };
 
-const normalizedSeason = String(team.season ?? "").trim().replace(/^88\/89$/, "1988/89");
+const normalizedSeason = String(team.season ?? "").trim().replace(/^88\/89$/, "1988/89").replace(/^89\/90$/, "1989/90");
 const competitionText = String(team.competition ?? "");
 const leagueCompetitionText = String(team.results?.league?.competition ?? "");
 const combinedCompetitionText = `${competitionText} ${leagueCompetitionText}`;

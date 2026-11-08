@@ -41,6 +41,7 @@ export const team = {
       losses: 10,
       goalsFor: 20,
       goalsAgainst: 28,
+      goalDifference: -8,
     },
 
     jslCup: "3回戦敗退",

@@ -315,6 +315,14 @@ const teams = [
   },
   {
     season: "89/90",
+    competitionKey: "JSL1",
+    competition: "日本サッカーリーグ1部",
+    rank: 12,
+    name: "日立製作所",
+    url: "/teams/hitachi-89-90",
+  },
+  {
+    season: "89/90",
     competitionKey: "JSL2",
     competition: "日本サッカーリーグ2部",
     rank: 2,
@@ -594,6 +602,12 @@ const regionSeasonLinks = (key) =>
                           {seasonGroup.season}
                         </span>
                       </h3>
+
+                      {seasonGroup.season === "89/90" && competitionGroup.competitionKey === "JSL1" && (
+  <p class="standings-link">
+    <a href="/standings/1989-90-jsl1">最終順位表を見る →</a>
+  </p>
+)}
 
                       {seasonGroup.season === "88/89" && competitionGroup.competitionKey === "JSL1" && (
                         <p class="standings-link">
