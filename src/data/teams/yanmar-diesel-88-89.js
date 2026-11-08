@@ -25,7 +25,7 @@ export const team = {
     },
     next: {
       label: "89/90 ヤンマーディーゼル",
-      url: "",
+      url: "/teams/yanmar-diesel-89-90",
     },
   },
   results: {
@@ -290,7 +290,7 @@ export const players = [
   {
     number: "23",
     name: "マルコス",
-    latin: "MARCOS Antonio Menezes Godoy",
+    latin: "MARCOS Antonio Menezes Godoi",
     position: "FW",
     birth: "1966年12月18日",
     size: "167cm/64kg",

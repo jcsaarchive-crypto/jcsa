@@ -917,7 +917,8 @@ export const playerPages = {
   P00916: "/players/koezuka-kazuaki",
   P00917: "/players/azuma-hiroki",
   P00918: "/players/morikawa-toru",
-
+  P00919: "/players/nigorisawa-kazuhito",
+  
 
 
 };
@@ -989,6 +990,7 @@ export const teamSeasonPages = {
   "読売サッカークラブ|89/90": "/teams/yomiuri-soccer-club-89-90",
   "古河電気工業|89/90": "/teams/furukawa-electric-89-90",
   "松下電器産業|89/90": "/teams/matsushita-electric-89-90",
+  "ヤンマーディーゼル|89/90": "/teams/yanmar-diesel-89-90",
 
 
 };
