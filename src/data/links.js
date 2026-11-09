@@ -938,6 +938,11 @@ export const playerPages = {
   P00937: "/players/teranishi-akihito",
   P00938: "/players/kazama-yahiro",
   P00939: "/players/kita-kenji",
+  P00940: "/players/shu-daishoku",
+  P00941: "/players/kameda-akihiro",
+  P00942: "/players/ishii-masatada",
+  P00943: "/players/iwanabe-makoto",
+  P00944: "/players/watanabe-takayuki",
 
 
 
@@ -1019,6 +1024,7 @@ export const teamSeasonPages = {
   "三菱重工業|89/90": "/teams/mitsubishi-heavy-industries-89-90",
   "田辺製薬|89/90": "/teams/tanabe-seiyaku-89-90",
   "マツダサッカークラブ|89/90": "/teams/mazda-soccer-club-89-90",
+  "NTT関東|89/90": "/teams/ntt-kanto-89-90",
 
 
 

@@ -7,7 +7,7 @@ export const team = {
     year: 1969,
   },
   season: "88/89",
-  competition: "日本サッカーリーグ2部",
+  competition: "日本サッカーリーグ2部（JSL2部）",
   competitionEn: "JAPAN SOCCER LEAGUE（JSL）DIVISION 2",
   mainGrounds: [
     "大宮サッカー場",
@@ -16,19 +16,17 @@ export const team = {
     "東松山サッカー場",
     "深谷市仙元山公園陸上競技場",
   ],
-
-  seasonNavigation: {
+   seasonNavigation: {
     previous: {
-      season: "1987",
-      name: "NTT関東",
+      label: "1987 NTT関東",
       url: "",
     },
     next: {
-      season: "89/90",
-      name: "NTT関東",
-      url: "",
+      label: "89/90 NTT関東",
+      url: "/teams/ntt-kanto-89-90",
     },
   },
+  
 
   results: {
   league: {
@@ -327,6 +325,17 @@ export const players = [
     size: "172cm/67kg",
     birthplace: "―",
     previous: "日本大",
+  },
+  {
+    id: "P00944",
+    number: "",
+    name: "渡邊 貴之",
+    latin: "Takayuki WATANABE",
+    position: "FW",
+    birth: "1965年9月9日",
+    size: "170cm/63kg",
+    birthplace: "―",
+    previous: "攻玉社高 - 東京学芸大",
   },
 ];
 
