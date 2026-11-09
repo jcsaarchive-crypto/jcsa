@@ -26,7 +26,7 @@ export const team = {
     },
     next: {
       label: "89/90 田辺製薬",
-      url: "",
+      url: "/teams/tanabe-seiyaku-89-90",
     },
   },
   results: {
