@@ -931,7 +931,9 @@ export const playerPages = {
   P00930: "/players/yamamoto-kenji2",
   P00931: "/players/kakita-ken",
   P00932: "/players/manaka-yasuo",
-
+  P00933: "/players/fukuda-masahiro",
+  P00934: "/players/shimoda-mitsuhito",
+  P00935: "/players/tsuchida-hisashi",
 
 
 
@@ -1009,6 +1011,7 @@ export const teamSeasonPages = {
   "NKK|89/90": "/teams/nkk-89-90",
   "日立製作所|89/90": "/teams/hitachi-89-90",
   "住友金属工業|89/90": "/teams/sumitomo-metal-industries-89-90",
+  "三菱重工業|89/90": "/teams/mitsubishi-heavy-industries-89-90",
 
 
 
