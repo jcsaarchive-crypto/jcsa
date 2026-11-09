@@ -21,7 +21,7 @@ export const team = {
     },
     next: {
       label: "89/90 住友金属工業",
-      url: "",
+      url: "/teams/sumitomo-metal-industries-89-90",
     },
   },
   results: {
@@ -150,7 +150,7 @@ export const players = [
     birth: "1960年5月30日",
     size: "174cm/70kg",
     birthplace: "茨城県",
-    previous: "古河一高 - 中央大",
+    previous: "古河一高 - 中央大 - 読売サッカークラブ",
   },
   {
     id: "P00545",

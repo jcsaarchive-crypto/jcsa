@@ -926,6 +926,12 @@ export const playerPages = {
   P00925: "/players/endo-yoshimune",
   P00926: "/players/musashi-mizushima",
   P00927: "/players/kiyoshi-seo",
+  P00928: "/players/emoto-joko",
+  P00929: "/players/nagaishi-hiroyuki",
+  P00930: "/players/yamamoto-kenji2",
+  P00931: "/players/kakita-ken",
+  P00932: "/players/manaka-yasuo",
+
 
 
 
@@ -1002,6 +1008,7 @@ export const teamSeasonPages = {
   "本田技研工業|89/90": "/teams/honda-giken-89-90",
   "NKK|89/90": "/teams/nkk-89-90",
   "日立製作所|89/90": "/teams/hitachi-89-90",
+  "住友金属工業|89/90": "/teams/sumitomo-metal-industries-89-90",
 
 
 
