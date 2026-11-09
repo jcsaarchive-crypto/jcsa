@@ -21,7 +21,7 @@ export const team = {
     },
     next: {
       label: "89/90 マツダサッカークラブ",
-      url: "",
+      url: "/teams/mazda-soccer-club-89-90",
     },
   },
   results: {
