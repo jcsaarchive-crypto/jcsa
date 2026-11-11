@@ -20,7 +20,7 @@ export const team = {
     },
     next: {
       label: "89/90 甲府サッカークラブ",
-      url: "",
+      url: "/teams/kofu-soccer-club-89-90",
     },
   },
   results: {

@@ -946,6 +946,13 @@ export const playerPages = {
   P00945: "/players/kose-kazunari",
   P00946: "/players/taira-yoshitaka",
   P00947: "/players/dobashi-katsuyuki",
+  P00948: "/players/ariizumi-toru",
+  P00949: "/players/tamura-kunihiko",
+  P00950: "/players/yamamura-hiroshi",
+  P00951: "/players/maemura-tsuyoshi",
+  P00952: "/players/toda-norikazu",
+  P00953: "/players/hatano-hitoshi",
+  P00954: "/players/yoshida-daisuke",
 
 
 
@@ -1029,6 +1036,8 @@ export const teamSeasonPages = {
   "マツダサッカークラブ|89/90": "/teams/mazda-soccer-club-89-90",
   "NTT関東|89/90": "/teams/ntt-kanto-89-90",
   "大阪ガス|89/90": "/teams/osaka-gas-89-90",
+  "甲府サッカークラブ|89/90": "/teams/kofu-soccer-club-89-90",
+
 
 
 
