@@ -55,7 +55,7 @@ export const players = [
     birth: "1961年12月17日",
     size: "183cm/83kg",
     birthplace: "―",
-    previous: "城西大川越高 - 駒澤大 - 電電関東",
+    previous: "城西大川越高 - 駒澤大",
   },
   {
     id: "P00659",

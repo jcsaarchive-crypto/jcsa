@@ -943,6 +943,9 @@ export const playerPages = {
   P00942: "/players/ishii-masatada",
   P00943: "/players/iwanabe-makoto",
   P00944: "/players/watanabe-takayuki",
+  P00945: "/players/kose-kazunari",
+  P00946: "/players/taira-yoshitaka",
+  P00947: "/players/dobashi-katsuyuki",
 
 
 
@@ -1025,6 +1028,7 @@ export const teamSeasonPages = {
   "田辺製薬|89/90": "/teams/tanabe-seiyaku-89-90",
   "マツダサッカークラブ|89/90": "/teams/mazda-soccer-club-89-90",
   "NTT関東|89/90": "/teams/ntt-kanto-89-90",
+  "大阪ガス|89/90": "/teams/osaka-gas-89-90",
 
 
 

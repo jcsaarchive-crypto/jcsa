@@ -22,7 +22,7 @@ export const team = {
     },
     next: {
       label: "89/90 大阪ガス",
-      url: "",
+      url: "/teams/osaka-gas-89-90",
     },
   },
   results: {
