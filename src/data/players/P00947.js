@@ -9,7 +9,7 @@ export const player = {
   birthplace: "",
   height: "168",
   weight: "58",
-  education: "宝塚高 - 神戸商科大",
+  education: "宝塚高-神戸商科大",
 
   history: [
     {

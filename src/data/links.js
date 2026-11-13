@@ -959,7 +959,8 @@ export const playerPages = {
   P00958: "/players/nomoto-yuji",
   P00959: "/players/anbe-takao",
   P00960: "/players/kusano-makoto",
-
+  P00961: "/players/shimoi-ryosuke",
+  P00962: "/players/ohara-tatsuhiko",
 
 
 
@@ -1045,6 +1046,7 @@ export const teamSeasonPages = {
   "大阪ガス|89/90": "/teams/osaka-gas-89-90",
   "甲府サッカークラブ|89/90": "/teams/kofu-soccer-club-89-90",
   "新日本製鐵|89/90": "/teams/shin-nippon-steel-89-90",
+  "コスモ石油|89/90": "/teams/cosmo-oil-89-90",
 
 
 

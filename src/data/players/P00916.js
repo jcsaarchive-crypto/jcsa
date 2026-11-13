@@ -8,7 +8,7 @@ export const player = {
   birthplace: "大阪府",
   height: "174",
   weight: "67",
-  education: "清水谷高 - 天理大",
+  education: "清水谷高-天理大",
 
   history: [
     {

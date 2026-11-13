@@ -9,7 +9,7 @@ export const player = {
   birthplace: "",
   height: "176",
   weight: "68",
-  education: "韮崎高 - 順天堂大",
+  education: "韮崎高-順天堂大",
 
   history: [
     {

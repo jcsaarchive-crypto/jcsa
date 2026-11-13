@@ -8,7 +8,7 @@ export const player = {
   birthplace: "新潟県",
   height: "182",
   weight: "74",
-  education: "新潟工高 - 東京農業大",
+  education: "新潟工高-東京農業大",
 
   history: [
     {

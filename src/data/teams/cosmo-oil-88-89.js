@@ -20,7 +20,7 @@ export const team = {
     },
     next: {
       label: "89/90 コスモ石油",
-      url: "",
+      url: "/teams/cosmo-oil-89-90",
     },
   },
   results: {
