@@ -192,7 +192,7 @@ export const players = [
     number: "15",
     name: "高田 信行",
     latin: "Nobuyuki TAKADA",
-    position: "FW/MF",
+    position: "MF",
     birth: "1970年8月11日",
     size: "173cm/64kg",
     birthplace: "埼玉県",
