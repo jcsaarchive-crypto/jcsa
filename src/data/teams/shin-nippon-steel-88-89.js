@@ -20,7 +20,7 @@ export const team = {
     },
     next: {
       label: "89/90 新日本製鐵",
-      url: "",
+      url: "/teams/shin-nippon-steel-89-90",
     },
   },
   results: {
@@ -125,7 +125,7 @@ export const players = [
     birth: "1963年1月14日",
     size: "168cm/65kg",
     birthplace: "―",
-    previous: "釜石工高",
+    previous: "釜石工高 - 読売ジュニア",
   },
   {
     id: "P00754",

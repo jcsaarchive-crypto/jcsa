@@ -750,7 +750,7 @@ export const playerPages = {
   P00749: "/players/hyuga-yasuhiro",
   P00750: "/players/abe-yoshinori1",
   P00751: "/players/kudo-katsutoshi1",
-  P00752: "/players/yamaguchi-takashi",
+  P00752: "/players/yamaguchi-takashi1",
   P00753: "/players/miyakawa-masahiro",
   P00754: "/players/nishimoto-koji",
   P00755: "/players/oi-narimoto",
@@ -953,6 +953,13 @@ export const playerPages = {
   P00952: "/players/toda-norikazu",
   P00953: "/players/hatano-hitoshi",
   P00954: "/players/yoshida-daisuke",
+  P00955: "/players/noda-tsutomu",
+  P00956: "/players/mizumachi-shoji",
+  P00957: "/players/noda-koichi",
+  P00958: "/players/nomoto-yuji",
+  P00959: "/players/anbe-takao",
+  P00960: "/players/kusano-makoto",
+
 
 
 
@@ -1037,6 +1044,7 @@ export const teamSeasonPages = {
   "NTT関東|89/90": "/teams/ntt-kanto-89-90",
   "大阪ガス|89/90": "/teams/osaka-gas-89-90",
   "甲府サッカークラブ|89/90": "/teams/kofu-soccer-club-89-90",
+  "新日本製鐵|89/90": "/teams/shin-nippon-steel-89-90",
 
 
 
