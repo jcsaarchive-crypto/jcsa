@@ -965,6 +965,12 @@ export const playerPages = {
   P00964: "/players/takiue-tomomi",
   P00965: "/players/kurokawa-toshihiro",
   P00966: "/players/hanada-yuji",
+  P00967: "/players/tachibana-tomohiro",
+  P00968: "/players/takahashi-mitsuo",
+  P00969: "/players/oi-tomota",
+  P00970: "/players/arigai-masato",
+  P00971: "/players/shindo-takayuki",
+  P00972: "/players/shiozawa-teruhiro",
 
 
 
@@ -1052,6 +1058,8 @@ export const teamSeasonPages = {
   "新日本製鐵|89/90": "/teams/shin-nippon-steel-89-90",
   "コスモ石油|89/90": "/teams/cosmo-oil-89-90",
   "川崎製鉄|89/90": "/teams/kawasaki-steel-89-90",
+  "帝人|89/90": "/teams/teijin-89-90",
+  "東邦チタニウム|89/90": "/teams/toho-titanium-89-90",
 
 
 

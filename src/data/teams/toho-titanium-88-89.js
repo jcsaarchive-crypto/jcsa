@@ -21,7 +21,7 @@ export const team = {
     },
     next: {
       label: "89/90 東邦チタニウム",
-      url: "",
+      url: "/teams/toho-titanium-89-90",
     },
   },
   results: {
@@ -271,6 +271,17 @@ export const players = [
     size: "178cm/74kg",
     birthplace: "―",
     previous: "藤沢西高",
+  },
+  {
+    id: "P00318",
+    number: "",
+    name: "加藤 竜二",
+    latin: "Ryuji KATO",
+    position: "GK",
+    birth: "1969年12月24日",
+    size: "183cm/75kg",
+    birthplace: "東京都",
+    previous: "浦和学院高",
   },
 ];
 

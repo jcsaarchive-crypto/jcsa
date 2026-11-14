@@ -22,7 +22,7 @@ export const team = {
     },
     next: {
       label: "89/90 帝人",
-      url: "",
+      url: "/teams/teijin-89-90",
     },
   },
   results: {

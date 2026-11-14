@@ -16,8 +16,8 @@ export const player = {
       division: "JSL２部",
       jersey: "",
       team: "東邦チタニウム",
-      leagueMatches: "",
-      leagueGoals: "",
+      leagueMatches: 0,
+      leagueGoals: 0,
       cupMatches: 0,
       cupGoals: 0,
       emperorCupMatches: "",
@@ -325,8 +325,8 @@ export const player = {
     {
       country: "日本",
       division: "JSL２部",
-      leagueMatches: "",
-      leagueGoals: "",
+      leagueMatches: 83,
+      leagueGoals: 0,
       cupMatches: 2,
       cupGoals: 0,
       emperorCupMatches: "",
@@ -397,8 +397,8 @@ export const player = {
   ],
 
   grandTotal: {
-    leagueMatches: "",
-    leagueGoals: "",
+    leagueMatches: 255,
+    leagueGoals: 0,
     cupMatches: 3,
     cupGoals: 0,
     emperorCupMatches: "",

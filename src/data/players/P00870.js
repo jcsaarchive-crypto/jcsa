@@ -11,6 +11,20 @@ export const player = {
 
   history: [
     {
+      season: "1972",
+      division: "-",
+      jersey: "18",
+      team: "帝人松山",
+      leagueMatches: "-",
+      leagueGoals: "",
+      cupMatches: "-",
+      cupGoals: "",
+      emperorCupMatches: "",
+      emperorCupGoals: "",
+      totalMatches: "",
+      totalGoals: "",
+    },
+    {
       season: "1973",
       division: "JSL２部",
       jersey: "",
