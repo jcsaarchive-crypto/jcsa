@@ -21,7 +21,7 @@ export const team = {
     },
     next: {
       label: "89/90 川崎製鉄",
-      url: "",
+      url: "/teams/kawasaki-steel-89-90",
     },
   },
   results: {

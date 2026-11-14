@@ -310,7 +310,7 @@ export const players = [
   {
     number: "",
     name: "ピチポーン",
-    latin: "※PITIPONG",
+    latin: "―",
     position: "―",
     birth: "―",
     size: "―",
