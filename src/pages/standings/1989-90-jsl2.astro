@@ -1,0 +1,392 @@
+
+---
+import { team as mitsubishi } from "../../data/teams/mitsubishi-heavy-industries-89-90.js";
+import { team as toyota } from "../../data/teams/toyota-89-90.js";
+import { team as mazda } from "../../data/teams/mazda-soccer-club-89-90.js";
+import { team as kyoto } from "../../data/teams/kyoto-shiko-club-89-90.js";
+import { team as fujitsu } from "../../data/teams/fujitsu-89-90.js";
+import { team as sumitomo } from "../../data/teams/sumitomo-metal-industries-89-90.js";
+import { team as tanabe } from "../../data/teams/tanabe-seiyaku-89-90.js";
+import { team as kawasaki } from "../../data/teams/kawasaki-steel-89-90.js";
+import { team as ntt } from "../../data/teams/ntt-kanto-89-90.js";
+import { team as cosmo } from "../../data/teams/cosmo-oil-89-90.js";
+import { team as toho } from "../../data/teams/toho-titanium-89-90.js";
+import { team as kofu } from "../../data/teams/kofu-soccer-club-89-90.js";
+import { team as shinNippon } from "../../data/teams/shin-nippon-steel-89-90.js";
+import { team as osaka } from "../../data/teams/osaka-gas-89-90.js";
+import { team as mazdaAuto } from "../../data/teams/mazda-auto-hiroshima-89-90.js";
+import { team as teijin } from "../../data/teams/teijin-89-90.js";
+
+const teams = [
+  { data: mitsubishi, url: "/teams/mitsubishi-heavy-industries-89-90" },
+  { data: toyota, url: "/teams/toyota-89-90" },
+  { data: mazda, url: "/teams/mazda-soccer-club-89-90" },
+  { data: kyoto, url: "/teams/kyoto-shiko-club-89-90" },
+  { data: fujitsu, url: "/teams/fujitsu-89-90" },
+  { data: sumitomo, url: "/teams/sumitomo-metal-industries-89-90" },
+  { data: tanabe, url: "/teams/tanabe-seiyaku-89-90" },
+  { data: kawasaki, url: "/teams/kawasaki-steel-89-90" },
+  { data: ntt, url: "/teams/ntt-kanto-89-90" },
+  { data: cosmo, url: "/teams/cosmo-oil-89-90" },
+  { data: toho, url: "/teams/toho-titanium-89-90" },
+  { data: kofu, url: "/teams/kofu-soccer-club-89-90" },
+  { data: shinNippon, url: "/teams/shin-nippon-steel-89-90" },
+  { data: osaka, url: "/teams/osaka-gas-89-90" },
+  { data: mazdaAuto, url: "/teams/mazda-auto-hiroshima-89-90" },
+  { data: teijin, url: "/teams/teijin-89-90" },
+];
+
+const standings = teams
+  .map(({ data, url }) => ({
+    name: data.name,
+    url,
+    ...data.results.league,
+  }))
+  .sort((a, b) => a.rank - b.rank);
+
+const show = (value) => {
+  if (value === null || value === undefined) return "";
+  return value;
+};
+
+const showGoalDifference = (value) => {
+  if (value === null || value === undefined || value === "") return "";
+  return Number(value) > 0 ? `+${value}` : value;
+};
+
+const isPromoted = (rank) => Number(rank) === 1 || Number(rank) === 2;
+const isRelegated = (rank) => Number(rank) === 15 || Number(rank) === 16;
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>1989/90 第18回日本サッカーリーグ2部 JSL2部 順位表 | 日本クラブサッカーアーカイブ</title>
+  </head>
+
+  <body>
+    <main>
+      <p class="back">
+        <a href="/">← トップへ戻る</a>
+      </p>
+
+      <header class="league-header">
+        <h1 class="league-heading">
+          <span>1989/90</span>
+          <span>第18回日本サッカーリーグ2部</span>
+          <span>JSL2部</span>
+        </h1>
+
+        <div class="league-profile">
+          <p>参加チーム数：{standings.length}</p>
+        </div>
+      </header>
+
+      <section class="archive-section">
+        <h2>最終順位表</h2>
+
+        <div class="table-scroll">
+          <table class="standings-table">
+            <thead>
+              <tr>
+                <th class="rank-column" scope="col">順位</th>
+                <th class="team-column" scope="col">チーム</th>
+                <th class="stat-column" scope="col">勝点</th>
+                <th class="stat-column" scope="col">勝</th>
+                <th class="stat-column" scope="col">分</th>
+                <th class="stat-column" scope="col">敗</th>
+                <th class="stat-column" scope="col">得点</th>
+                <th class="stat-column" scope="col">失点</th>
+                <th class="difference-column" scope="col">得失点差</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {standings.map((item) => (
+                <tr>
+                  <td class="rank-cell">
+                    <span class="rank-content">
+                      {isPromoted(item.rank) && (
+                        <span
+                          class="promotion-arrow"
+                          aria-label="JSL1部昇格"
+                          title="JSL1部昇格"
+                        >▲</span>
+                      )}
+                      {isRelegated(item.rank) && (
+                        <span
+                          class="relegation-arrow"
+                          aria-label="地域リーグ降格"
+                          title="地域リーグ降格"
+                        >▼</span>
+                      )}
+                      <span>{show(item.rank)}</span>
+                    </span>
+                  </td>
+                  <td class="team-name">
+                    <a href={item.url}>{item.name}</a>
+                  </td>
+                  <td class="points-cell">{show(item.points)}</td>
+                  <td class="number">{show(item.wins)}</td>
+                  <td class="number">{show(item.draws)}</td>
+                  <td class="number">{show(item.losses)}</td>
+                  <td class="number">{show(item.goalsFor)}</td>
+                  <td class="number">{show(item.goalsAgainst)}</td>
+                  <td class="number">{showGoalDifference(item.goalDifference)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p class="table-note">
+          <span class="promotion-arrow" aria-hidden="true">▲</span>
+          JSL1部昇格
+          <span class="relegation-arrow" aria-hidden="true">▼</span>
+          地域リーグ降格
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #f4f5f3;
+    color: #202522;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+  }
+
+  main {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 50px 0 90px;
+  }
+
+  .back {
+    margin: 0 0 55px;
+    font-size: 14px;
+  }
+
+  .back a {
+    color: #68716b;
+    text-decoration: none;
+  }
+
+  .back a:hover {
+    text-decoration: underline;
+  }
+
+  .league-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: -0.02em;
+  }
+
+  .league-heading span {
+    display: block;
+  }
+
+  .league-profile {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #cfd5d0;
+  }
+
+  .league-profile p {
+    margin: 7px 0;
+    font-size: 15px;
+    color: #68716b;
+  }
+
+  .archive-section {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #cfd5d0;
+  }
+
+  .archive-section h2 {
+    margin: 0 0 25px;
+    font-size: 22px;
+  }
+
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border: 2px solid #7f8982;
+  }
+
+  table {
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 14px;
+  }
+
+  .standings-table {
+    width: 100%;
+    min-width: 790px;
+    table-layout: fixed;
+  }
+
+  th,
+  td {
+    border: 1px solid #8f9992;
+    padding: 12px 10px;
+    vertical-align: middle;
+  }
+
+  table tr:first-child th {
+    border-top: 0;
+  }
+
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  table th:first-child,
+  table td:first-child {
+    border-left: 0;
+  }
+
+  table th:last-child,
+  table td:last-child {
+    border-right: 0;
+  }
+
+  th {
+    background: #dde3df;
+    color: #202522;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .rank-column {
+    width: 72px;
+  }
+
+  .team-column {
+    width: 300px;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .stat-column {
+    width: 80px;
+  }
+
+  .difference-column {
+    width: 100px;
+  }
+
+  .rank-cell {
+    text-align: center;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rank-content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .promotion-arrow {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .relegation-arrow {
+    color: #b63d36;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .team-name {
+    padding-left: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .team-name a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .team-name a:hover {
+    text-decoration: underline;
+  }
+
+  .points-cell {
+    text-align: center;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    background: #f3f5f3;
+  }
+
+  .number {
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+
+  tbody tr:hover td {
+    background: #f3f5f3;
+  }
+
+  tbody tr:hover .points-cell {
+    background: #e7ebe8;
+  }
+
+  .table-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 13px 0 0;
+    font-size: 13px;
+    color: #68716b;
+  }
+
+  @media (max-width: 600px) {
+    main {
+      width: calc(100% - 24px);
+      padding-top: 30px;
+    }
+
+    .back {
+      margin-bottom: 40px;
+    }
+
+    .league-heading {
+      font-size: 26px;
+      gap: 6px;
+    }
+
+    .archive-section {
+      margin-top: 45px;
+    }
+
+    th,
+    td {
+      padding: 10px 8px;
+    }
+  }
+</style>

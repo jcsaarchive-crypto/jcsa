@@ -996,6 +996,14 @@ export const playerPages = {
   P00995: "/players/yamada-masuhiro",
   P00996: "/players/ishii-tsutomu",
   P00997: "/players/morikawa-akihiro",
+  P00998: "/players/maeda-takashi",
+  P00999: "/players/yamaoka-hiroshi",
+  P01000: "/players/imanishi-koichi",
+  P01001: "/players/nishida-masanori",
+  P01002: "/players/shiokawa-takuji",
+  P01003: "/players/yagi-hiroshi",
+  P01004: "/players/hirai-mikihiro",
+  P01005: "/players/zaima-hirofumi",
 
 
 
@@ -1086,6 +1094,7 @@ export const teamSeasonPages = {
   "帝人|89/90": "/teams/teijin-89-90",
   "東邦チタニウム|89/90": "/teams/toho-titanium-89-90",
   "マツダオート広島|89/90": "/teams/mazda-auto-hiroshima-89-90",
+  "京都紫光クラブ|89/90": "/teams/kyoto-shiko-club-89-90",
 
 
 

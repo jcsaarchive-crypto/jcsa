@@ -21,7 +21,7 @@ export const team = {
     },
     next: {
       label: "89/90 三菱重工業",
-      url: "",
+      url: "/teams/mitsubishi-heavy-industries-89-90",
     },
   },
   results: {
