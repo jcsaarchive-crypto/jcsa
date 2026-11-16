@@ -971,6 +971,31 @@ export const playerPages = {
   P00970: "/players/arigai-masato",
   P00971: "/players/shindo-takayuki",
   P00972: "/players/shiozawa-teruhiro",
+  P00973: "/players/nakatomi-hironori",
+  P00974: "/players/matsuda-shinji",
+  P00975: "/players/matsumoto-osamu1",
+  P00976: "/players/kamikawa-kazunari",
+  P00977: "/players/sugikane-osamu",
+  P00978: "/players/tsuru-toshiaki",
+  P00979: "/players/shiiba-hidenao",
+  P00980: "/players/miyamoto-hiroyuki",
+  P00981: "/players/hirano-kazuhiko",
+  P00982: "/players/kunimoto-tadaaki",
+  P00983: "/players/udo-hiroshi",
+  P00984: "/players/irei-hisashi",
+  P00985: "/players/okatani-kazuhiko",
+  P00986: "/players/hirokane-yuji",
+  P00987: "/players/otsuya-teruyuki",
+  P00988: "/players/tsuchioka-hisanobu",
+  P00989: "/players/okada-masanori",
+  P00990: "/players/shimotaka-kenshi",
+  P00991: "/players/numano-masahiro",
+  P00992: "/players/matsuoka-hirokazu",
+  P00993: "/players/nakamura-koji1",
+  P00994: "/players/shinjo-katsuya",
+  P00995: "/players/yamada-masuhiro",
+  P00996: "/players/ishii-tsutomu",
+  P00997: "/players/morikawa-akihiro",
 
 
 
@@ -1060,6 +1085,7 @@ export const teamSeasonPages = {
   "川崎製鉄|89/90": "/teams/kawasaki-steel-89-90",
   "帝人|89/90": "/teams/teijin-89-90",
   "東邦チタニウム|89/90": "/teams/toho-titanium-89-90",
+  "マツダオート広島|89/90": "/teams/mazda-auto-hiroshima-89-90",
 
 
 
