@@ -135,6 +135,7 @@ export const players = [
     previous: "島原商高 - 同志社大",
   },
   {
+    id: "P01006",
     number: "9",
     name: "今井 雅士",
     latin: "Masashi IMAI",
@@ -145,6 +146,7 @@ export const players = [
     previous: "石山高 - 同志社大",
   },
   {
+    id: "P01007",
     number: "10",
     name: "前田 尚克",
     latin: "Naokatsu MAEDA",
@@ -155,6 +157,7 @@ export const players = [
     previous: "洛北高 - 京都教育大",
   },
   {
+    id: "P01008",
     number: "11",
     name: "板垣 泰一",
     latin: "Taiichi ITAGAKI",
@@ -165,6 +168,7 @@ export const players = [
     previous: "大阪体育大 - 川崎製鉄水島",
   },
   {
+    id: "P01009",
     number: "12",
     name: "韓　哲成",
     latin: "Tetsunari KAN",
@@ -175,6 +179,7 @@ export const players = [
     previous: "京都朝鮮高",
   },
   {
+    id: "P01010",
     number: "13",
     name: "奥村　智",
     latin: "Satoshi OKUMURA",
@@ -185,6 +190,7 @@ export const players = [
     previous: "守山高 - 大阪体育大",
   },
   {
+    id: "P01011",
     number: "14",
     name: "和田 栄一",
     latin: "Eiichi WADA",
@@ -195,6 +201,7 @@ export const players = [
     previous: "大阪体育大",
   },
   {
+    id: "P01012",
     number: "15",
     name: "牧戸 万佐夫",
     latin: "Masao MAKITO",
@@ -205,6 +212,7 @@ export const players = [
     previous: "洛陽工高 - 大阪体育大",
   },
   {
+    id: "P01013",
     number: "16",
     name: "大西 泰昭",
     latin: "Yasuaki ONISHI",
@@ -215,6 +223,7 @@ export const players = [
     previous: "中央大",
   },
   {
+    id: "P01014",
     number: "17",
     name: "平野 達郎",
     latin: "Tatsuro HIRANO",
@@ -225,6 +234,7 @@ export const players = [
     previous: "同志社香里高 - 同志社大",
   },
   {
+    id: "P01015",
     number: "18",
     name: "川勝 良一",
     latin: "Ryoichi KAWAKATSU",
@@ -246,6 +256,7 @@ export const players = [
     previous: "法政大 - 全日空横浜クラブ/全日空サッカークラブ",
   },
   {
+    id: "P01016",
     number: "20",
     name: "近藤　健",
     latin: "Ken KONDO",
@@ -266,6 +277,7 @@ export const players = [
     previous: "CAタクアリチンガ(ブラジル) - マリーリアAC(ブラジル) - ポルトゥゲーザ(ブラジル) - サントスFC(ブラジル) - ウニオン・サンジョアンEC(ブラジル)",
   },
   {
+    id: "P01017",
     number: "22",
     name: "芳賀　敦",
     latin: "Atsushi HAGA",
@@ -296,6 +308,7 @@ export const players = [
     previous: "AAモンテシオン(ブラジル) - アンバロ・アトレチコ(ブラジル) - モジミリンEC(ブラジル)",
   },
   {
+    id: "P01018",
     number: "26",
     name: "高間　武",
     latin: "Takeshi TAKAMA",
@@ -306,6 +319,7 @@ export const players = [
     previous: "京都商高 - 大阪体育大 - 日産自動車",
   },
   {
+    id: "P01019",
     number: "27",
     name: "武甕 和範",
     latin: "Kazunori TAKEMIKA",
@@ -316,6 +330,7 @@ export const players = [
     previous: "洛南高",
   },
   {
+    id: "P01020",
     number: "28",
     name: "長田 幹雄",
     latin: "Mikio NAGATA",
@@ -326,6 +341,7 @@ export const players = [
     previous: "京都教育大",
   },
   {
+    id: "P01021",
     number: "29",
     name: "大道 敬二",
     latin: "Keiji OMICHI",
@@ -355,14 +371,17 @@ export const staff = [
     name: "来栖 孝治",
   },
   {
+    id: "P01018",
     role: "コーチ兼選手",
     name: "高間　武",
   },
   {
+    id: "P01019",
     role: "主務兼選手",
     name: "武甕 和範",
   },
   {
+    id: "P01000",
     role: "主将",
     name: "今西 晃一",
   },

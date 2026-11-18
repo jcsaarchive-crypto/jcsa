@@ -1004,6 +1004,22 @@ export const playerPages = {
   P01003: "/players/yagi-hiroshi",
   P01004: "/players/hirai-mikihiro",
   P01005: "/players/zaima-hirofumi",
+  P01006: "/players/imai-masashi",
+  P01007: "/players/maeda-naokatsu",
+  P01008: "/players/itagaki-taiichi",
+  P01009: "/players/kan-tetsunari",
+  P01010: "/players/okumura-satoshi",
+  P01011: "/players/wada-eiichi",
+  P01012: "/players/makito-masao",
+  P01013: "/players/onishi-yasuaki",
+  P01014: "/players/hirano-tatsuro",
+  P01015: "/players/kawakatsu-ryoichi",
+  P01016: "/players/kondo-ken",
+  P01017: "/players/haga-atsushi",
+  P01018: "/players/takama-takeshi",
+  P01019: "/players/takemika-kazunori",
+  P01020: "/players/nagata-mikio",
+  P01021: "/players/omichi-keiji",
 
 
 
