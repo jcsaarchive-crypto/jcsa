@@ -1,0 +1,792 @@
+---
+// 「チームから探す」29系譜統合版。
+// records は提供された現行ファイルの収録情報をそのまま保持。
+// 系譜の名称はユーザー確定順（最新 → 最古）。
+const records = [
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "日産自動車",
+    "url": "/teams/nissan-motors-88-89",
+    "rank": 1
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "全日空サッカークラブ",
+    "url": "/teams/ana-soccer-club-88-89",
+    "rank": 2
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "ヤマハ発動機",
+    "url": "/teams/yamaha-88-89",
+    "rank": 3
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "フジタ工業クラブ",
+    "url": "/teams/fujita-kogyo-88-89",
+    "rank": 4
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "読売サッカークラブ",
+    "url": "/teams/yomiuri-soccer-club-88-89",
+    "rank": 5
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "古河電気工業",
+    "url": "/teams/furukawa-electric-88-89",
+    "rank": 6
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "松下電器産業",
+    "url": "/teams/matsushita-electric-88-89",
+    "rank": 7
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "ヤンマーディーゼル",
+    "url": "/teams/yanmar-diesel-88-89",
+    "rank": 8
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "本田技研工業",
+    "url": "/teams/honda-giken-88-89",
+    "rank": 9
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "NKK",
+    "url": "/teams/nkk-88-89",
+    "rank": 10
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "住友金属工業",
+    "url": "/teams/sumitomo-metal-industries-88-89",
+    "rank": 11
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ1部",
+    "name": "三菱重工業",
+    "url": "/teams/mitsubishi-heavy-industries-88-89",
+    "rank": 12
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "東芝",
+    "url": "/teams/toshiba-88-89",
+    "rank": 1
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "日立製作所",
+    "url": "/teams/hitachi-88-89",
+    "rank": 2
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "田辺製薬",
+    "url": "/teams/tanabe-seiyaku-88-89",
+    "rank": 3
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "富士通",
+    "url": "/teams/fujitsu-88-89",
+    "rank": 4
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "マツダサッカークラブ",
+    "url": "/teams/mazda-soccer-club-88-89",
+    "rank": 5
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "トヨタ自動車",
+    "url": "/teams/toyota-88-89",
+    "rank": 6
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "NTT関東",
+    "url": "/teams/ntt-kanto-88-89",
+    "rank": 7
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "大阪ガス",
+    "url": "/teams/osaka-gas-88-89",
+    "rank": 8
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "甲府サッカークラブ",
+    "url": "/teams/kofu-soccer-club-88-89",
+    "rank": 9
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部（JSL2部）",
+    "name": "新日本製鐵",
+    "url": "/teams/shin-nippon-steel-88-89",
+    "rank": 10
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "コスモ石油",
+    "url": "/teams/cosmo-oil-88-89",
+    "rank": 11
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "川崎製鉄",
+    "url": "/teams/kawasaki-steel-88-89",
+    "rank": 12
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "帝人",
+    "url": "/teams/teijin-88-89",
+    "rank": 13
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "東邦チタニウム",
+    "url": "/teams/toho-titanium-88-89",
+    "rank": 14
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "NTT関西",
+    "url": "/teams/ntt-kansai-88-89",
+    "rank": 15
+  },
+  {
+    "season": "88/89",
+    "competition": "日本サッカーリーグ2部",
+    "name": "藤枝市役所",
+    "url": "/teams/fujieda-shiyakusho-88-89",
+    "rank": 16
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "日産自動車",
+    "url": "/teams/nissan-motors-89-90",
+    "rank": 1
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "読売サッカークラブ",
+    "url": "/teams/yomiuri-soccer-club-89-90",
+    "rank": 2
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "全日空サッカークラブ",
+    "url": "/teams/ana-soccer-club-89-90",
+    "rank": 3
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "古河電気工業",
+    "url": "/teams/furukawa-electric-89-90",
+    "rank": 4
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "ヤマハ発動機",
+    "url": "/teams/yamaha-89-90",
+    "rank": 5
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "本田技研工業",
+    "url": "/teams/honda-giken-89-90",
+    "rank": 6
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "ヤンマーディーゼル",
+    "url": "/teams/yanmar-diesel-89-90",
+    "rank": 7
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "NKK",
+    "url": "/teams/nkk-89-90",
+    "rank": 8
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "東芝",
+    "url": "/teams/toshiba-89-90",
+    "rank": 9
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "松下電器産業",
+    "url": "/teams/matsushita-electric-89-90",
+    "rank": 10
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "フジタ工業クラブ",
+    "url": "/teams/fujita-kogyo-89-90",
+    "rank": 11
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ1部",
+    "name": "日立製作所",
+    "url": "/teams/hitachi-89-90",
+    "rank": 12
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "三菱重工業",
+    "url": "/teams/mitsubishi-heavy-industries-89-90",
+    "rank": 1
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "トヨタ自動車",
+    "url": "/teams/toyota-89-90",
+    "rank": 2
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "マツダサッカークラブ",
+    "url": "/teams/mazda-soccer-club-89-90",
+    "rank": 3
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "京都紫光クラブ",
+    "url": "/teams/kyoto-shiko-club-89-90",
+    "rank": 4
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "富士通",
+    "url": "/teams/fujitsu-89-90",
+    "rank": 5
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "住友金属工業",
+    "url": "/teams/sumitomo-metal-industries-89-90",
+    "rank": 6
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "田辺製薬",
+    "url": "/teams/tanabe-seiyaku-89-90",
+    "rank": 7
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "川崎製鉄",
+    "url": "/teams/kawasaki-steel-89-90",
+    "rank": 8
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "NTT関東",
+    "url": "/teams/ntt-kanto-89-90",
+    "rank": 9
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "コスモ石油",
+    "url": "/teams/cosmo-oil-89-90",
+    "rank": 10
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "東邦チタニウム",
+    "url": "/teams/toho-titanium-89-90",
+    "rank": 11
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "甲府サッカークラブ",
+    "url": "/teams/kofu-soccer-club-89-90",
+    "rank": 12
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "新日本製鐵",
+    "url": "/teams/shin-nippon-steel-89-90",
+    "rank": 13
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "大阪ガス",
+    "url": "/teams/osaka-gas-89-90",
+    "rank": 14
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "マツダオート広島",
+    "url": "/teams/mazda-auto-hiroshima-89-90",
+    "rank": 15
+  },
+  {
+    "season": "89/90",
+    "competition": "日本サッカーリーグ2部",
+    "name": "帝人",
+    "url": "/teams/teijin-89-90",
+    "rank": 16
+  },
+  {
+    "season": "90/91",
+    "competition": "日本サッカーリーグ1部",
+    "name": "日産自動車",
+    "url": "/teams/nissan-motors-90-91",
+    "rank": 2
+  },
+  {
+    "season": "90/91",
+    "competition": "日本サッカーリーグ1部",
+    "name": "東芝",
+    "url": "/teams/toshiba-90-91",
+    "rank": 4
+  },
+  {
+    "season": "90/91",
+    "competition": "日本サッカーリーグ1部",
+    "name": "トヨタ自動車",
+    "url": "/teams/toyota-90-91",
+    "rank": 5
+  },
+  {
+    "season": "90/91",
+    "competition": "日本サッカーリーグ2部",
+    "name": "富士通",
+    "url": "/teams/fujitsu-90-91",
+    "rank": 5
+  },
+  {
+    "season": "1991",
+    "competition": "北海道サッカーリーグ",
+    "name": "新日鐵室蘭",
+    "url": "/teams/shin-nittetsu-muroran-1991",
+    "rank": 3
+  },
+  {
+    "season": "91/92",
+    "competition": "日本サッカーリーグ1部",
+    "name": "東芝",
+    "url": "/teams/toshiba-91-92",
+    "rank": 4
+  },
+  {
+    "season": "91/92",
+    "competition": "日本サッカーリーグ1部",
+    "name": "トヨタ自動車",
+    "url": "/teams/toyota-91-92",
+    "rank": 12
+  },
+  {
+    "season": "91/92",
+    "competition": "日本サッカーリーグ2部",
+    "name": "富士通",
+    "url": "/teams/fujitsu-91-92",
+    "rank": 5
+  },
+  {
+    "season": "1992",
+    "competition": "Jリーグ",
+    "name": "清水FCエスパルス",
+    "url": "/teams/shimizu-s-pulse-1992",
+    "rank": null
+  },
+  {
+    "season": "1992",
+    "competition": "ジャパンフットボールリーグ（旧JFL）1部",
+    "name": "東芝",
+    "url": "/teams/toshiba-1992",
+    "rank": 5
+  },
+  {
+    "season": "1992",
+    "competition": "ジャパンフットボールリーグ1部",
+    "name": "富士通",
+    "url": "/teams/fujitsu-1992",
+    "rank": 6
+  },
+  {
+    "season": "1993",
+    "competition": "Jリーグ",
+    "name": "清水エスパルス",
+    "url": "/teams/shimizu-s-pulse-1993",
+    "rank": 3
+  },
+  {
+    "season": "1993",
+    "competition": "ジャパンフットボールリーグ1部",
+    "name": "富士通",
+    "url": "/teams/fujitsu-1993",
+    "rank": 6
+  },
+  {
+    "season": "1993",
+    "competition": "ジャパンフットボールリーグ（旧JFL）1部",
+    "name": "東芝",
+    "url": "/teams/toshiba-1993",
+    "rank": 3
+  },
+  {
+    "season": "1994",
+    "competition": "Jリーグ",
+    "name": "清水エスパルス",
+    "url": "/teams/shimizu-s-pulse-1994",
+    "rank": 4
+  },
+  {
+    "season": "1994",
+    "competition": "ジャパンフットボールリーグ（旧JFL）",
+    "name": "東芝",
+    "url": "/teams/toshiba-1994",
+    "rank": 11
+  },
+  {
+    "season": "1994",
+    "competition": "ジャパンフットボールリーグ（旧JFL）",
+    "name": "富士通",
+    "url": "/teams/fujitsu-1994",
+    "rank": 10
+  },
+  {
+    "season": "1995",
+    "competition": "Jリーグ",
+    "name": "清水エスパルス",
+    "url": "/teams/shimizu-s-pulse-1995",
+    "rank": 9
+  },
+  {
+    "season": "1995",
+    "competition": "ジャパンフットボールリーグ（旧JFL）",
+    "name": "東芝",
+    "url": "/teams/toshiba-1995",
+    "rank": 8
+  },
+  {
+    "season": "1995",
+    "competition": "ジャパンフットボールリーグ（旧JFL）",
+    "name": "富士通",
+    "url": "/teams/fujitsu-1995",
+    "rank": 12
+  },
+  {
+    "season": "1996",
+    "competition": "Jリーグ",
+    "name": "清水エスパルス",
+    "url": "/teams/shimizu-s-pulse-1996",
+    "rank": 10
+  },
+  {
+    "season": "1996",
+    "competition": "ジャパンフットボールリーグ（旧JFL）",
+    "name": "東芝 / コンサドーレ札幌",
+    "url": "/teams/toshiba-consadole-sapporo-1996",
+    "rank": 5
+  },
+  {
+    "season": "1996",
+    "competition": "ジャパンフットボールリーグ（旧JFL）",
+    "name": "富士通川崎FC",
+    "url": "/teams/fujitsu-kawasaki-fc-1996",
+    "rank": 9
+  },
+  {
+    "season": "1997",
+    "competition": "Jリーグ",
+    "name": "清水エスパルス",
+    "url": "/teams/shimizu-s-pulse-1997",
+    "rank": 5
+  },
+  {
+    "season": "1997",
+    "competition": "ジャパンフットボールリーグ（旧JFL）",
+    "name": "コンサドーレ札幌",
+    "url": "/teams/consadole-sapporo-1997",
+    "rank": 1
+  },
+  {
+    "season": "1997",
+    "competition": "ジャパンフットボールリーグ（旧JFL）",
+    "name": "川崎フロンターレ",
+    "url": "/teams/kawasaki-frontale-1997",
+    "rank": 3
+  },
+  {
+    "season": "1998",
+    "competition": "Jリーグ",
+    "name": "清水エスパルス",
+    "url": "/teams/shimizu-s-pulse-1998",
+    "rank": 3
+  },
+  {
+    "season": "1998",
+    "competition": "Jリーグ",
+    "name": "コンサドーレ札幌",
+    "url": "/teams/consadole-sapporo-1998",
+    "rank": 14
+  },
+  {
+    "season": "1998",
+    "competition": "ジャパンフットボールリーグ（旧JFL）",
+    "name": "川崎フロンターレ",
+    "url": "/teams/kawasaki-frontale-1998",
+    "rank": 2
+  }
+];
+// ユーザー確認済みの29クラブ系譜（最新名称 → 最古名称）。
+// records の当時の名称・URL・順位は変更しない。
+const clubDefinitions = [
+  { name: "日本製鉄室蘭", kana: "にっぽんせいてつむろらん", aliases: ["日本製鉄室蘭", "新日鐵住金室蘭", "新日鐵室蘭"] },
+  { name: "NKK", kana: "えぬけーけー", aliases: ["NKK", "日本鋼管"] },
+  { name: "NTT西日本京都", kana: "えぬてぃーてぃーにしにほんきょうと", aliases: ["NTT西日本京都", "NTT関西", "電電近畿"] },
+  { name: "RB大宮アルディージャ", kana: "あーるびーおおみやあるでぃーじゃ", aliases: ["RB大宮アルディージャ", "大宮アルディージャ", "NTT関東", "電電関東"] },
+  { name: "ヴィッセル神戸", kana: "ゔぃっせるこうべ", aliases: ["ヴィッセル神戸", "川崎製鉄", "川崎製鉄水島"] },
+  { name: "川崎フロンターレ", kana: "かわさきふろんたーれ", aliases: ["川崎フロンターレ", "富士通川崎FC", "富士通"] },
+  { name: "京都サンガF.C.", kana: "きょうとさんが", aliases: ["京都サンガF.C.", "京都パープルサンガ", "教育研究社京都パープルサンガ", "京都紫光クラブ"] },
+  { name: "ヴァンフォーレ甲府", kana: "ゔぁんふぉーれこうふ", aliases: ["ヴァンフォーレ甲府", "甲府サッカークラブ"] },
+  { name: "コスモ石油四日市", kana: "こすもせきゆよっかいち", aliases: ["コスモ石油四日市", "コスモ石油", "大協石油"] },
+  { name: "清水エスパルス", kana: "しみずえすぱるす", aliases: ["清水エスパルス", "清水FCエスパルス"] },
+  { name: "NSC八幡", kana: "えぬえすしーやはた", aliases: ["NSC八幡", "新日鐵八幡", "新日本製鐵", "八幡製鐵"] },
+  { name: "鹿島アントラーズ", kana: "かしまあんとらーず", aliases: ["鹿島アントラーズ", "住友金属工業"] },
+  { name: "横浜フリューゲルス", kana: "よこはまふりゅーげるす", aliases: ["横浜フリューゲルス", "全日空サッカークラブ", "全日空横浜サッカークラブ", "横浜トライスターサッカークラブ"] },
+  { name: "田辺三菱製薬", kana: "たなべみつびしせいやく", aliases: ["田辺三菱製薬", "田辺製薬"] },
+  { name: "テイジン", kana: "ていじん", aliases: ["テイジン", "帝人", "帝人松山"] },
+  { name: "トヨタ自動車", kana: "とよたじどうしゃ", aliases: ["トヨタ自動車", "トヨタ自動車工業"] },
+  { name: "横浜F・マリノス", kana: "よこはまえふまりのす", aliases: ["横浜F・マリノス", "横浜マリノス", "日産F.C.横浜マリノス", "日産自動車"] },
+  { name: "柏レイソル", kana: "かしわれいそる", aliases: ["柏レイソル", "日立FC柏レイソル", "日立フットボールクラブ", "日立製作所", "日立製作所本社"] },
+  { name: "湘南ベルマーレ", kana: "しょうなんべるまーれ", aliases: ["湘南ベルマーレ", "ベルマーレ平塚", "フジタサッカークラブ", "フジタ工業クラブ", "藤和不動産"] },
+  { name: "ジェフユナイテッド千葉", kana: "じぇふゆないてっどちば", aliases: ["ジェフユナイテッド千葉", "ジェフユナイテッド市原", "東日本JR古河SC（ジェフユナイテッド）", "東日本JR古河SC", "古河電気工業"] },
+  { name: "北海道コンサドーレ札幌", kana: "ほっかいどうこんさどーれさっぽろ", aliases: ["北海道コンサドーレ札幌", "コンサドーレ札幌", "東芝", "東芝堀川町"] },
+  { name: "Honda FC", kana: "ほんだえふしー", aliases: ["Honda FC", "本田技研工業"] },
+  { name: "ガンバ大阪", kana: "がんばおおさか", aliases: ["ガンバ大阪", "パナソニックガンバ大阪", "松下電器産業"] },
+  { name: "アンフィニ広島", kana: "あんふぃにひろしま", aliases: ["アンフィニ広島", "マツダオート広島"] },
+  { name: "サンフレッチェ広島", kana: "さんふれっちぇひろしま", aliases: ["サンフレッチェ広島", "サンフレッチェ広島F.C", "マツダサッカークラブ", "マツダスポーツクラブ", "マツダスポーツクラブ東洋工業", "東洋工業"] },
+  { name: "浦和レッズ", kana: "うらわれっず", aliases: ["浦和レッズ", "浦和レッドダイヤモンズ", "三菱浦和FC（レッドダイヤモンズ）", "三菱自動車工業", "三菱重工業"] },
+  { name: "ジュビロ磐田", kana: "じゅびろいわた", aliases: ["ジュビロ磐田", "ヤマハFCジュビロ磐田", "ヤマハフットボールクラブ", "ヤマハ発動機"] },
+  { name: "セレッソ大阪", kana: "せれっそおおさか", aliases: ["セレッソ大阪", "ヤンマーディーゼル"] },
+  { name: "東京ヴェルディ", kana: "とうきょうゔぇるでぃ", aliases: ["東京ヴェルディ", "東京ヴェルディ1969", "ヴェルディ川崎", "読売日本SC（読売ヴェルディ）", "読売サッカークラブ"] },
+];
+
+const seasonSort = (season) => {
+  const m = season.match(/^(\d{2})\/(\d{2})$/);
+  if (m) return 1900 + Number(m[1]) + 0.5;
+  return Number(season) || 0;
+};
+const toHiragana = (value) => value.replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 96));
+const kanaGroup = (kana) => {
+  const first = (toHiragana(kana)[0] ?? "").replace("ゔ", "う");
+  const rows = ["あいうえお", "かきくけこがぎぐげご", "さしすせそざじずぜぞ", "たちつてとだぢづでど", "なにぬねの", "はひふへほばびぶべぼぱぴぷぺぽ", "まみむめも", "やゆよ", "らりるれろ", "わをん"];
+  const headings = ["あ", "か", "さ", "た", "な", "は", "ま", "や", "ら", "わ"];
+  return headings[rows.findIndex((row) => row.includes(first))] ?? "その他";
+};
+// シーズン限定の表記ゆれ。見出しの歴代名称には追加しない。
+const recordNameToClub = { "東芝 / コンサドーレ札幌": "北海道コンサドーレ札幌" };
+const definedNames = new Set(clubDefinitions.flatMap((club) => club.aliases));
+const unmatchedNames = [...new Set(records.map((record) => record.name))].filter((name) => !definedNames.has(name) && !recordNameToClub[name]);
+const independentKana = {"大阪ガス": "おおさかがす", "東邦チタニウム": "とうほうちたにうむ", "藤枝市役所": "ふじえだしやくしょ"};
+const independentClubs = unmatchedNames.map((name) => ({ name, kana: independentKana[name] ?? name, aliases: [name] }));
+const allDefinitions = [...clubDefinitions, ...independentClubs];
+const clubs = allDefinitions.map((club) => ({
+  ...club,
+  entries: records.filter((record) => (club.aliases.includes(record.name) || recordNameToClub[record.name] === club.name)).sort((a, b) => seasonSort(a.season) - seasonSort(b.season) || a.name.localeCompare(b.name, "ja")),
+  group: kanaGroup(club.kana),
+})).filter((club) => club.entries.length).sort((a, b) => a.kana.localeCompare(b.kana, "ja"));
+const headings = ["あ", "か", "さ", "た", "な", "は", "ま", "や", "ら", "わ", "その他"];
+const indexed = headings.map((heading) => ({ heading, clubs: clubs.filter((club) => club.group === heading) })).filter((section) => section.clubs.length);
+---
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>チームから探す | 日本クラブサッカーアーカイブ</title>
+    <meta name="description" content="日本クラブサッカーアーカイブに収録されたチームを五十音順から探し、歴代名称とシーズン別の記録をたどれます。" />
+  </head>
+  <body>
+    <main>
+      <p class="back"><a href="/">← トップへ戻る</a></p>
+      <p class="eyebrow">CLUB INDEX</p>
+      <h1>チームから探す</h1>
+      <p class="intro">チーム名を選ぶと、収録済みのシーズンが開きます。各シーズンから当時のチームページへ進めます。</p>
+      <p class="notice">確認済みの28クラブ系譜を統合。旧名称からも探せます。</p>
+      <div class="search-area">
+        <label for="club-search">チーム名を検索（旧名称も対象）</label>
+        <input id="club-search" type="search" placeholder="例：東芝、古河電気工業、日立製作所" autocomplete="off" />
+        <p id="search-count" aria-live="polite"></p>
+      </div>
+      <nav class="kana-nav" aria-label="五十音目次">
+        {headings.map((heading) => indexed.some((s) => s.heading === heading) ? <a href={`#kana-${heading}`}>{heading}</a> : <span aria-disabled="true">{heading}</span>)}
+      </nav>
+      <div class="index-sections">
+        {indexed.map((section) => (
+          <section class="kana-section" id={`kana-${section.heading}`}>
+            <h2>{section.heading}行</h2>
+            <div class="club-list">
+              {section.clubs.map((club) => (
+                <details class="club" data-search={`${club.name} ${club.aliases.join(" ")} ${club.kana} ${club.entries.map((entry) => entry.name).join(" ")}`}>
+                  <summary>
+                    <span class="club-title">{club.aliases.join(" ／ ")}</span>
+                    <span class="club-meta">{club.entries.length}シーズン <span class="chevron">⌄</span></span>
+                  </summary>
+                  <div class="club-body">
+                    
+                    <div class="season-links">
+                      {club.entries.map((entry) => (
+                        <a href={entry.url} class="season-link">
+                          <span class="season">{entry.season}</span>
+                          <span class="historical-name">{entry.name}</span>
+                          <span class="competition">{entry.competition}{entry.rank != null ? `・${entry.rank}位` : ""}</span>
+                          <span class="arrow" aria-hidden="true">→</span>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </main>
+    <script>
+      const input = document.querySelector<HTMLInputElement>("#club-search");
+      const count = document.querySelector<HTMLElement>("#search-count");
+      const items = [...document.querySelectorAll<HTMLElement>("details.club")];
+      const sections = [...document.querySelectorAll<HTMLElement>("section.kana-section")];
+      input?.addEventListener("input", () => {
+        const query = (input.value ?? "").trim().toLocaleLowerCase("ja").normalize("NFKC");
+        let visible = 0;
+        items.forEach((item) => {
+          const text = (item.dataset.search ?? "").toLocaleLowerCase("ja").normalize("NFKC");
+          item.hidden = Boolean(query) && !text.includes(query);
+          if (!item.hidden) visible++;
+        });
+        sections.forEach((section) => {
+          section.hidden = ![...section.querySelectorAll("details.club")].some((item) => !item.hidden);
+        });
+        if (count) count.textContent = query ? `${visible}クラブが見つかりました` : "";
+      });
+    </script>
+  </body>
+</html>
+<style>
+  :global(*) { box-sizing: border-box; }
+  :global(html) { scroll-behavior: smooth; }
+  :global(body) { margin: 0; background: #f4f5f3; color: #202522; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif; }
+  main { width: min(1000px, calc(100% - 40px)); margin: 0 auto; padding: 50px 0 90px; }
+  .back { margin: 0 0 55px; font-size: 14px; }
+  .back a { color: #68716b; text-decoration: none; }
+  .back a:hover { text-decoration: underline; }
+  .eyebrow { margin: 0 0 8px; color: #68716b; font-size: 12px; font-weight: 700; letter-spacing: .12em; }
+  h1 { margin: 0 0 12px; font-size: clamp(34px, 6vw, 56px); }
+  .intro { color: #68716b; line-height: 1.8; margin: 0 0 14px; }
+  .notice { font-size: 12px; color: #68716b; margin: 0 0 28px; line-height: 1.8; }
+  .kana-nav { display: flex; flex-wrap: wrap; gap: 8px; padding: 20px; background: #fff; border: 1px solid #cfd5d0; }
+  .kana-nav a, .kana-nav span { display: grid; place-items: center; width: 48px; height: 44px; border: 1px solid #cfd5d0; border-radius: 6px; font-weight: 700; color: #202522; text-decoration: none; }
+  .kana-nav a:hover { background: #edf2ee; border-color: #9eaaa1; }
+  .kana-nav span { color: #a5ada7; background: #f4f5f3; }
+  .kana-section { margin-top: 46px; scroll-margin-top: 24px; }
+  .kana-section h2 { font-size: 22px; margin: 0 0 18px; padding-bottom: 14px; border-bottom: 2px solid #bfc6c1; }
+  .club-list { display: grid; gap: 10px; }
+  .club { background: #fff; border: 1px solid #cfd5d0; border-radius: 7px; min-width: 0; }
+  .club[open] { border-color: #9eaaa1; }
+  .club summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 17px 20px; cursor: pointer; }
+  .club summary::-webkit-details-marker { display: none; }
+  .club summary:hover, .club[open] summary { background: #f3f6f3; }
+  .club-title { font-size: 16px; font-weight: 700; }
+  .club-meta { flex-shrink: 0; color: #68716b; font-size: 12px; }
+  .chevron { display: inline-block; font-size: 19px; margin-left: 8px; transition: transform .18s; }
+  .club[open] .chevron { transform: rotate(180deg); }
+  .club-body { padding: 0 20px 20px; }
+  .aliases { margin: 4px 0 14px; color: #68716b; font-size: 12px; line-height: 1.8; }
+  .season-links { border-top: 1px solid #e2e7e3; }
+  .season-link { display: grid; grid-template-columns: 64px minmax(0, 1.1fr) minmax(0, 1.4fr) 16px; align-items: center; gap: 12px; padding: 13px 4px; border-bottom: 1px solid #e2e7e3; text-decoration: none; }
+  .season-link:hover { background: #f3f6f3; }
+  .season { color: #202522; font-weight: 700; font-size: 13px; }
+  .historical-name { color: #2563eb; font-size: 14px; font-weight: 700; }
+  .competition { color: #68716b; font-size: 12px; }
+  .arrow { color: #2563eb; }
+  summary:focus-visible, a:focus-visible { outline: 2px solid #476d53; outline-offset: 2px; }
+  @media (max-width: 600px) {
+    main { width: calc(100% - 24px); padding-top: 30px; }
+    .back { margin-bottom: 35px; }
+    .search-area { margin: 0 0 20px; }
+   .search-area label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 700; }
+   .search-area input { width: 100%; padding: 14px 16px; border: 1px solid #bfc6c1; border-radius: 6px; font: inherit; background: white; }
+   #search-count { margin: 6px 0 0; font-size: 12px; color: #68716b; }
+   [hidden] { display: none !important; }
+   .kana-nav { padding: 12px; gap: 6px; }
+    .kana-nav a, .kana-nav span { width: 42px; height: 40px; }
+    .club summary { padding: 15px 13px; }
+    .club-body { padding: 0 13px 14px; }
+    .season-link { grid-template-columns: 54px minmax(0, 1fr) 16px; gap: 7px; }
+    .competition { grid-column: 2; grid-row: 2; }
+    .arrow { grid-column: 3; grid-row: 1 / span 2; }
+  }
+</style>

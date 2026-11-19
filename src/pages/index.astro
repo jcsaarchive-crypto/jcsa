@@ -771,8 +771,9 @@ const recentUpdates = sortedUpdates.slice(0, 3);
         >
           <a href="/">ホーム</a>
           <a href="/players/">選手</a>
-          <a href="#decades">年代、チームから探す</a>
-          <a href="#recent">チーム</a>
+          <a href="/teams/">チーム</a>
+          <a href="/standings/">順位表</a>
+          <a href="#recent">最近の更新</a>
           <a href="#about">このサイトについて</a>
           <a href="/about/data-policy">データ表記・編集方針</a>
           <a href="#contact">情報提供・お問い合わせ</a>
@@ -838,166 +839,58 @@ const recentUpdates = sortedUpdates.slice(0, 3);
         </div>
       </section>
 
-      <section
-        class="content-section player-search-section"
-        id="players"
-      >
+      <section class="content-section explore-section" id="explore">
         <div class="section-heading">
           <div>
-            <div class="section-kicker">
-              PLAYER INDEX
-            </div>
-
-            <h2>選手から探す</h2>
+            <div class="section-kicker">EXPLORE THE ARCHIVE</div>
+            <h2>記録を探す</h2>
           </div>
-
-          <p>
-            収録選手を名前から探します。
-          </p>
+          <p>選手、チーム、シーズン順位表。3つの入口から日本クラブサッカーの歴史を辿ります。</p>
         </div>
 
-        <a
-          class="player-index-card"
-          href="/players/"
-        >
-          <div class="player-index-left">
-            <span class="player-index-kicker">
-              PLAYER INDEX
-            </span>
-
-            <strong class="player-index-title">
-              選手索引
-            </strong>
-          </div>
-
-          <div class="player-index-right">
-            <span class="player-index-description">
-              収録選手を名前から探す
-            </span>
-
-            <span class="player-index-arrow">
-              →
-            </span>
-          </div>
-        </a>
-      </section>
-
-      <section
-        class="content-section"
-        id="decades"
-      >
-        <div class="section-heading">
-          <div>
-            <div class="section-kicker">
-              BROWSE BY DECADE / TEAM
-            </div>
-
-            <h2>年代、チームから探す</h2>
-          </div>
-
-          <p>
-            各年代から収録チーム・シーズンを辿ります。
-          </p>
-        </div>
-
-        <div class="decade-grid">
-          <div class="decade-card disabled">
-            <span class="decade-year">1960s</span>
-            <span class="decade-ja">1960年代</span>
-            <span class="coming-soon">準備中</span>
-          </div>
-
-          <div class="decade-card disabled">
-            <span class="decade-year">1970s</span>
-            <span class="decade-ja">1970年代</span>
-            <span class="coming-soon">準備中</span>
-          </div>
-
-          <a
-            class="decade-card"
-            href="/years/1980"
-          >
-            <span class="decade-year">1980s</span>
-            <span class="decade-ja">1980年代</span>
-            <span class="card-arrow">→</span>
+        <div class="explore-grid">
+          <a class="explore-card explore-card-featured" href="/players/">
+            <span class="explore-kicker">PLAYER INDEX</span>
+            <strong class="explore-title">選手から探す</strong>
+            <span class="explore-description">五十音順の選手索引から、所属歴や出場記録へ。</span>
+            <span class="explore-arrow" aria-hidden="true">→</span>
           </a>
-
-          <a
-            class="decade-card"
-            href="/years/1990"
-          >
-            <span class="decade-year">1990s</span>
-            <span class="decade-ja">1990年代</span>
-            <span class="card-arrow">→</span>
+          <a class="explore-card" href="/teams/">
+            <span class="explore-kicker">TEAM ARCHIVE</span>
+            <strong class="explore-title">チームから探す</strong>
+            <span class="explore-description">五十音順でクラブを探し、歴代のチーム名とシーズン記録へ。</span>
+            <span class="explore-arrow" aria-hidden="true">→</span>
           </a>
-
-          <div class="decade-card disabled">
-            <span class="decade-year">2000s</span>
-            <span class="decade-ja">2000年代</span>
-            <span class="coming-soon">準備中</span>
-          </div>
-
-          <div class="decade-card disabled">
-            <span class="decade-year">2010s</span>
-            <span class="decade-ja">2010年代</span>
-            <span class="coming-soon">準備中</span>
-          </div>
-
-          <div class="decade-card disabled">
-            <span class="decade-year">2020s</span>
-            <span class="decade-ja">2020年代</span>
-            <span class="coming-soon">準備中</span>
-          </div>
+          <a class="explore-card" href="/standings/">
+            <span class="explore-kicker">LEAGUE STANDINGS</span>
+            <strong class="explore-title">シーズン順位表から探す</strong>
+            <span class="explore-description">年度と大会を選び、順位表からクラブの記録へ。</span>
+            <span class="explore-arrow" aria-hidden="true">→</span>
+          </a>
         </div>
       </section>
 
-      <section
-        class="content-section"
-        id="recent"
-      >
+      <section class="content-section" id="recent">
         <div class="section-heading">
           <div>
-            <div class="section-kicker">
-              RECENT ADDITIONS
-            </div>
-
-            <h2>最近の追加</h2>
+            <div class="section-kicker">LATEST UPDATES</div>
+            <h2>最近の更新</h2>
           </div>
-
-          <p>
-            新たに整理・追加したチームシーズン。
-          </p>
+          <p>新たに公開・更新したチームシーズン。</p>
         </div>
-
         <div class="recent-list">
           {
             recentUpdates.map((item) => (
-              <a
-                class="recent-item"
-                href={item.url}
-              >
+              <a class="recent-item" href={item.url}>
                 <div class="recent-main">
-                  <span class="recent-season">
-                    {item.season}
-                  </span>
-
-                  <strong class="recent-team">
-                    {item.team}
-                  </strong>
+                  <span class="recent-season">{item.season}</span>
+                  <strong class="recent-team">{item.team}</strong>
                 </div>
-
                 <div class="recent-meta">
-                  {
-                    item.updated && (
-                      <time datetime={item.updated}>
-                        {item.updated}
-                      </time>
-                    )
-                  }
-
-                  <span class="recent-arrow">
-                    →
-                  </span>
+                  {item.updated && (
+                    <time datetime={item.updated}>{item.updated}</time>
+                  )}
+                  <span class="recent-arrow">→</span>
                 </div>
               </a>
             ))
@@ -1947,5 +1840,80 @@ const recentUpdates = sortedUpdates.slice(0, 3);
       min-height: 130px;
       padding: 30px 0;
     }
+  }
+
+  /* 記録を探す：三つの入口 */
+  .explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .explore-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 218px;
+    padding: 27px 26px 55px;
+    border: 1px solid #cfd5d0;
+    background: #ffffff;
+    text-decoration: none;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+
+  .explore-card:hover {
+    background: #e7ebe8;
+    border-color: #8f9992;
+  }
+
+  .explore-card-featured {
+    background: #202522;
+    color: #ffffff;
+    border-color: #202522;
+  }
+
+  .explore-card-featured:hover {
+    background: #343b36;
+    border-color: #343b36;
+  }
+
+  .explore-kicker {
+    color: #68716b;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+  }
+
+  .explore-card-featured .explore-kicker {
+    color: #adb5af;
+  }
+
+  .explore-title {
+    margin-top: 17px;
+    font-size: clamp(19px, 2vw, 25px);
+    line-height: 1.4;
+  }
+
+  .explore-description {
+    margin-top: 14px;
+    color: #68716b;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .explore-card-featured .explore-description {
+    color: #d1d6d2;
+  }
+
+  .explore-arrow {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    font-size: 24px;
+  }
+
+  @media (max-width: 900px) {
+    .explore-grid { grid-template-columns: 1fr; }
+    .explore-card { min-height: 150px; }
   }
 </style>

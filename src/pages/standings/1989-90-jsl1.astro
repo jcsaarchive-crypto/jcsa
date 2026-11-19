@@ -53,18 +53,30 @@ const isRelegated = (rank) => Number(rank) === 11 || Number(rank) === 12;
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>1989/90 第25回日本サッカーリーグ1部 JSL1部 順位表 | 日本クラブサッカーアーカイブ</title>
+    <title>89/90 第25回日本サッカーリーグ1部 JSL1部 順位表 | 日本クラブサッカーアーカイブ</title>
   </head>
 
   <body>
     <main>
       <p class="back">
-        <a href="/">← トップへ戻る</a>
+        <a href="/standings/">← 順位表一覧へ戻る</a>
       </p>
+
+      <nav class="season-navigation" aria-label="前後シーズン">
+        <div class="season-nav-item previous">
+          <span class="season-nav-label">← 前季</span>
+          <a href="/standings/1988-89-jsl1">88/89 JSL1部</a>
+        </div>
+
+        <div class="season-nav-item next">
+          <span class="season-nav-label">翌季 →</span>
+          <span class="season-nav-unlinked">90/91 JSL1部</span>
+        </div>
+      </nav>
 
       <header class="league-header">
         <h1 class="league-heading">
-          <span>1989/90</span>
+          <span>89/90</span>
           <span>第25回日本サッカーリーグ1部</span>
           <span>JSL1部</span>
         </h1>
@@ -152,7 +164,7 @@ const isRelegated = (rank) => Number(rank) === 11 || Number(rank) === 12;
   }
 
   .back {
-    margin: 0 0 55px;
+    margin: 0 0 28px;
     font-size: 14px;
   }
 
@@ -163,6 +175,51 @@ const isRelegated = (rank) => Number(rank) === 11 || Number(rank) === 12;
 
   .back a:hover {
     text-decoration: underline;
+  }
+
+  .season-navigation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 36px;
+    padding: 14px 0;
+    border-top: 1px solid #cfd5d0;
+    border-bottom: 1px solid #cfd5d0;
+  }
+
+  .season-nav-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+  }
+
+  .season-nav-item.next {
+    text-align: right;
+  }
+
+  .season-nav-label {
+    color: #68716b;
+    font-size: 12px;
+  }
+
+  .season-nav-item a {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .season-nav-item a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .season-nav-unlinked {
+    color: #68716b;
+    font-size: 14px;
+    font-weight: 700;
   }
 
   .league-heading {
@@ -346,7 +403,17 @@ const isRelegated = (rank) => Number(rank) === 11 || Number(rank) === 12;
     }
 
     .back {
-      margin-bottom: 40px;
+      margin-bottom: 24px;
+    }
+
+    .season-navigation {
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .season-nav-item a,
+    .season-nav-unlinked {
+      font-size: 12px;
     }
 
     .league-heading {
