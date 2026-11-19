@@ -32,16 +32,17 @@ export const team = {
   },
  
   results: { 
-    league: { 
-      competition: "第14回北海道サッカーリーグ１部", 
-      rank: 3, 
-      points: 27, 
-      wins: 8, 
-      draws: 3, 
-      losses: 3, 
-      goalsFor: 21, 
-      goalsAgainst: 14, 
-    }, 
+    league: {
+  competition: "第14回北海道サッカーリーグ１部",
+  rank: 3,
+  points: 27,
+  wins: 8,
+  draws: 3,
+  losses: 3,
+  goalsFor: 21,
+  goalsAgainst: 14,
+  goalDifference: 7
+}, 
  
     emperorCup: "1回戦敗退", 
   }, 
