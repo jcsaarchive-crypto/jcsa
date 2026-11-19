@@ -26,7 +26,7 @@ export const team = {
     },
     next: {
       label: "90/91 日産自動車",
-      url: "",
+      url: "/teams/nissan-motors-90-91",
     },
   },
   results: {
@@ -221,7 +221,7 @@ export const players = [
     birth: "1968年1月11日",
     size: "183cm/76kg",
     birthplace: "栃木県",
-    previous: "宇都宮学園高",
+    previous: "宇都宮学園高 - 日産FCファーム",
   },
   {
     id: "P00422",

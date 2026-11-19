@@ -270,7 +270,7 @@ export const players = [
     birth: "1968年1月11日",
     size: "183cm/76kg",
     birthplace: "栃木県",
-    previous: "宇都宮学園高",
+    previous: "宇都宮学園高 - 日産FCファーム",
   },
   {
     id: "P00423",

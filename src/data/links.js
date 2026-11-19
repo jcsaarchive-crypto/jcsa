@@ -1020,6 +1020,12 @@ export const playerPages = {
   P01019: "/players/takemika-kazunori",
   P01020: "/players/nagata-mikio",
   P01021: "/players/omichi-keiji",
+  P01022: "/players/ihara-masami",
+  P01023: "/players/ueda-isao",
+  P01024: "/players/kato-masahiro",
+  P01025: "/players/noda-satoru",
+  P01026: "/players/ai-tatsuya",
+  P01027: "/players/yamada-takahiro",
 
 
 
@@ -1111,6 +1117,7 @@ export const teamSeasonPages = {
   "東邦チタニウム|89/90": "/teams/toho-titanium-89-90",
   "マツダオート広島|89/90": "/teams/mazda-auto-hiroshima-89-90",
   "京都紫光クラブ|89/90": "/teams/kyoto-shiko-club-89-90",
+  "日産自動車|90/91": "/teams/nissan-motors-90-91",
 
 
 
