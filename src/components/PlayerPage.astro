@@ -1,4 +1,5 @@
 ---
+import SiteHeader from "./SiteHeader.astro";
 import { getTeamSeasonUrl } from "../data/links.js";
 
 const { player } = Astro.props;
@@ -155,6 +156,7 @@ const hasOtherOfficialMatches =
   </head>
 
   <body>
+    <SiteHeader currentPath={Astro.url.pathname} />
     <main>
       <p class="back"><a href="/">← トップへ戻る</a></p>
 

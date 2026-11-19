@@ -1,4 +1,5 @@
 ---
+import SiteHeader from "../../components/SiteHeader.astro";
 import { team as mitsubishi } from "../../data/teams/mitsubishi-heavy-industries-89-90.js";
 import { team as toyota } from "../../data/teams/toyota-89-90.js";
 import { team as mazda } from "../../data/teams/mazda-soccer-club-89-90.js";
@@ -66,6 +67,7 @@ const isRelegated = (rank) => Number(rank) === 15 || Number(rank) === 16;
   </head>
 
   <body>
+  <SiteHeader currentPath={Astro.url.pathname} />
     <main>
       <p class="back">
         <a href="/standings/">← 順位表一覧へ戻る</a>

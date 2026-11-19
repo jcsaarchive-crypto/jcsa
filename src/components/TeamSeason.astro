@@ -1,5 +1,6 @@
 ---
 import { getPlayerUrl } from "../data/links.js";
+import SiteHeader from "./SiteHeader.astro";
 
 const {
   team,
@@ -102,6 +103,7 @@ const splitPlayerName = (name = "") => {
 </head>
 
 <body>
+  <SiteHeader currentPath={Astro.url.pathname} />
   <main>
     <div class="top-nav">
       <a href="/">← トップへ戻る</a>

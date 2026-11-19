@@ -1,4 +1,5 @@
 ---
+import SiteHeader from "../../components/SiteHeader.astro";
 // 「チームから探す」29系譜統合版。
 // records は提供された現行ファイルの収録情報をそのまま保持。
 // 系譜の名称はユーザー確定順（最新 → 最古）。
@@ -669,6 +670,7 @@ const indexed = headings.map((heading) => ({ heading, clubs: clubs.filter((club)
     <meta name="description" content="日本クラブサッカーアーカイブに収録されたチームを五十音順から探し、歴代名称とシーズン別の記録をたどれます。" />
   </head>
   <body>
+    <SiteHeader currentPath={Astro.url.pathname} />
     <main>
       <p class="back"><a href="/">← トップへ戻る</a></p>
       <p class="eyebrow">CLUB INDEX</p>

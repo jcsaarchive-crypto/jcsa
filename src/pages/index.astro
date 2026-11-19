@@ -1,4 +1,5 @@
 ---
+import SiteHeader from "../components/SiteHeader.astro";
 /*
   ========================================
   日本クラブサッカーアーカイブ
@@ -743,43 +744,7 @@ const recentUpdates = sortedUpdates.slice(0, 3);
   </head>
 
   <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="site-brand" href="/">
-          <img
-            class="brand-mark"
-            src="/images/jcsa-emblem.png"
-            alt="JCSA エンブレム"
-            width="80"
-            height="80"
-          />
-
-          <span class="brand-names">
-            <strong>
-              日本クラブサッカーアーカイブ
-            </strong>
-
-            <span>
-              Japan Club Soccer Archive
-            </span>
-          </span>
-        </a>
-
-        <nav
-          class="site-nav"
-          aria-label="メインナビゲーション"
-        >
-          <a href="/">ホーム</a>
-          <a href="/players/">選手</a>
-          <a href="/teams/">チーム</a>
-          <a href="/standings/">順位表</a>
-          <a href="#recent">最近の更新</a>
-          <a href="#about">このサイトについて</a>
-          <a href="/about/data-policy">データ表記・編集方針</a>
-          <a href="#contact">情報提供・お問い合わせ</a>
-        </nav>
-      </div>
-    </header>
+    <SiteHeader currentPath="/" />
 
     <main>
       <section class="hero">

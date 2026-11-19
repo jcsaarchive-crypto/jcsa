@@ -1,0 +1,156 @@
+---
+const { currentPath = "" } = Astro.props;
+
+const links = [
+  { label: "ホーム", href: "/" },
+  { label: "選手", href: "/players/" },
+  { label: "チーム", href: "/teams/" },
+  { label: "順位表", href: "/standings/" },
+  { label: "最近の更新", href: "/#recent" },
+  { label: "このサイトについて", href: "/#about" },
+  { label: "データ表記・編集方針", href: "/about/data-policy" },
+  { label: "情報提供・お問い合わせ", href: "/#contact" },
+];
+
+const isCurrent = (href) => {
+  if (href === "/") return currentPath === "/";
+  if (href.startsWith("/#")) return false;
+  return currentPath === href || currentPath.startsWith(href);
+};
+---
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-brand" href="/">
+      <img
+        class="brand-mark"
+        src="/images/jcsa-emblem.png"
+        alt="JCSA エンブレム"
+        width="80"
+        height="80"
+      />
+      <span class="brand-names">
+        <strong>日本クラブサッカーアーカイブ</strong>
+        <span>Japan Club Soccer Archive</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            aria-current={isCurrent(link.href) ? "page" : undefined}
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #cfd5d0;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    width: min(1280px, calc(100% - 40px));
+    min-height: 84px;
+    margin: 0 auto;
+  }
+
+  .site-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #202522;
+  }
+
+  .brand-mark {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .brand-names {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .brand-names strong {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .brand-names span {
+    color: #68716b;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+
+  .site-nav a {
+    color: #4e5751;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .site-nav a:hover {
+    color: #202522;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .site-nav a[aria-current="page"] {
+    color: #202522;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .header-inner {
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 18px 0;
+    }
+
+    .site-nav {
+      width: 100%;
+      gap: 15px 20px;
+      overflow-x: auto;
+      padding-bottom: 3px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .header-inner {
+      width: calc(100% - 24px);
+    }
+
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+    }
+
+    .brand-names strong {
+      font-size: 13px;
+    }
+  }
+</style>

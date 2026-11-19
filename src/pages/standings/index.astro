@@ -1,4 +1,6 @@
 ---
+import SiteHeader from "../../components/SiteHeader.astro";
+
 const seasons = [
   {
     label: "88/89",
@@ -31,15 +33,8 @@ const seasons = [
     <title>シーズン順位表から探す｜日本クラブサッカーアーカイブ</title>
   </head>
   <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="/">
-          <img src="/images/jcsa-emblem.png" alt="" width="52" height="52" />
-          <span><strong>日本クラブサッカーアーカイブ</strong><small>Japan Club Soccer Archive</small></span>
-        </a>
-        <nav aria-label="メインナビゲーション"><a href="/">ホーム</a><a href="/players/">選手</a><a href="/browse/teams/">チーム</a><a href="/standings/" aria-current="page">順位表</a></nav>
-      </div>
-    </header>
+    <SiteHeader currentPath="/standings/" />
+
     <main>
       <nav class="breadcrumb" aria-label="現在地"><a href="/">ホーム</a><span>›</span><span>シーズン順位表</span></nav>
       <div class="intro"><p class="kicker">LEAGUE STANDINGS</p><h1>シーズン順位表から探す</h1><p>年度を選び、各大会の順位表へ進みます。現在公開している順位表を掲載しています。</p></div>
@@ -56,23 +51,16 @@ const seasons = [
       <p class="note">※ 順位表は公開済みの年度・大会から順次追加します。</p>
       <a class="back" href="/">← トップへ戻る</a>
     </main>
+
     <footer><div><strong>日本クラブサッカーアーカイブ</strong><small>Japan Club Soccer Archive</small></div><span>JCSA</span></footer>
   </body>
 </html>
+
 <style>
   :global(*) { box-sizing: border-box; }
   :global(body) { margin: 0; background: #f4f5f3; color: #202522; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif; }
   :global(a) { color: inherit; }
-  .site-header { background: #fff; border-bottom: 1px solid #cfd5d0; }
-  .header-inner { width: min(1280px, calc(100% - 40px)); min-height: 84px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-  .brand img { object-fit: contain; }
-  .brand span, footer div { display: flex; flex-direction: column; gap: 3px; }
-  .brand strong { font-size: 15px; }
-  .brand small { color: #68716b; font-size: 10px; letter-spacing: .06em; }
-  nav:not(.breadcrumb) { display: flex; flex-wrap: wrap; gap: 22px; }
-  nav:not(.breadcrumb) a { font-size: 12px; font-weight: 700; text-decoration: none; }
-  nav a:hover, .back:hover { text-decoration: underline; text-underline-offset: 4px; }
+
   main { width: min(1180px, calc(100% - 40px)); margin: auto; padding: 34px 0 100px; }
   .breadcrumb { display: flex; gap: 10px; align-items: center; font-size: 12px; color: #68716b; }
   .breadcrumb a { text-decoration: none; }
@@ -92,5 +80,12 @@ const seasons = [
   footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 150px; padding: 35px max(20px, calc((100% - 1280px) / 2)); background: #202522; color: #fff; }
   footer strong { font-size: 14px; }
   footer small, footer > span { color: #aeb6b0; font-size: 10px; }
-  @media (max-width: 700px) { .header-inner { flex-direction: column; align-items: flex-start; padding: 14px 0; } main { width: calc(100% - 24px); } .intro { margin-top: 45px; } .season { grid-template-columns: 1fr; gap: 18px; } .links { grid-template-columns: 1fr; } .links a { min-height: 72px; } }
+
+  @media (max-width: 700px) {
+    main { width: calc(100% - 24px); }
+    .intro { margin-top: 45px; }
+    .season { grid-template-columns: 1fr; gap: 18px; }
+    .links { grid-template-columns: 1fr; }
+    .links a { min-height: 72px; }
+  }
 </style>
