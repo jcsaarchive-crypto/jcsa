@@ -137,6 +137,96 @@ export const player = {
       totalMatches: "",
       totalGoals: "",
     },
+    {
+      season: "1989",
+      division: "東京都１部",
+      jersey: "",
+      team: "エリースフットボールクラブ",
+
+      leagueMatches: "",
+      leagueGoals: "",
+
+      cupMatches: "-",
+      cupGoals: "",
+
+      emperorCupMatches: "-",
+      emperorCupGoals: "",
+
+      totalMatches: "",
+      totalGoals: "",
+    },
+    {
+      season: "1990",
+      division: "東京都１部",
+      jersey: "",
+      team: "エリースフットボールクラブ",
+
+      leagueMatches: "",
+      leagueGoals: "",
+
+      cupMatches: "-",
+      cupGoals: "",
+
+      emperorCupMatches: "-",
+      emperorCupGoals: "",
+
+      totalMatches: "",
+      totalGoals: "",
+    },
+    {
+      season: "1991",
+      division: "東京都１部",
+      jersey: "",
+      team: "エリースフットボールクラブ",
+
+      leagueMatches: "",
+      leagueGoals: "",
+
+      cupMatches: "-",
+      cupGoals: "",
+
+      emperorCupMatches: "-",
+      emperorCupGoals: "",
+
+      totalMatches: "",
+      totalGoals: "",
+    },
+    {
+      season: "1992",
+      division: "東京都１部",
+      jersey: "",
+      team: "エリースフットボールクラブ",
+
+      leagueMatches: "",
+      leagueGoals: "",
+
+      cupMatches: "-",
+      cupGoals: "",
+
+      emperorCupMatches: "-",
+      emperorCupGoals: "",
+
+      totalMatches: "",
+      totalGoals: "",
+    },
+    {
+      season: "1993",
+      division: "東京都１部",
+      jersey: "",
+      team: "エリースフットボールクラブ",
+
+      leagueMatches: "",
+      leagueGoals: "",
+
+      cupMatches: "-",
+      cupGoals: "",
+
+      emperorCupMatches: "-",
+      emperorCupGoals: "",
+
+      totalMatches: "",
+      totalGoals: "",
+    },
   ],
 
   totals: [
@@ -153,6 +243,17 @@ export const player = {
       emperorCupMatches: "",
       emperorCupGoals: "",
 
+      totalMatches: "",
+      totalGoals: "",
+    },
+    {
+      division: "東京都１部",
+      leagueMatches: "",
+      leagueGoals: "",
+      cupMatches: "-",
+      cupGoals: "",
+      emperorCupMatches: "-",
+      emperorCupGoals: "",
       totalMatches: "",
       totalGoals: "",
     },

@@ -181,7 +181,7 @@ export const player = {
       season: "1998",
       division: "関西",
       jersey: "18",
-      team: "京都紫光クラブ",
+      team: "京都紫光サッカークラブ",
 
       leagueMatches: "",
       leagueGoals: "",
@@ -199,7 +199,7 @@ export const player = {
       season: "1999",
       division: "関西",
       jersey: "18",
-      team: "京都紫光クラブ",
+      team: "京都紫光サッカークラブ",
 
       leagueMatches: "",
       leagueGoals: "",
@@ -217,7 +217,7 @@ export const player = {
       season: "2000",
       division: "関西",
       jersey: "18",
-      team: "京都紫光クラブ",
+      team: "京都紫光サッカークラブ",
 
       leagueMatches: "",
       leagueGoals: "",
