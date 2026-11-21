@@ -142,7 +142,7 @@ export const player = {
       season: "1992",
       division: "東京都１部",
       jersey: "26",
-      team: "エリースFC",
+      team: "エリースフットボールクラブ",
       leagueMatches: "",
       leagueGoals: "",
       cupMatches: "-",

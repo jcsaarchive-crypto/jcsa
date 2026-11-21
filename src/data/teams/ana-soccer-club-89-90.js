@@ -25,7 +25,7 @@ export const team = {
     },
     next: {
       label: "90/91 全日空サッカークラブ",
-      url: "",
+      url: "/teams/ana-soccer-club-90-91",
     },
   },
   results: {

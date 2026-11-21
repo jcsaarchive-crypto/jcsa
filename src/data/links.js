@@ -1030,6 +1030,11 @@ export const playerPages = {
   P01029: "/players/nakamura-tadashi",
   P01030: "/players/okamoto-kenji",
   P01031: "/players/miura-kazuyoshi",
+  P01032: "/players/shizuhata-norihiko",
+  P01033: "/players/tomita-kenji",
+  P01034: "/players/oishi-hideya",
+  P01035: "/players/otake-naoto",
+  P01036: "/players/yamaguchi-motohiro",
 
 
 
@@ -1123,6 +1128,7 @@ export const teamSeasonPages = {
   "京都紫光クラブ|89/90": "/teams/kyoto-shiko-club-89-90",
   "日産自動車|90/91": "/teams/nissan-motors-90-91",
   "読売サッカークラブ|90/91": "/teams/yomiuri-soccer-club-90-91",
+  "全日空サッカークラブ|90/91": "/teams/ana-soccer-club-90-91",
 
 
 
