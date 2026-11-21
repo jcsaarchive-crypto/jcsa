@@ -22,6 +22,9 @@ const standingsLinks = {
     JSL1: "/standings/1989-90-jsl1",
     JSL2: "/standings/1989-90-jsl2",
   },
+  "1991": {
+    HOKKAIDO1: "/standings/1991-hokkaido1",
+  },
 };
 
 const normalizedSeason = String(team.season ?? "").trim().replace(/^88\/89$/, "1988/89").replace(/^89\/90$/, "1989/90");
@@ -32,7 +35,9 @@ const standingsDivision = /(?:JSL\s*1|日本サッカーリーグ\s*1|日本サ�
   ? "JSL1"
   : /(?:JSL\s*2|日本サッカーリーグ\s*2|日本サッカーリーグ\s*２|JSL\s*２)/i.test(combinedCompetitionText)
     ? "JSL2"
-    : null;
+    : /北海道サッカーリーグ\s*[1１]部/.test(combinedCompetitionText)
+      ? "HOKKAIDO1"
+      : null;
 const standingsUrl = standingsDivision ? standingsLinks[normalizedSeason]?.[standingsDivision] : null;
 
 const birthColumnLabel =

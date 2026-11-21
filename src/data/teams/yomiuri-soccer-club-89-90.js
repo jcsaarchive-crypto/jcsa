@@ -23,7 +23,7 @@ export const team = {
     },
     next: {
       label: "90/91 読売サッカークラブ",
-      url: "",
+      url: "/teams/yomiuri-soccer-club-90-91",
     },
   },
   results: {
