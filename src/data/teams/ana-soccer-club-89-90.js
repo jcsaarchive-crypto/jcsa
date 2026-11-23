@@ -68,22 +68,26 @@ export const team = {
         timing: "preseason",
       },
       {
+        playerId: "P00571",
         name: "岩沢 明彦",
         to: "京都紫光クラブ(JSL２部)",
         toUrl: "/teams/kyoto-shiko-club-89-90",
         timing: "preseason",
       },
       {
+        playerId: "P00570",
         name: "岸田　洋",
         to: "",
         timing: "preseason",
       },
       {
+        playerId: "P00250",
         name: "川上　靖",
         to: "中央防犯(東海)",
         timing: "preseason",
       },
       {
+        playerId: "P00575",
         name: "堀溝 祐司",
         to: "",
         timing: "preseason",

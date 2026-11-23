@@ -78,15 +78,13 @@ export const team = {
     outgoing: [
       {
         name: "ピッコリ",
-        to: "ヒムナシア・ラ・プラタ",
+        to: "ヒムナシア・ラ・プラタ(アルゼンチン)",
         timing: "preseason",
-        note: "アルゼンチン",
       },
       {
         name: "メッサ",
-        to: "ラシン・クラブ",
+        to: "ラシン・クラブ(アルゼンチン)",
         timing: "preseason",
-        note: "アルゼンチン",
       },
     ],
   },
