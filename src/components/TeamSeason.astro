@@ -1,5 +1,6 @@
 ---
 import { getPlayerUrl } from "../data/links.js";
+import * as linkData from "../data/links.js";
 import SiteHeader from "./SiteHeader.astro";
 
 const {
@@ -8,6 +9,27 @@ const {
   staff = [],
   sources = [],
 } = Astro.props;
+
+// 選手の動き：移籍先・移籍元の当該シーズンページだけをリンク化する。
+// links.js に登録がない場合は、リンクなしの文字として表示する。
+const teamSeasonPages = linkData.teamSeasonPages ?? {};
+const transfers = team.transfers ?? {};
+const incomingTransfers = Array.isArray(transfers.incoming) ? transfers.incoming : [];
+const outgoingTransfers = Array.isArray(transfers.outgoing) ? transfers.outgoing : [];
+const hasTransfers = team.transfers != null;
+const isMidseasonTransfer = (entry) => entry.timing === "midseason";
+const getRelatedTeamUrl = (entry, direction) => {
+  const directUrl = direction === "incoming" ? entry.fromUrl : entry.toUrl;
+  if (directUrl) return directUrl;
+  const name = direction === "incoming" ? entry.from : entry.to;
+  const season = direction === "incoming" ? entry.fromSeason : entry.toSeason;
+  if (!name || !season) return "";
+  return teamSeasonPages[`${name}|${season}`] ?? "";
+};
+const transferGroups = [
+  { title: "IN｜新加入", direction: "incoming", entries: incomingTransfers },
+  { title: "OUT｜退団", direction: "outgoing", entries: outgoingTransfers },
+];
 
 const seoTitle = `${team.season} ${team.name}｜${team.competition ? `${team.competition} ` : ""}選手名鑑・成績｜日本クラブサッカーアーカイブ`;
 const seoDescription = `${team.season}シーズンの${team.name}${team.competition ? `（${team.competition}）` : ""}の選手名鑑・チームデータ。所属選手一覧、クラブ情報、シーズン成績などを当時の資料に基づいて掲載しています。`;
@@ -631,6 +653,59 @@ const splitPlayerName = (name = "") => {
       </div>
     </section>
 
+    <!-- 選手動向：transfers が設定されたチームは空欄でも枠を表示 -->
+    {hasTransfers && (
+      <section class="transfers-section">
+        <h2>選手動向</h2>
+        <div class="transfers-grid">
+          {transferGroups.map((group) => (
+            <div class="transfer-box">
+              <h3>{group.title}</h3>
+              {group.entries.length === 0 ? (
+                null
+              ) : (
+                [
+                  { title: "シーズン開幕前", entries: group.entries.filter((entry) => !isMidseasonTransfer(entry)) },
+                  { title: "シーズン途中", entries: group.entries.filter(isMidseasonTransfer) },
+                ].filter((period) => period.entries.length > 0).map((period) => (
+                  <div class="transfer-period">
+                    <h4>{period.title}</h4>
+                    <ul class="transfer-list">
+                      {period.entries.map((entry) => {
+                        const playerUrl = getPlayerUrl(entry.playerId);
+                        const relatedName = group.direction === "incoming" ? entry.from : entry.to;
+                        const relatedUrl = getRelatedTeamUrl(entry, group.direction);
+                        return (
+                          <li class="transfer-item">
+                            <div class="transfer-player">
+                              {playerUrl ? <a href={playerUrl}>{entry.name}</a> : <strong>{entry.name}</strong>}
+                            </div>
+                            <div class="transfer-detail">
+                              <span>
+                                {group.direction === "incoming" ? "← " : "→ "}
+                                {relatedName && (
+                                  relatedUrl ? (
+                                    <a href={relatedUrl}>{relatedName}</a>
+                                  ) : (
+                                    <span>{relatedName}</span>
+                                  )
+                                )}
+                              </span>
+                              {entry.note && <span class="transfer-note">{entry.note}</span>}
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                ))
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
     <!-- スタッフ -->
     {staff.length > 0 && (
       <section class="staff-section">
@@ -1038,6 +1113,7 @@ const splitPlayerName = (name = "") => {
   .info-section,
   .players-section,
   .staff-section,
+  .transfers-section,
   .sources-section {
     margin-top: 38px;
   }
@@ -1472,6 +1548,22 @@ const splitPlayerName = (name = "") => {
     text-decoration: underline;
   }
 
+  /* 選手動向 */
+  .transfers-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .transfer-box { background: #fff; border: 1px solid #cfd5d0; min-width: 0; }
+  .transfer-box > h3 { padding: 14px 18px; background: #e7ebe8; border-bottom: 1px solid #cfd5d0; }
+  .transfer-period { padding: 15px 18px; }
+  .transfer-period + .transfer-period { border-top: 1px solid #e0e4e1; }
+  .transfer-period h4 { margin: 0 0 10px; font-size: 12px; color: #68716b; }
+  .transfer-list { margin: 0; padding: 0; list-style: none; }
+  .transfer-item { display: grid; grid-template-columns: 130px minmax(0, 1fr); align-items: baseline; column-gap: 12px; padding: 9px 0; line-height: 1.6; }
+  .transfer-item + .transfer-item { border-top: 1px solid #edf0ed; }
+  .transfer-player { font-size: 15px; font-weight: 700; min-width: 0; }
+  .transfer-detail { display: inline-flex; flex-wrap: wrap; gap: 3px 14px; color: #68716b; font-size: 13px; min-width: 0; }
+  .transfer-note { color: #68716b; }
+  .transfer-box a { color: #2563eb; text-decoration: none; }
+  .transfer-box a:hover { text-decoration: underline; }
+
   /* スタッフ */
 
   .staff-box {
@@ -1555,6 +1647,7 @@ const splitPlayerName = (name = "") => {
   }
 
   @media (max-width: 700px) {
+    .transfers-grid { grid-template-columns: 1fr; }
     main {
       width: calc(100% - 24px);
       padding-top: 28px;

@@ -25,6 +25,64 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "モーラン",
+        from: "ゴスポート・バラFC(イングランド)",
+        timing: "preseason",
+      },
+      {
+        name: "アレハンドロ",
+        from: "全日空サッカークラブ(JSL１部)",
+        fromUrl: "/teams/ana-soccer-club-88-89",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00907",
+        name: "長島 裕明",
+        from: "日本大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00908",
+        name: "坂田　渉",
+        from: "米子工高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00238",
+        name: "野口 幸司",
+        from: "市立船橋高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00909",
+        name: "川田 信茂",
+        from: "本庄東高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00514",
+        name: "野村　貢",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00511",
+        name: "園部　勉",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "ハインズ",
+        to: "ダンディー・ユナイテッドFC(スコットランド)",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第25回日本サッカーリーグ1部",

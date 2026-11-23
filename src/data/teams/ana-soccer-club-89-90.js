@@ -28,6 +28,68 @@ export const team = {
       url: "/teams/ana-soccer-club-90-91",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "メッサ",
+        from: "アトレティコ・ジュニオール(コロンビア)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00901",
+        name: "岩井 厚裕",
+        from: "東海大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00902",
+        name: "田口 禎則",
+        from: "筑波大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00903",
+        name: "上野 展裕",
+        from: "早稲田大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00904",
+        name: "柴田　峡",
+        from: "東京学芸大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "アレハンドロ",
+        to: "フジタ工業クラブ(JSL１部)",
+        toUrl: "/teams/fujita-kogyo-89-90",
+        timing: "preseason",
+      },
+      {
+        name: "岩沢 明彦",
+        to: "京都紫光クラブ(JSL２部)",
+        toUrl: "/teams/kyoto-shiko-club-89-90",
+        timing: "preseason",
+      },
+      {
+        name: "岸田　洋",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "川上　靖",
+        to: "中央防犯(東海)",
+        timing: "preseason",
+      },
+      {
+        name: "堀溝 祐司",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第25回日本サッカーリーグ1部",

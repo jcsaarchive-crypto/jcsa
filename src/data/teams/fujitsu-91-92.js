@@ -25,6 +25,92 @@ export const team = {
       url: "/teams/fujitsu-1992",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "高　　升",
+        from: "遼寧足球倶楽部(中国)",
+        timing: "preseason",
+      },
+      {
+        name: "魏　克興",
+        from: "北京足球倶楽部(中国)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00177",
+        name: "小島 光顕",
+        from: "東京農業大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00178",
+        name: "高畠　勉",
+        from: "大阪体育大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00179",
+        name: "浮嶋　敏",
+        from: "日産FCファーム(関東)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00180",
+        name: "緒方　哲",
+        from: "東京農業大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00181",
+        name: "檀原　亘",
+        from: "向上高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00182",
+        name: "伊藤 克寿",
+        from: "東北高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "呂　洪祥",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "沈　祥福",
+        to: "引退(コーチ就任)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00163",
+        name: "柴崎　仁",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00165",
+        name: "小野澤 教至",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00166",
+        name: "斉藤　勝",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00167",
+        name: "上畑 政博",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第20回日本サッカーリーグ2部",

@@ -23,6 +23,56 @@ export const team = {
       url: "/teams/cosmo-oil-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00717",
+        name: "佐々木 康裕",
+        from: "中央大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00718",
+        name: "佐藤　勝",
+        from: "三菱養和SC",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00722",
+        name: "江渕 雄二",
+        from: "中津工高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00723",
+        name: "山川 直之",
+        from: "四日市中央工高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "加藤 博久",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "松永 信吾",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "寺田　章",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "上野 祥寛",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第17回日本サッカーリーグ2部",

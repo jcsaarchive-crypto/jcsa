@@ -29,6 +29,67 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00240",
+        name: "真田 雅則",
+        from: "順天堂大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P01032",
+        name: "賤機 徳彦",
+        from: "筑波大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P01033",
+        name: "冨田 健二",
+        from: "大阪商業大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00915",
+        name: "池ノ上 俊一",
+        from: "松下電器産業(JSL１部)",
+        fromUrl: "/teams/matsushita-electric-89-90",
+        timing: "preseason",
+      },
+      {
+        playerId: "P01034",
+        name: "大石 秀哉",
+        from: "慶應義塾大",
+        timing: "midseason",
+      },
+      {
+        playerId: "P01035",
+        name: "大嶽 直人",
+        from: "順天堂大",
+        timing: "midseason",
+      },
+      {
+        playerId: "P01036",
+        name: "山口 素弘",
+        from: "東海大",
+        timing: "midseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "ピッコリ",
+        to: "ヒムナシア・ラ・プラタ",
+        timing: "preseason",
+        note: "アルゼンチン",
+      },
+      {
+        name: "メッサ",
+        to: "ラシン・クラブ",
+        timing: "preseason",
+        note: "アルゼンチン",
+      },
+    ],
+  },
 
   results: {
     league: {

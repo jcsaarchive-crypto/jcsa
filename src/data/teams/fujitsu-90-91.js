@@ -32,6 +32,65 @@ export const team = {
       url: "/teams/fujitsu-91-92",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00173",
+        name: "池田 忠雅",
+        from: "三菱養和SC",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00174",
+        name: "門脇 端午",
+        from: "秋田市役所(東北)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00175",
+        name: "浅野 裕史",
+        from: "札幌大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00176",
+        name: "岸本 浩右",
+        from: "大阪体育大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00149",
+        name: "佐々木 尚史",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00152",
+        name: "松田 岳夫",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "徐　樹剛",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00161",
+        name: "大塚 達夫",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00170",
+        name: "河野 高伺",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
     league: {

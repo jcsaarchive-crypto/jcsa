@@ -40,6 +40,101 @@ export const team = {
       url: "/teams/fujitsu-kawasaki-fc-1996",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "魏　克興",
+        from: "北京国安足球倶楽部(中国)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00200",
+        name: "木村 裕之",
+        from: "駒澤大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00201",
+        name: "竹内  弘明",
+        from: "青山学院大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00202",
+        name: "伊藤　彰",
+        from: "国士舘大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00203",
+        name: "源平 貴久",
+        from: "専修大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00204",
+        name: "小坂 圭亮",
+        from: "青山学院大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00205",
+        name: "三浦 祐二",
+        from: "天理大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00206",
+        name: "鈴木　純",
+        from: "室蘭大谷高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00207",
+        name: "中山 貴夫",
+        from: "マッキーフットボールクラブ(北信越)",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00176",
+        name: "岸本 浩右",
+        to: "ジェフユナイテッド市原(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00183",
+        name: "荻島 広行",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00181",
+        name: "檀原　亘",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00190",
+        name: "水内 俊博",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00198",
+        name: "細谷 裕史",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00156",
+        name: "安部 一雄",
+        to: "引退(コーチ就任)",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
     league: {

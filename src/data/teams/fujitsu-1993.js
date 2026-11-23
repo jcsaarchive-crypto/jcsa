@@ -35,6 +35,112 @@ export const team = {
       url: "/teams/fujitsu-1994",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00189",
+        name: "小松崎 保",
+        from: "順天堂大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00190",
+        name: "水内 俊博",
+        from: "明治大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00191",
+        name: "堀越 亮太",
+        from: "東海大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00192",
+        name: "島田 豊久",
+        from: "順天堂大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00193",
+        name: "柳田 伸明",
+        from: "創価大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00194",
+        name: "境　秋範",
+        from: "専修大",
+        timing: "preseason",
+      },
+      {
+        name: "王　　軍",
+        from: "大連足球団(中国)",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00148",
+        name: "山下 広久",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00164",
+        name: "豊島 寿文",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00151",
+        name: "遠山 徹次",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00173",
+        name: "池田 忠雅",
+        to: "富士通川崎(神奈川県)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00174",
+        name: "門脇 端午",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00175",
+        name: "浅野 裕史",
+        to: "引退(アメリカンフットボール選手転向)",
+        timing: "preseason",
+      },
+      {
+        name: "魏　克興",
+        to: "愉園体育会(香港)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00177",
+        name: "小島 光顕",
+        to: "サンフレッチェ広島(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00180",
+        name: "緒方　哲",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00187",
+        name: "馬上 昌幸",
+        to: "富士通川崎(神奈川県)",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
     league: {

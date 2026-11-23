@@ -28,6 +28,65 @@ export const team = {
     url: "/teams/fujitsu-89-90",
   },
 },
+  transfers: {
+    incoming: [
+      {
+        name: "呂　洪祥",
+        from: "天津市足球隊(中国)",
+        timing: "preseason",
+      },
+      {
+        name: "徐　樹剛",
+        from: "",
+        timing: "preseason",
+      },
+      {
+        name: "沈　祥福",
+        from: "北京足球倶楽部(中国)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00163",
+        name: "柴崎　仁",
+        from: "三本木高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00165",
+        name: "小野沢 教至",
+        from: "早稲田大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00065",
+        name: "後藤 静臣",
+        from: "福岡大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "中村 一彦",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "杉山　実",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "清水 裕一",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "福岡　悟",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
     league: {

@@ -13,7 +13,7 @@ export const player = {
   history: [
     {
       season: "1989",
-      division: "秋田県",
+      division: "東北",
       jersey: "",
       team: "秋田市役所",
       leagueMatches: "",
@@ -155,21 +155,11 @@ export const player = {
       cupMatches: "-",
       cupGoals: "",
       emperorCupMatches: "",
-      emperorCupGoals: "",
+      emperorCupGoals: 0,
       totalMatches: "",
       totalGoals: "",
     },
-    {
-      division: "秋田県",
-      leagueMatches: "",
-      leagueGoals: "",
-      cupMatches: "-",
-      cupGoals: "",
-      emperorCupMatches: "-",
-      emperorCupGoals: "",
-      totalMatches: "",
-      totalGoals: "",
-    },
+    
   ],
 
   grandTotal: {

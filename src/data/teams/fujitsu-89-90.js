@@ -29,6 +29,53 @@ export const team = {
       url: "/teams/fujitsu-90-91",
     },
 },
+  transfers: {
+    incoming: [
+      {
+        name: "楊　朝輝",
+        from: "北京足球倶楽部(中国)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00171",
+        name: "矢作 典史",
+        from: "アセノSC(茨城県)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00172",
+        name: "大関 禎之",
+        from: "日産FCファーム(神奈川県)",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00153",
+        name: "沖宗 敏彦",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00154",
+        name: "城福　浩",
+        to: "エリースフットボールクラブ(東京都１部)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00158",
+        name: "大場 健哉",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00162",
+        name: "半田 一夫",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
     league: {

@@ -40,7 +40,7 @@ export const player = {
       totalGoals: 0,
     },
     {
-      season: "",
+      season: "1996",
       division: "地域決勝",
       jersey: "",
       team: "プリマハムFC土浦",

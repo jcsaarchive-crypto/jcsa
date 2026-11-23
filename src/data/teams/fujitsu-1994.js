@@ -40,6 +40,76 @@ export const team = {
       url: "/teams/fujitsu-1995",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00195",
+        name: "小林 慎二",
+        from: "横浜フリューゲルス(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        name: "黄　　崇",
+        from: "遼寧足球倶楽部(中国)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00196",
+        name: "戸澤　誠",
+        from: "順天堂大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00197",
+        name: "川元 正英",
+        from: "東海大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00198",
+        name: "細谷 裕史",
+        from: "法政大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00199",
+        name: "巻田 清一",
+        from: "浦和レッドダイヤモンズ(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00174",
+        name: "門脇 端午",
+        from: "再加入",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00184",
+        name: "遠藤 康就",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "楊　朝輝",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00160",
+        name: "八木橋 智",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00157",
+        name: "早田 正司",
+        to: "富士通川崎(神奈川県)",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
     league: {

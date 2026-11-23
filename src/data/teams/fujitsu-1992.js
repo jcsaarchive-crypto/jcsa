@@ -35,6 +35,78 @@ export const team = {
       url: "/teams/fujitsu-1993",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00183",
+        name: "荻島 広行",
+        from: "東京農業大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00184",
+        name: "遠藤 康就",
+        from: "東京農業大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00185",
+        name: "安倍 一夫",
+        from: "宮城工高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00186",
+        name: "遠藤 雅貴",
+        from: "石巻工高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00187",
+        name: "馬上 昌幸",
+        from: "仙台西高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00188",
+        name: "清水 智也",
+        from: "南宇和高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00150",
+        name: "田中 久雄",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00159",
+        name: "金田 龍輔",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00155",
+        name: "大木　武",
+        to: "引退(東京農業大コーチ就任)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00171",
+        name: "矢作 典史",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00182",
+        name: "伊藤 克寿",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
     league: {

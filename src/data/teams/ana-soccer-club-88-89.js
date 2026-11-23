@@ -24,6 +24,46 @@ export const team = {
       url: "/teams/ana-soccer-club-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "モネール",
+        from: "サン・ロレンソ(アルゼンチン)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00578",
+        name: "前田　治",
+        from: "東海大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00579",
+        name: "池田 直人",
+        from: "早稲田大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00580",
+        name: "馬場 芳浩",
+        from: "法政大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00581",
+        name: "佐々木 重人",
+        from: "中央大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00582",
+        name: "其田 秀太",
+        from: "国見高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [],
+  },
   results: {
     league: {
       competition: "第24回日本サッカーリーグ1部",

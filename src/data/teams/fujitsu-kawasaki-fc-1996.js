@@ -39,6 +39,189 @@ export const team = {
       url: "/teams/kawasaki-frontale-1997",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00208",
+        name: "川口 良輔",
+        from: "ジュビロ磐田(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        name: "パウス",
+        from: "ジュビロ磐田(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00209",
+        name: "村松 幸典",
+        from: "浦和レッドダイヤモンズ(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00210",
+        name: "保坂 信之",
+        from: "浦和レッドダイヤモンズ(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        name: "ウィルソン",
+        from: "ジュリアスバーガーFC(ナイジェリア)",
+        timing: "preseason",
+      },
+      {
+        name: "ムタイル",
+        from: "ジュリアスバーガーFC(ナイジェリア)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00211",
+        name: "申　在範",
+        from: "ジェフユナイテッド市原(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00212",
+        name: "重野 弘三郎",
+        from: "セレッソ大阪(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00213",
+        name: "蓮見 知弘",
+        from: "ヴェルディ川崎(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00214",
+        name: "牧野 安正",
+        from: "サンフレッチェ広島(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00215",
+        name: "竹花 友也",
+        from: "セレッソ大阪(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00216",
+        name: "藤田 慎一",
+        from: "近畿大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00217",
+        name: "中村　彰",
+        from: "早稲田大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00218",
+        name: "久野 智昭",
+        from: "東京農業大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00219",
+        name: "江田　広",
+        from: "帝京高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00220",
+        name: "三島 伸也",
+        from: "西武台高",
+        timing: "preseason",
+      },
+      {
+        name: "トーシン",
+        from: "",
+        timing: "preseason",
+      },
+      {
+        name: "エンリケ",
+        from: "ブランメル仙台(旧JFL)",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00172",
+        name: "大関 禎之",
+        to: "富士通中原(神奈川県)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00179",
+        name: "浮嶋　敏",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00169",
+        name: "戸沢 一也",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "高　　升",
+        to: "引退(ユース監督就任)",
+        timing: "preseason",
+      },
+      {
+        name: "王　　軍",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00192",
+        name: "島田 豊久",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "魏　克興",
+        to: "北京国安足球倶楽部(中国)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00193",
+        name: "柳田 伸明",
+        to: "プリマハムFC土浦(関東)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00174",
+        name: "門脇 端午",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00191",
+        name: "堀越 亮太",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00168",
+        name: "岩渕 弘幹",
+        to: "引退(コーチ就任)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00178",
+        name: "高畠　勉",
+        to: "引退(コーチ就任)",
+        timing: "preseason",
+      },
+      {
+        name: "トーシン",
+        to: "",
+        timing: "midseason",
+      },
+    ],
+  },
 
   results: {
     league: {

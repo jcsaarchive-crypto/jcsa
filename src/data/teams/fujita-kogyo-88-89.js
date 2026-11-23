@@ -25,6 +25,82 @@ export const team = {
       url: "/teams/fujita-kogyo-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00521",
+        name: "高橋 憲司",
+        from: "市立船橋高",
+        timing: "preseason",
+      },
+      {
+        name: "グリフィス",
+        from: "ウィガン・アスレティックFC(イングランド)",
+        timing: "preseason",
+      },
+      {
+        name: "ハインズ",
+        from: "ビショップ・オークランドFC(イングランド)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00527",
+        name: "小島 伸幸",
+        from: "同志社大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00531",
+        name: "霜田 正浩",
+        from: "ブラジル留学",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00532",
+        name: "黒田 優嗣",
+        from: "鹿児島実高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00533",
+        name: "名塚 善寛",
+        from: "習志野高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "鈴木　淳",
+        to: "松島サッカークラブ(東北)",
+        timing: "preseason",
+      },
+      {
+        name: "吉浦 茂和",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "高橋 貞洋",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "マイア",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "カルロス",
+        to: "コリチーバFC(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        name: "森　盛司",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第24回日本サッカーリーグ1部",

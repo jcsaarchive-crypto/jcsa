@@ -38,6 +38,162 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "ペッサリ",
+        from: "グレミオFBPA(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00276",
+        name: "伊藤 優津樹",
+        from: "清水エスパルス(Jリーグ)",
+        fromUrl: "/teams/shimizu-s-pulse-1997",
+        timing: "preseason",
+      },
+      {
+        name: "ヴァルディネイ",
+        from: "グレミオFBPA(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00324",
+        name: "鬼木　達",
+        from: "鹿島アントラーズ(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00325",
+        name: "伊東 真吾",
+        from: "武南高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00326",
+        name: "大石 鉄也",
+        from: "静岡学園高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00327",
+        name: "荒谷 弘樹",
+        from: "浦和レッズ(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00328",
+        name: "服部 浩紀",
+        from: "横浜フリューゲルス(Jリーグ)",
+        timing: "midseason",
+      },
+      {
+        name: "モレェノ",
+        from: "モジミリンEC(ブラジル)",
+        timing: "midseason",
+      },
+      {
+        name: "ツゥット",
+        from: "GEグロリア(ブラジル)",
+        timing: "midseason",
+      },
+      {
+        playerId: "P00329",
+        name: "林　善徹",
+        from: "イトゥアーノFC(ブラジル)",
+        timing: "midseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00222",
+        name: "小泉 淳嗣",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00223",
+        name: "戸倉 健一郎",
+        to: "ガンバ大阪(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00204",
+        name: "小坂 圭亮",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00232",
+        name: "森　一哉",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00217",
+        name: "中村　彰",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00216",
+        name: "藤田 慎一",
+        to: "アルビレックス新潟(旧JFL)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00220",
+        name: "三島 伸也",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00201",
+        name: "竹内 弘明",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00235",
+        name: "村松 勇輝",
+        to: "サガン鳥栖FC(旧JFL)",
+        timing: "preseason",
+      },
+      {
+        name: "アレックス",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00237",
+        name: "長谷部 茂利",
+        to: "ヴィッセル神戸(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00238",
+        name: "野口 幸司",
+        to: "名古屋グランパスエイト(Jリーグ)",
+        timing: "preseason",
+      },
+      {
+        name: "ベッチーニョ",
+        to: "SCインテルナシオナル(ブラジル)",
+        timing: "midseason",
+      },
+      {
+        name: "ムタイル",
+        to: "",
+        timing: "midseason",
+      },
+      {
+        playerId: "P00236",
+        name: "平山　大",
+        to: "",
+        timing: "midseason",
+      },
+    ],
+  },
 
   results: {
     league: {
