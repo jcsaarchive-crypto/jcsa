@@ -23,6 +23,41 @@ export const team = {
       url: "/teams/kofu-soccer-club-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00821",
+        name: "豊角 和徳",
+        from: "専修大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00824",
+        name: "青柳　昇",
+        from: "日川高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00828",
+        name: "戸沢　正",
+        from: "東海大甲府高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00829",
+        name: "広瀬　龍",
+        from: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00830",
+        name: "小林　実",
+        from: "日本体育大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [],
+  },
   results: {
     league: {
       competition: "第17回日本サッカーリーグ2部",

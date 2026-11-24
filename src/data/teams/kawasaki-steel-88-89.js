@@ -24,6 +24,45 @@ export const team = {
       url: "/teams/kawasaki-steel-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00727",
+        name: "藤枝 洋明",
+        from: "徳島市立高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00734",
+        name: "丸野 勝一郎",
+        from: "大阪商高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00735",
+        name: "岡崎　隆",
+        from: "京都商高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "三宅 正美",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "渡辺 幸之助",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "西沢 英治",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第17回日本サッカーリーグ2部",

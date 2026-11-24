@@ -25,6 +25,63 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "リッキー",
+        from: "アルセト・ソロ(インドネシア)",
+        timing: "preseason",
+      },
+      {
+        name: "ロナチャイ",
+        from: "ポート・オーソリティ・オブ・タイランドFC(タイ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00915",
+        name: "池ノ上 俊一",
+        from: "大阪商業大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00916",
+        name: "肥塚 一晃",
+        from: "天理大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00917",
+        name: "東　博樹",
+        from: "同志社大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00918",
+        name: "森川　徹",
+        from: "大阪体育大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00584",
+        name: "桝本 厚志",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "崔　徳柱",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00598",
+        name: "岡野 尚士",
+        to: "エリースフットボールクラブ(東京都1部)",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第25回日本サッカーリーグ1部",

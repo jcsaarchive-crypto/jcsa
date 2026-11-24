@@ -26,6 +26,61 @@ export const team = {
       url: "/teams/matsushita-electric-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "ナティ",
+        from: "ナコーンサワンFC(タイ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00601",
+        name: "植村　晋",
+        from: "同志社大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00602",
+        name: "平野 直樹",
+        from: "順天堂大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00603",
+        name: "柳　洪基",
+        from: "大阪体育大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00604",
+        name: "藤田 善浩",
+        from: "滝川二高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "藤原 兵衛",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "高井　猛",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "泉田 泰成",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "八木 清悟",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第24回日本サッカーリーグ1部",

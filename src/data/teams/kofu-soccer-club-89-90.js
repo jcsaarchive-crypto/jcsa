@@ -27,6 +27,108 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00948",
+        name: "有泉　透",
+        from: "順天堂大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00949",
+        name: "田村 邦彦",
+        from: "明治大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00950",
+        name: "山村　博",
+        from: "中京大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00951",
+        name: "前村　強",
+        from: "日本体育大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00952",
+        name: "戸田 徳和",
+        from: "東海大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00953",
+        name: "幡野　仁",
+        from: "韮崎高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00954",
+        name: "吉田 大介",
+        from: "韮崎高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00821",
+        name: "豊角 和徳",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00824",
+        name: "青柳　昇",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00825",
+        name: "新藤 道也",
+        to: "監督専任",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00826",
+        name: "塚田 雄二",
+        to: "コーチ専任",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00828",
+        name: "戸沢　正",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00829",
+        name: "広瀬　龍",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00830",
+        name: "小林　実",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00833",
+        name: "数野 篤人",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00834",
+        name: "青柳　修",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",
@@ -336,7 +438,7 @@ export const players = [
     number: "30",
     name: "鰻池 春雄",
     latin: "Haruo UNAGIIKE",
-    position: "GK/DF",
+    position: "GK",
     birth: "1958年1月21日",
     size: "175cm/72kg",
     birthplace: "―",

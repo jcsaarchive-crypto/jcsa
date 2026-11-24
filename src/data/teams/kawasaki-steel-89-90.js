@@ -27,6 +27,93 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00963",
+        name: "高木　功",
+        from: "国見高",
+        timing: "preseason",
+      },
+      {
+        name: "エルシオ",
+        from: "ECサント・アンドレ(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00964",
+        name: "瀧上 知巳",
+        from: "順天堂大",
+        timing: "preseason",
+      },
+      {
+        name: "ビニヨン",
+        from: "AAポンチ・プレッタ(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        name: "トゥータ",
+        from: "AAポンチ・プレッタ(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00965",
+        name: "黒川 俊博",
+        from: "高松南高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00966",
+        name: "花田 雄二",
+        from: "東海大五高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00725",
+        name: "中村 勝也",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00726",
+        name: "西上 康広",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00728",
+        name: "宇野 恭正",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00736",
+        name: "中村 康幸",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00737",
+        name: "姫野 真吉",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00742",
+        name: "大土 治彦",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00745",
+        name: "石田 安行",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",

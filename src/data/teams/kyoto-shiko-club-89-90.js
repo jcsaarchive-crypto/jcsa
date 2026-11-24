@@ -28,6 +28,36 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00571",
+        name: "岩沢 明彦",
+        from: "全日空サッカークラブ(JSL1部)",
+        fromUrl: "/teams/ana-soccer-club-88-89",
+        timing: "preseason",
+      },
+      {
+        playerId: "P01016",
+        name: "近藤　健",
+        from: "読売ジュニア(関東)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P01017",
+        name: "芳賀　敦",
+        from: "読売ジュニア(関東)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P01021",
+        name: "大道 敬二",
+        from: "国士舘大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",

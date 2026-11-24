@@ -28,6 +28,66 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "トニー",
+        from: "ストーク・シティFC(イングランド)",
+        timing: "preseason",
+      },
+      {
+        name: "デビッド",
+        from: "シェフィールド・ウェンズデイFC(イングランド)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00938",
+        name: "風間 八宏",
+        from: "アイントラハト・ブラウンシュヴァイク(西ドイツ)",
+        timing: "preseason",
+      },
+      {
+        name: "アラン",
+        from: "シュルーズベリー・タウンFC(イングランド)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00939",
+        name: "喜多 健二",
+        from: "マツダSC東洋(中国)",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00118",
+        name: "ディド・ハーフナー",
+        to: "読売サッカークラブ(JSL1部)",
+        timing: "preseason",
+      },
+      {
+        name: "金　明寛",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00608",
+        name: "猿沢　茂",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "朴　潤基",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "姜　信寓",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",

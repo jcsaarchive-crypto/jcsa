@@ -27,6 +27,29 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00974",
+        name: "松田 伸二",
+        from: "東京農業大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00994",
+        name: "新城 勝也",
+        from: "沖縄国際大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00997",
+        name: "森川 昭浩",
+        from: "山陽高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",

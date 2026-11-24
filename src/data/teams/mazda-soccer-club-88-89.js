@@ -24,6 +24,70 @@ export const team = {
       url: "/teams/mazda-soccer-club-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "金　明寛",
+        from: "",
+        timing: "preseason",
+      },
+      {
+        name: "朴　潤基",
+        from: "ラッキー金星ファンソFC(韓国)",
+        timing: "preseason",
+      },
+      {
+        name: "姜　信寓",
+        from: "ラッキー金星ファンソFC(韓国)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00621",
+        name: "田原 輝幸",
+        from: "マツダSC東洋(中国)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00626",
+        name: "緒方 光彦",
+        from: "マツダSC東洋(中国)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00627",
+        name: "幸田 将和",
+        from: "マツダSC東洋(中国)",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "ロン",
+        to: "BVフェーンダム(オランダ)",
+        timing: "preseason",
+      },
+      {
+        name: "高橋　誠",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "クレッグ",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "上原 洋史",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "今川 正浩",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第17回日本サッカーリーグ2部",
