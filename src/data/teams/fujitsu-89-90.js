@@ -39,7 +39,7 @@ export const team = {
       {
         playerId: "P00171",
         name: "矢作 典史",
-        from: "アセノSC(茨城県)",
+        from: "アセノサッカークラブ(茨城県)",
         timing: "preseason",
       },
       {
@@ -332,7 +332,7 @@ export const players = [
     birth: "1963年11月13日",
     size: "174cm/70kg",
     birthplace: "埼玉県",
-    previous: "読売ユース - 読売ジュニア - 読売サッカークラブ - U.S.I.U.(アメリカ) - アセノSC",
+    previous: "読売ユース - 読売ジュニア - 読売サッカークラブ - U.S.I.U.(アメリカ) - アセノサッカークラブ",
   },
   {
     id: "P00166",

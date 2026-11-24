@@ -77,7 +77,7 @@ export const team = {
     outgoing: [
       {
         name: "呂　洪祥",
-        to: "",
+        to: "東京ガス(JSL2部)",
         timing: "preseason",
       },
       {
@@ -366,7 +366,7 @@ export const players = [
     birth: "1963年11月13日",
     size: "174cm/69kg",
     birthplace: "埼玉県",
-    previous: "読売ユース - 読売ジュニア - 読売サッカークラブ - U.S.I.U.(アメリカ) - アセノSC",
+    previous: "読売ユース - 読売ジュニア - 読売サッカークラブ - U.S.I.U.(アメリカ) - アセノサッカークラブ",
   },
   {
     number: "23",
