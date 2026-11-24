@@ -24,6 +24,62 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "フジネイ",
+        from: "日産自動車(JSL1部)",
+        timing: "preseason",
+      },
+      {
+        name: "アベリヤ",
+        from: "ABC FC(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00920",
+        name: "石津 真介",
+        from: "聖隷学園高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00921",
+        name: "石川　康",
+        from: "武南高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00922",
+        name: "津野 健次",
+        from: "静岡学園高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00923",
+        name: "入井 和久",
+        from: "日立工高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "金　昌孝",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00490",
+        name: "吉越 利光",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "マラカジャ",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第25回日本サッカーリーグ1部",

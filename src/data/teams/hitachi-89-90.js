@@ -20,6 +20,58 @@ export const team = {
     previous: { label: "88/89 日立製作所", url: "/teams/hitachi-88-89" },
     next: { label: "90/91 日立製作所", url: "" },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "へジス",
+        from: "モジミリンEC(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00926",
+        name: "水島 武蔵",
+        from: "ポルトゲーザFC(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        name: "ジュニオール",
+        from: "インデペンディエンテ・デ・リメイラ(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00927",
+        name: "瀬尾　清",
+        from: "守山高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00630",
+        name: "須藤 茂光",
+        to: "引退(コーチ就任)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00632",
+        name: "森川 重則",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00642",
+        name: "川村 昭仁",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00654",
+        name: "水出 浩司",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第25回日本サッカーリーグ1部",
@@ -62,7 +114,7 @@ export const players = [
     birth: "1964年1月5日",
     size: "189cm/80kg",
     birthplace: "ブラジル",
-    previous: "モジミリン(ブラジル)",
+    previous: "モジミリンEC(ブラジル)",
   },
   {
     id: "P00631",
@@ -116,7 +168,7 @@ export const players = [
     birth: "1964年9月10日",
     size: "178cm/72kg",
     birthplace: "東京都",
-    previous: "清水FC - サンパウロFCユース - サンパウロFC - ポルトゲーザFC",
+    previous: "清水FC - サンパウロFC(ブラジル) - ポルトゲーザFC(ブラジル)",
   },
   {
     id: "P00635",

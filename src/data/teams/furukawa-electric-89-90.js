@@ -26,6 +26,66 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00912",
+        name: "松山 吉之",
+        from: "早稲田大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00913",
+        name: "公文 裕明",
+        from: "青山学院大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00073",
+        name: "若林 秀行",
+        from: "前橋商高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00914",
+        name: "下川 健一",
+        from: "岐阜工高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00470",
+        name: "小林　寛",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00480",
+        name: "丸山 啓一",
+        to: "大学進学",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00481",
+        name: "増渕　仁",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00483",
+        name: "諏訪辺 厚宜",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00484",
+        name: "大塚 一朗",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第25回日本サッカーリーグ1部",

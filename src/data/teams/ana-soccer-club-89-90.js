@@ -63,14 +63,14 @@ export const team = {
     outgoing: [
       {
         name: "アレハンドロ",
-        to: "フジタ工業クラブ(JSL１部)",
+        to: "フジタ工業クラブ(JSL1部)",
         toUrl: "/teams/fujita-kogyo-89-90",
         timing: "preseason",
       },
       {
         playerId: "P00571",
         name: "岩沢 明彦",
-        to: "京都紫光クラブ(JSL２部)",
+        to: "京都紫光クラブ(JSL2部)",
         toUrl: "/teams/kyoto-shiko-club-89-90",
         timing: "preseason",
       },

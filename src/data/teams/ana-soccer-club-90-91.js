@@ -52,7 +52,7 @@ export const team = {
       {
         playerId: "P00915",
         name: "池ノ上 俊一",
-        from: "松下電器産業(JSL１部)",
+        from: "松下電器産業(JSL1部)",
         fromUrl: "/teams/matsushita-electric-89-90",
         timing: "preseason",
       },

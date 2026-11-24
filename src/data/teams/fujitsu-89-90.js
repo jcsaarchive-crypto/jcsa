@@ -59,7 +59,7 @@ export const team = {
       {
         playerId: "P00154",
         name: "城福　浩",
-        to: "エリースフットボールクラブ(東京都１部)",
+        to: "エリースフットボールクラブ(東京都1部)",
         timing: "preseason",
       },
       {

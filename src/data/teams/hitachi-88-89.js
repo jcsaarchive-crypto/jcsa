@@ -23,6 +23,79 @@ export const team = {
       url: "/teams/hitachi-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "ゼ・セルジオ",
+        from: "CRヴァスコ・ダ・ガマ(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00646",
+        name: "新井 二朗",
+        from: "市立船橋高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00647",
+        name: "鈴木 紀和",
+        from: "東海大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00650",
+        name: "瀧　祥典",
+        from: "明治大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00651",
+        name: "有田 正宏",
+        from: "広島大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00652",
+        name: "小田 雅巳",
+        from: "新潟西高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00653",
+        name: "安部 雄一",
+        from: "清水商高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00657",
+        name: "丸岡 孝公",
+        from: "本庄東高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "菅又 哲男",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "成嶋　徹",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "伊藤 俊彦",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "川端 康幸",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第17回日本サッカーリーグ2部",

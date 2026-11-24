@@ -27,6 +27,71 @@ export const team = {
       url: "/teams/furukawa-electric-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00468",
+        name: "山本 健二",
+        from: "駒澤大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00479",
+        name: "簔口 祐介",
+        from: "国士舘大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00487",
+        name: "木沢 正徳",
+        from: "古河一高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00488",
+        name: "牧野 景輔",
+        from: "滝川二高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "佐藤 長栄",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "奥寺 康彦",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "三浦 雅人",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "宮内　聡",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "永井 良和",
+        to: "引退(コーチ就任)",
+        timing: "preseason",
+      },
+      {
+        name: "大石 達哉",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "畑中 邦夫",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第24回日本サッカーリーグ1部",

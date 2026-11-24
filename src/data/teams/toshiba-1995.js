@@ -100,7 +100,7 @@ export const players = [
     birth: "1964年1月5日",
     size: "188cm/80kg",
     birthplace: "ブラジル",
-    previous: "モジミリン(ブラジル)",
+    previous: "モジミリンEC(ブラジル) - 日立製作所/日立フットボールクラブ/日立FC柏レイソル",
   },
   {
     id: "P00093",

@@ -34,7 +34,7 @@ export const team = {
       },
       {
         name: "アレハンドロ",
-        from: "全日空サッカークラブ(JSL１部)",
+        from: "全日空サッカークラブ(JSL1部)",
         fromUrl: "/teams/ana-soccer-club-88-89",
         timing: "preseason",
       },

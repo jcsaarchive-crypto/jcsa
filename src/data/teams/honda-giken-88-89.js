@@ -24,6 +24,59 @@ export const team = {
       url: "/teams/honda-giken-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "金　昌孝",
+        from: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00506",
+        name: "根岸 誠一",
+        from: "宇都宮学園高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00507",
+        name: "本田 泰人",
+        from: "帝京高",
+        timing: "preseason",
+      },
+      {
+        name: "ダ・シルバ",
+        from: "ウベラバ(ブラジル)",
+        timing: "midseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "安間 和仁",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "荒木 茂明",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "吉田 憲司",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "エデル",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "フェレイラ",
+        to: "",
+        timing: "midseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第24回日本サッカーリーグ1部",
