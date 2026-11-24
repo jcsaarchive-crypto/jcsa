@@ -25,6 +25,57 @@ export const team = {
       url: "/teams/nissan-motors-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00259",
+        name: "長谷川 健太",
+        from: "筑波大",
+        timing: "preseason",
+      },
+      {
+        name: "フジネイ",
+        from: "CRヴァスコ・ダ・ガマ(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00222",
+        name: "小泉 淳嗣",
+        from: "日産FCファーム(神奈川県)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00423",
+        name: "村上　浩",
+        from: "暁星高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00426",
+        name: "米田 年孝",
+        from: "三原高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "石井　肇",
+        to: "大塚製薬(徳島県1部)",
+        timing: "preseason",
+      },
+      {
+        name: "田村 恵久男",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00423",
+        name: "村上　浩",
+        to: "",
+        timing: "midseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第24回日本サッカーリーグ1部",

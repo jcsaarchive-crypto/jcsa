@@ -63,6 +63,7 @@ export const team = {
         playerId: "P00118",
         name: "ディド・ハーフナー",
         to: "読売サッカークラブ(JSL1部)",
+        toUrl: "/teams/yomiuri-soccer-club-89-90",
         timing: "preseason",
       },
       {

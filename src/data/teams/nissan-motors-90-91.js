@@ -30,6 +30,82 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P01022",
+        name: "井原 正巳",
+        from: "筑波大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P01023",
+        name: "上田　勲",
+        from: "阿武野高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P01024",
+        name: "加藤 正浩",
+        from: "静岡学園高",
+        timing: "preseason",
+      },
+      {
+        name: "エバートン",
+        from: "アトレチコ・ミネイロ(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00230",
+        name: "浦上 壮史",
+        from: "日産FCファーム(関東)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P01025",
+        name: "野田　知",
+        from: "国士舘大",
+        timing: "midseason",
+      },
+      {
+        playerId: "P01026",
+        name: "阿井 達也",
+        from: "立正大",
+        timing: "midseason",
+      },
+      {
+        playerId: "P01027",
+        name: "山田 隆裕",
+        from: "清水商高",
+        timing: "midseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00412",
+        name: "池田 司信",
+        to: "松下電器産業(JSL1部)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00416",
+        name: "ロペス",
+        to: "日立製作所(JSL2部)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00426",
+        name: "米田 年孝",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "サンドロ",
+        to: "AAポンチ・プレッタ(ブラジル)",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
     league: {
@@ -377,7 +453,7 @@ export const players = [
     birth: "1969年2月7日",
     size: "182cm/72kg",
     birthplace: "東京都",
-    previous: "國學院久我山高",
+    previous: "國學院久我山高 - 日産FCファーム",
   },
   {
     id: "P01027",

@@ -24,6 +24,56 @@ export const team = {
       url: "/teams/mitsubishi-heavy-industries-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00397",
+        name: "生田 久貴",
+        from: "愛知学院大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00401",
+        name: "松本 安司",
+        from: "四日市中央工高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00402",
+        name: "三上 明紀",
+        from: "藤枝東高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00407",
+        name: "生駒 剛人",
+        from: "甲南大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "橋本　晃",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "関口 久雄",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "別宮 智徳",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "小林 伸樹",
+        to: "エリースフットボールクラブ(東京都1部)",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第24回日本サッカーリーグ1部",

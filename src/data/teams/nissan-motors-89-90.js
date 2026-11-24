@@ -29,6 +29,69 @@ export const team = {
       url: "/teams/nissan-motors-90-91",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00897",
+        name: "神野 卓哉",
+        from: "修徳高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00898",
+        name: "鈴木 正治",
+        from: "静岡学園高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00899",
+        name: "松橋 力蔵",
+        from: "日産FCファーム(神奈川県)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00900",
+        name: "永山 邦夫",
+        from: "日産FCユース",
+        timing: "preseason",
+      },
+      {
+        name: "レナト",
+        from: "アトレチコ・ミネイロ(ブラジル)",
+        timing: "preseason",
+      },
+      {
+        name: "サンドロ",
+        from: "AAポンチ・プレッタ(ブラジル)",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00411",
+        name: "越田 剛史",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "フジネイ",
+        to: "本田技研工業(JSL1部)",
+        toUrl: "/teams/honda-giken-89-90",
+        timing: "preseason",
+      },
+      {
+        name: "オスカー",
+        to: "引退(監督就任)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00424",
+        name: "清水 秀彦",
+        to: "引退(コーチ就任)",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第25回日本サッカーリーグ1部",
