@@ -41,7 +41,7 @@ export const players = [
     birth: "1961年1月4日",
     size: "180cm/83kg",
     birthplace: "大阪府",
-    previous: "京都西高 - 大阪体育大",
+    previous: "京都西高 - 大阪体育大 - 日本鋼管/NKK",
   },
   {
     id: "P00240",

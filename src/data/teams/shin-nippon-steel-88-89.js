@@ -23,6 +23,21 @@ export const team = {
       url: "/teams/shin-nippon-steel-89-90",
     },
   },
+    transfers: {
+    incoming: [],
+    outgoing: [
+      {
+        name: "猪原 泰幸",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "寺田 行広",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第17回日本サッカーリーグ2部",

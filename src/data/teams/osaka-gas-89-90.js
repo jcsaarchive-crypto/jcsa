@@ -26,6 +26,54 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00945",
+        name: "小世 一成",
+        from: "滝川二高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00946",
+        name: "平　祥孝",
+        from: "国見高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00947",
+        name: "土橋 克行",
+        from: "神戸商科大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00785",
+        name: "寺尾 泰伸",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00787",
+        name: "湊　邦三",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00792",
+        name: "中林 進一",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00803",
+        name: "海老名 史朗",
+        to: "引退(監督専任)",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",

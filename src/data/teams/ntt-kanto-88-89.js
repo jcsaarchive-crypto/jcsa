@@ -26,7 +26,52 @@ export const team = {
       url: "/teams/ntt-kanto-89-90",
     },
   },
-  
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00659",
+        name: "児玉 浩一",
+        from: "東海大甲府高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00675",
+        name: "鈴木　剛",
+        from: "青山学院大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00677",
+        name: "飯田　勉",
+        from: "東海大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00678",
+        name: "大橋　勉",
+        from: "中央大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00944",
+        name: "渡邊 貴之",
+        from: "東京学芸大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "永尾 裕一",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "小俣 栄一",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
   league: {

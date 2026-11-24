@@ -26,6 +26,10 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [],
+    outgoing: [],
+  },
   results: {
     league: {
       competition: "第17回日本サッカーリーグ2部",

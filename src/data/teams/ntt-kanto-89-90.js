@@ -28,6 +28,61 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00940",
+        name: "周　大植",
+        from: "明治大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00941",
+        name: "亀田 明広",
+        from: "日本体育大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00942",
+        name: "石井 正忠",
+        from: "順天堂大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00943",
+        name: "岩邊　睦",
+        from: "順天堂大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00660",
+        name: "山下 兼弘",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00056",
+        name: "立石 勝志",
+        to: "東芝(JSL1部)",
+        toUrl: "/teams/toshiba-89-90",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00679",
+        name: "祝田 憲克",
+        to: "引退(運営委員/主務/コーチ就任)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00680",
+        name: "白𡈽　功",
+        to: "引退(監督専任)",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",

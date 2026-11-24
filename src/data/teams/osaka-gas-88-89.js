@@ -25,6 +25,29 @@ export const team = {
       url: "/teams/osaka-gas-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00788",
+        name: "園田 慎二",
+        from: "国見高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00804",
+        name: "貴志 正弘",
+        from: "大塚高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00805",
+        name: "佐々木 威",
+        from: "神戸大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [],
+  },
   results: {
     league: {
       competition: "第17回日本サッカーリーグ2部",

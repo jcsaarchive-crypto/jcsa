@@ -25,6 +25,25 @@ export const team = {
       url: "/teams/nkk-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00377",
+        name: "礒田 由和",
+        from: "同志社大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00443",
+        name: "浅岡 朝泰",
+        to: "読売サッカークラブ(JSL1部)",
+        toUrl: "/teams/yomiuri-soccer-club-89-90",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第24回日本サッカーリーグ",

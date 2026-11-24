@@ -25,6 +25,54 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00924",
+        name: "神田 勝夫",
+        from: "東京農業大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00925",
+        name: "遠藤 善主",
+        from: "上野丘高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00144",
+        name: "米倉　誠",
+        from: "前橋商高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00370",
+        name: "斉藤 健二",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00374",
+        name: "坂本 裕昭",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00381",
+        name: "田中 孝司",
+        to: "引退(コーチ就任)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00382",
+        name: "山本 欣也",
+        to: "引退(コーチ就任)",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第25回日本サッカーリーグ1部",

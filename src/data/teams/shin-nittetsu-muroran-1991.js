@@ -30,6 +30,99 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "東坂　健",
+        from: "室蘭大谷高",
+        timing: "preseason",
+      },
+      {
+        name: "井上 直樹",
+        from: "名寄工高",
+        timing: "preseason",
+      },
+      {
+        name: "熊谷 勝己",
+        from: "室蘭大谷高",
+        timing: "preseason",
+      },
+      {
+        name: "吉村 慎也",
+        from: "苫小牧工高",
+        timing: "preseason",
+      },
+      {
+        name: "岡崎 直樹",
+        from: "遠軽高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00031",
+        name: "松山 貴之",
+        from: "日立製作所(JSL1部)",
+        fromUrl: "/teams/hitachi-89-90",
+        timing: "preseason",
+      },
+      {
+        name: "遠藤 正之",
+        from: "登別大谷高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "星川　信",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "大坂 誠二",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "西村 学生",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "佐藤　渉",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "斉藤　仁",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "東　　学",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "石垣 譲冶",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "斉藤 伸也",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "高橋 良章",
+        to: "引退(主務専任)",
+        timing: "preseason",
+      },
+      {
+        name: "岸奥 幸雄",
+        to: "引退(監督専任)",
+        timing: "preseason",
+      },
+    ],
+  },
  
   results: {
   league: {

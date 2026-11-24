@@ -25,6 +25,60 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00955",
+        name: "野田　勉",
+        from: "八幡中央高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00956",
+        name: "水町 省二",
+        from: "熊本工高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00957",
+        name: "野田 浩一",
+        from: "筑豊工高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00958",
+        name: "野元 雄二",
+        from: "鹿児島工高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00959",
+        name: "安部 孝穂",
+        from: "小倉工高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00960",
+        name: "草野　誠",
+        from: "島原工高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00754",
+        name: "西元 光二",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00756",
+        name: "平田 光徳",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",
