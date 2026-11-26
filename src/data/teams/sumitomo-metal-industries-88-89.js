@@ -24,6 +24,45 @@ export const team = {
       url: "/teams/sumitomo-metal-industries-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00538",
+        name: "奥友 敏朗",
+        from: "遠野高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00549",
+        name: "滝沢　明",
+        from: "新潟工高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00560",
+        name: "犬飼 一郎",
+        from: "愛知学院大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "池田 義文",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "鈴木 秀樹",
+        to: "引退(主務専任)",
+        timing: "preseason",
+      },
+      {
+        name: "河野　満",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第24回日本サッカーリーグ1部",

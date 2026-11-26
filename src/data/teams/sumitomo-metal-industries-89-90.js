@@ -17,6 +17,66 @@ export const team = {
     previous: { label: "88/89 住友金属工業", url: "/teams/sumitomo-metal-industries-88-89" },
     next: { label: "90/91 住友金属工業", url: "" },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00928",
+        name: "江本 城幸",
+        from: "順天堂大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00929",
+        name: "長石 博之",
+        from: "大阪体育大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00930",
+        name: "山本 健二",
+        from: "光星学院高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00931",
+        name: "垣田　健",
+        from: "浦和学院高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00932",
+        name: "真中 靖夫",
+        from: "岩井西高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00536",
+        name: "西野　昇",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00540",
+        name: "茂木 一浩",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00548",
+        name: "茂木 亮一",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00554",
+        name: "横堀 武史",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",
