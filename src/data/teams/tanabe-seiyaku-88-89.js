@@ -29,6 +29,23 @@ export const team = {
       url: "/teams/tanabe-seiyaku-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00690",
+        name: "小早川 修二",
+        from: "東海大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00697",
+        name: "中川 和久",
+        from: "大阪体育大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [],
+  },
   results: {
     league: {
       competition: "第17回日本サッカーリーグ2部",

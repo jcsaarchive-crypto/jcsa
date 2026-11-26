@@ -26,8 +26,33 @@ export const team = {
       url: "",
     },
   },
-    transfers: {
-    incoming: [],
+      transfers: {
+    incoming: [
+      {
+        playerId: "P00845",
+        name: "田口 恭史",
+        from: "大阪商業大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00849",
+        name: "高橋 一生",
+        from: "大阪体育大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00850",
+        name: "原　恵司",
+        from: "三原高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00852",
+        name: "篠崎　亮",
+        from: "三木東高",
+        timing: "preseason",
+      },
+    ],
     outgoing: [],
   },
   results: {

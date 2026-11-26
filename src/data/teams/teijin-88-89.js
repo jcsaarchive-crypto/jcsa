@@ -25,6 +25,10 @@ export const team = {
       url: "/teams/teijin-89-90",
     },
   },
+    transfers: {
+    incoming: [],
+    outgoing: [],
+  },
   results: {
     league: {
       competition: "第17回日本サッカーリーグ2部",

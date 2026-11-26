@@ -31,6 +31,36 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00936",
+        name: "吉田 安孝",
+        from: "東海大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00937",
+        name: "寺西 昭人",
+        from: "東海大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00072",
+        name: "白井　淳",
+        from: "京都産業大",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00699",
+        name: "古賀　満",
+        to: "引退(コーチ就任)",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",

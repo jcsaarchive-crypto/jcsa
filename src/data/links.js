@@ -858,7 +858,7 @@ export const playerPages = {
   P00857: "/players/shirai-yutaka",
   P00858: "/players/higashioka-yasuhiro",
   P00859: "/players/shiroishi-mitsuaki",
-  P00860: "/players/yamazaki-tomohiro",
+  P00860: "/players/tachibana-tomohiro",
   P00861: "/players/tsushima-kuniyoshi",
   P00862: "/players/hyodo-shoichi",
   P00863: "/players/harada-tatsuya",
@@ -965,7 +965,7 @@ export const playerPages = {
   P00964: "/players/takiue-tomomi",
   P00965: "/players/kurokawa-toshihiro",
   P00966: "/players/hanada-yuji",
-  P00967: "/players/tachibana-tomohiro",
+  P00967: "/players/uchino-yoshizumi",
   P00968: "/players/takahashi-mitsuo",
   P00969: "/players/oi-tomota",
   P00970: "/players/arigai-masato",
@@ -1129,6 +1129,7 @@ export const teamSeasonPages = {
   "日産自動車|90/91": "/teams/nissan-motors-90-91",
   "読売サッカークラブ|90/91": "/teams/yomiuri-soccer-club-90-91",
   "全日空サッカークラブ|90/91": "/teams/ana-soccer-club-90-91",
+  "三菱化成黒崎|1990": "/teams/mitsubishi-kasei-kurosaki-1990",
 
 
 

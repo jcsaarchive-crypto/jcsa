@@ -27,6 +27,17 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [],
+    outgoing: [
+      {
+        playerId: "P00861",
+        name: "津嶋 邦嘉",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",
@@ -200,7 +211,7 @@ export const players = [
     previous: "南宇和高",
   },
   {
-    id: "P00967",
+    id: "P00860",
     number: "16",
     name: "橘　智浩",
     latin: "Tomohiro TACHIBANA",
