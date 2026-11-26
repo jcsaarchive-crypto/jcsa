@@ -25,6 +25,72 @@ export const team = {
       url: "",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00968",
+        name: "高橋 三津雄",
+        from: "中央大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00969",
+        name: "大井 智太",
+        from: "横浜商科大高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00970",
+        name: "有貝 匡人",
+        from: "沼津工高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00971",
+        name: "進藤 隆幸",
+        from: "横浜東高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00972",
+        name: "塩沢 英啓",
+        from: "有馬高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00764",
+        name: "長岡 伸浩",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00766",
+        name: "佐野　勉",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00769",
+        name: "古谷 厚四",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00773",
+        name: "安田 一昭",
+        to: "東邦チタニウム蹴球部(神奈川県)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00776",
+        name: "平賀 英樹",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
   results: {
     league: {
       competition: "第18回日本サッカーリーグ2部",

@@ -24,6 +24,41 @@ export const team = {
       url: "/teams/toho-titanium-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00778",
+        name: "垣内 友二",
+        from: "藤沢北高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00779",
+        name: "三島 洋治",
+        from: "境高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00780",
+        name: "菅原 武彦",
+        from: "相模工大附高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00782",
+        name: "野田 正一",
+        from: "藤沢西高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00318",
+        name: "加藤 竜二",
+        from: "浦和学院高",
+        timing: "preseason",
+      },
+    ],
+    outgoing: [],
+  },
   results: {
     league: {
       competition: "第17回日本サッカーリーグ2部",

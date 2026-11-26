@@ -30,6 +30,71 @@ export const team = {
       url: "/teams/toshiba-89-90",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00032",
+        name: "吉村　聡",
+        from: "東海大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00036",
+        name: "芦澤 敏之",
+        from: "中央大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00041",
+        name: "向島　建",
+        from: "国士舘大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00042",
+        name: "白　榮玉",
+        from: "明治大",
+        timing: "preseason",
+      },
+      {
+        name: "カルバネッセ",
+        from: "サンロレンソ(アルゼンチン)",
+        timing: "preseason",
+      },
+      {
+        name: "ペレス",
+        from: "",
+        timing: "preseason",
+      },
+      {
+        name: "バッチ",
+        from: "",
+        timing: "midseason",
+      },
+    ],
+    outgoing: [
+      {
+        name: "八木 智嗣",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "青木 克也",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "大谷 芳夫",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "永井 則夫",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
     league: {

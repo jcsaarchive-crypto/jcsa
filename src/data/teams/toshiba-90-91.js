@@ -30,6 +30,162 @@ export const team = {
       url: "/teams/toshiba-91-92",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        name: "ロペス",
+        from: "リバープレート(ウルグアイ)",
+        timing: "preseason",
+      },
+      {
+        name: "カルバネッセ",
+        from: "サンロレンソ(アルゼンチン)",
+        timing: "preseason",
+      },
+      {
+        name: "ペデルッチ",
+        from: "プログレッソ(ウルグアイ)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00060",
+        name: "中込 正行",
+        from: "日本体育大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00061",
+        name: "堀　孝史",
+        from: "明治大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00062",
+        name: "高本 詞史",
+        from: "福岡大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00063",
+        name: "二井 秀雄",
+        from: "東海大一高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00064",
+        name: "山田 徹哉",
+        from: "帝京高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00065",
+        name: "後藤 静臣",
+        from: "富士通(JSL2部)",
+        fromUrl: "/teams/fujitsu-89-90",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00066",
+        name: "櫛引　実",
+        from: "大阪商業大",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00067",
+        name: "亀谷　誠",
+        from: "青山学院大",
+        timing: "midseason",
+      },
+      {
+        playerId: "P00068",
+        name: "田中 賢二",
+        from: "順天堂大",
+        timing: "midseason",
+      },
+      {
+        playerId: "P00069",
+        name: "油　弘幸",
+        from: "京都産業大",
+        timing: "midseason",
+      },
+      {
+        playerId: "P00070",
+        name: "鈴木 政紀",
+        from: "国士舘大",
+        timing: "midseason",
+      },
+      {
+        playerId: "P00071",
+        name: "新明 正広",
+        from: "習志野高",
+        timing: "midseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00032",
+        name: "吉村　聡",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00033",
+        name: "石井 克己",
+        to: "引退(コーチ就任)",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00038",
+        name: "新井 義一",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00048",
+        name: "鈴木 豊人",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00049",
+        name: "大松　暢",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        name: "アメッド",
+        to: "ミジョナリオスFC(コロンビア)",
+        timing: "preseason",
+      },
+      {
+        name: "フルートス",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "デニス",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00053",
+        name: "保坂 不二夫",
+        to: "引退",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00054",
+        name: "柳楽 雅幸",
+        to: "引退(コーチ専任)",
+        timing: "preseason",
+      },
+      {
+        name: "ルイディアス",
+        to: "CAインデペンディエンテ",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
     league: {

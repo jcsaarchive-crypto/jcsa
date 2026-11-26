@@ -30,6 +30,91 @@ export const team = {
       url: "/teams/toshiba-90-91",
     },
   },
+    transfers: {
+    incoming: [
+      {
+        playerId: "P00056",
+        name: "立石 勝志",
+        from: "NTT関東(JSL2部)",
+        fromUrl: "/teams/ntt-kanto-88-89",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00057",
+        name: "川浦 淳之",
+        from: "前橋商高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00058",
+        name: "菊池　淳",
+        from: "遠野高",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00059",
+        name: "茶木 裕司",
+        from: "八千代松陰高",
+        timing: "preseason",
+      },
+      {
+        name: "アメッド",
+        from: "サンロレンソ(アルゼンチン)",
+        timing: "preseason",
+      },
+      {
+        name: "フルートス",
+        from: "サンロレンソ(アルゼンチン)",
+        timing: "preseason",
+      },
+      {
+        name: "デニス",
+        from: "CAベレス・サルスフィエルド(アルゼンチン)",
+        timing: "preseason",
+      },
+      {
+        name: "ルイディアス",
+        from: "CAインデペンディエンテ(アルゼンチン)",
+        timing: "midseason",
+      },
+    ],
+    outgoing: [
+      {
+        playerId: "P00044",
+        name: "山下 義孝",
+        to: "トヨタ自動車(JSL1部)",
+        toUrl: "/teams/toyota-89-90",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00046",
+        name: "関根 多喜夫",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        playerId: "P00050",
+        name: "徳田 俊篤",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "カルバネッセ",
+        to: "サンロレンソ(アルゼンチン)",
+        timing: "preseason",
+      },
+      {
+        name: "ペレス",
+        to: "",
+        timing: "preseason",
+      },
+      {
+        name: "バッチ",
+        to: "",
+        timing: "preseason",
+      },
+    ],
+  },
 
   results: {
     league: {
